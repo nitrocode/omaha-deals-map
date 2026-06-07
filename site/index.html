@@ -23,6 +23,10 @@
 <header class="app-bar">
   <h1>Omaha Deals</h1>
   <div class="app-bar-actions">
+    <div class="view-toggle" role="tablist" aria-label="View" id="view-toggle">
+      <button id="view-map-btn" data-view="map" role="tab" aria-selected="true">Map</button>
+      <button id="view-list-btn" data-view="list" role="tab" aria-selected="false">List</button>
+    </div>
     <button id="home-btn" aria-label="Set home">🏠</button>
     <button id="locate-btn" aria-label="Find me">📍</button>
     <button id="filter-btn" aria-label="Filters">filters</button>
@@ -37,7 +41,12 @@
   <button data-day="sat"><span class="day-letter">S</span><span class="day-count"></span></button>
   <button data-day="sun"><span class="day-letter">S</span><span class="day-count"></span></button>
 </nav>
-<main id="map" aria-label="Map"></main>
+<div id="view-container">
+  <main id="map" aria-label="Map"></main>
+  <aside id="list-view" aria-label="List of venues">
+    <ol id="list-rows" class="venue-list"></ol>
+  </aside>
+</div>
 <div id="banner" class="banner hidden" role="status"></div>
 <div id="empty-overlay" class="empty-overlay hidden">
   <p>No matches. Loosen a filter or pick another day.</p>

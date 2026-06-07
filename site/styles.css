@@ -49,7 +49,72 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 .day-tabs button.active .day-count { color: rgba(255,255,255,.7); }
 .day-tabs button.active.today::after { background: var(--today); bottom: 1px; }
 
-#map { min-height: 50vh; height: 100%; position: relative; }
+#view-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    min-height: 0;  /* let flex children own their own scroll */
+}
+#map { flex: 1; min-height: 50vh; height: 100%; position: relative; }
+
+/* List view: hidden on mobile by default; shown side-by-side on desktop. */
+#list-view {
+    background: var(--card-bg);
+    overflow-y: auto;
+    border-left: 1px solid var(--border);
+    -webkit-overflow-scrolling: touch;
+}
+.venue-list { list-style: none; margin: 0; padding: 0; }
+.venue-row {
+    padding: .65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: .25rem .5rem;
+    align-items: baseline;
+}
+.venue-row:hover, .venue-row:focus-visible { background: #f0f4fb; outline: 0; }
+.venue-row.selected { background: #fde8e8; }
+.venue-row .v-pip {
+    width: 8px; height: 8px; border-radius: 50%; align-self: center;
+    grid-row: 1; grid-column: 1;
+}
+.venue-row .v-name {
+    font-weight: 600; grid-row: 1; grid-column: 2;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.venue-row .v-distance {
+    grid-row: 1; grid-column: 3; font-size: .75rem; color: var(--muted);
+    white-space: nowrap;
+}
+.venue-row .v-meta {
+    grid-row: 2; grid-column: 2 / span 2;
+    font-size: .8rem; color: var(--muted);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.venue-row .v-nogeo {
+    display: inline-block; font-size: .65rem; padding: .05rem .35rem;
+    background: #f0e2c4; color: #7a5b1c; border-radius: 3px; margin-left: .25rem;
+    vertical-align: middle;
+}
+
+/* Header view-toggle (mobile only). Hidden on wide screens since both panes show. */
+.view-toggle {
+    display: inline-flex; border: 1px solid rgba(255,255,255,.4); border-radius: 999px;
+    overflow: hidden; margin-right: .25rem;
+}
+.view-toggle button {
+    background: transparent; color: inherit; border: 0; padding: .2rem .65rem;
+    font-size: .8rem; cursor: pointer;
+}
+.view-toggle button[aria-selected="true"] {
+    background: rgba(255,255,255,.25);
+}
+
+/* Default mobile: one view at a time, controlled by body data-view attribute. */
+body[data-view="list"] #map { display: none; }
+body[data-view="map"] #list-view { display: none; }
 
 /* Empty state overlay sits on top of the map */
 .empty-overlay {
@@ -135,4 +200,13 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 
 @media (min-width: 768px) {
     body { max-width: 60rem; margin: 0 auto; box-shadow: 0 0 16px rgba(0,0,0,.1); }
+}
+
+/* Desktop: show both panes side-by-side; hide the mobile toggle. */
+@media (min-width: 900px) {
+    body { max-width: 80rem; }
+    body[data-view="list"] #map,
+    body[data-view="map"] #list-view { display: block; }
+    .view-toggle { display: none; }
+    #list-view { flex: 0 0 22rem; max-width: 22rem; }
 }

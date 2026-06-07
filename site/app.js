@@ -2,6 +2,7 @@ const JS_DAY = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 const STORAGE_KEY = "omaha-deals-filters-v1";
 const FAVORITES_KEY = "omaha-deals-favorites-v1";
 const HOME_KEY = "omaha-deals-home-v1";
+const VIEW_KEY = "omaha-deals-view-v1";
 
 // Driving-time heuristic. Real road distance is roughly 1.3x straight-line in
 // city grids; average urban driving (including stops) ~25 mph. Override-able if
@@ -43,6 +44,8 @@ const state = {
     home: null,            // { lat, lng, label } or null
     homeMarker: null,
     pickingHomeOnMap: false,
+    view: "map",           // "map" | "list" (mobile-only; ignored when split-pane shows both)
+    selectedId: null,      // restaurant.id of the currently-selected venue, if any
 };
 
 // ---------- persistence ----------
@@ -92,6 +95,17 @@ function loadHome() {
             state.home = { lat: h.lat, lng: h.lng, label: h.label || "" };
         }
     } catch (e) { /* ignore */ }
+}
+
+function loadView() {
+    try {
+        const v = localStorage.getItem(VIEW_KEY);
+        if (v === "map" || v === "list") state.view = v;
+    } catch (e) { /* ignore */ }
+}
+
+function persistView() {
+    try { localStorage.setItem(VIEW_KEY, state.view); } catch (e) { /* ignore */ }
 }
 
 function persistHome() {
@@ -289,23 +303,149 @@ function updateDayCounts() {
 function render() {
     if (!state.map || !state.data) return;
     clearMarkers();
-    let visible = 0;
+    const matched = [];
     for (const r of state.data.restaurants) {
-        if (r.lat == null || r.lng == null) continue;
         if (!matchesFilters(r)) continue;
+        matched.push(r);
+    }
+    let visibleMarkers = 0;
+    for (const r of matched) {
+        if (r.lat == null || r.lng == null) continue;
         const kind = primaryKindForRestaurant(r);
         const marker = L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
         marker._kind = kind;
-        marker.on("click", () => {
-            selectMarker(marker, kind);
-            showVenue(r);
-        });
+        marker._venueId = r.id;
+        marker.on("click", () => openVenue(r, { fromList: false }));
         state.cluster.addLayer(marker);
         state.markers.push(marker);
-        visible++;
+        if (state.selectedId === r.id) selectMarker(marker, kind);
+        visibleMarkers++;
     }
-    document.getElementById("empty-overlay").classList.toggle("hidden", visible > 0);
+    renderList(matched);
+    document.getElementById("empty-overlay").classList.toggle("hidden", matched.length > 0);
     updateDayCounts();
+}
+
+// ---------- list view ----------
+
+function happyHourSummaryForDay(r) {
+    // One short line: the first happy-hour window on the selected day, formatted 12h.
+    for (const d of r.deals) {
+        if (d.kind !== "happy_hour") continue;
+        for (const w of (d.windows || [])) {
+            if (w.day !== state.selectedDay) continue;
+            const start = formatTime12(w.start);
+            const end = w.end ? "-" + formatTime12(w.end) : "";
+            const tag = w.type === "reverse_hh" ? " (rev)" : "";
+            return `HH ${start}${end}${tag}`;
+        }
+    }
+    return null;
+}
+
+function listRowMetaLine(r) {
+    // Prefer the happy-hour window for the selected day; otherwise show the
+    // kinds-on-this-venue as fallback so a special/voucher-only venue isn't blank.
+    const hh = happyHourSummaryForDay(r);
+    if (hh) return hh;
+    const kinds = [...new Set(r.deals.map(d => d.kind))]
+        .filter(k => k !== "happy_hour")
+        .join(", ");
+    return kinds || "";
+}
+
+function compareForList(a, b) {
+    // Sort by distance from home if set, otherwise alphabetical by name.
+    // No-coord venues sink to the bottom of distance sort so they don't clutter
+    // the "nearest" view.
+    if (state.home) {
+        const da = (a.lat != null && a.lng != null)
+            ? haversineMiles([state.home.lat, state.home.lng], [a.lat, a.lng])
+            : Infinity;
+        const db = (b.lat != null && b.lng != null)
+            ? haversineMiles([state.home.lat, state.home.lng], [b.lat, b.lng])
+            : Infinity;
+        if (da !== db) return da - db;
+    }
+    return (a.name || "").localeCompare(b.name || "");
+}
+
+function renderList(matched) {
+    const root = document.getElementById("list-rows");
+    if (!root) return;
+    root.innerHTML = "";
+    const sorted = [...matched].sort(compareForList);
+    const frag = document.createDocumentFragment();
+    for (const r of sorted) {
+        const li = document.createElement("li");
+        li.className = "venue-row";
+        if (state.selectedId === r.id) li.classList.add("selected");
+        li.dataset.venueId = r.id;
+        li.tabIndex = 0;
+        const kind = primaryKindForRestaurant(r);
+        const distHtml = (state.home && r.lat != null && r.lng != null)
+            ? `<span class="v-distance">${formatMiles(haversineMiles([state.home.lat, state.home.lng], [r.lat, r.lng]))}</span>`
+            : "";
+        const nogeoHtml = (r.lat == null || r.lng == null)
+            ? `<span class="v-nogeo" title="No location yet, won't show on map">no location</span>`
+            : "";
+        li.innerHTML = `
+            <span class="v-pip kind-${kind}"></span>
+            <span class="v-name">${escapeHtml(r.name)}${nogeoHtml}</span>
+            ${distHtml}
+            <span class="v-meta">${escapeHtml(listRowMetaLine(r))}</span>
+        `;
+        li.addEventListener("click", () => openVenue(r, { fromList: true }));
+        li.addEventListener("keydown", e => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openVenue(r, { fromList: true });
+            }
+        });
+        frag.appendChild(li);
+    }
+    root.appendChild(frag);
+}
+
+function openVenue(r, opts = {}) {
+    state.selectedId = r.id;
+    // Highlight the marker if there is one (no-coord venues still open the sheet).
+    const marker = state.markers.find(m => m._venueId === r.id);
+    if (marker) {
+        selectMarker(marker, marker._kind);
+        // If we came from the list (esp. on mobile when switching views), nudge
+        // the map toward the venue so it's visible once user flips to map view.
+        if (opts.fromList && state.map && r.lat != null && r.lng != null) {
+            state.map.setView([r.lat, r.lng], Math.max(state.map.getZoom(), 14));
+        }
+    }
+    // Update list-row highlight without a full re-render.
+    document.querySelectorAll(".venue-row.selected").forEach(el => el.classList.remove("selected"));
+    const row = document.querySelector(`.venue-row[data-venue-id="${cssEscape(r.id)}"]`);
+    if (row) {
+        row.classList.add("selected");
+        row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+    showVenue(r);
+}
+
+function cssEscape(s) {
+    // Slugs are kebab-case alphanumeric, but escape defensively so a malformed
+    // id can't break the querySelector.
+    return (window.CSS && CSS.escape) ? CSS.escape(s) : String(s).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
+}
+
+function setView(v) {
+    if (v !== "map" && v !== "list") return;
+    state.view = v;
+    document.body.dataset.view = v;
+    document.querySelectorAll("#view-toggle button").forEach(btn => {
+        btn.setAttribute("aria-selected", btn.dataset.view === v ? "true" : "false");
+    });
+    persistView();
+    // Leaflet needs a nudge when its container goes from display:none to visible,
+    // otherwise tiles render at the wrong size.
+    if (v === "map" && state.map) state.map.invalidateSize();
 }
 
 // ---------- venue sheet ----------
@@ -422,6 +562,8 @@ function showVenue(r) {
             state.selectedMarker.setStyle(markerStyle(k, false));
             state.selectedMarker = null;
         }
+        state.selectedId = null;
+        document.querySelectorAll(".venue-row.selected").forEach(el => el.classList.remove("selected"));
     });
     document.getElementById("fav-toggle").addEventListener("click", () => {
         if (state.favorites.has(r.id)) state.favorites.delete(r.id);
@@ -677,6 +819,15 @@ function wireControls() {
     document.getElementById("home-from-map").addEventListener("click", startPickingHomeOnMap);
     document.getElementById("home-from-locate").addEventListener("click", setHomeFromCurrentLocation);
     document.getElementById("home-clear").addEventListener("click", clearHome);
+    document.querySelectorAll("#view-toggle button").forEach(btn => {
+        btn.addEventListener("click", () => setView(btn.dataset.view));
+    });
+
+    // Crossing the 900px breakpoint (or any resize) can leave Leaflet with
+    // stale dimensions if its container was hidden at init time. Nudge it.
+    window.addEventListener("resize", () => {
+        if (state.map) state.map.invalidateSize();
+    });
 
     // Single map-click handler: while in "pick home" mode, claim the next click.
     state.map.on("click", e => {
@@ -694,6 +845,9 @@ function wireControls() {
     loadPersistedFilters();
     loadFavorites();
     loadHome();
+    loadView();
+    document.body.dataset.view = state.view;
+    setView(state.view);  // syncs aria-selected on the toggle buttons
     initMap();
     wireControls();
     renderHomeMarker();
