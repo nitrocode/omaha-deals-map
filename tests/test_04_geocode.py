@@ -1,5 +1,6 @@
 """Tests for geocode stage."""
 from pathlib import Path
+from unittest.mock import MagicMock
 
 import yaml
 
@@ -46,3 +47,44 @@ def test_geocode_falls_back_to_geocoder(tmp_path, monkeypatch):
     with open("data/geocoded.yaml") as f:
         out = yaml.safe_load(f)
     assert all(r["geocode_confidence"] == "high" for r in out)
+
+
+def test_mapbox_called_when_nominatim_misses(monkeypatch):
+    """Mapbox should be invoked only when Nominatim returns None."""
+    from scripts import _geocode_main
+
+    nominatim_calls = []
+    mapbox_calls = []
+
+    def nominatim(name):
+        nominatim_calls.append(name)
+        return None  # always miss
+
+    def mapbox(name):
+        mapbox_calls.append(name)
+        return {"address": f"{name} mb", "lat": 41.25, "lng": -95.93,
+                "category": "amenity", "geocode_source": "mapbox"}
+
+    result = _geocode_main._chain_geocode("Test", nominatim, mapbox)
+    assert nominatim_calls == ["Test"]
+    assert mapbox_calls == ["Test"]
+    assert result["geocode_source"] == "mapbox"
+
+
+def test_mapbox_not_called_when_nominatim_hits(monkeypatch):
+    from scripts import _geocode_main
+
+    def nominatim(name):
+        return {"address": "x", "lat": 41.25, "lng": -95.93,
+                "category": "amenity", "geocode_source": "nominatim"}
+
+    mapbox = MagicMock(side_effect=AssertionError("mapbox should not be called"))
+    result = _geocode_main._chain_geocode("Test", nominatim, mapbox)
+    assert result["geocode_source"] == "nominatim"
+    mapbox.assert_not_called()
+
+
+def test_chain_handles_no_mapbox_fn():
+    from scripts import _geocode_main
+    result = _geocode_main._chain_geocode("Test", lambda n: None, None)
+    assert result is None

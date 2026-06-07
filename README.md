@@ -19,9 +19,21 @@ Updated weekly by GitHub Actions; you can also rescrape locally any time.
 ```bash
 make install                       # one-time
 export ANTHROPIC_API_KEY=...       # optional, for LLM end-time extraction fallback
+export MAPBOX_TOKEN=...            # optional, geocoder fallback when Nominatim misses
 make all                           # fetch + parse + extract + geocode + build
 make serve                         # serve site/ at http://localhost:8000
 ```
+
+**Caching is comprehensive.** Re-running `make all` only hits the network for content that's actually changed:
+
+| Cache | File | Survives across runs? |
+|---|---|---|
+| HTTP body + ETag/Last-Modified | `data/http_cache.yaml` | yes (per-URL) |
+| Per-source raw snapshots | `data/raw/<source>/latest.pickle` | yes (gitignored binary) |
+| Geocode name -> lat/lng | `data/geocode_cache.yaml` | yes |
+| LLM end-time extractions | `data/llm_cache.yaml` | yes (when ANTHROPIC_API_KEY is set) |
+
+Use `make rebuild` to force every cache miss.
 
 Individual stages: `make scrape`, `make parse`, `make extract`, `make geocode`, `make build`. `make rebuild` forces every stage to bypass caches.
 
