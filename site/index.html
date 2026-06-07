@@ -77,6 +77,13 @@
       <option value="18"></option><option value="23"></option>
     </datalist>
   </fieldset>
+  <fieldset id="radius-filter" hidden>
+    <legend>Distance from home</legend>
+    <label class="slider-row">
+      <span id="radius-label">Any distance</span>
+      <input type="range" id="radius" min="1" max="30" step="1" value="">
+    </label>
+  </fieldset>
   <fieldset id="cuisine-filter"><legend>Cuisine</legend></fieldset>
   <label><input type="checkbox" id="favorites-only"> Favorites only</label>
   <button id="close-filter">Done</button>

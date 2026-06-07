@@ -23,6 +23,7 @@ const DEFAULT_FILTERS = {
     atHour: null,
     favoritesOnly: false,
     cuisines: [],
+    radiusMi: null,  // null = no limit; otherwise miles from home
 };
 
 const state = {
@@ -34,6 +35,7 @@ const state = {
     atHour: DEFAULT_FILTERS.atHour,
     favoritesOnly: DEFAULT_FILTERS.favoritesOnly,
     cuisines: new Set(DEFAULT_FILTERS.cuisines),
+    radiusMi: DEFAULT_FILTERS.radiusMi,
     favorites: new Set(),
     markers: [],
     selectedMarker: null,
@@ -60,6 +62,7 @@ function loadPersistedFilters() {
         if (f.atHour === null || typeof f.atHour === "number") state.atHour = f.atHour;
         if (typeof f.favoritesOnly === "boolean") state.favoritesOnly = f.favoritesOnly;
         if (Array.isArray(f.cuisines)) state.cuisines = new Set(f.cuisines);
+        if (f.radiusMi === null || typeof f.radiusMi === "number") state.radiusMi = f.radiusMi;
     } catch (e) { /* ignore corrupt storage */ }
 }
 
@@ -70,6 +73,7 @@ function persistFilters() {
         atHour: state.atHour,
         favoritesOnly: state.favoritesOnly,
         cuisines: [...state.cuisines],
+        radiusMi: state.radiusMi,
     };
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); } catch (e) { /* ignore */ }
 }
@@ -222,6 +226,14 @@ function matchesFilters(r) {
         const cs = r.cuisine || [];
         if (!cs.some(c => state.cuisines.has(c))) return false;
     }
+    if (state.radiusMi != null && state.home && r.lat != null && r.lng != null) {
+        const mi = haversineMiles([state.home.lat, state.home.lng], [r.lat, r.lng]);
+        if (mi > state.radiusMi) return false;
+    } else if (state.radiusMi != null && state.home && (r.lat == null || r.lng == null)) {
+        // No coords means we can't measure; hide rather than show ambiguously when
+        // the user has explicitly constrained by distance.
+        return false;
+    }
     return r.deals.some(d => {
         if (!state.kinds.has(d.kind)) return false;
         if (d.kind === "happy_hour") {
@@ -354,17 +366,25 @@ function listRowMetaLine(r) {
     return kinds || "";
 }
 
+function distanceAnchor() {
+    // Prefer the user's home (stable, persisted). Fall back to their current
+    // location (browser geolocation, may not be set). Returning null means we
+    // have no anchor and the list should fall back to alphabetical sort.
+    if (state.home) return [state.home.lat, state.home.lng];
+    if (state.userLocation) return state.userLocation;
+    return null;
+}
+
 function compareForList(a, b) {
-    // Sort by distance from home if set, otherwise alphabetical by name.
-    // No-coord venues sink to the bottom of distance sort so they don't clutter
-    // the "nearest" view.
-    if (state.home) {
+    // Default sort is by distance from whichever anchor we have (home OR
+    // current location). No-coord venues sink to the bottom so they don't
+    // clutter the "nearest" view. Alphabetical only when we have no anchor.
+    const anchor = distanceAnchor();
+    if (anchor) {
         const da = (a.lat != null && a.lng != null)
-            ? haversineMiles([state.home.lat, state.home.lng], [a.lat, a.lng])
-            : Infinity;
+            ? haversineMiles(anchor, [a.lat, a.lng]) : Infinity;
         const db = (b.lat != null && b.lng != null)
-            ? haversineMiles([state.home.lat, state.home.lng], [b.lat, b.lng])
-            : Infinity;
+            ? haversineMiles(anchor, [b.lat, b.lng]) : Infinity;
         if (da !== db) return da - db;
     }
     return (a.name || "").localeCompare(b.name || "");
@@ -383,8 +403,9 @@ function renderList(matched) {
         li.dataset.venueId = r.id;
         li.tabIndex = 0;
         const kind = primaryKindForRestaurant(r);
-        const distHtml = (state.home && r.lat != null && r.lng != null)
-            ? `<span class="v-distance">${formatMiles(haversineMiles([state.home.lat, state.home.lng], [r.lat, r.lng]))}</span>`
+        const anchor = distanceAnchor();
+        const distHtml = (anchor && r.lat != null && r.lng != null)
+            ? `<span class="v-distance">${formatMiles(haversineMiles(anchor, [r.lat, r.lng]))}</span>`
             : "";
         const nogeoHtml = (r.lat == null || r.lng == null)
             ? `<span class="v-nogeo" title="No location yet, won't show on map">no location</span>`
@@ -619,9 +640,11 @@ function setHome(lat, lng, label = "") {
     persistHome();
     renderHomeMarker();
     refreshHomeSheet();
+    updateRadiusFilterUI();
     // If the venue sheet is open, re-render so the new distance shows up.
     // (We don't have a reference to the active venue, so just hide; user can re-tap.)
     document.getElementById("venue-sheet").classList.add("hidden");
+    render();  // re-sort the list and refresh per-row distances
 }
 
 function clearHome() {
@@ -629,6 +652,8 @@ function clearHome() {
     persistHome();
     renderHomeMarker();
     refreshHomeSheet();
+    updateRadiusFilterUI();
+    render();
 }
 
 function refreshHomeSheet() {
@@ -719,6 +744,7 @@ function locateMe() {
             }).addTo(state.map).bindTooltip("You are here");
             state.map.setView(ll, 13);
             document.getElementById("locate-btn").classList.add("active");
+            render();  // re-sort the list by distance from current location
         },
         err => alert("Could not get location: " + err.message),
         { enableHighAccuracy: false, timeout: 10000 },
@@ -741,6 +767,7 @@ function applyFilterUI() {
         slider.value = String(state.atHour);
         document.getElementById("at-hour-label").textContent = "At " + formatTime12(`${state.atHour}:00`);
     }
+    updateRadiusFilterUI();
 }
 
 function clearAllFilters() {
@@ -749,10 +776,35 @@ function clearAllFilters() {
     state.atHour = DEFAULT_FILTERS.atHour;
     state.favoritesOnly = DEFAULT_FILTERS.favoritesOnly;
     state.cuisines = new Set(DEFAULT_FILTERS.cuisines);
+    state.radiusMi = DEFAULT_FILTERS.radiusMi;
     applyFilterUI();
     buildCuisineFilter();  // re-render to clear checkmarks
     persistFilters();
     render();
+}
+
+function updateRadiusFilterUI() {
+    // Radius is only meaningful with a home location. Hide the fieldset until
+    // home is set; reset the slider when home is cleared so a stale filter
+    // doesn't haunt the next session.
+    const fieldset = document.getElementById("radius-filter");
+    if (!fieldset) return;
+    const slider = document.getElementById("radius");
+    const label = document.getElementById("radius-label");
+    if (state.home) {
+        fieldset.hidden = false;
+        if (state.radiusMi == null) {
+            slider.value = "";
+            label.textContent = "Any distance";
+        } else {
+            slider.value = String(state.radiusMi);
+            label.textContent = `Within ${state.radiusMi} mi`;
+        }
+    } else {
+        fieldset.hidden = true;
+        // Don't keep filtering by a radius the user can no longer see.
+        state.radiusMi = null;
+    }
 }
 
 function wireControls() {
@@ -804,6 +856,26 @@ function wireControls() {
     });
     document.getElementById("favorites-only").addEventListener("change", e => {
         state.favoritesOnly = e.target.checked;
+        persistFilters();
+        render();
+    });
+    document.getElementById("radius").addEventListener("input", e => {
+        const v = e.target.value;
+        if (v === "") {
+            state.radiusMi = null;
+            document.getElementById("radius-label").textContent = "Any distance";
+        } else {
+            state.radiusMi = Number(v);
+            document.getElementById("radius-label").textContent = `Within ${state.radiusMi} mi`;
+        }
+        persistFilters();
+        render();
+    });
+    // Double-click the slider thumb to clear (drag-to-zero would be < min=1).
+    document.getElementById("radius").addEventListener("dblclick", e => {
+        e.target.value = "";
+        state.radiusMi = null;
+        document.getElementById("radius-label").textContent = "Any distance";
         persistFilters();
         render();
     });
