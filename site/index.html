@@ -23,6 +23,7 @@
 <header class="app-bar">
   <h1>Omaha Deals</h1>
   <div class="app-bar-actions">
+    <button id="home-btn" aria-label="Set home">🏠</button>
     <button id="locate-btn" aria-label="Find me">📍</button>
     <button id="filter-btn" aria-label="Filters">filters</button>
   </div>
@@ -37,6 +38,7 @@
   <button data-day="sun"><span class="day-letter">S</span><span class="day-count"></span></button>
 </nav>
 <main id="map" aria-label="Map"></main>
+<div id="banner" class="banner hidden" role="status"></div>
 <div id="empty-overlay" class="empty-overlay hidden">
   <p>No matches. Loosen a filter or pick another day.</p>
 </div>
@@ -71,6 +73,27 @@
   <button id="close-filter">Done</button>
 </aside>
 <aside id="venue-sheet" class="sheet hidden" aria-hidden="true"></aside>
+<aside id="home-sheet" class="sheet hidden" aria-hidden="true">
+  <div class="sheet-header">
+    <h2>Home location</h2>
+    <button id="close-home" class="link-btn">Done</button>
+  </div>
+  <p id="home-current" class="meta">Not set</p>
+  <fieldset>
+    <legend>Set by address</legend>
+    <label class="slider-row">
+      <input type="text" id="home-address" placeholder="1234 Main St, Omaha, NE">
+      <button id="home-geocode-btn">Look up</button>
+    </label>
+    <p id="home-geocode-status" class="hint"></p>
+  </fieldset>
+  <fieldset>
+    <legend>Or pick interactively</legend>
+    <button id="home-from-map">Tap on map to set</button>
+    <button id="home-from-locate">Use current location</button>
+  </fieldset>
+  <button id="home-clear" class="link-btn">Clear home</button>
+</aside>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>

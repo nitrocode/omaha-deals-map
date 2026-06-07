@@ -109,6 +109,24 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 
 .slider-row { display: grid; grid-template-columns: 1fr; gap: .25rem; padding: .5rem 0; }
 .slider-row input[type=range] { width: 100%; }
+.slider-row input[type=text] {
+    width: 100%; padding: .5rem .75rem; font-size: 1rem;
+    border: 1px solid var(--border); border-radius: 4px;
+}
+.sheet button:not(.link-btn):not(.fav-btn) {
+    background: var(--primary); color: var(--primary-fg);
+    border: 0; padding: .5rem 1rem; margin: .25rem .25rem .25rem 0;
+    border-radius: 4px; cursor: pointer; font-size: .9rem;
+}
+.sheet button:not(.link-btn):not(.fav-btn).pressed {
+    background: var(--selected);
+}
+.banner {
+    position: absolute; top: .5rem; left: 50%; transform: translateX(-50%);
+    background: var(--card-bg); padding: .5rem 1rem; border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15); z-index: 1100; font-size: .85rem;
+}
+.banner.hidden { display: none; }
 
 @media (min-width: 768px) {
     body { max-width: 60rem; margin: 0 auto; box-shadow: 0 0 16px rgba(0,0,0,.1); }

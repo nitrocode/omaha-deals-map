@@ -1,6 +1,13 @@
 const JS_DAY = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 const STORAGE_KEY = "omaha-deals-filters-v1";
 const FAVORITES_KEY = "omaha-deals-favorites-v1";
+const HOME_KEY = "omaha-deals-home-v1";
+
+// Driving-time heuristic. Real road distance is roughly 1.3x straight-line in
+// city grids; average urban driving (including stops) ~25 mph. Override-able if
+// we ever wire a real routing API.
+const ROAD_FACTOR = 1.3;
+const AVG_MPH = 25;
 
 const KIND_COLOR = {
     happy_hour: "#2c5aa0",
@@ -33,6 +40,9 @@ const state = {
     map: null,
     userLocation: null,    // [lat, lng] or null
     userMarker: null,
+    home: null,            // { lat, lng, label } or null
+    homeMarker: null,
+    pickingHomeOnMap: false,
 };
 
 // ---------- persistence ----------
@@ -71,6 +81,24 @@ function loadFavorites() {
 function persistFavorites() {
     try { localStorage.setItem(FAVORITES_KEY, JSON.stringify([...state.favorites])); }
     catch (e) { /* ignore */ }
+}
+
+function loadHome() {
+    try {
+        const raw = localStorage.getItem(HOME_KEY);
+        if (!raw) return;
+        const h = JSON.parse(raw);
+        if (typeof h?.lat === "number" && typeof h?.lng === "number") {
+            state.home = { lat: h.lat, lng: h.lng, label: h.label || "" };
+        }
+    } catch (e) { /* ignore */ }
+}
+
+function persistHome() {
+    try {
+        if (state.home) localStorage.setItem(HOME_KEY, JSON.stringify(state.home));
+        else localStorage.removeItem(HOME_KEY);
+    } catch (e) { /* ignore */ }
 }
 
 // ---------- data loading + map setup ----------
@@ -127,6 +155,32 @@ function haversineMiles(a, b) {
     const x = Math.sin(dLat / 2) ** 2 +
               Math.cos(toRad(a[0])) * Math.cos(toRad(b[0])) * Math.sin(dLng / 2) ** 2;
     return 2 * R * Math.asin(Math.sqrt(x));
+}
+
+function driveTimeMinutes(miles) {
+    return (miles * ROAD_FACTOR) / AVG_MPH * 60;
+}
+
+function formatMiles(miles) {
+    return miles < 10 ? miles.toFixed(1) + " mi" : Math.round(miles) + " mi";
+}
+
+function formatDriveTime(min) {
+    if (min < 1) return "< 1 min";
+    if (min < 60) return Math.round(min) + " min";
+    const h = Math.floor(min / 60);
+    const m = Math.round(min - h * 60);
+    return m ? `${h}h ${m}min` : `${h}h`;
+}
+
+function showBanner(text) {
+    const b = document.getElementById("banner");
+    b.textContent = text;
+    b.classList.remove("hidden");
+}
+
+function hideBanner() {
+    document.getElementById("banner").classList.add("hidden");
 }
 
 // ---------- filtering ----------
@@ -287,28 +341,61 @@ function renderDeal(d) {
     return "";
 }
 
+function distanceLines(r) {
+    // Build distance + drive-time lines for both home and current location, if set.
+    const lines = [];
+    const target = [r.lat, r.lng];
+    if (state.home) {
+        const mi = haversineMiles([state.home.lat, state.home.lng], target);
+        const min = driveTimeMinutes(mi);
+        lines.push(
+            `<p class="distance">🏠 ${formatMiles(mi)} from home &middot; ~${formatDriveTime(min)} drive</p>`
+        );
+    }
+    if (state.userLocation) {
+        const mi = haversineMiles(state.userLocation, target);
+        const min = driveTimeMinutes(mi);
+        lines.push(
+            `<p class="distance">📍 ${formatMiles(mi)} from you &middot; ~${formatDriveTime(min)} drive</p>`
+        );
+    }
+    return lines.join("");
+}
+
+function mapsLinkFor(r) {
+    // If home is set, deep-link Google Maps directions from home -> restaurant.
+    // Otherwise fall back to a search link (matches prior behavior).
+    if (r.lat != null && r.lng != null && state.home) {
+        return "https://www.google.com/maps/dir/?api=1" +
+            `&origin=${state.home.lat},${state.home.lng}` +
+            `&destination=${r.lat},${r.lng}`;
+    }
+    if (r.lat != null && r.lng != null) {
+        return `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
+    }
+    return `https://www.google.com/maps/search/${encodeURIComponent(r.name + " Omaha NE")}`;
+}
+
 function showVenue(r) {
     const sheet = document.getElementById("venue-sheet");
     const cuisineLine = (r.cuisine && r.cuisine.length)
         ? `<p class="meta">${escapeHtml(r.cuisine.join(", "))}${r.neighborhood ? " &middot; " + escapeHtml(r.neighborhood) : ""}</p>`
         : "";
-    const distance = state.userLocation
-        ? `<p class="distance">${haversineMiles(state.userLocation, [r.lat, r.lng]).toFixed(1)} mi from you</p>`
-        : "";
     const fav = state.favorites.has(r.id);
-    const mapsUrl = `https://www.google.com/maps/search/${encodeURIComponent(r.name + " Omaha NE")}`;
+    const mapsUrl = mapsLinkFor(r);
+    const mapsLabel = state.home ? "Directions from home" : "Open in Google Maps";
     sheet.innerHTML = `
         <h2>${escapeHtml(r.name)}</h2>
         ${cuisineLine}
         <p>${escapeHtml(r.address || "(no address yet)")}</p>
-        ${distance}
+        ${distanceLines(r)}
         <p>
           <button class="fav-btn ${fav ? "active" : ""}" id="fav-toggle">
             ${fav ? "♥ Favorited" : "♡ Favorite"}
           </button>
         </p>
         ${(r.deals || []).map(renderDeal).join("")}
-        <p><a target="_blank" rel="noopener" href="${mapsUrl}">Open in Google Maps</a></p>
+        <p><a target="_blank" rel="noopener" href="${mapsUrl}">${mapsLabel}</a></p>
         ${r.personal?.notes ? `<p><em>${escapeHtml(r.personal.notes)}</em></p>` : ""}
         <button id="venue-close">Close</button>
     `;
@@ -355,6 +442,107 @@ function buildCuisineFilter() {
             render();
         });
     });
+}
+
+// ---------- home location ----------
+
+function renderHomeMarker() {
+    if (state.homeMarker) {
+        state.map.removeLayer(state.homeMarker);
+        state.homeMarker = null;
+    }
+    if (!state.home) return;
+    state.homeMarker = L.circleMarker([state.home.lat, state.home.lng], {
+        radius: 8, color: "#fff", weight: 2,
+        fillColor: "#7a5af5", fillOpacity: 0.9,   // purple distinguishes from user-location blue
+    }).addTo(state.map).bindTooltip("🏠 Home");
+}
+
+function setHome(lat, lng, label = "") {
+    state.home = { lat, lng, label };
+    persistHome();
+    renderHomeMarker();
+    refreshHomeSheet();
+    // If the venue sheet is open, re-render so the new distance shows up.
+    // (We don't have a reference to the active venue, so just hide; user can re-tap.)
+    document.getElementById("venue-sheet").classList.add("hidden");
+}
+
+function clearHome() {
+    state.home = null;
+    persistHome();
+    renderHomeMarker();
+    refreshHomeSheet();
+}
+
+function refreshHomeSheet() {
+    const el = document.getElementById("home-current");
+    if (state.home) {
+        const label = state.home.label || `${state.home.lat.toFixed(4)}, ${state.home.lng.toFixed(4)}`;
+        el.textContent = `Set: ${label}`;
+    } else {
+        el.textContent = "Not set. Distance lines won't show until you set one.";
+    }
+}
+
+async function geocodeHomeAddress() {
+    const input = document.getElementById("home-address");
+    const status = document.getElementById("home-geocode-status");
+    const q = input.value.trim();
+    if (!q) {
+        status.textContent = "Enter an address first.";
+        return;
+    }
+    status.textContent = "Looking up...";
+    try {
+        const url = "https://nominatim.openstreetmap.org/search?format=json&limit=1" +
+            "&countrycodes=us&q=" + encodeURIComponent(q);
+        const r = await fetch(url, {
+            headers: { "Accept": "application/json" },
+        });
+        const results = await r.json();
+        if (!results.length) {
+            status.textContent = "No match. Try adding city/state.";
+            return;
+        }
+        const top = results[0];
+        const lat = parseFloat(top.lat);
+        const lng = parseFloat(top.lon);
+        setHome(lat, lng, top.display_name);
+        status.textContent = `Found: ${top.display_name.slice(0, 80)}`;
+        state.map.setView([lat, lng], 14);
+    } catch (e) {
+        status.textContent = "Lookup failed: " + e.message;
+    }
+}
+
+function startPickingHomeOnMap() {
+    state.pickingHomeOnMap = true;
+    document.getElementById("home-sheet").classList.add("hidden");
+    showBanner("Tap the map to set home");
+    state.map.getContainer().style.cursor = "crosshair";
+}
+
+function setHomeFromCurrentLocation() {
+    if (state.userLocation) {
+        setHome(state.userLocation[0], state.userLocation[1], "Current location");
+        return;
+    }
+    // Otherwise prompt for permission via locateMe; setHome called from there if granted.
+    if (!navigator.geolocation) {
+        alert("Geolocation not supported.");
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(
+        pos => setHome(pos.coords.latitude, pos.coords.longitude, "Current location"),
+        err => alert("Couldn't get location: " + err.message),
+        { enableHighAccuracy: false, timeout: 10000 },
+    );
+}
+
+function openHomeSheet() {
+    refreshHomeSheet();
+    document.getElementById("home-sheet").classList.remove("hidden");
 }
 
 // ---------- geolocation ----------
@@ -464,6 +652,26 @@ function wireControls() {
         render();
     });
     document.getElementById("locate-btn").addEventListener("click", locateMe);
+    document.getElementById("home-btn").addEventListener("click", openHomeSheet);
+    document.getElementById("close-home").addEventListener("click", () => {
+        document.getElementById("home-sheet").classList.add("hidden");
+    });
+    document.getElementById("home-geocode-btn").addEventListener("click", geocodeHomeAddress);
+    document.getElementById("home-address").addEventListener("keydown", e => {
+        if (e.key === "Enter") { e.preventDefault(); geocodeHomeAddress(); }
+    });
+    document.getElementById("home-from-map").addEventListener("click", startPickingHomeOnMap);
+    document.getElementById("home-from-locate").addEventListener("click", setHomeFromCurrentLocation);
+    document.getElementById("home-clear").addEventListener("click", clearHome);
+
+    // Single map-click handler: while in "pick home" mode, claim the next click.
+    state.map.on("click", e => {
+        if (!state.pickingHomeOnMap) return;
+        state.pickingHomeOnMap = false;
+        hideBanner();
+        state.map.getContainer().style.cursor = "";
+        setHome(e.latlng.lat, e.latlng.lng, "Picked on map");
+    });
 }
 
 // ---------- boot ----------
@@ -471,8 +679,10 @@ function wireControls() {
 (async function () {
     loadPersistedFilters();
     loadFavorites();
+    loadHome();
     initMap();
     wireControls();
+    renderHomeMarker();
     try {
         state.data = await loadData();
         buildCuisineFilter();
