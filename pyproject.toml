@@ -28,6 +28,9 @@ exclude = ["site*", "data*", "docs*", "tests*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra"
+markers = [
+    "slow: tests that hit live external services",
+]
 
 [tool.ruff]
 line-length = 100
