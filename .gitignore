@@ -22,3 +22,6 @@ venv/
 # Pipeline transient outputs are committed (data/parsed.yaml, data/extracted.yaml,
 # data/geocoded.yaml, data/deals.json, caches). Only the personal override is excluded.
 *.egg-info/
+
+# Raw per-source snapshots (binary pickles, regenerate via `make scrape`)
+data/raw/

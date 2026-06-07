@@ -1,0 +1,12 @@
+growomaha:
+  ok: true
+  snapshot: data/raw/growomaha/20260607T040558Z.pickle
+  records: 261
+visitomaha:
+  ok: true
+  snapshot: data/raw/visitomaha/20260607T040559Z.pickle
+  records: 11
+bigdealsmedia:
+  ok: true
+  snapshot: data/raw/bigdealsmedia/20260607T040559Z.pickle
+  records: 0
