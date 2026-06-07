@@ -1,0 +1,10 @@
+# Personal overlay: tags, ratings, notes per restaurant id.
+# Copy this file to personal.yaml (which is gitignored) and edit there.
+# Rebuild via `make build` after edits. Site running locally will see your notes;
+# the deployed site won't (CI doesn't have personal.yaml).
+
+# Example:
+# blue-sky-patio:
+#   tags: [favorite, date_spot]
+#   rating: 5
+#   notes: "Patio after work. Friday reverse HH is the move."
