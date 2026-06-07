@@ -634,3 +634,817 @@ Benson Brewery:
   lng: -96.022821
   category: amenity
   geocode_confidence: high
+Approach at Indian Creek:
+  address: The Club at Indian Creek, 3825, North 202nd Street, Omaha, Nebraska, 68022
+  lat: 41.2953645
+  lng: -96.2298353
+  category: building
+  geocode_source: photon
+  geocode_confidence: medium
+SPIN! Pizza:
+  address: Rocco's Pizza & Cantina, 1302, Mike Fahey Street, Omaha, Nebraska, 68102
+  lat: 41.2660077
+  lng: -95.9333868
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Cibo Vino:
+  address: Vino Mas, 144th Trail, Omaha, Nebraska, 68116
+  lat: 41.2881322
+  lng: -96.1396794
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high
+Cumbia Omaha:
+  address: Omaha, Nebraska
+  lat: 41.2587459
+  lng: -95.9383758
+  category: place
+  geocode_source: photon
+  geocode_confidence: medium
+Fore Seasons Golf:
+  address: Fore Seasons Golf, Gihon Road, Parkersburg, West Virginia, 26101
+  lat: 39.2420941
+  lng: -81.5752146
+  category: building
+  geocode_source: photon
+  geocode_confidence: low
+Office West Lounge:
+  address: West Omaha Post Office Station, West Center Road, Omaha, Nebraska, 68124
+  lat: 41.2333638
+  lng: -96.0461471
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Ray's Wings:
+  address: Buffalo Wild Wings, 7540, Dodge Street, Omaha, Nebraska, 68114
+  lat: 41.2612098
+  lng: -96.0304941
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Blue Sushi Sake Grill (Old Market):
+  address: Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102
+  lat: 41.2559125
+  lng: -95.9321166
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+The Nifty Bar:
+  address: Nifty Bar, Northwest Radial Highway, Omaha, Nebraska, 68104
+  lat: 41.2810709
+  lng: -95.9846568
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Lefty O'Tooles:
+  address: Lefty's, 1310, Mike Fahey Street, Omaha, Nebraska, 68102
+  lat: 41.266086
+  lng: -95.9335618
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Houston's Lounge:
+  address: Houston's Lounge, 12040, McDermott Plaza, La Vista, Nebraska, 68128
+  lat: 41.1800979
+  lng: -96.1020605
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Goose's Bar & Grill:
+  address: Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134
+  lat: 41.2889123
+  lng: -96.0760783
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+"Salty Dog Bar & Grill \u2013 Omaha":
+  address: The Salty Dog Bar & Grill, 3401, South 72nd Street, Omaha, Nebraska, 68124
+  lat: 41.228295
+  lng: -96.0233388
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+3rd Base Bar & Grill:
+  address: 3rd Base Bar & Grill, 1st Ave NW, Laporte, Minnesota, 56461
+  lat: 47.216582
+  lng: -94.7567025
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Meddys- Village Pointe:
+  address: Village Pointe, Omaha, Nebraska
+  lat: 41.2609348
+  lng: -96.1838968
+  category: landuse
+  geocode_source: photon
+  geocode_confidence: medium
+The Dandy Lion:
+  address: The Dandy Lion, 111, South Dubuque Street, Iowa City, Iowa, 52240
+  lat: 41.6596359
+  lng: -91.5332957
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+The Matt Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Legacy Chophouse:
+  address: Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114
+  lat: 41.2605856
+  lng: -96.0732947
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Sweetbeans Coffee Co.:
+  address: Hardy Coffee Co., 6051, Maple Street, Omaha, Nebraska, 68104
+  lat: 41.2848626
+  lng: -96.0061305
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Lula B's Breakfast, Brunch & Bar:
+  address: Bailey's Breakfast & Lunch, 1259, S 120th Street, Omaha, Nebraska, 68137
+  lat: 41.247244
+  lng: -96.1001493
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+The Caddy Shack West (180th & Harrison):
+  address: The Caddy Shack West, South 180th Street, Richland VII Precinct, Nebraska,
+    68136
+  lat: 41.1898341
+  lng: -96.1972899
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Clio:
+  address: Passport Health Omaha Travel Clinic, 260, Regency Parkway Drive, Omaha,
+    Nebraska, 68114
+  lat: 41.2575062
+  lng: -96.0740929
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Taqueria Tijuana West:
+  address: Taqueria Tijuana, Q Street, Omaha, Nebraska, 68107
+  lat: 41.2057557
+  lng: -95.946846
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Ramona's Mexican Restaurant:
+  address: Trini's Mexican Restaurant, 1020, Howard Street, Omaha, Nebraska, 68102
+  lat: 41.2557472
+  lng: -95.9301331
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Brick Street Tavern:
+  address: Jackson Street Tavern, Jackson Street, Omaha, Nebraska, 68102
+  lat: 41.2542444
+  lng: -95.9314378
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Cohen & Kelly's Lounge:
+  address: Cohen Kelleys Lounge, Augusta Avenue, Omaha, Nebraska, 68144
+  lat: 41.2327309
+  lng: -96.1183659
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Frosty Mug:
+  address: The Frosty Mug Bar & Grill, 1113, Salem Road, Mount Vernon, Illinois, 62864
+  lat: 38.3283613
+  lng: -88.9107001
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Saltgrass Steakhouse:
+  address: Saltgrass Steakhouse Parking, Galleria Circle, Bee Cave, Texas, 78738
+  lat: 30.3066534
+  lng: -97.938016
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Tupelo Honey:
+  address: Tupelo Honey, 12, College Street, Asheville, North Carolina, 28801
+  lat: 35.5948353
+  lng: -82.5548917
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Kaiyo Sushi:
+  address: Kaiyo Sushi, 3503, Samson Way, Bellevue, Nebraska, 68123
+  lat: 41.1411189
+  lng: -95.9660768
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Javi's Taco:
+  address: Javi's Tacos, 2559, South 171st Street, Omaha, Nebraska, 68130
+  lat: 41.2352329
+  lng: -96.1830287
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Ralston Keno:
+  address: Ralston Keno, P Street, Ralston, Nebraska, 68117
+  lat: 41.2066421
+  lng: -96.0246463
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Copps Pizza (Papillion):
+  address: Copps Pizza, 7204, Jones Street, Omaha, Nebraska, 68114
+  lat: 41.2547567
+  lng: -96.0243145
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Hurrdat Sports Bar & Grill:
+  address: Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137
+  lat: 41.2044973
+  lng: -96.1341971
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+A Catered Affair:
+  address: Catered Affair, Hillsborough Township, New Jersey, 08844
+  lat: 40.5049925
+  lng: -74.6443762
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Talus Spirits & Sustenance:
+  address: Talus Spirits and Sustenance, 10914, Cumberland Drive, Papillion, Nebraska,
+    68046
+  lat: 41.1490281
+  lng: -96.0825192
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+"Bogie's Bar & Grill \u2013 West":
+  address: Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134
+  lat: 41.2889123
+  lng: -96.0760783
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Brownie's Bar & Grill:
+  address: Brownie Bar, Leavenworth Street, Omaha, Nebraska, 68106
+  lat: 41.2522218
+  lng: -95.9325955
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+The Verdict Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Get Real Sandwiches:
+  address: "Fabrica de Sandwiches de Miga, Ruta Provincial E-83 - Avenida Julio Argentino\
+    \ Roca, Villa General Belgrano, C\xF3rdoba, X5194"
+  lat: -31.9806893
+  lng: -64.5601675
+  category: shop
+  geocode_source: photon
+  geocode_confidence: low
+Big Kel's Pizza & Wings:
+  address: Big Kel's Pizza and Wings, 40, Arena Way, Lewis Township, Iowa, 51501
+  lat: 41.2364028
+  lng: -95.8917805
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Foxy Sushi:
+  address: Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102
+  lat: 41.2559125
+  lng: -95.9321166
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Isla Del Mar:
+  address: Isla de la Virgen del Mar, Santander, Cantabria, 39012
+  lat: 43.4790624
+  lng: -3.877448
+  category: place
+  geocode_source: photon
+  geocode_confidence: low
+Gather Omaha:
+  address: Omaha, Nebraska
+  lat: 41.2587459
+  lng: -95.9383758
+  category: place
+  geocode_source: photon
+  geocode_confidence: medium
+Flagship Commons:
+  address: Scott Village Commons, Omaha, Nebraska
+  lat: 41.2433178
+  lng: -96.0104803
+  category: leisure
+  geocode_source: photon
+  geocode_confidence: high
+Sickies Garage Burgers & Brews:
+  address: Sickies Garage Burgers & Brews, Wolf Creek Drive, Bellevue, Nebraska, 68005
+  lat: 41.1578007
+  lng: -95.9326215
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Bomb Taco:
+  address: Bomb Taco, 120, Olson Drive, Papillion, Nebraska, 68046
+  lat: 41.1389973
+  lng: -96.042459
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Beyond Golf Bar + Kitchen:
+  address: Goldeez Bar & Kitchen, 5502, North 103rd Street, Omaha, Nebraska, 68134
+  lat: 41.3084544
+  lng: -96.075343
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+GL Lounge:
+  address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
+  lat: 41.2656727
+  lng: -96.0930437
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Pint Nine Brewing:
+  address: Pint Nine Brewing Company, Portal Road, La Vista, Nebraska, 68128
+  lat: 41.1718832
+  lng: -96.0759759
+  category: craft
+  geocode_source: photon
+  geocode_confidence: medium
+The Cabin Bar & Grill:
+  address: The Cabin Bar and Grill, 9226, Mormon Bridge Road, Omaha, Nebraska, 68152
+  lat: 41.3432606
+  lng: -95.9844189
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Brewsky's:
+  address: Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508
+  lat: 40.8151888
+  lng: -96.7102032
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Site-1 Brewing:
+  address: ZipLine Brewing Co., 721, North 14th Street, Omaha, Nebraska, 68102
+  lat: 41.2662602
+  lng: -95.9342256
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Dundee Cork N Bottle:
+  address: Dundee Cork & Bottle, 614, North 50th Street, Omaha, Nebraska, 68132
+  lat: 41.2646336
+  lng: -95.9904351
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+72 Table and Tap:
+  address: 72 Table & Tap, 5413, South 72th Street, Omaha, Nebraska, 68127-3935
+  lat: 41.2035881
+  lng: -96.022821
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Big Red Restaurant & Sports Bar:
+  address: Big Red Restaurant & Sports Bar, 2323, Laverna Street, Fremont, Nebraska,
+    68025
+  lat: 41.4517245
+  lng: -96.4720119
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Industrial Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Waterfall Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Jimi D's:
+  address: Omaha, Nebraska
+  lat: 41.2587459
+  lng: -95.9383758
+  category: place
+  geocode_source: photon
+  geocode_confidence: medium
+Winchester Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Backlot Taphouse:
+  address: Blacklot Taphouse, 2110, South 67th Street, Omaha, Nebraska, 68106
+  lat: 41.2395515
+  lng: -96.0152355
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Twisted Vine:
+  address: Twisted Vine, 123, North Washington Street, Papillion, Nebraska, 68046
+  lat: 41.156828
+  lng: -96.0426363
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Maloney's Irish Pub:
+  address: Maloney's Irish Pub, 1120, East Kennedy Boulvard, Tampa, Florida, 33602
+  lat: 27.9512201
+  lng: -82.4486647
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Villagio Pizzeria:
+  address: Zio's Pizzeria, 1109, Howard Street, Omaha, Nebraska, 68102
+  lat: 41.2552869
+  lng: -95.9310913
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Dundee's Place Bar & Grill:
+  address: Dundee Barber, North 50th Street, Omaha, Nebraska, 68104
+  lat: 41.2598405
+  lng: -95.9901317
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high
+Grant St. Bar:
+  address: Grant Street, Omaha, Nebraska, 68111
+  lat: 41.2800152
+  lng: -95.9549416
+  category: highway
+  geocode_source: photon
+  geocode_confidence: medium
+Billy O's Lounge:
+  address: O Dining & Lounge, 1015, Farnam Street, Omaha, Nebraska, 68102
+  lat: 41.2572282
+  lng: -95.9299403
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Pat & Mike's Bar:
+  address: Snack Bar - Sioux Room & Patio, 3825, North 202nd Street, Omaha, Nebraska,
+    68022
+  lat: 41.2952472
+  lng: -96.2295166
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Bushwood Lounge:
+  address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
+  lat: 41.2656727
+  lng: -96.0930437
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Rookies Bar & Grill:
+  address: Rookies Sports Bar & Grill, 2180, Northwest 156th Street, Walnut Township,
+    Iowa, 50325
+  lat: 41.6137048
+  lng: -93.8347701
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Homy Inn:
+  address: Residence Inn Omaha Downtown/Old Market Area, 106, South 15th Street, Omaha,
+    Nebraska, 68102
+  lat: 41.2593854
+  lng: -95.9361194
+  category: tourism
+  geocode_source: photon
+  geocode_confidence: high
+Harney Street Tavern:
+  address: Harney Street, Omaha, Nebraska, 68131
+  lat: 41.2565173
+  lng: -95.9308121
+  category: highway
+  geocode_source: photon
+  geocode_confidence: medium
+Legends Patio Grill & Bar:
+  address: Legends Patio Grill & Bar, 801, R Street, Lincoln, Nebraska, 68508
+  lat: 40.816778
+  lng: -96.7097403
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Harold's Bar:
+  address: Harold's Square Shopping Center, Omaha, Nebraska
+  lat: 41.2771095
+  lng: -96.0367667
+  category: landuse
+  geocode_source: photon
+  geocode_confidence: medium
+Huber Haus:
+  address: Huber Chevrolet Service, 11102, West Dodge Road, Omaha, Nebraska, 68154
+  lat: 41.2649089
+  lng: -96.0886259
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high
+Flight Deck Tap & Grill:
+  address: Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California,
+    96158
+  lat: 38.8926965
+  lng: -119.9983696
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+RTG on Center:
+  address: North Omaha Transit Center, BUS ONLY, Omaha, Nebraska, 68111
+  lat: 41.2978873
+  lng: -95.9585075
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Pub 134:
+  address: T. Henery's Pub, South 11th Street, Omaha, Nebraska, 68102
+  lat: 41.2567817
+  lng: -95.9308703
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Island Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+J. Gilbert's Wood-Fired Steaks & Seafood:
+  address: J. Gilbert's Wood-Fired Steaks & Seafood Kansas City, 8901, Metcalf Avenue,
+    Overland Park, Kansas, 66212
+  lat: 38.9674284
+  lng: -94.6669383
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+801 Chophouse:
+  address: Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114
+  lat: 41.2605856
+  lng: -96.0732947
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Skyybox Bar & Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Wilson & Washburn:
+  address: Wilson Circle, Omaha, Nebraska, 68147
+  lat: 41.1961809
+  lng: -95.9553552
+  category: highway
+  geocode_source: photon
+  geocode_confidence: medium
+Vincenzo's Italian Ristorante:
+  address: Vincenzo's, 808, P Street, Lincoln, Nebraska, 68508
+  lat: 40.8149576
+  lng: -96.7095786
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Varsity Sports Cafe and Roman Pizza:
+  address: Varsity Sports Cafe & Roman Coin Pizza, 14529, F Street, Omaha, Nebraska,
+    68137
+  lat: 41.2187081
+  lng: -96.1411858
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Sullivan's Steakhouse:
+  address: Sullivan's Steakhouse, West 119th Street, Leawood, Kansas, 66211
+  lat: 38.9124336
+  lng: -94.6374237
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+St. Andrew's Pub:
+  address: St. Andrew's Pointe, Omaha, Nebraska
+  lat: 41.1999771
+  lng: -96.0980922
+  category: landuse
+  geocode_source: photon
+  geocode_confidence: medium
+Spencer's for Steak and Chops:
+  address: Spencers for Steaks and Chops, 255, West Temple, Salt Lake City, Utah,
+    84144
+  lat: 40.7640215
+  lng: -111.893552
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Shuck's Fish House and Oyster Bar:
+  address: Shuck's Fish House & Oyster Bar, 16901, Wright Plaza, Omaha, Nebraska,
+    68130
+  lat: 41.2323227
+  lng: -96.1781621
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Shevy's Sports Bar & Grill:
+  address: Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137
+  lat: 41.2044973
+  lng: -96.1341971
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Sean O'Casey's:
+  address: Casey's General Store, Dodge Street, Omaha, Nebraska, 68198
+  lat: 41.2593587
+  lng: -95.9727488
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high
+Report in Pub:
+  address: Marking Georgetown "Report Card", Chulia Street, George Town, Penang Island,
+    10200
+  lat: 5.4191159
+  lng: 100.334613
+  category: tourism
+  geocode_source: photon
+  geocode_confidence: low
+Rusty Taco:
+  address: Rusty Taco, 5331, South 204th Avenue, Elkhorn, Nebraska, 68022
+  lat: 41.2028601
+  lng: -96.2350204
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Pan Asian Terrace:
+  address: Asian Gifts, 123, Palmer Park Mall, Easton, Pennsylvania, 18045
+  lat: 40.696551
+  lng: -75.2586815
+  category: shop
+  geocode_source: photon
+  geocode_confidence: low
+Ollie and Hobbes Craft Kitchen:
+  address: Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska,
+    68516
+  lat: 40.7430165
+  lng: -96.6789605
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+The Observatory:
+  address: "The Observatory or Caracol, Sendero de acceso a Serie Inicial o Chich\xE9\
+    n viejo, Yucat\xE1n, 97751"
+  lat: 20.6793114
+  lng: -88.5707562
+  category: building
+  geocode_source: photon
+  geocode_confidence: low
+Monarch Restaurant & Bar:
+  address: Gerda's German Restaurant & Bakery, 5180, Leavenworth Street, Omaha, Nebraska,
+    68106
+  lat: 41.2526406
+  lng: -95.9953875
+  category: building
+  geocode_source: photon
+  geocode_confidence: medium
+Maximo's Cantina:
+  address: Maximino's Cantina, 2613, North Main Street, Omaha, Nebraska, 68022
+  lat: 41.2829022
+  lng: -96.2366635
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Local Beer, Patio, and Kitchen:
+  address: Local Beer, Patio, and Kitchen, South 134th Street, Omaha, Nebraska, 68137
+  lat: 41.2098569
+  lng: -96.1235004
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Le Bouillon:
+  address: Bouillon Restaurant, 1017, Howard Street, Omaha, Nebraska, 68102
+  lat: 41.2552485
+  lng: -95.9298756
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Ika Ramen & Izakaya:
+  address: Ika San Ramen and Izakaya, 7902, Towne Center Parkway, Papillion, Nebraska,
+    68046
+  lat: 41.1349929
+  lng: -96.0292131
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Herbe Sainte:
+  address: "La Gr\xE8ve Herbe, Sainte-Marie-du-Mont, Normandy, 50480"
+  lat: 49.3651776
+  lng: -1.188704
+  category: place
+  geocode_source: photon
+  geocode_confidence: low
+The Good Life:
+  address: Good Life Concrete, 6710, South 153rd Circle, Omaha, Nebraska, 68137
+  lat: 41.1920326
+  lng: -96.1532126
+  category: office
+  geocode_source: photon
+  geocode_confidence: medium
+Cunningham's Pub & Grill:
+  address: Barrett's Barleycorn Pub & Grill, 4322, Leavenworth Street, Omaha, Nebraska,
+    68105
+  lat: 41.252621
+  lng: -95.9779952
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+The Linden House:
+  address: Hospice House - The Josie Harper Residence, 7415, Cedar Street, Omaha,
+    Nebraska, 68124
+  lat: 41.240195
+  lng: -96.0269809
+  category: healthcare
+  geocode_source: photon
+  geocode_confidence: medium
+Brazen Head Irish Pub:
+  address: Brazen Head Irish Pub, 165, East Liberty Street, Toronto, Ontario, M6K
+    3K4
+  lat: 43.6384421
+  lng: -79.4172263
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Blue Sushi Sake Grill (Grayhawk Pointe):
+  address: Baby Blue Sushi Sake Grill, 16939, Wright Plaza, Omaha, Nebraska, 68130
+  lat: 41.2330256
+  lng: -96.1793581
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Blatt Beer + Table (Downtown):
+  address: Blatt Beer & Table, Mike Fahey Street, Omaha, Nebraska, 68102
+  lat: 41.2655965
+  lng: -95.9321381
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Agave Azteca:
+  address: Azteca, 9429, South 142nd Street, Omaha, Nebraska, 68138
+  lat: 41.1640593
+  lng: -96.1377222
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Stay Local. Stay Inspired w/ 15% Off!:
+  address: Pendas Way Local Store & Off Licence, 85, Pendas Way, Leeds, England, LS15
+    8HN
+  lat: 53.8109247
+  lng: -1.4393431
+  category: shop
+  geocode_source: photon
+  geocode_confidence: low
+The Off Peak Perk:
+  address: Off the Road Banana Loop Bush Camp, Stuart Highway, South Australia, 5723
+  lat: -29.9669875
+  lng: 135.1680029
+  category: tourism
+  geocode_source: photon
+  geocode_confidence: low
+The Woodcliff Restaurant:
+  address: Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2567175
+  lng: -95.938139
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Rib Shack Smokehouse:
+  address: Rib shack Smokehouse bbq, 295, Port St Lucie, Port Saint Lucie, Florida,
+    34984
+  lat: 27.2757797
+  lng: -80.354112
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low

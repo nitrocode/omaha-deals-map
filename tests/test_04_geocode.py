@@ -49,42 +49,80 @@ def test_geocode_falls_back_to_geocoder(tmp_path, monkeypatch):
     assert all(r["geocode_confidence"] == "high" for r in out)
 
 
-def test_mapbox_called_when_nominatim_misses(monkeypatch):
-    """Mapbox should be invoked only when Nominatim returns None."""
+def test_chain_falls_through_to_each_geocoder_on_miss():
+    """Chain runs in order; later geocoders are only called when earlier ones miss."""
     from scripts import _geocode_main
 
-    nominatim_calls = []
-    mapbox_calls = []
+    calls = []
+    def maker(label, hit):
+        def fn(name):
+            calls.append(label)
+            return hit
+        return fn
 
-    def nominatim(name):
-        nominatim_calls.append(name)
-        return None  # always miss
-
-    def mapbox(name):
-        mapbox_calls.append(name)
-        return {"address": f"{name} mb", "lat": 41.25, "lng": -95.93,
-                "category": "amenity", "geocode_source": "mapbox"}
-
-    result = _geocode_main._chain_geocode("Test", nominatim, mapbox)
-    assert nominatim_calls == ["Test"]
-    assert mapbox_calls == ["Test"]
+    nominatim = maker("nominatim", None)
+    photon = maker("photon", None)
+    mapbox = maker("mapbox", {"address": "x", "lat": 41.25, "lng": -95.93,
+                              "category": "amenity", "geocode_source": "mapbox"})
+    result = _geocode_main._chain_geocode("Test", [
+        ("nominatim", nominatim), ("photon", photon), ("mapbox", mapbox),
+    ])
+    assert calls == ["nominatim", "photon", "mapbox"]
     assert result["geocode_source"] == "mapbox"
 
 
-def test_mapbox_not_called_when_nominatim_hits(monkeypatch):
+def test_chain_short_circuits_on_first_hit():
     from scripts import _geocode_main
-
-    def nominatim(name):
-        return {"address": "x", "lat": 41.25, "lng": -95.93,
-                "category": "amenity", "geocode_source": "nominatim"}
-
+    photon = MagicMock(side_effect=AssertionError("photon should not be called"))
     mapbox = MagicMock(side_effect=AssertionError("mapbox should not be called"))
-    result = _geocode_main._chain_geocode("Test", nominatim, mapbox)
+    result = _geocode_main._chain_geocode("Test", [
+        ("nominatim", lambda n: {"address": "x", "lat": 41.25, "lng": -95.93,
+                                  "category": "amenity", "geocode_source": "nominatim"}),
+        ("photon", photon),
+        ("mapbox", mapbox),
+    ])
     assert result["geocode_source"] == "nominatim"
+    photon.assert_not_called()
     mapbox.assert_not_called()
 
 
-def test_chain_handles_no_mapbox_fn():
+def test_chain_skips_none_entries():
+    """When a geocoder fn is None (e.g. no MAPBOX_TOKEN), the chain skips it without error."""
     from scripts import _geocode_main
-    result = _geocode_main._chain_geocode("Test", lambda n: None, None)
+    result = _geocode_main._chain_geocode("Test", [
+        ("nominatim", lambda n: None),
+        ("mapbox", None),
+    ])
     assert result is None
+
+
+def test_is_plausible_match_accepts_overlap():
+    from scripts._geocode_main import _is_plausible_match
+    # Multi-token overlap
+    assert _is_plausible_match("Approach at Indian Creek", "The Club at Indian Creek")
+    # Exact-ish
+    assert _is_plausible_match("Revival House", "Revival House")
+    # Short query (no significant tokens) -> accept
+    assert _is_plausible_match("A&W", "A&W Burger Stand")
+
+
+def test_is_plausible_match_rejects_fuzzy_false_positives():
+    from scripts._geocode_main import _is_plausible_match
+    # Real Photon false positives that hurt our pipeline:
+    assert not _is_plausible_match("Nick's Quorum", "Fairfield Inn & Suites Omaha Downtown")
+    assert not _is_plausible_match("J's Smokehouse", "US Coast Guard Omaha Moorings")
+    assert not _is_plausible_match("Hacienda Real", "Real Look")  # "real" is <5 chars, dropped
+
+
+def test_chain_continues_past_geocoder_exceptions():
+    from scripts import _geocode_main
+
+    def boom(name):
+        raise RuntimeError("network down")
+
+    result = _geocode_main._chain_geocode("Test", [
+        ("nominatim", boom),
+        ("photon", lambda n: {"address": "x", "lat": 41.25, "lng": -95.93,
+                              "category": "amenity", "geocode_source": "photon"}),
+    ])
+    assert result["geocode_source"] == "photon"

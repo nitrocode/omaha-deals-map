@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-07T04:13:46.087830+00:00",
+  "built_at": "2026-06-07T05:03:57.912314+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -172,10 +172,10 @@
     {
       "id": "2717",
       "name": "Stay Local. Stay Inspired w/ 15% Off!",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Pendas Way Local Store & Off Licence, 85, Pendas Way, Leeds, England, LS15 8HN",
+      "lat": 53.8109247,
+      "lng": -1.4393431,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -297,10 +297,10 @@
     {
       "id": "2732",
       "name": "The Off Peak Perk",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Off the Road Banana Loop Bush Camp, Stuart Highway, South Australia, 5723",
+      "lat": -29.9669875,
+      "lng": 135.1680029,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -446,10 +446,10 @@
     {
       "id": "3rd-base-bar-grill",
       "name": "3rd Base Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "3rd Base Bar & Grill, 1st Ave NW, Laporte, Minnesota, 56461",
+      "lat": 47.216582,
+      "lng": -94.7567025,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -552,10 +552,10 @@
     {
       "id": "72-table-and-tap",
       "name": "72 Table and Tap",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "72 Table & Tap, 5413, South 72th Street, Omaha, Nebraska, 68127-3935",
+      "lat": 41.2035881,
+      "lng": -96.022821,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -612,7 +612,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "72-table-tap",
@@ -643,10 +643,10 @@
     {
       "id": "801-chophouse",
       "name": "801 Chophouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114",
+      "lat": 41.2605856,
+      "lng": -96.0732947,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -691,15 +691,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "a-catered-affair",
       "name": "A Catered Affair",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Catered Affair, Hillsborough Township, New Jersey, 08844",
+      "lat": 40.5049925,
+      "lng": -74.6443762,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -873,10 +873,10 @@
     {
       "id": "agave-azteca",
       "name": "Agave Azteca",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Azteca, 9429, South 142nd Street, Omaha, Nebraska, 68138",
+      "lat": 41.1640593,
+      "lng": -96.1377222,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -921,7 +921,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "annies-irish-pub",
@@ -1020,10 +1020,10 @@
     {
       "id": "approach-at-indian-creek",
       "name": "Approach at Indian Creek",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Club at Indian Creek, 3825, North 202nd Street, Omaha, Nebraska, 68022",
+      "lat": 41.2953645,
+      "lng": -96.2298353,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1074,7 +1074,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "backlot-pizza-kitchen",
@@ -1132,10 +1132,10 @@
     {
       "id": "backlot-taphouse",
       "name": "Backlot Taphouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Blacklot Taphouse, 2110, South 67th Street, Omaha, Nebraska, 68106",
+      "lat": 41.2395515,
+      "lng": -96.0152355,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1186,7 +1186,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "backstretch-bar-at-inner-rail-food-hall",
@@ -1539,10 +1539,10 @@
     {
       "id": "beyond-golf",
       "name": "Beyond Golf Bar + Kitchen",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Goldeez Bar & Kitchen, 5502, North 103rd Street, Omaha, Nebraska, 68134",
+      "lat": 41.3084544,
+      "lng": -96.075343,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1593,15 +1593,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "big-kels-pizza-wings",
       "name": "Big Kel's Pizza & Wings",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Big Kel's Pizza and Wings, 40, Arena Way, Lewis Township, Iowa, 51501",
+      "lat": 41.2364028,
+      "lng": -95.8917805,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1634,15 +1634,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "big-red-restaurant-sports-bar-2",
       "name": "Big Red Restaurant & Sports Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Big Red Restaurant & Sports Bar, 2323, Laverna Street, Fremont, Nebraska, 68025",
+      "lat": 41.4517245,
+      "lng": -96.4720119,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1686,10 +1686,10 @@
     {
       "id": "billy-os-lounge",
       "name": "Billy O's Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "O Dining & Lounge, 1015, Farnam Street, Omaha, Nebraska, 68102",
+      "lat": 41.2572282,
+      "lng": -95.9299403,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1746,7 +1746,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "biryaniwala",
@@ -1773,10 +1773,10 @@
     {
       "id": "blatt-beer-table",
       "name": "Blatt Beer + Table (Downtown)",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Blatt Beer & Table, Mike Fahey Street, Omaha, Nebraska, 68102",
+      "lat": 41.2655965,
+      "lng": -95.9321381,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1833,7 +1833,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "blue-chip-ultra-lounge",
@@ -1891,10 +1891,10 @@
     {
       "id": "blue-sushi-3",
       "name": "Blue Sushi Sake Grill (Grayhawk Pointe)",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Baby Blue Sushi Sake Grill, 16939, Wright Plaza, Omaha, Nebraska, 68130",
+      "lat": 41.2330256,
+      "lng": -96.1793581,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -1951,15 +1951,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "blue-sushi-old-market",
       "name": "Blue Sushi Sake Grill (Old Market)",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102",
+      "lat": 41.2559125,
+      "lng": -95.9321166,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2016,7 +2016,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "blue-sushi-shops-of-legacy",
@@ -2204,10 +2204,10 @@
     {
       "id": "bogies-bar-grill-west",
       "name": "Bogie's Bar & Grill – West",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134",
+      "lat": 41.2889123,
+      "lng": -96.0760783,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2252,7 +2252,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "bonefish-grill",
@@ -2322,10 +2322,10 @@
     {
       "id": "brazen-head-irish-pub",
       "name": "Brazen Head Irish Pub",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Brazen Head Irish Pub, 165, East Liberty Street, Toronto, Ontario, M6K 3K4",
+      "lat": 43.6384421,
+      "lng": -79.4172263,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2375,10 +2375,10 @@
     {
       "id": "brewskys-2",
       "name": "Brewsky's",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508",
+      "lat": 40.8151888,
+      "lng": -96.7102032,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2434,10 +2434,10 @@
     {
       "id": "brick-street-tavern",
       "name": "Brick Street Tavern",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Jackson Street Tavern, Jackson Street, Omaha, Nebraska, 68102",
+      "lat": 41.2542444,
+      "lng": -95.9314378,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2482,7 +2482,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "brickway-brewery-distillery",
@@ -2552,10 +2552,10 @@
     {
       "id": "brownies-bar-grill",
       "name": "Brownie's Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Brownie Bar, Leavenworth Street, Omaha, Nebraska, 68106",
+      "lat": 41.2522218,
+      "lng": -95.9325955,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2594,15 +2594,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "brushi-bistro-bar",
       "name": "The Linden House",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Hospice House - The Josie Harper Residence, 7415, Cedar Street, Omaha, Nebraska, 68124",
+      "lat": 41.240195,
+      "lng": -96.0269809,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2653,7 +2653,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "burdock-bitters",
@@ -2782,10 +2782,10 @@
     {
       "id": "bushwood-lounge",
       "name": "Bushwood Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154",
+      "lat": 41.2656727,
+      "lng": -96.0930437,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -2830,7 +2830,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "casanovas-butchery-rockbrook",
@@ -2990,10 +2990,10 @@
     {
       "id": "cibo-vino",
       "name": "Cibo Vino",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Vino Mas, 144th Trail, Omaha, Nebraska, 68116",
+      "lat": 41.2881322,
+      "lng": -96.1396794,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3044,7 +3044,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "cilantros-mexican-bar-grill",
@@ -3234,10 +3234,10 @@
     {
       "id": "clio",
       "name": "Clio",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Passport Health Omaha Travel Clinic, 260, Regency Parkway Drive, Omaha, Nebraska, 68114",
+      "lat": 41.2575062,
+      "lng": -96.0740929,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3294,15 +3294,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "cohen-kellys-lounge",
       "name": "Cohen & Kelly's Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Cohen Kelleys Lounge, Augusta Avenue, Omaha, Nebraska, 68144",
+      "lat": 41.2327309,
+      "lng": -96.1183659,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3341,15 +3341,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "copps-pizza",
       "name": "Copps Pizza (Papillion)",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Copps Pizza, 7204, Jones Street, Omaha, Nebraska, 68114",
+      "lat": 41.2547567,
+      "lng": -96.0243145,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3394,15 +3394,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "cork-n-bottle",
       "name": "Dundee Cork N Bottle",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Dundee Cork & Bottle, 614, North 50th Street, Omaha, Nebraska, 68132",
+      "lat": 41.2646336,
+      "lng": -95.9904351,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3447,7 +3447,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "corkscrew-blackstone",
@@ -3611,10 +3611,10 @@
     {
       "id": "cumbia-omaha",
       "name": "Cumbia Omaha",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Omaha, Nebraska",
+      "lat": 41.2587459,
+      "lng": -95.9383758,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3665,15 +3665,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "cunninghams-pub-grill",
       "name": "Cunningham's Pub & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Barrett's Barleycorn Pub & Grill, 4322, Leavenworth Street, Omaha, Nebraska, 68105",
+      "lat": 41.252621,
+      "lng": -95.9779952,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3718,7 +3718,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "dante-2",
@@ -3906,10 +3906,10 @@
     {
       "id": "dundees-place-bar-grill",
       "name": "Dundee's Place Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Dundee Barber, North 50th Street, Omaha, Nebraska, 68104",
+      "lat": 41.2598405,
+      "lng": -95.9901317,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -3954,7 +3954,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "early-bird",
@@ -4053,10 +4053,10 @@
     {
       "id": "el-chicano",
       "name": "Bomb Taco",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Bomb Taco, 120, Olson Drive, Papillion, Nebraska, 68046",
+      "lat": 41.1389973,
+      "lng": -96.042459,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4107,7 +4107,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "el-milagro",
@@ -4605,10 +4605,10 @@
     {
       "id": "flagship-commons",
       "name": "Flagship Commons",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Scott Village Commons, Omaha, Nebraska",
+      "lat": 41.2433178,
+      "lng": -96.0104803,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4665,7 +4665,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "flemings-2",
@@ -4735,10 +4735,10 @@
     {
       "id": "flight-deck-tap-grill",
       "name": "Flight Deck Tap & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California, 96158",
+      "lat": 38.8926965,
+      "lng": -119.9983696,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4794,10 +4794,10 @@
     {
       "id": "fore-seasons-golf",
       "name": "Fore Seasons Golf",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Fore Seasons Golf, Gihon Road, Parkersburg, West Virginia, 26101",
+      "lat": 39.2420941,
+      "lng": -81.5752146,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4853,10 +4853,10 @@
     {
       "id": "foxy-sushi",
       "name": "Foxy Sushi",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102",
+      "lat": 41.2559125,
+      "lng": -95.9321166,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4913,15 +4913,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "frosty-mug",
       "name": "Frosty Mug",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Frosty Mug Bar & Grill, 1113, Salem Road, Mount Vernon, Illinois, 62864",
+      "lat": 38.3283613,
+      "lng": -88.9107001,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -4977,10 +4977,10 @@
     {
       "id": "gather-omaha",
       "name": "Gather Omaha",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Omaha, Nebraska",
+      "lat": 41.2587459,
+      "lng": -95.9383758,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5025,7 +5025,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "genos-bar-grill",
@@ -5089,10 +5089,10 @@
     {
       "id": "get-real-sandwiches",
       "name": "Get Real Sandwiches",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Fabrica de Sandwiches de Miga, Ruta Provincial E-83 - Avenida Julio Argentino Roca, Villa General Belgrano, Córdoba, X5194",
+      "lat": -31.9806893,
+      "lng": -64.5601675,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5154,10 +5154,10 @@
     {
       "id": "gl-lounge",
       "name": "GL Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154",
+      "lat": 41.2656727,
+      "lng": -96.0930437,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5214,7 +5214,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "goldbergs-bar-grills",
@@ -5402,10 +5402,10 @@
     {
       "id": "gooses-bar-grill",
       "name": "Goose's Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134",
+      "lat": 41.2889123,
+      "lng": -96.0760783,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5444,7 +5444,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "gorats-steakhouse",
@@ -5502,10 +5502,10 @@
     {
       "id": "grant-st-bar",
       "name": "Grant St. Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Grant Street, Omaha, Nebraska, 68111",
+      "lat": 41.2800152,
+      "lng": -95.9549416,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5550,7 +5550,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "green-onion-lounge",
@@ -5685,10 +5685,10 @@
     {
       "id": "hail-varsity",
       "name": "Hurrdat Sports Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137",
+      "lat": 41.2044973,
+      "lng": -96.1341971,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5739,15 +5739,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "harney-street-tavern",
       "name": "Harney Street Tavern",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Harney Street, Omaha, Nebraska, 68131",
+      "lat": 41.2565173,
+      "lng": -95.9308121,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5804,15 +5804,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "harolds-bar",
       "name": "Harold's Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Harold's Square Shopping Center, Omaha, Nebraska",
+      "lat": 41.2771095,
+      "lng": -96.0367667,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -5869,7 +5869,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "heights-draft-room",
@@ -5903,10 +5903,10 @@
     {
       "id": "herbe-sainte",
       "name": "Herbe Sainte",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "La Grève Herbe, Sainte-Marie-du-Mont, Normandy, 50480",
+      "lat": 49.3651776,
+      "lng": -1.188704,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6033,10 +6033,10 @@
     {
       "id": "homy-inn",
       "name": "Homy Inn",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Residence Inn Omaha Downtown/Old Market Area, 106, South 15th Street, Omaha, Nebraska, 68102",
+      "lat": 41.2593854,
+      "lng": -95.9361194,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6081,7 +6081,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "hook-lime",
@@ -6186,10 +6186,10 @@
     {
       "id": "houstons-lounge",
       "name": "Houston's Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Houston's Lounge, 12040, McDermott Plaza, La Vista, Nebraska, 68128",
+      "lat": 41.1800979,
+      "lng": -96.1020605,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6246,15 +6246,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "huber-haus",
       "name": "Huber Haus",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Huber Chevrolet Service, 11102, West Dodge Road, Omaha, Nebraska, 68154",
+      "lat": 41.2649089,
+      "lng": -96.0886259,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6287,7 +6287,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "hunan-fusion-sushi-bar",
@@ -6427,10 +6427,10 @@
     {
       "id": "ika-ramen-izakaya",
       "name": "Ika Ramen & Izakaya",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Ika San Ramen and Izakaya, 7902, Towne Center Parkway, Papillion, Nebraska, 68046",
+      "lat": 41.1349929,
+      "lng": -96.0292131,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6475,15 +6475,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "industrial-bar-grill",
       "name": "Industrial Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6528,7 +6528,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "inkwell",
@@ -6645,10 +6645,10 @@
     {
       "id": "isla-del-mar",
       "name": "Isla Del Mar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Isla de la Virgen del Mar, Santander, Cantabria, 39012",
+      "lat": 43.4790624,
+      "lng": -3.877448,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6727,10 +6727,10 @@
     {
       "id": "island-bar-grill",
       "name": "Island Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6769,15 +6769,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "j-gilberts-wood-fired-steaks-seafood",
       "name": "J. Gilbert's Wood-Fired Steaks & Seafood",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "J. Gilbert's Wood-Fired Steaks & Seafood Kansas City, 8901, Metcalf Avenue, Overland Park, Kansas, 66212",
+      "lat": 38.9674284,
+      "lng": -94.6669383,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6880,10 +6880,10 @@
     {
       "id": "javis-taco",
       "name": "Javi's Taco",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Javi's Tacos, 2559, South 171st Street, Omaha, Nebraska, 68130",
+      "lat": 41.2352329,
+      "lng": -96.1830287,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -6940,7 +6940,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "jdubs-hangout",
@@ -7004,10 +7004,10 @@
     {
       "id": "jimi-ds",
       "name": "Jimi D's",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Omaha, Nebraska",
+      "lat": 41.2587459,
+      "lng": -95.9383758,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7064,7 +7064,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "jinya-ramen-bar",
@@ -7187,10 +7187,10 @@
     {
       "id": "kaiyo-sushi",
       "name": "Kaiyo Sushi",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Kaiyo Sushi, 3503, Samson Way, Bellevue, Nebraska, 68123",
+      "lat": 41.1411189,
+      "lng": -95.9660768,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7247,7 +7247,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "kinaara",
@@ -7629,10 +7629,10 @@
     {
       "id": "le-bouillon",
       "name": "Le Bouillon",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Bouillon Restaurant, 1017, Howard Street, Omaha, Nebraska, 68102",
+      "lat": 41.2552485,
+      "lng": -95.9298756,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7683,7 +7683,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "le-voltaire-french-restaurant",
@@ -7714,10 +7714,10 @@
     {
       "id": "lefty-otooles",
       "name": "Lefty O'Tooles",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Lefty's, 1310, Mike Fahey Street, Omaha, Nebraska, 68102",
+      "lat": 41.266086,
+      "lng": -95.9335618,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7768,15 +7768,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "legacy-chophouse",
       "name": "Legacy Chophouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114",
+      "lat": 41.2605856,
+      "lng": -96.0732947,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7821,15 +7821,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "legends-patio-grill-bar",
       "name": "Legends Patio Grill & Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Legends Patio Grill & Bar, 801, R Street, Lincoln, Nebraska, 68508",
+      "lat": 40.816778,
+      "lng": -96.7097403,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -7985,10 +7985,10 @@
     {
       "id": "local-beer-patio-kitchen",
       "name": "Local Beer, Patio, and Kitchen",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Local Beer, Patio, and Kitchen, South 134th Street, Omaha, Nebraska, 68137",
+      "lat": 41.2098569,
+      "lng": -96.1235004,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8033,15 +8033,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "lula-bs-breakfast-brunch-bar",
       "name": "Lula B's Breakfast, Brunch & Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Bailey's Breakfast & Lunch, 1259, S 120th Street, Omaha, Nebraska, 68137",
+      "lat": 41.247244,
+      "lng": -96.1001493,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8055,7 +8055,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "lyles-pizzeria-2",
@@ -8113,10 +8113,10 @@
     {
       "id": "maloneys-irish-pub",
       "name": "Maloney's Irish Pub",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Maloney's Irish Pub, 1120, East Kennedy Boulvard, Tampa, Florida, 33602",
+      "lat": 27.9512201,
+      "lng": -82.4486647,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8261,7 +8261,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "marrow",
@@ -8396,10 +8396,10 @@
     {
       "id": "maximos-cantina",
       "name": "Maximo's Cantina",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Maximino's Cantina, 2613, North Main Street, Omaha, Nebraska, 68022",
+      "lat": 41.2829022,
+      "lng": -96.2366635,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8444,15 +8444,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "meddys-village-pointe",
       "name": "Meddys- Village Pointe",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Village Pointe, Omaha, Nebraska",
+      "lat": 41.2609348,
+      "lng": -96.1838968,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8509,7 +8509,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "memoir-2",
@@ -8614,10 +8614,10 @@
     {
       "id": "monarch-prime-bar",
       "name": "Monarch Restaurant & Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Gerda's German Restaurant & Bakery, 5180, Leavenworth Street, Omaha, Nebraska, 68106",
+      "lat": 41.2526406,
+      "lng": -95.9953875,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -8674,7 +8674,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "mouth-of-the-south-downtown",
@@ -9080,10 +9080,10 @@
     {
       "id": "office-west-lounge",
       "name": "Office West Lounge",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "West Omaha Post Office Station, West Center Road, Omaha, Nebraska, 68124",
+      "lat": 41.2333638,
+      "lng": -96.0461471,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9134,15 +9134,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "ollie-hobbs-craft-kitchen",
       "name": "Ollie and Hobbes Craft Kitchen",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska, 68516",
+      "lat": 40.7430165,
+      "lng": -96.6789605,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9434,10 +9434,10 @@
     {
       "id": "pan-asian-terrace",
       "name": "Pan Asian Terrace",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Asian Gifts, 123, Palmer Park Mall, Easton, Pennsylvania, 18045",
+      "lat": 40.696551,
+      "lng": -75.2586815,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9481,10 +9481,10 @@
     {
       "id": "pat-mikes-bar-grill",
       "name": "Pat & Mike's Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Snack Bar - Sioux Room & Patio, 3825, North 202nd Street, Omaha, Nebraska, 68022",
+      "lat": 41.2952472,
+      "lng": -96.2295166,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9529,7 +9529,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "phoenix-food-spirits",
@@ -9599,10 +9599,10 @@
     {
       "id": "pint-nine-brewing",
       "name": "Pint Nine Brewing",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Pint Nine Brewing Company, Portal Road, La Vista, Nebraska, 68128",
+      "lat": 41.1718832,
+      "lng": -96.0759759,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9629,7 +9629,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "pivot-prime",
@@ -9870,10 +9870,10 @@
     {
       "id": "pub-134",
       "name": "Pub 134",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "T. Henery's Pub, South 11th Street, Omaha, Nebraska, 68102",
+      "lat": 41.2567817,
+      "lng": -95.9308703,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -9930,7 +9930,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "public-house",
@@ -9988,10 +9988,10 @@
     {
       "id": "r-taco",
       "name": "Rusty Taco",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Rusty Taco, 5331, South 204th Avenue, Elkhorn, Nebraska, 68022",
+      "lat": 41.2028601,
+      "lng": -96.2350204,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10036,7 +10036,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "railcar-modern-american-kitchen",
@@ -10106,10 +10106,10 @@
     {
       "id": "ralston-keno",
       "name": "Ralston Keno",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Ralston Keno, P Street, Ralston, Nebraska, 68117",
+      "lat": 41.2066421,
+      "lng": -96.0246463,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10123,15 +10123,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "ramonas-mexican-restaurant",
       "name": "Ramona's Mexican Restaurant",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Trini's Mexican Restaurant, 1020, Howard Street, Omaha, Nebraska, 68102",
+      "lat": 41.2557472,
+      "lng": -95.9301331,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10164,15 +10164,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "rays-wings",
       "name": "Ray's Wings",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Buffalo Wild Wings, 7540, Dodge Street, Omaha, Nebraska, 68114",
+      "lat": 41.2612098,
+      "lng": -96.0304941,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10217,7 +10217,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "red-lion-lounge",
@@ -10275,10 +10275,10 @@
     {
       "id": "redeye-tavern",
       "name": "RTG on Center",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "North Omaha Transit Center, BUS ONLY, Omaha, Nebraska, 68111",
+      "lat": 41.2978873,
+      "lng": -95.9585075,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10329,15 +10329,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "report-in-pub",
       "name": "Report in Pub",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Marking Georgetown \"Report Card\", Chulia Street, George Town, Penang Island, 10200",
+      "lat": 5.4191159,
+      "lng": 100.334613,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10452,10 +10452,10 @@
     {
       "id": "rib-shack-smokehouse",
       "name": "Rib Shack Smokehouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Rib shack Smokehouse bbq, 295, Port St Lucie, Port Saint Lucie, Florida, 34984",
+      "lat": 27.2757797,
+      "lng": -80.354112,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10470,7 +10470,7 @@
           "original_price": 50.0,
           "sale_price": 25.0,
           "savings": 25.0,
-          "category": "restaurants"
+          "category": "amenity"
         }
       ],
       "needs_review": true
@@ -10543,10 +10543,10 @@
     {
       "id": "rookies-bar-grill",
       "name": "Rookies Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Rookies Sports Bar & Grill, 2180, Northwest 156th Street, Walnut Township, Iowa, 50325",
+      "lat": 41.6137048,
+      "lng": -93.8347701,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10767,10 +10767,10 @@
     {
       "id": "saltgrass-steakhouse",
       "name": "Saltgrass Steakhouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Saltgrass Steakhouse Parking, Galleria Circle, Bee Cave, Texas, 78738",
+      "lat": 30.3066534,
+      "lng": -97.938016,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10820,10 +10820,10 @@
     {
       "id": "salty-dog-bar-grill-omaha",
       "name": "Salty Dog Bar & Grill – Omaha",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Salty Dog Bar & Grill, 3401, South 72nd Street, Omaha, Nebraska, 68124",
+      "lat": 41.228295,
+      "lng": -96.0233388,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10880,15 +10880,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "sean-ocaseys",
       "name": "Sean O'Casey's",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Casey's General Store, Dodge Street, Omaha, Nebraska, 68198",
+      "lat": 41.2593587,
+      "lng": -95.9727488,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10933,15 +10933,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "shevys-sports-bar-grill",
       "name": "Shevy's Sports Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137",
+      "lat": 41.2044973,
+      "lng": -96.1341971,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -10986,15 +10986,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "shucks-fish-house-oyster-bar",
       "name": "Shuck's Fish House and Oyster Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Shuck's Fish House & Oyster Bar, 16901, Wright Plaza, Omaha, Nebraska, 68130",
+      "lat": 41.2323227,
+      "lng": -96.1781621,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11051,15 +11051,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "sickies-garage-burgers-brews",
       "name": "Sickies Garage Burgers & Brews",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Sickies Garage Burgers & Brews, Wolf Creek Drive, Bellevue, Nebraska, 68005",
+      "lat": 41.1578007,
+      "lng": -95.9326215,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11110,7 +11110,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "sips-on-10th",
@@ -11168,10 +11168,10 @@
     {
       "id": "site-1-brewing",
       "name": "Site-1 Brewing",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "ZipLine Brewing Co., 721, North 14th Street, Omaha, Nebraska, 68102",
+      "lat": 41.2662602,
+      "lng": -95.9342256,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11216,15 +11216,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "skyboxx-bar-grill",
       "name": "Skyybox Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11269,7 +11269,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "smash-park-lavista",
@@ -11597,10 +11597,10 @@
     {
       "id": "spencers-steak-chops",
       "name": "Spencer's for Steak and Chops",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Spencers for Steaks and Chops, 255, West Temple, Salt Lake City, Utah, 84144",
+      "lat": 40.7640215,
+      "lng": -111.893552,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11727,10 +11727,10 @@
     {
       "id": "spin-pizza",
       "name": "SPIN! Pizza",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Rocco's Pizza & Cantina, 1302, Mike Fahey Street, Omaha, Nebraska, 68102",
+      "lat": 41.2660077,
+      "lng": -95.9333868,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11744,15 +11744,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "st-andrews-pub",
       "name": "St. Andrew's Pub",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "St. Andrew's Pointe, Omaha, Nebraska",
+      "lat": 41.1999771,
+      "lng": -96.0980922,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -11809,7 +11809,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "stokes-2",
@@ -12021,10 +12021,10 @@
     {
       "id": "sullivans-steakhouse",
       "name": "Sullivan's Steakhouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Sullivan's Steakhouse, West 119th Street, Leawood, Kansas, 66211",
+      "lat": 38.9124336,
+      "lng": -94.6374237,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12068,10 +12068,10 @@
     {
       "id": "sweetbeans-coffee-co",
       "name": "Sweetbeans Coffee Co.",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Hardy Coffee Co., 6051, Maple Street, Omaha, Nebraska, 68104",
+      "lat": 41.2848626,
+      "lng": -96.0061305,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12128,7 +12128,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "taco-co",
@@ -12180,10 +12180,10 @@
     {
       "id": "talus-spirits-sustenance",
       "name": "Talus Spirits & Sustenance",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Talus Spirits and Sustenance, 10914, Cumberland Drive, Papillion, Nebraska, 68046",
+      "lat": 41.1490281,
+      "lng": -96.0825192,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12234,15 +12234,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "taqueria-tijuana-west",
       "name": "Taqueria Tijuana West",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Taqueria Tijuana, Q Street, Omaha, Nebraska, 68107",
+      "lat": 41.2057557,
+      "lng": -95.946846,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12275,7 +12275,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "tavern-180",
@@ -12457,10 +12457,10 @@
     {
       "id": "the-cabin-bar-grill",
       "name": "The Cabin Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Cabin Bar and Grill, 9226, Mormon Bridge Road, Omaha, Nebraska, 68152",
+      "lat": 41.3432606,
+      "lng": -95.9844189,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12505,7 +12505,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-caddy-shack-blondo",
@@ -12532,10 +12532,10 @@
     {
       "id": "the-caddy-shack-west-180th-harrison",
       "name": "The Caddy Shack West (180th & Harrison)",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Caddy Shack West, South 180th Street, Richland VII Precinct, Nebraska, 68136",
+      "lat": 41.1898341,
+      "lng": -96.1972899,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12549,7 +12549,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-casual-pint",
@@ -12784,10 +12784,10 @@
     {
       "id": "the-dandy-lion",
       "name": "The Dandy Lion",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Dandy Lion, 111, South Dubuque Street, Iowa City, Iowa, 52240",
+      "lat": 41.6596359,
+      "lng": -91.5332957,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12849,10 +12849,10 @@
     {
       "id": "the-good-life",
       "name": "The Good Life",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Good Life Concrete, 6710, South 153rd Circle, Omaha, Nebraska, 68137",
+      "lat": 41.1920326,
+      "lng": -96.1532126,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -12909,7 +12909,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-green-room",
@@ -13073,10 +13073,10 @@
     {
       "id": "the-matt-bar-grill",
       "name": "The Matt Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13121,15 +13121,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-nifty-bar",
       "name": "The Nifty Bar",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Nifty Bar, Northwest Radial Highway, Omaha, Nebraska, 68104",
+      "lat": 41.2810709,
+      "lng": -95.9846568,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13174,15 +13174,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-observatory",
       "name": "The Observatory",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Observatory or Caracol, Sendero de acceso a Serie Inicial o Chichén viejo, Yucatán, 97751",
+      "lat": 20.6793114,
+      "lng": -88.5707562,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13391,10 +13391,10 @@
     {
       "id": "the-verdict-bar-grill",
       "name": "The Verdict Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13439,7 +13439,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-west-end",
@@ -13497,10 +13497,10 @@
     {
       "id": "the-woodcliff-restaurant",
       "name": "The Woodcliff Restaurant",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2567175,
+      "lng": -95.938139,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13515,10 +13515,10 @@
           "original_price": 50.0,
           "sale_price": 25.0,
           "savings": 25.0,
-          "category": "restaurants"
+          "category": "amenity"
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "therapy-bar-grill",
@@ -13741,10 +13741,10 @@
     {
       "id": "tupelo-honey",
       "name": "Tupelo Honey",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Tupelo Honey, 12, College Street, Asheville, North Carolina, 28801",
+      "lat": 35.5948353,
+      "lng": -82.5548917,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13853,10 +13853,10 @@
     {
       "id": "twisted-vine",
       "name": "Twisted Vine",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Twisted Vine, 123, North Washington Street, Papillion, Nebraska, 68046",
+      "lat": 41.156828,
+      "lng": -96.0426363,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -13895,7 +13895,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "union-pizzeria-sports-bar",
@@ -14006,10 +14006,10 @@
     {
       "id": "varsity-sports-cafe-roman-pizza",
       "name": "Varsity Sports Cafe and Roman Pizza",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Varsity Sports Cafe & Roman Coin Pizza, 14529, F Street, Omaha, Nebraska, 68137",
+      "lat": 41.2187081,
+      "lng": -96.1411858,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14054,7 +14054,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "venue-779",
@@ -14141,10 +14141,10 @@
     {
       "id": "villagio-pizzeria",
       "name": "Villagio Pizzeria",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Zio's Pizzeria, 1109, Howard Street, Omaha, Nebraska, 68102",
+      "lat": 41.2552869,
+      "lng": -95.9310913,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14195,15 +14195,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "vincenzos",
       "name": "Vincenzo's Italian Ristorante",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Vincenzo's, 808, P Street, Lincoln, Nebraska, 68508",
+      "lat": 40.8149576,
+      "lng": -96.7095786,
+      "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14406,10 +14406,10 @@
     {
       "id": "waterfall-bar-grill",
       "name": "Waterfall Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14460,7 +14460,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "well-smoke-u-bbq",
@@ -14524,10 +14524,10 @@
     {
       "id": "wilson-washburn",
       "name": "Wilson & Washburn",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Wilson Circle, Omaha, Nebraska, 68147",
+      "lat": 41.1961809,
+      "lng": -95.9553552,
+      "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14572,15 +14572,15 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "winchester-bar-grill",
       "name": "Winchester Bar & Grill",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "personal": {},
@@ -14619,7 +14619,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "zen-coffee-company",

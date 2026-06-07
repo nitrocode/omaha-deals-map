@@ -38,12 +38,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: building
+  lat: 41.2953645
+  lng: -96.2298353
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Club at Indian Creek, 3825, North 202nd Street, Omaha, Nebraska, 68022
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: marrow
   source_url: https://growomaha.com/happy-hour/marrow/
@@ -197,7 +199,7 @@
   address: Burdock + Bitters, 222, North 10th Street, NoDo, Omaha, Douglas County,
     Nebraska, 68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: hacienda-real-2
   source_url: https://growomaha.com/happy-hour/hacienda-real-2/
@@ -380,7 +382,7 @@
   address: Via Farina, South 10th Street, Omaha, Douglas County, Nebraska, 68108,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: 30hop
   source_url: https://growomaha.com/happy-hour/30hop/
@@ -466,12 +468,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2660077
+  lng: -95.9333868
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Rocco's Pizza & Cantina, 1302, Mike Fahey Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: north-italia
   source_url: https://growomaha.com/happy-hour/north-italia/
@@ -558,7 +562,7 @@
   address: PIVOT Prime, 13665, California Street, Commercial Federal Business Park,
     Omaha, Douglas County, Nebraska, 68154, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: cibo-vino
   source_url: https://growomaha.com/happy-hour/cibo-vino/
@@ -599,12 +603,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 41.2881322
+  lng: -96.1396794
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Vino Mas, 144th Trail, Omaha, Nebraska, 68116
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: revival-house
   source_url: https://growomaha.com/happy-hour/revival-house/
@@ -657,7 +663,7 @@
   address: Revival House, 3700, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: sips-on-10th
   source_url: https://growomaha.com/happy-hour/sips-on-10th/
@@ -703,7 +709,7 @@
   address: Sips on 10th, 1022, South 10th Street, Omaha, Douglas County, Nebraska,
     68108, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-committee-chophouse
   source_url: https://growomaha.com/happy-hour/the-committee-chophouse/
@@ -794,12 +800,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: place
+  lat: 41.2587459
+  lng: -95.9383758
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: backstretch-bar-at-inner-rail-food-hall
   source_url: https://growomaha.com/happy-hour/backstretch-bar-at-inner-rail-food-hall/
@@ -994,7 +1002,7 @@
   address: Stories coffee, 11426, Davenport Street, Omaha, Douglas County, Nebraska,
     68154, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: fore-seasons-golf
   source_url: https://growomaha.com/happy-hour/fore-seasons-golf/
@@ -1036,12 +1044,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: building
+  lat: 39.2420941
+  lng: -81.5752146
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Fore Seasons Golf, Gihon Road, Parkersburg, West Virginia, 26101
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: hotel-indigo-three-card-monte
   source_url: https://growomaha.com/happy-hour/hotel-indigo-three-card-monte/
@@ -1138,7 +1148,7 @@
   address: Baby Blue Sushi Sake Grill, 16939, Wright Plaza, The Shops of Legacy, Millard,
     Omaha, Douglas County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: office-west-lounge
   source_url: https://growomaha.com/happy-hour/office-west-lounge/
@@ -1180,12 +1190,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2333638
+  lng: -96.0461471
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: West Omaha Post Office Station, West Center Road, Omaha, Nebraska, 68124
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: rays-wings
   source_url: https://growomaha.com/happy-hour/rays-wings/
@@ -1222,12 +1234,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2612098
+  lng: -96.0304941
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Buffalo Wild Wings, 7540, Dodge Street, Omaha, Nebraska, 68114
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: blue-sushi-old-market
   source_url: https://growomaha.com/happy-hour/blue-sushi-old-market/
@@ -1274,12 +1288,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2559125
+  lng: -95.9321166
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: the-nifty-bar
   source_url: https://growomaha.com/happy-hour/the-nifty-bar/
@@ -1316,12 +1332,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2810709
+  lng: -95.9846568
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Nifty Bar, Northwest Radial Highway, Omaha, Nebraska, 68104
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: lefty-otooles
   source_url: https://growomaha.com/happy-hour/lefty-otooles/
@@ -1363,12 +1381,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.266086
+  lng: -95.9335618
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Lefty's, 1310, Mike Fahey Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: houstons-lounge
   source_url: https://growomaha.com/happy-hour/houstons-lounge/
@@ -1414,12 +1434,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1800979
+  lng: -96.1020605
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Houston's Lounge, 12040, McDermott Plaza, La Vista, Nebraska, 68128
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: clancys-pub
   source_url: https://growomaha.com/happy-hour/clancys-pub/
@@ -1464,7 +1486,7 @@
   address: Clancy's Pub Southwest, 2905, South 168th Street, Millard, Omaha, Douglas
     County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: gooses-bar-grill
   source_url: https://growomaha.com/happy-hour/gooses-bar-grill/
@@ -1498,12 +1520,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2889123
+  lng: -96.0760783
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: salty-dog-bar-grill-omaha
   source_url: https://growomaha.com/happy-hour/salty-dog-bar-grill-omaha/
@@ -1548,12 +1572,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.228295
+  lng: -96.0233388
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Salty Dog Bar & Grill, 3401, South 72nd Street, Omaha, Nebraska, 68124
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: vive-le-rock-lounge
   source_url: https://growomaha.com/happy-hour/vive-le-rock-lounge/
@@ -1614,12 +1640,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 47.216582
+  lng: -94.7567025
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: 3rd Base Bar & Grill, 1st Ave NW, Laporte, Minnesota, 56461
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: meddys-village-pointe
   source_url: https://growomaha.com/happy-hour/meddys-village-pointe/
@@ -1665,12 +1693,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: landuse
+  lat: 41.2609348
+  lng: -96.1838968
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Village Pointe, Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: the-dandy-lion
   source_url: https://growomaha.com/happy-hour/the-dandy-lion/
@@ -1716,12 +1746,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.6596359
+  lng: -91.5332957
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: The Dandy Lion, 111, South Dubuque Street, Iowa City, Iowa, 52240
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: el-muchacho-alegre
   source_url: https://growomaha.com/happy-hour/el-muchacho-alegre/
@@ -1766,7 +1798,7 @@
   address: El Muchacho Alegre, 6222, North 72nd Street, Omaha, Douglas County, Nebraska,
     68122, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-matt-bar-grill
   source_url: https://growomaha.com/happy-hour/the-matt-bar-grill/
@@ -1803,12 +1835,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: social-blackstone
   source_url: https://growomaha.com/happy-hour/social-blackstone/
@@ -1834,7 +1868,7 @@
   address: Blackstone Social, 3910, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: legacy-chophouse
   source_url: https://growomaha.com/happy-hour/legacy-chophouse/
@@ -1871,12 +1905,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2605856
+  lng: -96.0732947
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: fig
   source_url: https://growomaha.com/happy-hour/fig/
@@ -1901,7 +1937,7 @@
   address: "Fig. Caf\xE9, 345, Riverfront Drive, Omaha, Douglas County, Nebraska,\
     \ 68102, United States"
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: sweetbeans-coffee-co
   source_url: https://growomaha.com/happy-hour/sweetbeans-coffee-co/
@@ -1946,12 +1982,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2848626
+  lng: -96.0061305
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Hardy Coffee Co., 6051, Maple Street, Omaha, Nebraska, 68104
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: corkscrew-blackstone
   source_url: https://growomaha.com/happy-hour/corkscrew-blackstone/
@@ -1996,7 +2034,7 @@
   address: Corkscrew Wine & Cheese, 3908, Farnam Street, Blackstone, Omaha, Douglas
     County, Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: dante-2
   source_url: https://growomaha.com/happy-hour/dante-2/
@@ -2049,7 +2087,7 @@
   address: Dante Pizzeria Napoletana, 16901, Wright Plaza, The Shops of Legacy, Millard,
     Omaha, Douglas County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: lula-bs-breakfast-brunch-bar
   source_url: https://growomaha.com/happy-hour/lula-bs-breakfast-brunch-bar/
@@ -2067,12 +2105,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.247244
+  lng: -96.1001493
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Bailey's Breakfast & Lunch, 1259, S 120th Street, Omaha, Nebraska, 68137
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: smash-park-lavista
   source_url: https://growomaha.com/happy-hour/smash-park-lavista/
@@ -2197,12 +2237,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1898341
+  lng: -96.1972899
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Caddy Shack West, South 180th Street, Richland VII Precinct, Nebraska,
+    68136
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: el-milagro
   source_url: https://growomaha.com/happy-hour/el-milagro/
@@ -2292,12 +2335,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2575062
+  lng: -96.0740929
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Passport Health Omaha Travel Clinic, 260, Regency Parkway Drive, Omaha,
+    Nebraska, 68114
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: taqueria-tijuana-west
   source_url: https://growomaha.com/happy-hour/taqueria-tijuana-west/
@@ -2327,12 +2373,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2057557
+  lng: -95.946846
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Taqueria Tijuana, Q Street, Omaha, Nebraska, 68107
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: zen-coffee-company
   source_url: https://growomaha.com/happy-hour/zen-coffee-company/
@@ -2378,7 +2426,7 @@
   address: Zen Coffee Company, 230, South 25th Street, Omaha, Douglas County, Nebraska,
     68178, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: casanovas-butchery-rockbrook
   source_url: https://growomaha.com/happy-hour/casanovas-butchery-rockbrook/
@@ -2434,12 +2482,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2557472
+  lng: -95.9301331
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Trini's Mexican Restaurant, 1020, Howard Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: brick-street-tavern
   source_url: https://growomaha.com/happy-hour/brick-street-tavern/
@@ -2477,12 +2527,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2542444
+  lng: -95.9314378
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Jackson Street Tavern, Jackson Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: cohen-kellys-lounge
   source_url: https://growomaha.com/happy-hour/cohen-kellys-lounge/
@@ -2517,12 +2569,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2327309
+  lng: -96.1183659
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Cohen Kelleys Lounge, Augusta Avenue, Omaha, Nebraska, 68144
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: frosty-mug
   source_url: https://growomaha.com/happy-hour/frosty-mug/
@@ -2564,12 +2618,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 38.3283613
+  lng: -88.9107001
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: The Frosty Mug Bar & Grill, 1113, Salem Road, Mount Vernon, Illinois, 62864
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: memoir-2
   source_url: https://growomaha.com/happy-hour/memoir-2/
@@ -2615,7 +2671,7 @@
   address: Memoir, 930, Harney Street, Omaha, Douglas County, Nebraska, 68102, United
     States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: saltgrass-steakhouse
   source_url: https://growomaha.com/happy-hour/saltgrass-steakhouse/
@@ -2655,12 +2711,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 30.3066534
+  lng: -97.938016
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Saltgrass Steakhouse Parking, Galleria Circle, Bee Cave, Texas, 78738
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: hy-vee-gretna
   source_url: https://growomaha.com/happy-hour/hy-vee-gretna/
@@ -2788,12 +2846,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 35.5948353
+  lng: -82.5548917
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Tupelo Honey, 12, College Street, Asheville, North Carolina, 28801
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: hunan-fusion-sushi-bar
   source_url: https://growomaha.com/happy-hour/hunan-fusion-sushi-bar/
@@ -2866,7 +2926,7 @@
   address: Lyle's Pizzeria, 5213, Leavenworth Street, Happy Hollow, Omaha, Douglas
     County, Nebraska, 68106, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: salted-edge
   source_url: https://growomaha.com/happy-hour/salted-edge/
@@ -2951,12 +3011,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1411189
+  lng: -95.9660768
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Kaiyo Sushi, 3503, Samson Way, Bellevue, Nebraska, 68123
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: javis-taco
   source_url: https://growomaha.com/happy-hour/javis-taco/
@@ -3001,12 +3063,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2352329
+  lng: -96.1830287
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Javi's Tacos, 2559, South 171st Street, Omaha, Nebraska, 68130
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: ralston-keno
   source_url: https://growomaha.com/happy-hour/ralston-keno/
@@ -3024,12 +3088,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2066421
+  lng: -96.0246463
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Ralston Keno, P Street, Ralston, Nebraska, 68117
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: first-round-2
   source_url: https://growomaha.com/happy-hour/first-round-2/
@@ -3075,7 +3141,7 @@
   address: First Round West, 2829, South 181st Street, Omaha, Douglas County, Nebraska,
     68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: saffron-urban-kitchen
   source_url: https://growomaha.com/happy-hour/saffron-urban-kitchen/
@@ -3220,7 +3286,7 @@
   address: Trucks and Taps Patio, 5402, South 108th Street, Millard, Omaha, Douglas
     County, Nebraska, 68137, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: kinaara
   source_url: https://growomaha.com/happy-hour/kinaara/
@@ -3357,12 +3423,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2547567
+  lng: -96.0243145
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Copps Pizza, 7204, Jones Street, Omaha, Nebraska, 68114
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: hail-varsity
   source_url: https://growomaha.com/happy-hour/hail-varsity/
@@ -3405,12 +3473,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2044973
+  lng: -96.1341971
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: dundee-dell-2
   source_url: https://growomaha.com/happy-hour/dundee-dell-2/
@@ -3463,7 +3533,7 @@
   address: Dundee Dell, Underwood Avenue, Dundee Place, Omaha, Douglas County, Nebraska,
     68132, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: a-catered-affair
   source_url: https://growomaha.com/happy-hour/a-catered-affair/
@@ -3508,12 +3578,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.5049925
+  lng: -74.6443762
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Catered Affair, Hillsborough Township, New Jersey, 08844
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: mouth-of-the-south-downtown
   source_url: https://growomaha.com/happy-hour/mouth-of-the-south-downtown/
@@ -3559,7 +3631,7 @@
   address: Mouth of the South, 16909, Lakeside Hills Plaza, Millard, Omaha, Douglas
     County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: talus-spirits-sustenance
   source_url: https://growomaha.com/happy-hour/talus-spirits-sustenance/
@@ -3601,12 +3673,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1490281
+  lng: -96.0825192
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Talus Spirits and Sustenance, 10914, Cumberland Drive, Papillion, Nebraska,
+    68046
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: bogies-bar-grill-west
   source_url: https://growomaha.com/happy-hour/bogies-bar-grill-west/
@@ -3645,12 +3720,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2889123
+  lng: -96.0760783
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Bogie's Bar & Grill, 3305, Old Maple Road, Omaha, Nebraska, 68134
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: green-onion-lounge
   source_url: https://growomaha.com/happy-hour/green-onion-lounge/
@@ -3748,7 +3825,7 @@
   address: Vino Mas, 144th Trail, Grayhawk, Omaha, Douglas County, Nebraska, 68116,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: brownies-bar-grill
   source_url: https://growomaha.com/happy-hour/brownies-bar-grill/
@@ -3781,12 +3858,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2522218
+  lng: -95.9325955
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Brownie Bar, Leavenworth Street, Omaha, Nebraska, 68106
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: the-verdict-bar-grill
   source_url: https://growomaha.com/happy-hour/the-verdict-bar-grill/
@@ -3825,12 +3904,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: public-house
   source_url: https://growomaha.com/happy-hour/public-house/
@@ -3876,7 +3957,7 @@
   address: Stiles Public House, Howard Street, The Old Market, Omaha, Douglas County,
     Nebraska, 68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: get-real-sandwiches
   source_url: https://growomaha.com/happy-hour/get-real-sandwiches/
@@ -3922,12 +4003,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: -31.9806893
+  lng: -64.5601675
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: "Fabrica de Sandwiches de Miga, Ruta Provincial E-83 - Avenida Julio Argentino\
+    \ Roca, Villa General Belgrano, C\xF3rdoba, X5194"
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: early-bird
   source_url: https://growomaha.com/happy-hour/early-bird/
@@ -3981,7 +4065,7 @@
   address: Early Bird Brunch, 3824, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-porch-council-bluffs
   source_url: https://growomaha.com/happy-hour/the-porch-council-bluffs/
@@ -4125,7 +4209,7 @@
   address: Mas Chingon, Maple Street, Benson, Omaha, Douglas County, Nebraska, 68104,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: barretts-barleycorn
   source_url: https://growomaha.com/happy-hour/barretts-barleycorn/
@@ -4178,7 +4262,7 @@
   address: Barrett's Barleycorn Pub & Grill, 4322, Leavenworth Street, Omaha, Douglas
     County, Nebraska, 68105, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: bob-willies-wonderbowl
   source_url: https://growomaha.com/happy-hour/bob-willies-wonderbowl/
@@ -4258,12 +4342,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2364028
+  lng: -95.8917805
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Big Kel's Pizza and Wings, 40, Arena Way, Lewis Township, Iowa, 51501
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: pacific-eating-house
   source_url: https://growomaha.com/happy-hour/pacific-eating-house/
@@ -4317,7 +4403,7 @@
   address: Pacific Eating House, 1130, Sterling Ridge Drive, Millard, Omaha, Douglas
     County, Nebraska, 68144, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: goldeez
   source_url: https://growomaha.com/happy-hour/goldeez/
@@ -4363,7 +4449,7 @@
   address: Goldeez Bar & Kitchen, 5502, North 103rd Street, Omaha, Douglas County,
     Nebraska, 68134, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: foxy-sushi
   source_url: https://growomaha.com/happy-hour/foxy-sushi/
@@ -4409,12 +4495,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2559125
+  lng: -95.9321166
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Blue Sake Sushi, South 12th Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: isla-del-mar
   source_url: https://growomaha.com/happy-hour/isla-del-mar/
@@ -4443,12 +4531,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: place
+  lat: 43.4790624
+  lng: -3.877448
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Isla de la Virgen del Mar, Santander, Cantabria, 39012
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: the-sydney
   source_url: https://growomaha.com/happy-hour/the-sydney/
@@ -4528,12 +4618,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: place
+  lat: 41.2587459
+  lng: -95.9383758
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: flagship-commons
   source_url: https://growomaha.com/happy-hour/flagship-commons/
@@ -4581,12 +4673,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
-  needs_review: true
+  category: leisure
+  lat: 41.2433178
+  lng: -96.0104803
+  needs_review: false
   extraction_source: none
-  geocode_confidence: none
+  address: Scott Village Commons, Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: smokin-oak-wood-fired-pizza
   source_url: https://growomaha.com/happy-hour/smokin-oak-wood-fired-pizza/
@@ -4635,7 +4729,7 @@
   address: Smokin' Oak Wood-Fired Pizza, South 31st Avenue, Midtown Crossing, Omaha,
     Douglas County, Nebraska, 68175, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: sickies-garage-burgers-brews
   source_url: https://growomaha.com/happy-hour/sickies-garage-burgers-brews/
@@ -4677,12 +4771,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1578007
+  lng: -95.9326215
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Sickies Garage Burgers & Brews, Wolf Creek Drive, Bellevue, Nebraska, 68005
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: el-chicano
   source_url: https://growomaha.com/happy-hour/el-chicano/
@@ -4724,12 +4820,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1389973
+  lng: -96.042459
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Bomb Taco, 120, Olson Drive, Papillion, Nebraska, 68046
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: marias
   source_url: https://growomaha.com/happy-hour/marias/
@@ -4767,11 +4865,11 @@
   lat: 38.8718592
   lng: -76.9276247
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Omaha Street, Hillside, Coral Hills, Prince George's County, Maryland,
     20743, United States
   geocode_confidence: low
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: beyond-golf
   source_url: https://growomaha.com/happy-hour/beyond-golf/
@@ -4814,12 +4912,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.3084544
+  lng: -96.075343
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Goldeez Bar & Kitchen, 5502, North 103rd Street, Omaha, Nebraska, 68134
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: gl-lounge
   source_url: https://growomaha.com/happy-hour/gl-lounge/
@@ -4865,12 +4965,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
-  needs_review: true
+  category: amenity
+  lat: 41.2656727
+  lng: -96.0930437
+  needs_review: false
   extraction_source: none
-  geocode_confidence: none
+  address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: jdubs-hangout
   source_url: https://growomaha.com/happy-hour/jdubs-hangout/
@@ -4963,7 +5065,7 @@
   address: Union Pizzeria and Sports Bar, 156th Street Trail, Omaha, Douglas County,
     Nebraska, 68116, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: pint-nine-brewing
   source_url: https://growomaha.com/happy-hour/pint-nine-brewing/
@@ -4988,12 +5090,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: craft
+  lat: 41.1718832
+  lng: -96.0759759
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Pint Nine Brewing Company, Portal Road, La Vista, Nebraska, 68128
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: the-cabin-bar-grill
   source_url: https://growomaha.com/happy-hour/the-cabin-bar-grill/
@@ -5030,12 +5134,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.3432606
+  lng: -95.9844189
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Cabin Bar and Grill, 9226, Mormon Bridge Road, Omaha, Nebraska, 68152
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: heights-draft-room
   source_url: https://growomaha.com/happy-hour/heights-draft-room/
@@ -5106,12 +5212,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.8151888
+  lng: -96.7102032
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: backlot-pizza-kitchen
   source_url: https://growomaha.com/happy-hour/backlot-pizza-kitchen/
@@ -5184,7 +5292,7 @@
   address: Edge of the Universe, 6070, Maple Street, Benson, Omaha, Douglas County,
     Nebraska, 68104, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: site-1-brewing
   source_url: https://growomaha.com/happy-hour/site-1-brewing/
@@ -5222,12 +5330,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2662602
+  lng: -95.9342256
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: ZipLine Brewing Co., 721, North 14th Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: firewater-grille
   source_url: https://growomaha.com/happy-hour/firewater-grille/
@@ -5273,7 +5383,7 @@
   address: Firewater Grille, 7007, Grover Street, Omaha, Douglas County, Nebraska,
     68106, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: fizzys-fountain-liquors
   source_url: https://growomaha.com/happy-hour/fizzys-fountain-liquors/
@@ -5315,7 +5425,7 @@
   address: Fizzy's Fountain & Liquors, 1408, South 13th Street, Omaha, Douglas County,
     Nebraska, 68108, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: 402-eat-drink
   source_url: https://growomaha.com/happy-hour/402-eat-drink/
@@ -5369,7 +5479,7 @@
   address: 402 Eat + Drink, 17305, Davenport Street, Village Pointe, Omaha, Douglas
     County, Nebraska, 68118, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: cork-n-bottle
   source_url: https://growomaha.com/happy-hour/cork-n-bottle/
@@ -5407,12 +5517,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2646336
+  lng: -95.9904351
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Dundee Cork & Bottle, 614, North 50th Street, Omaha, Nebraska, 68132
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: 72-table-and-tap
   source_url: https://growomaha.com/happy-hour/72-table-and-tap/
@@ -5458,12 +5570,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2035881
+  lng: -96.022821
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: 72 Table & Tap, 5413, South 72th Street, Omaha, Nebraska, 68127-3935
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: barnato
   source_url: https://growomaha.com/happy-hour/barnato/
@@ -5553,7 +5667,7 @@
   address: Famous Dave's, Birch Drive, Omaha, Douglas County, Nebraska, 68164, United
     States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: omaha-tap-house-2
   source_url: https://growomaha.com/happy-hour/omaha-tap-house-2/
@@ -5598,7 +5712,7 @@
   address: Omaha Tap House, Pepperwood Drive, Omaha, Douglas County, Nebraska, 68154,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: big-red-restaurant-sports-bar-2
   source_url: https://growomaha.com/happy-hour/big-red-restaurant-sports-bar-2/
@@ -5632,12 +5746,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.4517245
+  lng: -96.4720119
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Big Red Restaurant & Sports Bar, 2323, Laverna Street, Fremont, Nebraska,
+    68025
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: rusty-nail-2
   source_url: https://growomaha.com/happy-hour/rusty-nail-2/
@@ -5726,12 +5843,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: waterfall-bar-grill
   source_url: https://growomaha.com/happy-hour/waterfall-bar-grill/
@@ -5773,12 +5892,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: jimi-ds
   source_url: https://growomaha.com/happy-hour/jimi-ds/
@@ -5824,12 +5945,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: place
+  lat: 41.2587459
+  lng: -95.9383758
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: ez-place
   source_url: https://growomaha.com/happy-hour/ez-place/
@@ -5879,7 +6002,7 @@
   address: E'Z Place, West Dodge South Frontage Road, Omaha, Douglas County, Nebraska,
     68118, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-green-room
   source_url: https://growomaha.com/happy-hour/the-green-room/
@@ -5955,12 +6078,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: gorats-steakhouse
   source_url: https://growomaha.com/happy-hour/gorats-steakhouse/
@@ -6008,7 +6133,7 @@
   address: Gorat's Steakhouse, 4917, Center Street, Omaha, Douglas County, Nebraska,
     68106, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: tavern-on-q
   source_url: https://growomaha.com/happy-hour/tavern-on-q/
@@ -6058,7 +6183,7 @@
   address: Tavern On Q, South 180th Street, Millard, Omaha, Douglas County, Nebraska,
     68135, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: backlot-taphouse
   source_url: https://growomaha.com/happy-hour/backlot-taphouse/
@@ -6100,12 +6225,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2395515
+  lng: -96.0152355
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Blacklot Taphouse, 2110, South 67th Street, Omaha, Nebraska, 68106
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: twisted-vine
   source_url: https://growomaha.com/happy-hour/twisted-vine/
@@ -6139,12 +6266,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.156828
+  lng: -96.0426363
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Twisted Vine, 123, North Washington Street, Papillion, Nebraska, 68046
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: maloneys-irish-pub
   source_url: https://growomaha.com/happy-hour/maloneys-irish-pub/
@@ -6182,12 +6311,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 27.9512201
+  lng: -82.4486647
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Maloney's Irish Pub, 1120, East Kennedy Boulvard, Tampa, Florida, 33602
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: villagio-pizzeria
   source_url: https://growomaha.com/happy-hour/villagio-pizzeria/
@@ -6229,12 +6360,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2552869
+  lng: -95.9310913
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Zio's Pizzeria, 1109, Howard Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: dundees-place-bar-grill
   source_url: https://growomaha.com/happy-hour/dundees-place-bar-grill/
@@ -6272,12 +6405,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 41.2598405
+  lng: -95.9901317
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Dundee Barber, North 50th Street, Omaha, Nebraska, 68104
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: 11eleven
   source_url: https://growomaha.com/happy-hour/11eleven/
@@ -6306,7 +6441,7 @@
   address: 11 Eleven, 6061, Maple Street, Benson, Omaha, Douglas County, Nebraska,
     68104, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: grant-st-bar
   source_url: https://growomaha.com/happy-hour/grant-st-bar/
@@ -6344,12 +6479,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: highway
+  lat: 41.2800152
+  lng: -95.9549416
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Grant Street, Omaha, Nebraska, 68111
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: billy-os-lounge
   source_url: https://growomaha.com/happy-hour/billy-os-lounge/
@@ -6395,12 +6532,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2572282
+  lng: -95.9299403
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: O Dining & Lounge, 1015, Farnam Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: nates-stumble-inn
   source_url: https://growomaha.com/happy-hour/nates-stumble-inn/
@@ -6485,12 +6624,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2952472
+  lng: -96.2295166
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Snack Bar - Sioux Room & Patio, 3825, North 202nd Street, Omaha, Nebraska,
+    68022
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: bushwood-lounge
   source_url: https://growomaha.com/happy-hour/bushwood-lounge/
@@ -6528,12 +6670,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2656727
+  lng: -96.0930437
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: koen-japanese-bbq-sushi
   source_url: https://growomaha.com/happy-hour/koen-japanese-bbq-sushi/
@@ -6621,12 +6765,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.6137048
+  lng: -93.8347701
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Rookies Sports Bar & Grill, 2180, Northwest 156th Street, Walnut Township,
+    Iowa, 50325
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: zios-pizzeria
   source_url: https://growomaha.com/happy-hour/zios-pizzeria/
@@ -6680,7 +6827,7 @@
   address: Zio's Pizzeria, 1109, Howard Street, The Old Market, Omaha, Douglas County,
     Nebraska, 68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: burrito-envy
   source_url: https://growomaha.com/happy-hour/burrito-envy/
@@ -6730,7 +6877,7 @@
   address: Burrito Envy, Maple Street, Benson, Omaha, Douglas County, Nebraska, 68104,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: la-casa-pizza-pasta
   source_url: https://growomaha.com/happy-hour/la-casa-pizza-pasta/
@@ -6808,12 +6955,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: tourism
+  lat: 41.2593854
+  lng: -95.9361194
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Residence Inn Omaha Downtown/Old Market Area, 106, South 15th Street, Omaha,
+    Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: icehouse-sports-bar
   source_url: https://growomaha.com/happy-hour/icehouse-sports-bar/
@@ -6859,7 +7009,7 @@
   address: IceHouse Sports Bar, Emmet Street, Omaha, Douglas County, Nebraska, 68164,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: harney-street-tavern
   source_url: https://growomaha.com/happy-hour/harney-street-tavern/
@@ -6905,12 +7055,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
-  needs_review: true
+  category: highway
+  lat: 41.2565173
+  lng: -95.9308121
+  needs_review: false
   extraction_source: none
-  geocode_confidence: none
+  address: Harney Street, Omaha, Nebraska, 68131
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: blue-chip-ultra-lounge
   source_url: https://growomaha.com/happy-hour/blue-chip-ultra-lounge/
@@ -6990,12 +7142,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.816778
+  lng: -96.7097403
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Legends Patio Grill & Bar, 801, R Street, Lincoln, Nebraska, 68508
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: genos-bar-grill
   source_url: https://growomaha.com/happy-hour/genos-bar-grill/
@@ -7045,7 +7199,7 @@
   address: Geno's Bar and Grill, West Maple Road, Omaha, Douglas County, Nebraska,
     68116, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-tipsy-pig
   source_url: https://growomaha.com/happy-hour/the-tipsy-pig/
@@ -7095,7 +7249,7 @@
   address: The Tipsy Pig, 1150, Sterling Ridge Drive, Sterling Ridge, Millard, Omaha,
     Douglas County, Nebraska, 68144, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: cilantros-mexican-bar-grill
   source_url: https://growomaha.com/happy-hour/cilantros-mexican-bar-grill/
@@ -7137,7 +7291,7 @@
   address: Cilantro's Mexican Bar & Grill, 14440, F Street, Millard, Omaha, Douglas
     County, Nebraska, 68136, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: proof-whiskey-bar-craft-cocktails
   source_url: https://growomaha.com/happy-hour/proof-whiskey-bar-craft-cocktails/
@@ -7235,12 +7389,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: landuse
+  lat: 41.2771095
+  lng: -96.0367667
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Harold's Square Shopping Center, Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: the-jewell
   source_url: https://growomaha.com/happy-hour/the-jewell/
@@ -7278,7 +7434,7 @@
   address: The Jewell, 1030, Capitol Avenue, Omaha, Douglas County, Nebraska, 68102,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: pageturners-lounge
   source_url: https://growomaha.com/happy-hour/pageturners-lounge/
@@ -7332,7 +7488,7 @@
   address: Pageturners lounge, 5004, Dodge Street, Happy Hollow, Omaha, Douglas County,
     Nebraska, 68132, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: huber-haus
   source_url: https://growomaha.com/happy-hour/huber-haus/
@@ -7363,12 +7519,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 41.2649089
+  lng: -96.0886259
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Huber Chevrolet Service, 11102, West Dodge Road, Omaha, Nebraska, 68154
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: flight-deck-tap-grill
   source_url: https://growomaha.com/happy-hour/flight-deck-tap-grill/
@@ -7410,12 +7568,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 38.8926965
+  lng: -119.9983696
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California,
+    96158
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: djs-dugout
   source_url: https://growomaha.com/happy-hour/djs-dugout/
@@ -7461,7 +7622,7 @@
   address: DJ's Dugout, 1003, Capitol Avenue, Omaha, Douglas County, Nebraska, 68102,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: phoenix-food-spirits
   source_url: https://growomaha.com/happy-hour/phoenix-food-spirits/
@@ -7556,12 +7717,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2978873
+  lng: -95.9585075
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: North Omaha Transit Center, BUS ONLY, Omaha, Nebraska, 68111
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: pub-134
   source_url: https://growomaha.com/happy-hour/pub-134/
@@ -7607,12 +7770,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2567817
+  lng: -95.9308703
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: T. Henery's Pub, South 11th Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: pizza-west-2
   source_url: https://growomaha.com/happy-hour/pizza-west-2/
@@ -7658,7 +7823,7 @@
   address: Rosatti's Pizza, West Maple Road, Omaha, Douglas County, Nebraska, 68116,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: island-bar-grill
   source_url: https://growomaha.com/happy-hour/island-bar-grill/
@@ -7692,12 +7857,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: applebees-2
   source_url: https://growomaha.com/happy-hour/applebees-2/
@@ -7743,7 +7910,7 @@
   address: Applebee's, Manderson Street, Omaha, Douglas County, Nebraska, 68164, United
     States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: cove-lounge-grille
   source_url: https://growomaha.com/happy-hour/cove-lounge-grille/
@@ -7878,7 +8045,7 @@
   address: Addy's Sports Bar & Grill, S Street, Millard, Omaha, Douglas County, Nebraska,
     68137, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: brickway-brewery-distillery
   source_url: https://growomaha.com/happy-hour/brickway-brewery-distillery/
@@ -7970,7 +8137,7 @@
   address: The Casual Pint, Shamrock Road, Hexum, Omaha, Douglas County, Nebraska,
     68114, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: j-gilberts-wood-fired-steaks-seafood
   source_url: https://growomaha.com/happy-hour/j-gilberts-wood-fired-steaks-seafood/
@@ -8008,12 +8175,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 38.9674284
+  lng: -94.6669383
   needs_review: true
   extraction_source: none
-  geocode_confidence: none
+  address: J. Gilbert's Wood-Fired Steaks & Seafood Kansas City, 8901, Metcalf Avenue,
+    Overland Park, Kansas, 66212
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: sonic
   source_url: https://growomaha.com/happy-hour/sonic/
@@ -8067,7 +8237,7 @@
   address: Sonic, 14598, West Maple Road, Omaha, Douglas County, Nebraska, 68116,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: 801-chophouse
   source_url: https://growomaha.com/happy-hour/801-chophouse/
@@ -8105,12 +8275,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2605856
+  lng: -96.0732947
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: acadian-grille
   source_url: https://growomaha.com/happy-hour/acadian-grille/
@@ -8206,7 +8378,7 @@
   address: Therapy Bar and Grill, South 108th Street, Millard, Omaha, Douglas County,
     Nebraska, 68127, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: inkwell
   source_url: https://growomaha.com/happy-hour/inkwell/
@@ -8260,7 +8432,7 @@
   address: Inkwell, 8716, Pacific Street, Omaha, Douglas County, Nebraska, 68114,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: 3189-2
   source_url: https://growomaha.com/happy-hour/3189-2/
@@ -8314,7 +8486,7 @@
   address: Beercade, Maple Street, Benson, Omaha, Douglas County, Nebraska, 68104,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: nosh-restaurant-wine-lounge
   source_url: https://growomaha.com/happy-hour/nosh-restaurant-wine-lounge/
@@ -8397,7 +8569,7 @@
   address: Annie's, 1101, Davenport Street, NoDo, Omaha, Douglas County, Nebraska,
     68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: skyboxx-bar-grill
   source_url: https://growomaha.com/happy-hour/skyboxx-bar-grill/
@@ -8435,12 +8607,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: taco-co
   source_url: https://growomaha.com/happy-hour/taco-co/
@@ -8483,7 +8657,7 @@
   address: Taco Co., Maple Street, Benson, Omaha, Douglas County, Nebraska, 68104,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: interlude-lounge
   source_url: https://growomaha.com/happy-hour/interlude-lounge/
@@ -8526,7 +8700,7 @@
   address: Interlude Lounge, 7643, Pacific Street, Loveland, Omaha, Douglas County,
     Nebraska, 68114, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: red-lion-lounge
   source_url: https://growomaha.com/happy-hour/red-lion-lounge/
@@ -8572,7 +8746,7 @@
   address: Red Lion Lounge, 3802, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: stokes-2
   source_url: https://growomaha.com/happy-hour/stokes-2/
@@ -8626,7 +8800,7 @@
   address: Stokes Grill & Bar, 17520, Wright Street, Millard, Omaha, Douglas County,
     Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: wilson-washburn
   source_url: https://growomaha.com/happy-hour/wilson-washburn/
@@ -8664,12 +8838,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: highway
+  lat: 41.1961809
+  lng: -95.9553552
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Wilson Circle, Omaha, Nebraska, 68147
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: vis-major-brewing-co
   source_url: https://growomaha.com/happy-hour/vis-major-brewing-co/
@@ -8758,12 +8934,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.8149576
+  lng: -96.7095786
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Vincenzo's, 808, P Street, Lincoln, Nebraska, 68508
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: varsity-sports-cafe-roman-pizza
   source_url: https://growomaha.com/happy-hour/varsity-sports-cafe-roman-pizza/
@@ -8802,12 +8980,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2187081
+  lng: -96.1411858
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Varsity Sports Cafe & Roman Coin Pizza, 14529, F Street, Omaha, Nebraska,
+    68137
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: upstream-2
   source_url: https://growomaha.com/happy-hour/upstream-2/
@@ -8855,7 +9036,7 @@
   address: Upstream Brewing Company, 514, South 11th Street, The Old Market, Omaha,
     Douglas County, Nebraska, 68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: twisted-fork-grill-bar
   source_url: https://growomaha.com/happy-hour/twisted-fork-grill-bar/
@@ -9000,7 +9181,7 @@
   address: Timber Wood Fire Bistro, 8702, Pacific Street, Omaha, Douglas County, Nebraska,
     68118, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: taxis-grille-bar
   source_url: https://growomaha.com/happy-hour/taxis-grille-bar/
@@ -9095,7 +9276,7 @@
   address: Jackson Street Tavern, Jackson Street, The Old Market, Omaha, Douglas County,
     Nebraska, 68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: sullivans-steakhouse
   source_url: https://growomaha.com/happy-hour/sullivans-steakhouse/
@@ -9129,12 +9310,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 38.9124336
+  lng: -94.6374237
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Sullivan's Steakhouse, West 119th Street, Leawood, Kansas, 66211
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: stokin-goat
   source_url: https://growomaha.com/happy-hour/stokin-goat/
@@ -9231,12 +9414,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: landuse
+  lat: 41.1999771
+  lng: -96.0980922
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: St. Andrew's Pointe, Omaha, Nebraska
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: spezia-2
   source_url: https://growomaha.com/happy-hour/spezia-2/
@@ -9290,7 +9475,7 @@
   address: Spezia Omaha, 3125, South 72nd Street, Omaha, Douglas County, Nebraska,
     68124, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: spencers-steak-chops
   source_url: https://growomaha.com/happy-hour/spencers-steak-chops/
@@ -9336,12 +9521,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.7640215
+  lng: -111.893552
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Spencers for Steaks and Chops, 255, West Temple, Salt Lake City, Utah,
+    84144
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: smittys-garage-burgers-beer
   source_url: https://growomaha.com/happy-hour/smittys-garage-burgers-beer/
@@ -9395,7 +9583,7 @@
   address: Smitty's Garage Burgers and Beer, 7610, Dodge Street, Omaha, Douglas County,
     Nebraska, 68114, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: shucks-fish-house-oyster-bar
   source_url: https://growomaha.com/happy-hour/shucks-fish-house-oyster-bar/
@@ -9440,12 +9628,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2323227
+  lng: -96.1781621
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Shuck's Fish House & Oyster Bar, 16901, Wright Plaza, Omaha, Nebraska,
+    68130
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: shevys-sports-bar-grill
   source_url: https://growomaha.com/happy-hour/shevys-sports-bar-grill/
@@ -9483,12 +9674,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2044973
+  lng: -96.1341971
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Addy's Sports Bar & Grill, S Street, Omaha, Nebraska, 68137
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: sean-ocaseys
   source_url: https://growomaha.com/happy-hour/sean-ocaseys/
@@ -9525,12 +9718,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 41.2593587
+  lng: -95.9727488
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Casey's General Store, Dodge Street, Omaha, Nebraska, 68198
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: roja-mexican-grill
   source_url: https://growomaha.com/happy-hour/roja-mexican-grill/
@@ -9583,7 +9778,7 @@
   address: Roja Mexican Grill & Margarita Bar, 17010, Wright Plaza, The Shops of Legacy,
     Millard, Omaha, Douglas County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: report-in-pub
   source_url: https://growomaha.com/happy-hour/report-in-pub/
@@ -9620,12 +9815,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: tourism
+  lat: 5.4191159
+  lng: 100.334613
   needs_review: true
   extraction_source: none
-  geocode_confidence: none
+  address: Marking Georgetown "Report Card", Chulia Street, George Town, Penang Island,
+    10200
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: railcar-modern-american-kitchen
   source_url: https://growomaha.com/happy-hour/railcar-modern-american-kitchen/
@@ -9712,12 +9910,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
-  needs_review: true
+  category: amenity
+  lat: 41.2028601
+  lng: -96.2350204
+  needs_review: false
   extraction_source: none
-  geocode_confidence: none
+  address: Rusty Taco, 5331, South 204th Avenue, Elkhorn, Nebraska, 68022
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: ponzu-sushi
   source_url: https://growomaha.com/happy-hour/ponzu-sushi/
@@ -9771,7 +9971,7 @@
   address: Ponzu Sushi and Grill, 2110, South 67th Street, Aksarben Village, Omaha,
     Douglas County, Nebraska, 68106, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: pan-asian-terrace
   source_url: https://growomaha.com/happy-hour/pan-asian-terrace/
@@ -9807,12 +10007,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 40.696551
+  lng: -75.2586815
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Asian Gifts, 123, Palmer Park Mall, Easton, Pennsylvania, 18045
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: oscars
   source_url: https://growomaha.com/happy-hour/oscars/
@@ -9858,7 +10060,7 @@
   address: Oscar's Pizza & Sports Grille, 17330, Lakeside Hills Plaza, Lakeside Plaza,
     Millard, Omaha, Douglas County, Nebraska, 68130, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: ollie-hobbs-craft-kitchen
   source_url: https://growomaha.com/happy-hour/ollie-hobbs-craft-kitchen/
@@ -9900,12 +10102,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 40.7430165
+  lng: -96.6789605
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska,
+    68516
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: the-observatory
   source_url: https://growomaha.com/happy-hour/the-observatory/
@@ -9946,12 +10151,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: building
+  lat: 20.6793114
+  lng: -88.5707562
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: "The Observatory or Caracol, Sendero de acceso a Serie Inicial o Chich\xE9\
+    n viejo, Yucat\xE1n, 97751"
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: nite-owl
   source_url: https://growomaha.com/happy-hour/nite-owl/
@@ -10001,7 +10209,7 @@
   address: Nite Owl, 3902, Farnam Street, Blackstone, Omaha, Douglas County, Nebraska,
     68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: mula-mexican-kitchen-tequileria
   source_url: https://growomaha.com/happy-hour/mula-mexican-kitchen-tequileria/
@@ -10090,12 +10298,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: building
+  lat: 41.2526406
+  lng: -95.9953875
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Gerda's German Restaurant & Bakery, 5180, Leavenworth Street, Omaha, Nebraska,
+    68106
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: mercury
   source_url: https://growomaha.com/happy-hour/mercury/
@@ -10137,7 +10348,7 @@
   address: Mercury, 329, South 16th Street, Omaha, Douglas County, Nebraska, 68102,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: maximos-cantina
   source_url: https://growomaha.com/happy-hour/maximos-cantina/
@@ -10175,12 +10386,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2829022
+  lng: -96.2366635
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Maximino's Cantina, 2613, North Main Street, Omaha, Nebraska, 68022
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: mantra
   source_url: https://growomaha.com/happy-hour/mantra/
@@ -10263,12 +10476,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2098569
+  lng: -96.1235004
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Local Beer, Patio, and Kitchen, South 134th Street, Omaha, Nebraska, 68137
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: liquid-sunshine-taproom
   source_url: https://growomaha.com/happy-hour/liquid-sunshine-taproom/
@@ -10357,7 +10572,7 @@
   address: Lighthouse Bar and Grill, North 157th Circle, Omaha, Douglas County, Nebraska,
     68116, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: le-bouillon
   source_url: https://growomaha.com/happy-hour/le-bouillon/
@@ -10399,12 +10614,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2552485
+  lng: -95.9298756
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Bouillon Restaurant, 1017, Howard Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: lazlos-2
   source_url: https://growomaha.com/happy-hour/lazlos-2/
@@ -10488,7 +10705,7 @@
   needs_review: false
   address: La Mesa, Emmet Street, Omaha, Douglas County, Nebraska, 68164, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: krug-park
   source_url: https://growomaha.com/happy-hour/krug-park/
@@ -10535,7 +10752,7 @@
   address: Krug Park, 6205, Maple Street, Benson, Omaha, Douglas County, Nebraska,
     68104, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: kobe-steakhouse
   source_url: https://growomaha.com/happy-hour/kobe-steakhouse/
@@ -10581,7 +10798,7 @@
   address: Kobe Steakhouse of Japan, 16801, Burke Street, Omaha, Douglas County, Nebraska,
     68118, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: jinya-ramen-bar
   source_url: https://growomaha.com/happy-hour/jinya-ramen-bar/
@@ -10635,7 +10852,7 @@
   address: JINYA Ramen Bar, 7010, Dodge Street, Omaha, Douglas County, Nebraska, 68132,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: jams-2
   source_url: https://growomaha.com/happy-hour/jams-2/
@@ -10682,7 +10899,7 @@
   address: Jams, Harney Street, The Old Market, Omaha, Douglas County, Nebraska, 68131,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: ika-ramen-izakaya
   source_url: https://growomaha.com/happy-hour/ika-ramen-izakaya/
@@ -10719,12 +10936,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1349929
+  lng: -96.0292131
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Ika San Ramen and Izakaya, 7902, Towne Center Parkway, Papillion, Nebraska,
+    68046
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: hook-lime
   source_url: https://growomaha.com/happy-hour/hook-lime/
@@ -10769,7 +10989,7 @@
   address: Hook and Lime, 735, North 14th Street, NoDo, Omaha, Douglas County, Nebraska,
     68102, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: hiro-88
   source_url: https://growomaha.com/happy-hour/hiro-88/
@@ -10825,7 +11045,7 @@
   address: Hiro 88, 17664, Welch Plaza, Millard, Omaha, Douglas County, Nebraska,
     68135, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-hill
   source_url: https://growomaha.com/happy-hour/the-hill/
@@ -10879,7 +11099,7 @@
   address: The Hill, South 185th Street, Omaha, Douglas County, Nebraska, 68130, United
     States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: herbe-sainte
   source_url: https://growomaha.com/happy-hour/herbe-sainte/
@@ -10925,12 +11145,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: place
+  lat: 49.3651776
+  lng: -1.188704
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: "La Gr\xE8ve Herbe, Sainte-Marie-du-Mont, Normandy, 50480"
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: flemings-2
   source_url: https://growomaha.com/happy-hour/flemings-2/
@@ -10984,7 +11206,7 @@
   address: Fleming's, 140, Regency Parkway, Regency, Omaha, Douglas County, Nebraska,
     68114, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: firebirds-wood-fired-grill
   source_url: https://growomaha.com/happy-hour/firebirds-wood-fired-grill/
@@ -11030,7 +11252,7 @@
   address: Firebirds Wood Fired Grill, 17415, Chicago Street, Village Pointe, Omaha,
     Douglas County, Nebraska, 68118, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-good-life
   source_url: https://growomaha.com/happy-hour/the-good-life/
@@ -11077,12 +11299,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
-  needs_review: true
+  category: office
+  lat: 41.1920326
+  lng: -96.1532126
+  needs_review: false
   extraction_source: none
-  geocode_confidence: none
+  address: Good Life Concrete, 6710, South 153rd Circle, Omaha, Nebraska, 68137
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: cunninghams-pub-grill
   source_url: https://growomaha.com/happy-hour/cunninghams-pub-grill/
@@ -11120,12 +11344,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.252621
+  lng: -95.9779952
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Barrett's Barleycorn Pub & Grill, 4322, Leavenworth Street, Omaha, Nebraska,
+    68105
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: the-corner-kick
   source_url: https://growomaha.com/happy-hour/the-corner-kick/
@@ -11178,7 +11405,7 @@
   address: The Corner Kick, P Street, Millard, Omaha, Douglas County, Nebraska, 68137,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: crescent-moon
   source_url: https://growomaha.com/happy-hour/crescent-moon/
@@ -11224,7 +11451,7 @@
   address: Crescent Moon, 3578, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: the-cheesecake-factory
   source_url: https://growomaha.com/happy-hour/the-cheesecake-factory/
@@ -11270,7 +11497,7 @@
   address: The Cheesecake Factory, California Street, Omaha, Douglas County, Nebraska,
     68114, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: charlies-on-the-lake
   source_url: https://growomaha.com/happy-hour/charlies-on-the-lake/
@@ -11312,7 +11539,7 @@
   address: Charlie's on the Lake, 4150, South 144th Street, Millard, Omaha, Douglas
     County, Nebraska, 68137, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: charlestons-2
   source_url: https://growomaha.com/happy-hour/charlestons-2/
@@ -11359,7 +11586,7 @@
   address: Charleston's, 13851, FNB Parkway, First National Business Park, Omaha,
     Douglas County, Nebraska, 68154, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: brushi-bistro-bar
   source_url: https://growomaha.com/happy-hour/brushi-bistro-bar/
@@ -11400,12 +11627,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: healthcare
+  lat: 41.240195
+  lng: -96.0269809
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Hospice House - The Josie Harper Residence, 7415, Cedar Street, Omaha,
+    Nebraska, 68124
+  geocode_source: photon
+  geocode_confidence: medium
 - source: growomaha
   source_record_id: brazen-head-irish-pub
   source_url: https://growomaha.com/happy-hour/brazen-head-irish-pub/
@@ -11443,12 +11673,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 43.6384421
+  lng: -79.4172263
   extraction_source: regex
   needs_review: true
-  geocode_confidence: none
+  address: Brazen Head Irish Pub, 165, East Liberty Street, Toronto, Ontario, M6K
+    3K4
+  geocode_source: photon
+  geocode_confidence: low
 - source: growomaha
   source_record_id: bonefish-grill
   source_url: https://growomaha.com/happy-hour/bonefish-grill/
@@ -11501,7 +11734,7 @@
   address: Bonefish Grill, Regency Circle, Omaha, Douglas County, Nebraska, 68114,
     United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: blue-sushi-3
   source_url: https://growomaha.com/happy-hour/blue-sushi-3/
@@ -11548,12 +11781,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2330256
+  lng: -96.1793581
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Baby Blue Sushi Sake Grill, 16939, Wright Plaza, Omaha, Nebraska, 68130
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: blatt-beer-table
   source_url: https://growomaha.com/happy-hour/blatt-beer-table/
@@ -11599,12 +11834,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2655965
+  lng: -95.9321381
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Blatt Beer & Table, Mike Fahey Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
 - source: growomaha
   source_record_id: benson-brewery
   source_url: https://growomaha.com/happy-hour/benson-brewery/
@@ -11653,7 +11890,7 @@
   address: Benson Brewery, 6059, Maple Street, Benson, Omaha, Douglas County, Nebraska,
     68104, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: growomaha
   source_record_id: beacon-hills-aksarben
   source_url: https://growomaha.com/happy-hour/beacon-hills-aksarben/
@@ -11776,12 +12013,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.1640593
+  lng: -96.1377222
   extraction_source: regex
-  needs_review: true
-  geocode_confidence: none
+  needs_review: false
+  address: Azteca, 9429, South 142nd Street, Omaha, Nebraska, 68138
+  geocode_source: photon
+  geocode_confidence: high
 - source: visitomaha
   source_record_id: '1628'
   source_url: https://www.visitomaha.com/coupon/%243-off-heartland-bike-share-24-hour-pass/1628/
@@ -12044,12 +12283,15 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: shop
+  lat: 53.8109247
+  lng: -1.4393431
   extraction_source: n/a
+  address: Pendas Way Local Store & Off Licence, 85, Pendas Way, Leeds, England, LS15
+    8HN
+  geocode_source: photon
+  geocode_confidence: low
   needs_review: true
-  geocode_confidence: none
 - source: visitomaha
   source_record_id: '2732'
   source_url: https://www.visitomaha.com/coupon/the-off-peak-perk/2732/
@@ -12088,12 +12330,14 @@
   original_price: null
   sale_price: null
   savings: null
-  category: null
-  lat: null
-  lng: null
+  category: tourism
+  lat: -29.9669875
+  lng: 135.1680029
   extraction_source: n/a
+  address: Off the Road Banana Loop Bush Camp, Stuart Highway, South Australia, 5723
+  geocode_source: photon
+  geocode_confidence: low
   needs_review: true
-  geocode_confidence: none
 - source: visitomaha
   source_record_id: '2725'
   source_url: https://www.visitomaha.com/coupon/treerush-advenures-4-pack-special/2725/
@@ -12168,7 +12412,7 @@
   address: 72 Table & Tap, 5413, South 70th Street, Omaha, Douglas County, Nebraska,
     68127, United States
   geocode_confidence: high
-  geocode_source: nominatim
+  geocode_source: cache
 - source: bigdealsmedia
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
@@ -12253,12 +12497,14 @@
   original_price: 50.0
   sale_price: 25.0
   savings: 25.0
-  category: restaurants
-  lat: null
-  lng: null
+  category: amenity
+  lat: 41.2567175
+  lng: -95.938139
   extraction_source: n/a
-  needs_review: true
-  geocode_confidence: none
+  address: Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
+  needs_review: false
 - source: bigdealsmedia
   source_record_id: cheeseburgers-a-take-out-joint
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
@@ -12297,9 +12543,12 @@
   original_price: 50.0
   sale_price: 25.0
   savings: 25.0
-  category: restaurants
-  lat: null
-  lng: null
+  category: amenity
+  lat: 27.2757797
+  lng: -80.354112
   extraction_source: n/a
+  address: Rib shack Smokehouse bbq, 295, Port St Lucie, Port Saint Lucie, Florida,
+    34984
+  geocode_source: photon
+  geocode_confidence: low
   needs_review: true
-  geocode_confidence: none

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import time
 from collections.abc import Callable
 from pathlib import Path
@@ -12,10 +13,11 @@ import requests
 from scripts._lib.io import read_yaml, write_yaml
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+PHOTON_URL = "https://photon.komoot.io/api/"
 MAPBOX_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places"
 USER_AGENT = "omaha-deals-map/0.1 (+https://github.com/nitrocode/omaha-deals-map)"
 OMAHA_BBOX = (-96.4, 41.0, -95.5, 41.5)  # lng_min, lat_min, lng_max, lat_max
-OMAHA_PROXIMITY = (-95.9345, 41.2565)    # downtown for Mapbox proximity bias
+OMAHA_PROXIMITY = (-95.9345, 41.2565)    # downtown lng, lat (for proximity bias)
 
 
 def _nominatim(name: str) -> dict | None:
@@ -40,6 +42,55 @@ def _nominatim(name: str) -> dict | None:
         "category": top.get("class", ""),
         "geocode_source": "nominatim",
     }
+
+
+def _significant_tokens(s: str, min_chars: int = 5) -> set[str]:
+    """Tokens of `min_chars`+ word-chars, lowercased. Drops short words and stopwords."""
+    return {t for t in re.findall(r"\w+", (s or "").lower()) if len(t) >= min_chars}
+
+
+def _is_plausible_match(query: str, result_name: str) -> bool:
+    """Reject fuzzy-matcher false positives: at least one 5+ char token must overlap."""
+    q = _significant_tokens(query)
+    n = _significant_tokens(result_name)
+    if not q:
+        return True  # nothing distinctive to compare
+    return len(q & n) >= 1
+
+
+def _photon(name: str) -> dict | None:
+    """Photon forward geocoding (OSM-backed, no key). Aggressive fuzzy guard."""
+    time.sleep(0.5)
+    r = requests.get(
+        PHOTON_URL,
+        params={
+            "q": f"{name} Omaha",
+            "limit": 3,  # ask for a few; we'll pick the first plausible match
+            "lat": OMAHA_PROXIMITY[1], "lon": OMAHA_PROXIMITY[0],
+            "lang": "en",
+        },
+        headers={"User-Agent": USER_AGENT}, timeout=20,
+    )
+    r.raise_for_status()
+    feats = r.json().get("features", [])
+    for f in feats:
+        props = f.get("properties", {})
+        result_name = props.get("name", "")
+        if not _is_plausible_match(name, result_name):
+            continue
+        lng, lat = f["geometry"]["coordinates"]
+        category = props.get("osm_key", "")
+        parts = [result_name, props.get("housenumber"), props.get("street"),
+                 props.get("city"), props.get("state"), props.get("postcode")]
+        address = ", ".join([p for p in parts if p])
+        return {
+            "address": address or result_name,
+            "lat": float(lat),
+            "lng": float(lng),
+            "category": category,
+            "geocode_source": "photon",
+        }
+    return None
 
 
 def _mapbox(name: str, token: str) -> dict | None:
@@ -88,22 +139,19 @@ def _confidence(lat: float, lng: float, category: str) -> str:
     return "low"
 
 
-def _chain_geocode(name: str, nominatim_fn, mapbox_fn) -> dict | None:
-    """Try Nominatim first; if empty AND mapbox available, fall back to Mapbox."""
-    try:
-        hit = nominatim_fn(name)
-    except Exception as e:
-        print(f"[geocode] nominatim {name}: {e}")
-        hit = None
-    if hit:
-        return hit
-    if mapbox_fn is None:
-        return None
-    try:
-        return mapbox_fn(name)
-    except Exception as e:
-        print(f"[geocode] mapbox {name}: {e}")
-        return None
+def _chain_geocode(name: str, fns: list) -> dict | None:
+    """Run geocoders in order, return the first hit. Each entry is (label, callable_or_None)."""
+    for label, fn in fns:
+        if fn is None:
+            continue
+        try:
+            hit = fn(name)
+        except Exception as e:
+            print(f"[geocode] {label} {name}: {e}")
+            hit = None
+        if hit:
+            return hit
+    return None
 
 
 def main(geocoder: Callable[[str], dict | None] | None = None) -> int:
@@ -113,13 +161,15 @@ def main(geocoder: Callable[[str], dict | None] | None = None) -> int:
 
     mapbox_token = os.environ.get("MAPBOX_TOKEN") or os.environ.get("MAPBOX_ACCESS_TOKEN")
     mapbox_fn = (lambda n: _mapbox(n, mapbox_token)) if mapbox_token else None
-    nominatim_fn = _nominatim
-    chain = geocoder or (lambda n: _chain_geocode(n, nominatim_fn, mapbox_fn))
+    fns = [
+        ("nominatim", _nominatim),
+        ("photon", _photon),
+        ("mapbox", mapbox_fn),
+    ]
+    chain = geocoder or (lambda n: _chain_geocode(n, fns))
 
-    if mapbox_token:
-        print("[geocode] Mapbox fallback enabled")
-    else:
-        print("[geocode] Mapbox fallback disabled (set MAPBOX_TOKEN to enable)")
+    enabled = [label for label, fn in fns if fn is not None]
+    print(f"[geocode] geocoder chain: {' -> '.join(enabled)}")
 
     stats = {"override": 0, "source": 0, "cache": 0, "nominatim": 0, "mapbox": 0, "miss": 0}
     out = []
