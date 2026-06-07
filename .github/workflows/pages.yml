@@ -5,8 +5,15 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'data/deals.json'
+      - 'scripts/05_build.py'
+      - 'scripts/_build_main.py'
+      - 'scripts/_lib/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Weekly scrape"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -24,17 +31,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-
-      - name: Configure Pages
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-
-      - name: Upload site/ artifact
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.11'
+      - run: pip install -e .
+      - run: python scripts/05_build.py
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
-
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

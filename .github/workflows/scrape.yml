@@ -1,0 +1,42 @@
+name: Weekly scrape
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'  # Mondays 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.11'
+      - run: pip install -e .
+      - env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/01_fetch.py
+          python scripts/02_parse.py
+          python scripts/03_extract_times.py
+          python scripts/04_geocode.py
+          python scripts/05_build.py
+      - name: Commit changes
+        env:
+          RUN: ${{ github.run_number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): weekly scrape $RUN
+
+Refs: omaha-deals-map"
+            git push
+          else
+            echo "No data changes this run."
+          fi
