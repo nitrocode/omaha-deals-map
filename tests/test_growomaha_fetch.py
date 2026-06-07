@@ -37,3 +37,44 @@ def test_fetch_paginates_until_no_records(fixtures_dir):
     assert isinstance(payload, GrowomahaPayload)
     assert len(payload.records) >= 200
     assert payload.day_of_week[161] == "mon"
+
+
+def test_get_json_retries_on_non_json_body():
+    """The WP REST host occasionally serves a HTML interstitial or empty
+    body with a 200 status. The fetcher should retry instead of failing
+    the whole scrape."""
+    from sources.growomaha.fetch import _get_json
+
+    sleeps: list[float] = []
+    attempts = 0
+
+    def fake_get(url):
+        nonlocal attempts
+        attempts += 1
+        resp = MagicMock()
+        resp.status_code = 200
+        # First two attempts get an HTML interstitial; third succeeds.
+        if attempts < 3:
+            resp.body = b"<html>Just a moment...</html>"
+        else:
+            resp.body = b'[{"id": 1, "name": "ok"}]'
+        return resp
+
+    client = MagicMock()
+    client.get = fake_get
+    result = _get_json(client, "http://x/y", sleep_fn=sleeps.append)
+    assert result == [{"id": 1, "name": "ok"}]
+    assert attempts == 3
+    assert sleeps == [1.5, 3.0]  # backoff applied between attempts 1->2 and 2->3
+
+
+def test_get_json_raises_after_exhausting_retries():
+    import pytest
+
+    from sources.growomaha.fetch import _get_json
+
+    client = MagicMock()
+    client.get = MagicMock(return_value=MagicMock(status_code=200, body=b""))
+    with pytest.raises(RuntimeError, match="growomaha returned non-JSON"):
+        _get_json(client, "http://x/y", sleep_fn=lambda _: None)
+    assert client.get.call_count == 3
