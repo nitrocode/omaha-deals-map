@@ -179,6 +179,14 @@ function driveTimeMinutes(miles) {
     return (miles * ROAD_FACTOR) / AVG_MPH * 60;
 }
 
+// Walking pace: ~3 mph on flat city blocks. No road-factor correction because
+// pedestrians cross diagonally and cut through, which roughly cancels out the
+// detour penalty cars suffer.
+const WALK_MPH = 3;
+function walkTimeMinutes(miles) {
+    return (miles / WALK_MPH) * 60;
+}
+
 function formatMiles(miles) {
     return miles < 10 ? miles.toFixed(1) + " mi" : Math.round(miles) + " mi";
 }
@@ -327,6 +335,7 @@ function render() {
         const marker = L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
         marker._kind = kind;
         marker._venueId = r.id;
+        marker.bindTooltip(r.name, { direction: "top", offset: [0, -4] });
         marker.on("click", () => openVenue(r, { fromList: false }));
         state.cluster.addLayer(marker);
         state.markers.push(marker);
@@ -504,20 +513,27 @@ function renderDeal(d) {
 
 function distanceLines(r) {
     // Build distance + drive-time lines for both home and current location, if set.
+    // Walking time is only shown for venues under a mile, where it's actually a
+    // realistic alternative; beyond that it just clutters the line.
     const lines = [];
     const target = [r.lat, r.lng];
+    const tail = mi => {
+        const drive = `~${formatDriveTime(driveTimeMinutes(mi))} drive`;
+        if (mi < 1) {
+            return `${drive} &middot; ~${formatDriveTime(walkTimeMinutes(mi))} walk`;
+        }
+        return drive;
+    };
     if (state.home) {
         const mi = haversineMiles([state.home.lat, state.home.lng], target);
-        const min = driveTimeMinutes(mi);
         lines.push(
-            `<p class="distance">🏠 ${formatMiles(mi)} from home &middot; ~${formatDriveTime(min)} drive</p>`
+            `<p class="distance">🏠 ${formatMiles(mi)} from home &middot; ${tail(mi)}</p>`
         );
     }
     if (state.userLocation) {
         const mi = haversineMiles(state.userLocation, target);
-        const min = driveTimeMinutes(mi);
         lines.push(
-            `<p class="distance">📍 ${formatMiles(mi)} from you &middot; ~${formatDriveTime(min)} drive</p>`
+            `<p class="distance">📍 ${formatMiles(mi)} from you &middot; ${tail(mi)}</p>`
         );
     }
     return lines.join("");
@@ -629,10 +645,18 @@ function renderHomeMarker() {
         state.homeMarker = null;
     }
     if (!state.home) return;
-    state.homeMarker = L.circleMarker([state.home.lat, state.home.lng], {
-        radius: 8, color: "#fff", weight: 2,
-        fillColor: "#7a5af5", fillOpacity: 0.9,   // purple distinguishes from user-location blue
-    }).addTo(state.map).bindTooltip("🏠 Home");
+    // A divIcon with the 🏠 emoji is clearer than an unlabeled circle: at a
+    // glance the user knows what that point on the map is. The transparent
+    // bg + drop-shadow keeps it visible on either light or dark map tiles.
+    const icon = L.divIcon({
+        className: "home-icon",
+        html: "🏠",
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+    });
+    state.homeMarker = L.marker([state.home.lat, state.home.lng], { icon })
+        .addTo(state.map)
+        .bindTooltip(state.home.label ? `🏠 ${state.home.label}` : "🏠 Home");
 }
 
 function setHome(lat, lng, label = "") {

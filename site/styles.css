@@ -172,6 +172,18 @@ body[data-view="map"] #list-view { display: none; }
 }
 .fav-btn.active { background: #ffe1e1; border-color: #d9534f; color: #d9534f; }
 
+/* Home marker: emoji rendered inside a Leaflet divIcon. Background-transparent
+   so it sits cleanly on the map tiles; the drop-shadow keeps the emoji
+   legible against busy backgrounds. */
+.home-icon {
+    background: transparent;
+    border: 0;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+}
+
 .report-link { margin-top: .75rem; font-size: .85rem; }
 .report-link a { color: var(--muted); }
 .contribute-links { margin-top: 1rem; font-size: .85rem; color: var(--muted); }
