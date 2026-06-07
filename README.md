@@ -35,6 +35,29 @@ make serve                         # serve site/ at http://localhost:8000
 
 Use `make rebuild` to force every cache miss.
 
+## Pre-commit hooks
+
+Install once:
+
+```bash
+pip install -e ".[dev]"   # installs pre-commit
+pre-commit install        # registers hooks under .git/hooks/
+```
+
+After that, every `git commit` runs:
+- **`verify-sri`** on any changed HTML file. Fetches each `<link>`/`<script>` with an `integrity=` attribute and checks the declared hash against the actual served content. Catches the failure mode where someone (me, on 4473ba5) commits a fabricated hash.
+- **`ruff check`** on Python files
+- **`pytest -q -m "not slow"`** the fast test suite
+
+CI runs the same `python scripts/check_sri.py site/index.html` so PRs without pre-commit installed still get the gate.
+
+Run manually any time:
+
+```bash
+pre-commit run --all-files
+python scripts/check_sri.py site/index.html  # just the SRI check
+```
+
 Individual stages: `make scrape`, `make parse`, `make extract`, `make geocode`, `make build`. `make rebuild` forces every stage to bypass caches.
 
 ## Add a source

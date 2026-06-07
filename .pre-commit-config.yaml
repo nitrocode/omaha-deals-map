@@ -1,0 +1,38 @@
+# Pre-commit hook configuration. Install once with:
+#   pip install pre-commit && pre-commit install
+# Hooks then run automatically on `git commit` for staged files only.
+#
+# Run all hooks against every file:
+#   pre-commit run --all-files
+repos:
+  - repo: local
+    hooks:
+      # Catches the class of bug where someone (me) commits a fabricated or
+      # stale SRI hash. Hits the network for each <link>/<script integrity=>
+      # tag in changed HTML files; fails if any declared hash doesn't match
+      # the served content.
+      - id: verify-sri
+        name: Verify SRI hashes in HTML
+        entry: python scripts/check_sri.py
+        language: system
+        files: '\.html$'
+        pass_filenames: true
+        require_serial: true
+
+      # Lint the codebase. Pre-commit runs ruff on staged files only.
+      - id: ruff
+        name: Ruff lint
+        entry: ruff check
+        language: system
+        types: [python]
+        require_serial: true
+
+      # Fail commits that introduce new failures. -m "not slow" so the
+      # network-heavy integration tests don't fire on every commit.
+      - id: pytest-fast
+        name: Pytest (fast suite)
+        entry: pytest -q -m "not slow"
+        language: system
+        pass_filenames: false
+        types: [python]
+        require_serial: true

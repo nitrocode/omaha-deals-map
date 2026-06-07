@@ -16,3 +16,8 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: ruff check .
       - run: pytest -q -m "not slow"
+      # Fetches each external resource referenced in site/index.html and
+      # verifies its declared SRI hash. Network-dependent (uses unpkg + cdnjs);
+      # acceptable in CI since the run is short.
+      - name: Verify SRI hashes in site/index.html
+        run: python scripts/check_sri.py site/index.html
