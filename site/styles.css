@@ -186,8 +186,16 @@ body[data-view="map"] #list-view { display: none; }
 
 .report-link { margin-top: .75rem; font-size: .85rem; }
 .report-link a { color: var(--muted); }
+.report-link .link-btn { font-size: .85rem; padding: 0; }
 .contribute-links { margin-top: 1rem; font-size: .85rem; color: var(--muted); }
 .contribute-links a { color: var(--hh); }
+.contribute-links .link-btn { font-size: .85rem; padding: 0; }
+
+#contribute-sheet { max-height: 92vh; }
+#contribute-iframe {
+    width: 100%; min-height: 70vh; border: 0;
+    background: var(--bg);
+}
 
 .slider-row { display: grid; grid-template-columns: 1fr; gap: .25rem; padding: .5rem 0; }
 .slider-row input[type=range] { width: 100%; }

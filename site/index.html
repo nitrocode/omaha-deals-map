@@ -88,16 +88,30 @@
   <label><input type="checkbox" id="favorites-only"> Favorites only</label>
   <button id="close-filter">Done</button>
   <p class="contribute-links">
-    Help improve the map:
+    <button id="open-contribute-btn" type="button" class="link-btn">Suggest changes (no login)</button>
+    or via GitHub:
     <a target="_blank" rel="noopener"
        href="https://github.com/nitrocode/omaha-deals-map/issues/new?template=add-deal.yml">add a deal</a>,
     <a target="_blank" rel="noopener"
        href="https://github.com/nitrocode/omaha-deals-map/issues/new?template=new-source.yml">suggest a source</a>,
     <a target="_blank" rel="noopener"
-       href="https://github.com/nitrocode/omaha-deals-map/issues/new/choose">other feedback</a>.
+       href="https://github.com/nitrocode/omaha-deals-map/issues/new/choose">other</a>.
   </p>
 </aside>
 <aside id="venue-sheet" class="sheet hidden" aria-hidden="true"></aside>
+<aside id="contribute-sheet" class="sheet hidden" aria-hidden="true">
+  <div class="sheet-header">
+    <h2>Help improve this map</h2>
+    <button id="contribute-close" class="link-btn">Close</button>
+  </div>
+  <p class="meta">No login needed. Please don't include personal contact info in the details.</p>
+  <iframe id="contribute-iframe" title="Contribute form" loading="lazy" hidden></iframe>
+  <p id="contribute-fallback" class="hint" hidden>
+    The anonymous form isn't configured yet. Use the GitHub links in the
+    filter panel for now.
+  </p>
+  <p><a id="contribute-direct-link" target="_blank" rel="noopener" href="#" hidden>Open form in a new tab</a></p>
+</aside>
 <aside id="home-sheet" class="sheet hidden" aria-hidden="true">
   <div class="sheet-header">
     <h2>Home location</h2>

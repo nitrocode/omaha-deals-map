@@ -544,6 +544,17 @@ function distanceLines(r) {
 
 const REPO_ISSUES_URL = "https://github.com/nitrocode/omaha-deals-map/issues/new";
 
+// Google Form for anonymous (no-login) contributions. Set these once you've
+// created the form and grabbed the entry IDs via "Get pre-filled link":
+//   - GOOGLE_FORM_EMBED_URL: the form's viewform URL with ?embedded=true appended
+//   - GOOGLE_FORM_ENTRY_SLUG: e.g. "entry.123456789" (Venue ID field)
+//   - GOOGLE_FORM_ENTRY_NAME: e.g. "entry.987654321" (Venue name field)
+// While these are blank, the in-app contribute sheet falls back to the
+// existing GitHub Issue templates (login required).
+const GOOGLE_FORM_EMBED_URL = "";
+const GOOGLE_FORM_ENTRY_SLUG = "";
+const GOOGLE_FORM_ENTRY_NAME = "";
+
 function reportIssueLinkFor(r) {
     const params = new URLSearchParams({
         template: "fix-venue.yml",
@@ -551,6 +562,40 @@ function reportIssueLinkFor(r) {
         name: r.name || "",
     });
     return `${REPO_ISSUES_URL}?${params.toString()}`;
+}
+
+function contributeFormUrlFor(r) {
+    // Returns the embed URL with venue context prefilled, or null when the
+    // Google Form isn't configured yet (we ship that way and let the maintainer
+    // wire it up post-deploy without redeploying).
+    if (!GOOGLE_FORM_EMBED_URL) return null;
+    const url = new URL(GOOGLE_FORM_EMBED_URL);
+    if (r?.id && GOOGLE_FORM_ENTRY_SLUG) url.searchParams.set(GOOGLE_FORM_ENTRY_SLUG, r.id);
+    if (r?.name && GOOGLE_FORM_ENTRY_NAME) url.searchParams.set(GOOGLE_FORM_ENTRY_NAME, r.name);
+    if (!url.searchParams.has("embedded")) url.searchParams.set("embedded", "true");
+    return url.toString();
+}
+
+function openContributeSheet(r) {
+    const sheet = document.getElementById("contribute-sheet");
+    const iframe = document.getElementById("contribute-iframe");
+    const fallback = document.getElementById("contribute-fallback");
+    const directLink = document.getElementById("contribute-direct-link");
+    const url = contributeFormUrlFor(r);
+    if (url) {
+        iframe.src = url;
+        iframe.hidden = false;
+        fallback.hidden = true;
+        const directUrl = new URL(url);
+        directUrl.searchParams.delete("embedded");
+        directLink.href = directUrl.toString();
+        directLink.hidden = false;
+    } else {
+        iframe.hidden = true;
+        directLink.hidden = true;
+        fallback.hidden = false;
+    }
+    sheet.classList.remove("hidden");
 }
 
 function mapsLinkFor(r) {
@@ -589,7 +634,9 @@ function showVenue(r) {
         <p><a target="_blank" rel="noopener" href="${mapsUrl}">${mapsLabel}</a></p>
         ${r.personal?.notes ? `<p><em>${escapeHtml(r.personal.notes)}</em></p>` : ""}
         <p class="report-link">
-          <a target="_blank" rel="noopener" href="${reportIssueLinkFor(r)}">Report a problem with this venue</a>
+          <button id="venue-contribute" class="link-btn">Suggest a fix (no login)</button>
+          &middot;
+          <a target="_blank" rel="noopener" href="${reportIssueLinkFor(r)}">via GitHub</a>
         </p>
         <button id="venue-close">Close</button>
     `;
@@ -611,6 +658,9 @@ function showVenue(r) {
         persistFavorites();
         showVenue(r);  // re-render to flip the button
         render();      // re-render markers in case favoritesOnly is on
+    });
+    document.getElementById("venue-contribute").addEventListener("click", () => {
+        openContributeSheet(r);
     });
 }
 
@@ -923,6 +973,16 @@ function wireControls() {
     document.getElementById("home-clear").addEventListener("click", clearHome);
     document.querySelectorAll("#view-toggle button").forEach(btn => {
         btn.addEventListener("click", () => setView(btn.dataset.view));
+    });
+    document.getElementById("open-contribute-btn").addEventListener("click", () => {
+        openContributeSheet(null);
+    });
+    document.getElementById("contribute-close").addEventListener("click", () => {
+        const sheet = document.getElementById("contribute-sheet");
+        sheet.classList.add("hidden");
+        // Clear iframe src so leaving the sheet stops any audio/animations and
+        // resets form state on the next open.
+        document.getElementById("contribute-iframe").src = "about:blank";
     });
 
     // Crossing the 900px breakpoint (or any resize) can leave Leaflet with
