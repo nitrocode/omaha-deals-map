@@ -335,7 +335,10 @@ function render() {
         const marker = L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
         marker._kind = kind;
         marker._venueId = r.id;
-        marker.bindTooltip(r.name, { direction: "top", offset: [0, -4] });
+        // escapeHtml: r.name comes from third-party scrape sources via deals.json;
+        // bindTooltip renders strings as HTML so an unescaped value would be a
+        // stored-XSS sink (OWASP A03).
+        marker.bindTooltip(escapeHtml(r.name), { direction: "top", offset: [0, -4] });
         marker.on("click", () => openVenue(r, { fromList: false }));
         state.cluster.addLayer(marker);
         state.markers.push(marker);
@@ -654,9 +657,12 @@ function renderHomeMarker() {
         iconSize: [28, 28],
         iconAnchor: [14, 14],
     });
+    // escapeHtml: home.label flows from Nominatim's display_name (third-party
+    // API) through localStorage to this innerHTML sink. Escape before render.
+    const tip = state.home.label ? `🏠 ${escapeHtml(state.home.label)}` : "🏠 Home";
     state.homeMarker = L.marker([state.home.lat, state.home.lng], { icon })
         .addTo(state.map)
-        .bindTooltip(state.home.label ? `🏠 ${state.home.label}` : "🏠 Home");
+        .bindTooltip(tip);
 }
 
 function setHome(lat, lng, label = "") {
