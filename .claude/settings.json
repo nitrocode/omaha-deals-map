@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath' | { read -r f; case \"$f\" in *.py) ./.venv/bin/ruff check \"$f\" || true ;; esac; }"
+          },
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath' | { read -r f; case \"$f\" in *.html) ./.venv/bin/python scripts/check_sri.py \"$f\" || true ;; esac; }"
+          }
+        ]
+      }
+    ]
+  }
+}
