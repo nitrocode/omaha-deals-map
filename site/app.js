@@ -71,21 +71,31 @@ function escapeHtml(s) {
         ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "\"": "&quot;" }[c]));
 }
 
+function fmtMoney(v) {
+    const n = Number(v);
+    return Number.isFinite(n) ? n.toFixed(2) : "?";
+}
+
 function renderDeal(d) {
     if (d.kind === "happy_hour") {
         const wins = (d.windows || [])
             .filter(w => w.day === state.selectedDay)
-            .map(w => `${w.start}${w.end ? '-' + w.end : ''}${w.type === 'reverse_hh' ? ' (reverse)' : ''}`)
+            .map(w => {
+                const start = escapeHtml(w.start);
+                const end = w.end ? "-" + escapeHtml(w.end) : "";
+                const tag = w.type === "reverse_hh" ? " (reverse)" : "";
+                return `${start}${end}${tag}`;
+            })
             .join(", ");
         return `<div class="venue-deal"><span class="kind">happy hour</span>${wins}</div>`;
     }
     if (d.kind === "special") {
         return `<div class="venue-deal"><span class="kind">special</span>${escapeHtml(d.title || "")}
-                <br><small>${d.valid_from} to ${d.valid_until}</small></div>`;
+                <br><small>${escapeHtml(d.valid_from || "?")} to ${escapeHtml(d.valid_until || "?")}</small></div>`;
     }
     if (d.kind === "voucher") {
         return `<div class="venue-deal"><span class="kind">voucher</span>${escapeHtml(d.title || "")}
-                <br><small>$${d.original_price} to $${d.sale_price} (save $${d.savings})</small></div>`;
+                <br><small>$${fmtMoney(d.original_price)} to $${fmtMoney(d.sale_price)} (save $${fmtMoney(d.savings)})</small></div>`;
     }
     return "";
 }
