@@ -61,37 +61,35 @@ def test_chain_falls_through_to_each_geocoder_on_miss():
         return fn
 
     nominatim = maker("nominatim", None)
-    photon = maker("photon", None)
-    mapbox = maker("mapbox", {"address": "x", "lat": 41.25, "lng": -95.93,
-                              "category": "amenity", "geocode_source": "mapbox"})
+    photon = maker("photon", {"address": "x", "lat": 41.25, "lng": -95.93,
+                              "category": "amenity", "geocode_source": "photon"})
     result = _geocode_main._chain_geocode("Test", [
-        ("nominatim", nominatim), ("photon", photon), ("mapbox", mapbox),
+        ("nominatim", nominatim), ("photon", photon),
     ])
-    assert calls == ["nominatim", "photon", "mapbox"]
-    assert result["geocode_source"] == "mapbox"
+    assert calls == ["nominatim", "photon"]
+    assert result["geocode_source"] == "photon"
 
 
 def test_chain_short_circuits_on_first_hit():
     from scripts import _geocode_main
     photon = MagicMock(side_effect=AssertionError("photon should not be called"))
-    mapbox = MagicMock(side_effect=AssertionError("mapbox should not be called"))
     result = _geocode_main._chain_geocode("Test", [
         ("nominatim", lambda n: {"address": "x", "lat": 41.25, "lng": -95.93,
                                   "category": "amenity", "geocode_source": "nominatim"}),
         ("photon", photon),
-        ("mapbox", mapbox),
     ])
     assert result["geocode_source"] == "nominatim"
     photon.assert_not_called()
-    mapbox.assert_not_called()
 
 
 def test_chain_skips_none_entries():
-    """When a geocoder fn is None (e.g. no MAPBOX_TOKEN), the chain skips it without error."""
+    """A None fn entry is skipped silently. Kept so future optional geocoders
+    can plug in via the same conditional-enable pattern without breaking
+    the chain."""
     from scripts import _geocode_main
     result = _geocode_main._chain_geocode("Test", [
         ("nominatim", lambda n: None),
-        ("mapbox", None),
+        ("future-optional", None),
     ])
     assert result is None
 

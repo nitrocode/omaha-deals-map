@@ -36,16 +36,29 @@ def main(force: bool = False) -> int:
         if latest.exists() or latest.is_symlink():
             latest.unlink()
         latest.symlink_to(snap.name)
-        n = len(getattr(payload, "records", []))
-        zero = n == 0
-        summary[name] = {
-            "ok": True, "snapshot": str(snap), "records": n,
-            "stale_data_warning": zero,
-        }
-        if zero:
-            print(f"[fetch] {name}: WARN 0 records (parser may be broken or source empty)")
+        # Some payloads expose a `records` list (e.g. growomaha API JSON);
+        # others are opaque blobs (e.g. bigdealsmedia HTML) whose record count
+        # only becomes known after parse. Only WARN on a clear zero from a
+        # source that actually claims to expose records pre-parse, otherwise
+        # we'd falsely flag every HTML scraper as "broken".
+        records_attr = getattr(payload, "records", None)
+        if records_attr is None:
+            summary[name] = {
+                "ok": True, "snapshot": str(snap), "records": None,
+                "stale_data_warning": False,
+            }
+            print(f"[fetch] {name}: fetched (records counted at parse stage)")
         else:
-            print(f"[fetch] {name}: {n} records")
+            n = len(records_attr)
+            zero = n == 0
+            summary[name] = {
+                "ok": True, "snapshot": str(snap), "records": n,
+                "stale_data_warning": zero,
+            }
+            if zero:
+                print(f"[fetch] {name}: WARN 0 records (parser may be broken or source empty)")
+            else:
+                print(f"[fetch] {name}: {n} records")
 
     write_yaml(Path("data/fetch_summary.yaml"), summary)
     failed = [n for n, v in summary.items() if not v["ok"]]

@@ -22,8 +22,6 @@ Updated weekly by GitHub Actions; you can also rescrape locally any time.
 
 ```bash
 make install                       # one-time
-export ANTHROPIC_API_KEY=...       # optional, for LLM end-time extraction fallback
-export MAPBOX_TOKEN=...            # optional, geocoder fallback when Nominatim misses
 make all                           # fetch + parse + extract + geocode + build
 make serve                         # serve site/ at http://localhost:8000
 ```
@@ -35,7 +33,6 @@ make serve                         # serve site/ at http://localhost:8000
 | HTTP body + ETag/Last-Modified | `data/http_cache.yaml` | yes (per-URL) |
 | Per-source raw snapshots | `data/raw/<source>/latest.pickle` | yes (gitignored binary) |
 | Geocode name -> lat/lng | `data/geocode_cache.yaml` | yes |
-| LLM end-time extractions | `data/llm_cache.yaml` | yes (when ANTHROPIC_API_KEY is set) |
 
 Use `make rebuild` to force every cache miss.
 
@@ -94,17 +91,16 @@ Prints any restaurant where geocoding or time extraction failed, with the overri
 ```
 01_fetch -> raw/<source>/latest.pickle
 02_parse -> parsed.yaml
-03_extract_times -> extracted.yaml      (regex first, Claude Haiku fallback if ANTHROPIC_API_KEY set)
-04_geocode -> geocoded.yaml             (Nominatim, 1 req/sec, override + cache)
+03_extract_times -> extracted.yaml      (regex; ~96% coverage, the rest flagged needs_review)
+04_geocode -> geocoded.yaml             (override -> source -> cache -> Nominatim -> Photon)
 05_build  -> deals.json (and site/data.json)
 ```
 
-Caches (`data/http_cache.yaml`, `data/llm_cache.yaml`, `data/geocode_cache.yaml`) make repeated runs near-instant.
+Caches (`data/http_cache.yaml`, `data/geocode_cache.yaml`) make repeated runs near-instant.
 
 ## Troubleshooting
 
 - **`make review` shows lots of needs_review entries.** Usually Nominatim couldn't find a confident match. Fix in `data/overrides/addresses.yaml`.
-- **CI scrape fails on `ANTHROPIC_API_KEY`.** Set the secret at https://github.com/nitrocode/omaha-deals-map/settings/secrets/actions/new. The pipeline works without it (regex-only extraction); you'll just see more `needs_review` entries.
 - **Site shows nothing.** Open browser console. If `data.json: 404`, the Pages build hasn't run yet; push any change to `data/deals.json`, `site/`, or run the `Deploy GitHub Pages` workflow manually.
 
 ## Design

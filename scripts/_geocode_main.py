@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import os
 import re
 import time
 from collections.abc import Callable
@@ -14,7 +13,6 @@ from scripts._lib.io import read_yaml, write_yaml
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 PHOTON_URL = "https://photon.komoot.io/api/"
-MAPBOX_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places"
 USER_AGENT = "omaha-deals-map/0.1 (+https://github.com/nitrocode/omaha-deals-map)"
 OMAHA_BBOX = (-96.4, 41.0, -95.5, 41.5)  # lng_min, lat_min, lng_max, lat_max
 OMAHA_PROXIMITY = (-95.9345, 41.2565)    # downtown lng, lat (for proximity bias)
@@ -93,42 +91,6 @@ def _photon(name: str) -> dict | None:
     return None
 
 
-def _mapbox(name: str, token: str) -> dict | None:
-    """Mapbox forward geocoding, restricted to Omaha-area, biased toward downtown."""
-    # Build query: restaurant name + Omaha NE
-    q = f"{name}, Omaha, NE"
-    lng_min, lat_min, lng_max, lat_max = OMAHA_BBOX
-    r = requests.get(
-        f"{MAPBOX_URL}/{requests.utils.quote(q)}.json",
-        params={
-            "access_token": token,
-            "country": "us",
-            "limit": 1,
-            "types": "poi,address",
-            "bbox": f"{lng_min},{lat_min},{lng_max},{lat_max}",
-            "proximity": f"{OMAHA_PROXIMITY[0]},{OMAHA_PROXIMITY[1]}",
-        },
-        timeout=20,
-    )
-    r.raise_for_status()
-    body = r.json()
-    feats = body.get("features", [])
-    if not feats:
-        return None
-    f = feats[0]
-    lng, lat = f["geometry"]["coordinates"]
-    # Mapbox 'place_type' is a list like ['poi'] or ['address']; treat poi as amenity-equivalent.
-    place_types = f.get("place_type", [])
-    category = "amenity" if "poi" in place_types else (place_types[0] if place_types else "")
-    return {
-        "address": f.get("place_name", ""),
-        "lat": float(lat),
-        "lng": float(lng),
-        "category": category,
-        "geocode_source": "mapbox",
-    }
-
-
 def _confidence(lat: float, lng: float, category: str) -> str:
     lng_min, lat_min, lng_max, lat_max = OMAHA_BBOX
     in_bbox = lng_min <= lng <= lng_max and lat_min <= lat <= lat_max
@@ -159,19 +121,16 @@ def main(geocoder: Callable[[str], dict | None] | None = None) -> int:
     overrides = read_yaml(Path("data/overrides/addresses.yaml"), default={}) or {}
     cache = read_yaml(Path("data/geocode_cache.yaml"), default={}) or {}
 
-    mapbox_token = os.environ.get("MAPBOX_TOKEN") or os.environ.get("MAPBOX_ACCESS_TOKEN")
-    mapbox_fn = (lambda n: _mapbox(n, mapbox_token)) if mapbox_token else None
     fns = [
         ("nominatim", _nominatim),
         ("photon", _photon),
-        ("mapbox", mapbox_fn),
     ]
     chain = geocoder or (lambda n: _chain_geocode(n, fns))
 
     enabled = [label for label, fn in fns if fn is not None]
     print(f"[geocode] geocoder chain: {' -> '.join(enabled)}")
 
-    stats = {"override": 0, "source": 0, "cache": 0, "nominatim": 0, "mapbox": 0, "miss": 0}
+    stats = {"override": 0, "source": 0, "cache": 0, "nominatim": 0, "miss": 0}
     out = []
     for rec in extracted:
         rid, name = rec["source_record_id"], rec["name"]

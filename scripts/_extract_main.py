@@ -1,16 +1,15 @@
-"""Pipeline stage 3: fill in window end times via regex, then LLM."""
+"""Pipeline stage 3: fill in window end times via regex."""
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
 
 from scripts._lib.io import read_yaml, write_yaml
-from scripts._lib.time_extractor import ExtractResult, extract_end_time
+from scripts._lib.time_extractor import extract_end_time
 
 
 def main(force: bool = False) -> int:
     parsed = read_yaml(Path("data/parsed.yaml"), default=[])
-    cache_path = Path("data/llm_cache.yaml")
     out = []
     for rec in parsed:
         if rec["kind"] != "happy_hour":
@@ -28,23 +27,12 @@ def main(force: bool = False) -> int:
         start_hint = wins[0]["start"] if wins else None
         result = extract_end_time(text, start_hint=start_hint)
 
-        if result.end is None and text:
-            try:
-                from scripts._lib.llm_extractor import extract_with_llm
-                llm = extract_with_llm(text, start_hint=start_hint, cache_path=cache_path)
-                if llm.end:
-                    result = ExtractResult(
-                        end=llm.end, confidence="medium", is_reverse=llm.is_reverse,
-                    )
-            except (ImportError, KeyError):
-                pass
-
         if result.end:
             for w in wins:
                 w["end"] = result.end
                 if result.is_reverse:
                     w["type"] = "reverse_hh"
-            rec["extraction_source"] = "regex" if result.confidence == "high" else "llm"
+            rec["extraction_source"] = "regex"
             rec["needs_review"] = False
         else:
             rec["needs_review"] = True

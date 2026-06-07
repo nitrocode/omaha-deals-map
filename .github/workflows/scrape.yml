@@ -17,10 +17,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -e .
-      - env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
-        run: |
+      - run: |
           python scripts/01_fetch.py
           python scripts/02_parse.py
           python scripts/03_extract_times.py

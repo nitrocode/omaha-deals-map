@@ -31,14 +31,13 @@ Then add the name to `sources/registry.yaml` and a fixture-based test (use `test
 
 `SourceRecord` and `Window` live in `sources/_common.py`. `kind` is one of `happy_hour | special | voucher`. Days are `mon..sun` (lowercase, 3-char). Times are `HH:MM` 24h.
 
-## Caching (four layers)
+## Caching (three layers)
 
 | Cache | File | Survives across runs? |
 |---|---|---|
 | HTTP body + ETag/Last-Modified | `data/http_cache.yaml` | yes |
 | Per-source raw payload | `data/raw/<source>/latest.pickle` | yes (gitignored, regenerable) |
 | Geocode name to lat/lng | `data/geocode_cache.yaml` | yes |
-| LLM end-time extractions | `data/llm_cache.yaml` | yes (only populated when `ANTHROPIC_API_KEY` is set) |
 
 `make all` is offline-safe for unchanged content. `make rebuild` forces every cache miss.
 
@@ -59,18 +58,13 @@ Use sha384, not sha256. Cross-verify against cdnjs when reasonable.
 
 ## Geocoder chain (`scripts/_geocode_main.py`)
 
-Order: `override -> source-provided lat/lng -> name cache -> Nominatim -> Photon (-> Mapbox if MAPBOX_TOKEN set)`.
+Order: `override -> source-provided lat/lng -> name cache -> Nominatim -> Photon`.
 
 `_is_plausible_match` in `_geocode_main.py` is a **load-bearing** strict-token-overlap guard against Photon's fuzzy false positives ("Nick's Quorum" matched "Fairfield Inn" before this check existed). Don't relax the 5-char threshold without understanding why it's there.
 
 ## Time format invariant
 
 Storage everywhere = `HH:MM` 24h. Display in the UI = 12h via `formatTime12()` in `site/app.js`. Tests assert 24h. Never mix the two.
-
-## Optional env vars (the pipeline degrades gracefully without them)
-
-- `ANTHROPIC_API_KEY`, LLM fallback for end-time extraction (regex covers ~96% on its own).
-- `MAPBOX_TOKEN`, additional geocoder fallback after Photon. Mapbox now requires a CC at signup; we usually skip this.
 
 ## Gitignored, never commit
 
