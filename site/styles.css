@@ -42,6 +42,11 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
     display: inline-block; background: var(--primary); color: #fff;
     padding: .1em .5em; border-radius: 3px; font-size: .75rem; margin-right: .5rem;
 }
+.sheet .meta { color: #666; font-size: .85rem; margin: -.5rem 0 .5rem; }
+.sheet .hint { color: #666; font-size: .85rem; }
+.slider-row { display: grid; grid-template-columns: 1fr; gap: .25rem; padding: .5rem 0; }
+.slider-row input[type=range] { width: 100%; }
+fieldset legend { font-weight: 600; padding: 0; }
 @media (min-width: 768px) {
     body { max-width: 60rem; margin: 0 auto; box-shadow: 0 0 16px rgba(0,0,0,.1); }
 }

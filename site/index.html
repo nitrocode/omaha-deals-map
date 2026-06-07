@@ -34,7 +34,19 @@
     <label><input type="checkbox" data-kind="special"> Specials</label>
     <label><input type="checkbox" data-kind="voucher"> Vouchers</label>
   </fieldset>
-  <label><input type="checkbox" id="now-only"> Active now</label>
+  <fieldset>
+    <legend>When</legend>
+    <label><input type="checkbox" id="now-only"> Active right now</label>
+    <label class="slider-row">
+      <span id="at-hour-label">Any time</span>
+      <input type="range" id="at-hour" min="0" max="23" step="1" value="" list="hour-ticks">
+    </label>
+    <datalist id="hour-ticks">
+      <option value="0"></option><option value="6"></option><option value="12"></option>
+      <option value="18"></option><option value="23"></option>
+    </datalist>
+  </fieldset>
+  <fieldset id="cuisine-filter"><legend>Cuisine</legend></fieldset>
   <label><input type="checkbox" id="favorites-only"> Favorites only</label>
   <button id="close-filter">Done</button>
 </aside>
