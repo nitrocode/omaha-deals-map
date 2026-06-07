@@ -362,6 +362,17 @@ function distanceLines(r) {
     return lines.join("");
 }
 
+const REPO_ISSUES_URL = "https://github.com/nitrocode/omaha-deals-map/issues/new";
+
+function reportIssueLinkFor(r) {
+    const params = new URLSearchParams({
+        template: "fix-venue.yml",
+        slug: r.id || "",
+        name: r.name || "",
+    });
+    return `${REPO_ISSUES_URL}?${params.toString()}`;
+}
+
 function mapsLinkFor(r) {
     // If home is set, deep-link Google Maps directions from home -> restaurant.
     // Otherwise fall back to a search link (matches prior behavior).
@@ -397,6 +408,9 @@ function showVenue(r) {
         ${(r.deals || []).map(renderDeal).join("")}
         <p><a target="_blank" rel="noopener" href="${mapsUrl}">${mapsLabel}</a></p>
         ${r.personal?.notes ? `<p><em>${escapeHtml(r.personal.notes)}</em></p>` : ""}
+        <p class="report-link">
+          <a target="_blank" rel="noopener" href="${reportIssueLinkFor(r)}">Report a problem with this venue</a>
+        </p>
         <button id="venue-close">Close</button>
     `;
     sheet.classList.remove("hidden");

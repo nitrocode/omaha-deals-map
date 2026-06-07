@@ -1,0 +1,51 @@
+name: Fix a venue (wrong address, hours, or info)
+description: Report incorrect info for a place already on the map.
+title: "[fix] "
+labels: ["fix", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping fix the map. Most fields below get prefilled when you open this from the venue popup.
+  - type: input
+    id: slug
+    attributes:
+      label: Venue ID (slug)
+      description: The internal id from the map. Leave blank if you're not sure.
+      placeholder: "e.g. ramonas-mexican-restaurant"
+    validations:
+      required: false
+  - type: input
+    id: name
+    attributes:
+      label: Venue name
+      placeholder: "e.g. Ramona's Mexican Restaurant"
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      options:
+        - Wrong address
+        - Marker is on the wrong building
+        - Wrong hours / times
+        - Wrong cuisine or category
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What's the correct info?
+      description: Paste the correct address, hours, or whatever needs fixing. Links to the venue's own site are great.
+      placeholder: "Real address is 1234 Howard St, Omaha NE 68102. Source: their Facebook page."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: "Optional context."
+    validations:
+      required: false

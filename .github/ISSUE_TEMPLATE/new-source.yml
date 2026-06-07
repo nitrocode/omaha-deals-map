@@ -1,0 +1,46 @@
+name: Suggest a new source
+description: A website that aggregates Omaha-area deals worth scraping.
+title: "[source] "
+labels: ["source", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Know a site that lists a bunch of local deals? Drop the URL and any context.
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      placeholder: "https://www.example.com/happy-hours"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of deals does it list?
+      multiple: true
+      options:
+        - Happy hours (weekly recurring)
+        - Specials (limited date range)
+        - Vouchers (Groupon-style)
+        - Mixed / not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Page format (if you know)
+      options:
+        - Single blog page listing many venues
+        - One page per venue
+        - Backend API / JSON
+        - Not sure
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: "Roughly how many venues, update frequency, anything funky about the site."
+    validations:
+      required: false

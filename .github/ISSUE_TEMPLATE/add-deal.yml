@@ -1,0 +1,57 @@
+name: Add or update a deal
+description: New happy hour, special, or voucher at a venue (existing or new).
+title: "[deal] "
+labels: ["deal", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to add a new deal or update an existing one. If the venue isn't on the map yet, leave the slug blank.
+  - type: input
+    id: slug
+    attributes:
+      label: Venue ID (slug)
+      description: Leave blank if this is a brand new venue.
+      placeholder: "e.g. ramonas-mexican-restaurant"
+    validations:
+      required: false
+  - type: input
+    id: name
+    attributes:
+      label: Venue name
+      placeholder: "e.g. Ramona's Mexican Restaurant"
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address (if known)
+      placeholder: "1234 Howard St, Omaha NE 68102"
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Deal kind
+      options:
+        - Happy hour (weekly recurring)
+        - Special (limited date range)
+        - Voucher (Groupon-style)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Deal details
+      description: Days, times, prices, whatever you know. Plain English is fine.
+      placeholder: "Mon-Thu 4-6pm, $5 wells and $3 off apps."
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL (optional)
+      description: A link confirming the deal (venue's site, Instagram post, Facebook event).
+      placeholder: "https://..."
+    validations:
+      required: false

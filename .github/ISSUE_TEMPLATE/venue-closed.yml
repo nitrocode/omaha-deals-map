@@ -1,0 +1,36 @@
+name: Venue closed
+description: A place on the map has shut down (permanently or for an extended time).
+title: "[closed] "
+labels: ["closed", "needs-triage"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Venue ID (slug)
+      placeholder: "e.g. ramonas-mexican-restaurant"
+    validations:
+      required: false
+  - type: input
+    id: name
+    attributes:
+      label: Venue name
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Closed permanently
+        - Closed for renovation / extended hiatus
+        - Moved to a new address (file a fix-venue issue instead if so)
+    validations:
+      required: true
+  - type: input
+    id: confirmed
+    attributes:
+      label: How do you know?
+      description: A link, a date you visited, a news article. Helps us avoid removing places that are just temporarily quiet.
+      placeholder: "Drove by 2026-06-01, sign was down. OWH article: https://..."
+    validations:
+      required: true

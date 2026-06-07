@@ -107,6 +107,11 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 }
 .fav-btn.active { background: #ffe1e1; border-color: #d9534f; color: #d9534f; }
 
+.report-link { margin-top: .75rem; font-size: .85rem; }
+.report-link a { color: var(--muted); }
+.contribute-links { margin-top: 1rem; font-size: .85rem; color: var(--muted); }
+.contribute-links a { color: var(--hh); }
+
 .slider-row { display: grid; grid-template-columns: 1fr; gap: .25rem; padding: .5rem 0; }
 .slider-row input[type=range] { width: 100%; }
 .slider-row input[type=text] {
