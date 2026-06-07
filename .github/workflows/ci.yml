@@ -15,7 +15,11 @@ jobs:
           python-version: '3.11'
       - run: pip install -e ".[dev]"
       - run: ruff check .
-      - run: pytest -q -m "not slow"
+      - name: Run fast suite with coverage gate
+        # The gate prevents test coverage from silently rotting. Threshold
+        # set just under the current baseline (76%) so flaky measurements
+        # don't tank PRs while still failing if real test loss happens.
+        run: pytest -q -m "not slow" --cov --cov-report=term --cov-report=xml --cov-fail-under=70
       # Fetches each external resource referenced in site/index.html and
       # verifies its declared SRI hash. Network-dependent (uses unpkg + cdnjs);
       # acceptable in CI since the run is short.

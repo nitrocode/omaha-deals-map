@@ -14,9 +14,27 @@ dependencies = [
 dev = [
     "pytest>=8.0",
     "pytest-mock>=3.12",
+    "pytest-cov>=5.0",
     "ruff>=0.6",
     "pre-commit>=3.7",
 ]
+
+[tool.coverage.run]
+source = ["sources", "scripts"]
+# Numbered CLI stubs are intentionally tiny argparse wrappers around the
+# `_*_main.py` modules that hold the real logic and are tested directly.
+# Excluding them keeps the headline coverage number honest.
+omit = [
+    "scripts/01_fetch.py",
+    "scripts/02_parse.py",
+    "scripts/03_extract_times.py",
+    "scripts/04_geocode.py",
+    "scripts/05_build.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
 
 [build-system]
 requires = ["setuptools>=68"]

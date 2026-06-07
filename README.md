@@ -1,5 +1,9 @@
 # Omaha Deals Map
 
+[![CI](https://github.com/nitrocode/omaha-deals-map/actions/workflows/ci.yml/badge.svg)](https://github.com/nitrocode/omaha-deals-map/actions/workflows/ci.yml)
+[![Integration](https://github.com/nitrocode/omaha-deals-map/actions/workflows/integration.yml/badge.svg)](https://github.com/nitrocode/omaha-deals-map/actions/workflows/integration.yml)
+[![Pages](https://github.com/nitrocode/omaha-deals-map/actions/workflows/pages.yml/badge.svg)](https://github.com/nitrocode/omaha-deals-map/actions/workflows/pages.yml)
+
 Mobile-first map of Omaha-area restaurant happy hours, specials, and vouchers.
 
 **Live:** https://nitrocode.github.io/omaha-deals-map/

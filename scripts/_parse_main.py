@@ -20,7 +20,10 @@ def main(force: bool = False) -> int:
         # Trusted: snapshots are written by our own 01_fetch stage on the
         # same machine. Not externally-sourced data.
         records = mod.parse(pickle.loads(snap.read_bytes()))  # noqa: S301
-        print(f"[parse] {name}: {len(records)} records")
+        if not records:
+            print(f"[parse] {name}: WARN 0 records (selector drift? source empty?)")
+        else:
+            print(f"[parse] {name}: {len(records)} records")
         out.extend(r.to_dict() for r in records)
 
     prior = read_yaml(Path("data/parsed.yaml"), default=[])

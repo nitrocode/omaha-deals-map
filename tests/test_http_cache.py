@@ -51,6 +51,27 @@ def test_second_fetch_sends_if_none_match_and_handles_304(tmp_path, monkeypatch)
     assert r.changed is False
 
 
+def test_retry_adapter_is_wired_with_expected_status_forcelist(tmp_path):
+    """Confirm transient 5xx / 429 trigger retries, not immediate failure.
+
+    Why: the weekly scrape crashed when growomaha's WP REST API returned a
+    momentary non-JSON page. urllib3 retries flatten those transient errors
+    before they reach our exception handler.
+    """
+    client = CachedHttpClient(cache_path=tmp_path / "http_cache.yaml")
+    adapter = client._session.get_adapter("https://example.com/")
+    retry = adapter.max_retries
+    assert retry.total == CachedHttpClient.RETRY_TOTAL
+    assert set(CachedHttpClient.RETRY_STATUSES).issubset(set(retry.status_forcelist))
+    assert "GET" in retry.allowed_methods
+
+
+def test_retries_can_be_disabled_for_tests(tmp_path):
+    client = CachedHttpClient(cache_path=tmp_path / "http_cache.yaml", retries=0)
+    adapter = client._session.get_adapter("https://example.com/")
+    assert adapter.max_retries.total == 0
+
+
 def test_200_with_unchanged_body_sha_reports_unchanged(tmp_path, monkeypatch):
     cache_path = tmp_path / "http_cache.yaml"
     sha = hashlib.sha256(b"hello").hexdigest()

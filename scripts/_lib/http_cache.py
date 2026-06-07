@@ -8,6 +8,8 @@ from pathlib import Path
 
 import requests
 import yaml
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 @dataclass
@@ -21,11 +23,24 @@ class CachedResponse:
 class CachedHttpClient:
     USER_AGENT = "omaha-deals-map/0.1 (+https://github.com/nitrocode/omaha-deals-map)"
     TIMEOUT = 30
+    RETRY_TOTAL = 3
+    RETRY_BACKOFF = 1.0  # 1s, 2s, 4s between retries
+    RETRY_STATUSES = (429, 500, 502, 503, 504)
 
-    def __init__(self, cache_path: Path):
+    def __init__(self, cache_path: Path, *, retries: int | None = None):
         self.cache_path = cache_path
         self._session = requests.Session()
         self._session.headers["User-Agent"] = self.USER_AGENT
+        retry = Retry(
+            total=self.RETRY_TOTAL if retries is None else retries,
+            backoff_factor=self.RETRY_BACKOFF,
+            status_forcelist=self.RETRY_STATUSES,
+            allowed_methods=frozenset(["GET", "HEAD"]),
+            raise_on_status=False,
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        self._session.mount("https://", adapter)
+        self._session.mount("http://", adapter)
         self._cache = self._load_cache()
 
     def _load_cache(self) -> dict:

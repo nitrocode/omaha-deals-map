@@ -37,12 +37,28 @@ def main(force: bool = False) -> int:
             latest.unlink()
         latest.symlink_to(snap.name)
         n = len(getattr(payload, "records", []))
-        summary[name] = {"ok": True, "snapshot": str(snap), "records": n}
-        print(f"[fetch] {name}: {n} records")
+        zero = n == 0
+        summary[name] = {
+            "ok": True, "snapshot": str(snap), "records": n,
+            "stale_data_warning": zero,
+        }
+        if zero:
+            print(f"[fetch] {name}: WARN 0 records (parser may be broken or source empty)")
+        else:
+            print(f"[fetch] {name}: {n} records")
 
     write_yaml(Path("data/fetch_summary.yaml"), summary)
-    bad = [n for n, v in summary.items() if not v["ok"]]
-    return 1 if bad and not force else 0
+    failed = [n for n, v in summary.items() if not v["ok"]]
+    succeeded = [n for n, v in summary.items() if v["ok"]]
+    # Exit non-zero only if ALL sources failed (and there's no cached data to
+    # fall through to). Partial failures should let downstream stages run with
+    # whatever we got, plus whatever's still on disk from prior runs.
+    if not succeeded:
+        print(f"[fetch] ABORT: all sources failed ({', '.join(failed)})")
+        return 0 if force else 1
+    if failed:
+        print(f"[fetch] partial: {len(succeeded)} ok, {len(failed)} failed ({', '.join(failed)})")
+    return 0
 
 
 if __name__ == "__main__":
