@@ -50,3 +50,17 @@ def test_window_validates_day_and_time_format():
         Window(day="MON", start="15:00")
     with pytest.raises(ValueError):
         Window(day="mon", start="3pm")
+
+
+def test_window_validates_type():
+    Window(day="mon", start="15:00", type="reverse_hh")  # OK
+    with pytest.raises(ValueError):
+        Window(day="mon", start="15:00", type="bogus")
+
+
+def test_window_rejects_end_before_or_equal_to_start():
+    Window(day="mon", start="15:00", end="18:00")  # OK
+    with pytest.raises(ValueError):
+        Window(day="mon", start="18:00", end="18:00")
+    with pytest.raises(ValueError):
+        Window(day="mon", start="18:00", end="15:00")

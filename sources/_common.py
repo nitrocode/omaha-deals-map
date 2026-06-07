@@ -7,6 +7,7 @@ from typing import Any
 
 VALID_KINDS = {"happy_hour", "special", "voucher"}
 VALID_DAYS = {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}
+VALID_WINDOW_TYPES = {"happy_hour", "reverse_hh"}
 TIME_RE = re.compile(r"^([01]\d|2[0-3]):[0-5]\d$")
 
 
@@ -31,10 +32,20 @@ class Window:
     def __post_init__(self):
         if self.day not in VALID_DAYS:
             raise ValueError(f"invalid day: {self.day!r}")
+        if self.type not in VALID_WINDOW_TYPES:
+            raise ValueError(
+                f"invalid window type: {self.type!r}; expected one of {VALID_WINDOW_TYPES}"
+            )
         if not TIME_RE.match(self.start):
             raise ValueError(f"invalid start time {self.start!r}; expected HH:MM 24h")
-        if self.end is not None and not TIME_RE.match(self.end):
-            raise ValueError(f"invalid end time {self.end!r}; expected HH:MM 24h")
+        if self.end is not None:
+            if not TIME_RE.match(self.end):
+                raise ValueError(f"invalid end time {self.end!r}; expected HH:MM 24h")
+            # HH:MM 24h strings sort lexicographically; overnight windows are not supported
+            if self.end <= self.start:
+                raise ValueError(
+                    f"window end {self.end} must be after start {self.start}"
+                )
 
 
 @dataclass
