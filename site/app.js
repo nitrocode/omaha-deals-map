@@ -544,16 +544,14 @@ function distanceLines(r) {
 
 const REPO_ISSUES_URL = "https://github.com/nitrocode/omaha-deals-map/issues/new";
 
-// Google Form for anonymous (no-login) contributions. Set these once you've
-// created the form and grabbed the entry IDs via "Get pre-filled link":
-//   - GOOGLE_FORM_EMBED_URL: the form's viewform URL with ?embedded=true appended
-//   - GOOGLE_FORM_ENTRY_SLUG: e.g. "entry.123456789" (Venue ID field)
-//   - GOOGLE_FORM_ENTRY_NAME: e.g. "entry.987654321" (Venue name field)
-// While these are blank, the in-app contribute sheet falls back to the
-// existing GitHub Issue templates (login required).
-const GOOGLE_FORM_EMBED_URL = "";
-const GOOGLE_FORM_ENTRY_SLUG = "";
-const GOOGLE_FORM_ENTRY_NAME = "";
+// Google Form for anonymous (no-login) contributions. Entry IDs were
+// extracted from FB_PUBLIC_LOAD_DATA_ on the live form page; they're stable
+// across responses (Google doesn't rotate them on form edits, only when a
+// question is deleted and recreated).
+const GOOGLE_FORM_EMBED_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSfbJH3elOl8Al-G9fSURno-QWa-Jn-f3HjXPWeQxoQ0BjJbcg/viewform?embedded=true";
+const GOOGLE_FORM_ENTRY_SLUG = "entry.1208694505";  // Venue ID field
+const GOOGLE_FORM_ENTRY_NAME = "entry.53145432";    // Venue name field
 
 function reportIssueLinkFor(r) {
     const params = new URLSearchParams({
