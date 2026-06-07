@@ -45,6 +45,7 @@ const state = {
     userMarker: null,
     home: null,            // { lat, lng, label } or null
     homeMarker: null,
+    radiusCircle: null,    // L.circle showing the radius constraint, or null
     pickingHomeOnMap: false,
     view: "map",           // "map" | "list" (mobile-only; ignored when split-pane shows both)
     selectedId: null,      // restaurant.id of the currently-selected venue, if any
@@ -713,10 +714,31 @@ function renderHomeMarker() {
         .bindTooltip(tip);
 }
 
+function renderRadiusCircle() {
+    // Visualizes the currently-set radius filter as a translucent circle
+    // around the home point. Helps the user see at a glance what area is
+    // included. interactive:false so clicks fall through to venues underneath.
+    if (state.radiusCircle) {
+        state.map.removeLayer(state.radiusCircle);
+        state.radiusCircle = null;
+    }
+    if (!state.home || state.radiusMi == null) return;
+    state.radiusCircle = L.circle([state.home.lat, state.home.lng], {
+        radius: state.radiusMi * 1609.344,  // miles to meters
+        color: "#7a5af5",
+        weight: 1.5,
+        opacity: 0.55,
+        fillColor: "#7a5af5",
+        fillOpacity: 0.08,
+        interactive: false,
+    }).addTo(state.map);
+}
+
 function setHome(lat, lng, label = "") {
     state.home = { lat, lng, label };
     persistHome();
     renderHomeMarker();
+    renderRadiusCircle();
     refreshHomeSheet();
     updateRadiusFilterUI();
     // If the venue sheet is open, re-render so the new distance shows up.
@@ -729,6 +751,7 @@ function clearHome() {
     state.home = null;
     persistHome();
     renderHomeMarker();
+    renderRadiusCircle();
     refreshHomeSheet();
     updateRadiusFilterUI();
     render();
@@ -947,6 +970,7 @@ function wireControls() {
             document.getElementById("radius-label").textContent = `Within ${state.radiusMi} mi`;
         }
         persistFilters();
+        renderRadiusCircle();
         render();
     });
     // Double-click the slider thumb to clear (drag-to-zero would be < min=1).
@@ -955,6 +979,7 @@ function wireControls() {
         state.radiusMi = null;
         document.getElementById("radius-label").textContent = "Any distance";
         persistFilters();
+        renderRadiusCircle();
         render();
     });
     document.getElementById("locate-btn").addEventListener("click", locateMe);
@@ -989,14 +1014,40 @@ function wireControls() {
         if (state.map) state.map.invalidateSize();
     });
 
-    // Single map-click handler: while in "pick home" mode, claim the next click.
+    // Map-click handler. Two responsibilities:
+    //  - In pick-home mode, claim the next click to set the home location.
+    //  - Otherwise, treat the click as "dismiss" for any open sheet so the user
+    //    can tap the map to get back to a clean view (matches the iOS/Maps
+    //    convention for bottom sheets).
+    //  Leaflet only fires this event for clicks that didn't land on a marker
+    //  or other interactive layer, so tapping a venue still opens its sheet.
     state.map.on("click", e => {
-        if (!state.pickingHomeOnMap) return;
-        state.pickingHomeOnMap = false;
-        hideBanner();
-        state.map.getContainer().style.cursor = "";
-        setHome(e.latlng.lat, e.latlng.lng, "Picked on map");
+        if (state.pickingHomeOnMap) {
+            state.pickingHomeOnMap = false;
+            hideBanner();
+            state.map.getContainer().style.cursor = "";
+            setHome(e.latlng.lat, e.latlng.lng, "Picked on map");
+            return;
+        }
+        dismissOpenSheets();
     });
+}
+
+function dismissOpenSheets() {
+    const venueSheet = document.getElementById("venue-sheet");
+    const contributeSheet = document.getElementById("contribute-sheet");
+    const wasOpen = !venueSheet.classList.contains("hidden")
+        || !contributeSheet.classList.contains("hidden");
+    if (!wasOpen) return;
+    venueSheet.classList.add("hidden");
+    contributeSheet.classList.add("hidden");
+    document.getElementById("contribute-iframe").src = "about:blank";
+    if (state.selectedMarker) {
+        state.selectedMarker.setStyle(markerStyle(state.selectedMarker._kind, false));
+        state.selectedMarker = null;
+    }
+    state.selectedId = null;
+    document.querySelectorAll(".venue-row.selected").forEach(el => el.classList.remove("selected"));
 }
 
 // ---------- boot ----------
@@ -1011,6 +1062,7 @@ function wireControls() {
     initMap();
     wireControls();
     renderHomeMarker();
+    renderRadiusCircle();
     try {
         state.data = await loadData();
         buildCuisineFilter();
