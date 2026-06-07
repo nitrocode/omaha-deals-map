@@ -28,7 +28,7 @@ rebuild:
 	python scripts/05_build.py --force
 
 serve:
-	cd site && python -m http.server 8000
+	python -m http.server 8000 --directory site
 
 test:
 	pytest -q
@@ -40,4 +40,6 @@ review:
 	python scripts/review_queue.py
 
 clean:
-	rm -rf .pytest_cache .ruff_cache __pycache__ */__pycache__ */*/__pycache__
+	rm -rf .pytest_cache .ruff_cache
+	find . -type d -name __pycache__ -exec rm -rf {} +
+	find . -type d -name '*.egg-info' -exec rm -rf {} +
