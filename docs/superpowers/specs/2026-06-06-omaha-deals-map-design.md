@@ -2,7 +2,7 @@
 
 **Status:** Draft, pending user review
 **Date:** 2026-06-06
-**Owner:** REDACTED (personal project)
+**Owner:** Personal project (nitrocode)
 
 ## Goal
 
