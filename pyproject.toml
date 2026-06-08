@@ -16,6 +16,11 @@ dev = [
     "pytest-cov>=5.0",
     "ruff>=0.6",
     "pre-commit>=3.7",
+    # Used only by scripts/sheet_to_issues.py (CI form-mirror job). Local
+    # dev needs them installed to run the script ad-hoc; the pipeline
+    # itself doesn't import google.
+    "google-api-python-client>=2.130",
+    "google-auth>=2.30",
 ]
 
 [tool.coverage.run]
