@@ -16,9 +16,11 @@ slugs entirely so the script is idempotent and rate-limit friendly.
 """
 from __future__ import annotations
 
+import ipaddress
+import socket
 import time
 from dataclasses import dataclass
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -33,6 +35,47 @@ HTTP_TIMEOUT = 20
 # Roughly 1 mi (~0.014 deg lat). Used to reject Nominatim matches that
 # share a name with our venue but sit somewhere else in town.
 COORD_TOLERANCE_DEG = 0.02
+
+# SSRF defense: the website URL we fetch comes from OSM, which is publicly
+# editable; a malicious contributor could plant a `website` tag pointing at
+# AWS/GCP metadata endpoints, RFC1918 ranges, or localhost services on the
+# CI runner. We accept only http/https, and refuse to follow into any IP
+# class that isn't a normal public address.
+ALLOWED_FETCH_SCHEMES = frozenset({"http", "https"})
+MAX_REDIRECT_HOPS = 3
+
+
+def _is_public_url(url: str) -> bool:
+    """Validate a URL before server-side GET to block SSRF vectors.
+
+    Rejects:
+      - non-http/https schemes (file://, gopher://, etc)
+      - URLs without a parseable hostname
+      - hostnames that resolve to private / loopback / link-local /
+        multicast / reserved / unspecified address space (incl. v6)
+      - hostnames that don't resolve at all (fail closed; better to skip
+        a venue's photo than to ignore a tampered tag)
+    """
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    if parsed.scheme not in ALLOWED_FETCH_SCHEMES or not parsed.hostname:
+        return False
+    try:
+        addrs = socket.getaddrinfo(parsed.hostname, None)
+    except (OSError, UnicodeError):
+        # OSError covers gaierror (DNS failure) and any other resolver error.
+        return False
+    for _family, _type, _proto, _canonname, sockaddr in addrs:
+        try:
+            ip = ipaddress.ip_address(sockaddr[0])
+        except (ValueError, IndexError):
+            return False
+        if (ip.is_private or ip.is_loopback or ip.is_link_local
+                or ip.is_reserved or ip.is_multicast or ip.is_unspecified):
+            return False
+    return True
 
 
 @dataclass
@@ -87,11 +130,31 @@ def fetch_wikidata_image(qid: str, *, session=None) -> str | None:
 
 
 def fetch_og_image(url: str, *, session=None) -> str | None:
-    """Fetch a URL and return its og:image content, or None."""
+    """Fetch a URL and return its og:image content, or None.
+
+    Disables auto-redirects so each 3xx hop is re-validated by
+    `_is_public_url`; otherwise an open redirect at a public host could
+    bounce into RFC1918 / metadata space and defeat the up-front check.
+    """
+    if not _is_public_url(url):
+        return None
     sess = session or requests
-    resp = sess.get(url, headers={"User-Agent": USER_AGENT},
-                    timeout=HTTP_TIMEOUT, allow_redirects=True)
-    resp.raise_for_status()
+    current_url = url
+    resp = None
+    for _ in range(MAX_REDIRECT_HOPS + 1):
+        resp = sess.get(current_url, headers={"User-Agent": USER_AGENT},
+                        timeout=HTTP_TIMEOUT, allow_redirects=False)
+        if resp.status_code in (301, 302, 303, 307, 308):
+            location = resp.headers.get("Location")
+            if not location or not _is_public_url(location):
+                return None
+            current_url = location
+            continue
+        resp.raise_for_status()
+        break
+    else:
+        # Hit the redirect limit without ever getting a final response.
+        return None
     soup = BeautifulSoup(resp.content, "html.parser")
     meta = soup.find("meta", property="og:image")
     if not meta or not meta.get("content"):
@@ -104,8 +167,13 @@ def fetch_og_image(url: str, *, session=None) -> str | None:
         return None
     # Browser will block mixed-content http:// images on our HTTPS site.
     if src.startswith("http://"):
-        https_attempt = "https://" + src[len("http://"):]
-        return https_attempt
+        src = "https://" + src[len("http://"):]
+    # Only allow https in cached output: the value gets rendered in an
+    # <img src> in the user's browser, so a non-https URL pointing at a
+    # private IP would be client-side SSRF too (limited blast radius
+    # but easy to close).
+    if not src.startswith("https://"):
+        return None
     return src
 
 
