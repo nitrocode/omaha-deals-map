@@ -46,7 +46,8 @@ def main(force: bool = False) -> int:
     for i, r in enumerate(to_check, 1):
         slug = r["id"]
         try:
-            photo = find_photo(r["name"], r["lat"], r["lng"])
+            photo = find_photo(r["name"], r["lat"], r["lng"],
+                                hint_website=r.get("website"))
         except Exception as e:
             print(f"  [{i}/{len(to_check)}] {slug}: ERROR {e}")
             # Don't cache errors permanently; they may be transient (timeouts,

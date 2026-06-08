@@ -299,6 +299,46 @@ def test_fetch_og_image_only_returns_https_results(monkeypatch):
         "https://example.com/a.jpg"
 
 
+def test_hint_website_used_when_osm_lacks_website_tag(monkeypatch):
+    """visitomaha + bigdealsmedia parsers know each venue's website
+    (offerlink, href on card). Pass it as hint_website so we still get
+    a photo for venues OSM doesn't know about."""
+    _force_public_dns(monkeypatch)
+    html = b'<meta property="og:image" content="https://venue.example.com/p.jpg">'
+    session = _mock_session({
+        "nominatim": _resp(json_data=[{
+            "lat": "41.25", "lon": "-95.93",
+            "extratags": {},  # no website tag
+        }]),
+        "venue.example.com": _resp(content=html),
+    })
+    photo = find_photo("Plain Bar", 41.25, -95.93,
+                       hint_website="https://venue.example.com",
+                       session=session, sleep_fn=lambda _: None)
+    assert photo is not None
+    assert photo.source == "og"
+    assert photo.url == "https://venue.example.com/p.jpg"
+
+
+def test_osm_website_wins_over_hint_when_both_present(monkeypatch):
+    """OSM data is usually higher-trust than aggregator-supplied links
+    (community-curated, more stable), so OSM still wins when present."""
+    _force_public_dns(monkeypatch)
+    html = b'<meta property="og:image" content="https://osm-supplied.example.com/p.jpg">'
+    session = _mock_session({
+        "nominatim": _resp(json_data=[{
+            "lat": "41.25", "lon": "-95.93",
+            "extratags": {"website": "https://osm-supplied.example.com"},
+        }]),
+        "osm-supplied.example.com": _resp(content=html),
+    })
+    photo = find_photo("Some Bar", 41.25, -95.93,
+                       hint_website="https://hint.example.com",
+                       session=session, sleep_fn=lambda _: None)
+    assert photo is not None
+    assert photo.attribution == "https://osm-supplied.example.com"
+
+
 def test_find_photo_continues_on_og_fetch_exception():
     """A venue's website might 500 or hang; that should fall through to
     'no photo' instead of crashing the whole pipeline."""

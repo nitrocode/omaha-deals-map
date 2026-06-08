@@ -178,8 +178,14 @@ def fetch_og_image(url: str, *, session=None) -> str | None:
 
 
 def find_photo(name: str, lat: float | None, lng: float | None, *,
+               hint_website: str | None = None,
                session=None, sleep_fn=time.sleep) -> Photo | None:
     """Try all three sources in order and return the first hit.
+
+    `hint_website`: optional venue website URL discovered from a source's
+    own data (e.g. visitomaha `offerlink`). Used as a fallback ONLY when
+    the OSM `website` tag is absent, so OSM data still wins when present
+    (it's usually higher-trust than aggregator-supplied links).
 
     `sleep_fn` is parameterized so tests can swap in a no-op, and so callers
     can swap in a stricter rate-limiter for batch runs. Nominatim's usage
@@ -203,7 +209,9 @@ def find_photo(name: str, lat: float | None, lng: float | None, *,
             return Photo(url=wd_url, source="wikidata",
                          attribution="Wikimedia Commons")
 
-    if (website := extratags.get("website")):
+    # Try OSM website first, then the source-supplied hint as a fallback.
+    website = extratags.get("website") or hint_website
+    if website:
         try:
             og_url = fetch_og_image(website, session=session)
         except Exception:

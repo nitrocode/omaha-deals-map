@@ -57,6 +57,18 @@ def _photo_for(rid: str, photos: dict) -> dict | None:
     }
 
 
+def _aggregate_website(recs: list[dict]) -> str | None:
+    """Pull the first usable `external_link` across the records for one
+    venue. Sources like visitomaha + bigdealsmedia set this directly; we
+    aggregate so the photo finder can use it as a fallback when the OSM
+    `website` tag is missing."""
+    for r in recs:
+        link = r.get("external_link")
+        if link and isinstance(link, str) and link.startswith(("http://", "https://")):
+            return link
+    return None
+
+
 def _deal(rec: dict) -> dict:
     base = {
         "kind": rec["kind"],
@@ -126,6 +138,9 @@ def main() -> int:
             # have to learn a new vocabulary.
             "price_tier": categories.get(rid, {}).get("price_tier"),
             "photo": _photo_for(rid, photos),
+            # Venue's own website if any source provided one. Used by the
+            # photo finder as a fallback when OSM lacks the website tag.
+            "website": _aggregate_website(recs),
             "personal": personal.get(rid, {}),
             "deals": [_deal(r) for r in recs],
             "needs_review": any(r.get("needs_review", False) for r in recs),
@@ -151,6 +166,10 @@ def main() -> int:
             "neighborhood": entry.get("neighborhood"),
             "price_tier": entry.get("price_tier"),
             "photo": _photo_for(rid, photos),
+            # manual_venues.yaml entries with a source_url that's the venue's
+            # own site (vs a third-party aggregator) double as a website.
+            "website": _aggregate_website(entry.get("deals", []))
+                       or entry.get("website"),
             "personal": personal.get(rid, {}),
             "deals": entry.get("deals", []),
             "needs_review": False,

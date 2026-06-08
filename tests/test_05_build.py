@@ -46,6 +46,37 @@ def test_build_merges_same_restaurant_across_sources(tmp_path, monkeypatch):
     assert json.loads(Path("site/data.json").read_text()) == bundle
 
 
+def test_build_aggregates_external_link_into_website(tmp_path, monkeypatch):
+    """Sources like visitomaha + bigdealsmedia attach the venue's own
+    website to each record via external_link. The build aggregates that
+    into a venue-level `website` field so the photo finder can use it
+    as a fallback when OSM is sparse."""
+    monkeypatch.chdir(tmp_path)
+    Path("data/overrides").mkdir(parents=True)
+    Path("site").mkdir()
+    sample = dict(SAMPLE[0])
+    sample["external_link"] = "https://example-bar.com"
+    with open("data/geocoded.yaml", "w") as f:
+        yaml.safe_dump([sample], f)
+    from scripts import _build_main
+    _build_main.main()
+    bundle = json.loads(Path("data/deals.json").read_text())
+    assert bundle["restaurants"][0]["website"] == "https://example-bar.com"
+
+
+def test_build_website_is_none_when_no_source_supplies_one(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    Path("data/overrides").mkdir(parents=True)
+    Path("site").mkdir()
+    # SAMPLE[0] has no external_link set.
+    with open("data/geocoded.yaml", "w") as f:
+        yaml.safe_dump([SAMPLE[0]], f)
+    from scripts import _build_main
+    _build_main.main()
+    bundle = json.loads(Path("data/deals.json").read_text())
+    assert bundle["restaurants"][0]["website"] is None
+
+
 def test_build_applies_category_overrides(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     Path("data/overrides").mkdir(parents=True)
