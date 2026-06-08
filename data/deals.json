@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T03:04:46.578084+00:00",
+  "built_at": "2026-06-08T03:27:49.178174+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -55,6 +55,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -84,6 +87,9 @@
           "valid_from": "2019-05-31",
           "valid_until": null
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -115,6 +121,9 @@
           "valid_until": null
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -143,6 +152,9 @@
           "valid_from": null,
           "valid_until": null
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -174,6 +186,9 @@
           "valid_until": "2027-01-01"
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -203,6 +218,9 @@
           "valid_from": "2024-12-31",
           "valid_until": null
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -234,7 +252,10 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -263,6 +284,9 @@
           "valid_from": "2026-02-27",
           "valid_until": "2027-01-01"
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -294,6 +318,9 @@
           "valid_until": "2027-01-01"
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -323,6 +350,9 @@
           "valid_from": "2026-04-23",
           "valid_until": "2026-12-02"
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -354,6 +384,9 @@
           "valid_until": "2026-11-01"
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -384,7 +417,10 @@
           "valid_until": "2027-04-01"
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -447,6 +483,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -518,6 +557,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -564,7 +606,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -634,6 +679,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -704,6 +750,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -735,6 +782,7 @@
           "category": "amenity"
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -793,6 +841,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -863,7 +912,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -927,6 +979,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -985,6 +1040,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1043,6 +1099,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1089,6 +1146,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1151,6 +1209,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1215,6 +1274,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1272,6 +1332,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -1337,6 +1400,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1407,6 +1471,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1465,6 +1532,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1522,6 +1592,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -1593,6 +1666,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1650,6 +1724,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -1715,6 +1792,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1779,6 +1857,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1825,6 +1904,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1877,7 +1957,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -1947,6 +2030,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -1973,6 +2057,9 @@
           "windows": [],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -2044,6 +2131,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2101,6 +2189,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -2172,6 +2263,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2242,6 +2334,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2312,6 +2405,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2382,6 +2476,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2439,6 +2536,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -2498,6 +2598,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2568,6 +2669,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2626,7 +2728,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -2690,7 +2795,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -2748,6 +2856,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2818,6 +2927,10 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2870,6 +2983,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -2934,6 +3048,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3004,6 +3119,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3068,6 +3184,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3126,6 +3243,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3159,6 +3277,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -3218,6 +3339,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3270,6 +3392,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3303,6 +3426,7 @@
           "raw_text": "$5 original burgers every Tuesday."
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3333,6 +3457,9 @@
           "savings": 25.0,
           "category": "restaurants"
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -3398,6 +3525,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3450,6 +3578,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3480,6 +3609,9 @@
           "savings": 25.0,
           "category": "restaurants"
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -3545,6 +3677,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3603,6 +3738,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3673,6 +3809,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3725,6 +3862,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3783,6 +3921,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3841,6 +3980,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3903,6 +4043,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -3960,6 +4101,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -4019,6 +4163,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4083,6 +4228,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4141,6 +4287,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4211,6 +4358,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4269,6 +4417,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4343,6 +4492,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4401,6 +4551,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4475,6 +4626,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4508,6 +4660,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -4573,6 +4728,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4630,6 +4786,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -4689,6 +4848,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4753,6 +4913,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4811,6 +4972,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4863,6 +5025,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4890,6 +5055,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -4948,6 +5114,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5006,6 +5173,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5064,6 +5232,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5120,6 +5289,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5189,6 +5359,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -5260,6 +5433,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5324,7 +5498,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -5388,7 +5565,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -5458,6 +5638,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5522,7 +5703,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -5580,6 +5764,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5644,6 +5829,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5714,7 +5900,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -5783,6 +5972,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -5854,6 +6046,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5912,6 +6107,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -5982,6 +6178,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6034,6 +6233,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6096,6 +6296,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6154,6 +6355,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6223,6 +6425,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -6294,6 +6499,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6358,6 +6566,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6427,6 +6636,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -6498,6 +6710,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6531,6 +6744,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -6602,7 +6819,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -6672,6 +6892,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6730,6 +6951,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6786,6 +7008,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6843,6 +7066,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -6914,6 +7141,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6960,6 +7188,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -6993,6 +7222,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -7052,6 +7285,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7110,6 +7346,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7168,6 +7405,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7226,6 +7464,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7300,6 +7539,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7352,6 +7592,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7398,7 +7639,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -7443,6 +7687,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -7496,6 +7743,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7553,6 +7801,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "uncertain_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -7612,6 +7864,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7682,6 +7935,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7745,6 +7999,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -7816,6 +8073,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7886,6 +8144,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -7943,6 +8202,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -8014,6 +8277,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8078,6 +8342,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8136,6 +8403,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8206,6 +8474,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8268,6 +8539,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8319,6 +8591,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -8372,6 +8647,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8429,6 +8705,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -8494,6 +8773,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8524,6 +8804,9 @@
           "savings": 25.0,
           "category": "restaurants"
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -8589,6 +8872,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8647,6 +8931,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8705,7 +8990,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -8763,6 +9051,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8820,6 +9109,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -8879,6 +9171,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8906,6 +9199,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -8964,6 +9258,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9022,7 +9317,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -9080,6 +9378,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9132,7 +9433,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -9201,6 +9505,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -9272,6 +9579,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9330,6 +9638,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9400,6 +9709,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9458,6 +9768,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9510,6 +9821,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9580,6 +9892,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9638,6 +9951,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9695,6 +10009,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -9759,6 +10076,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -9830,6 +10150,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9894,6 +10217,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -9951,6 +10275,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -10016,6 +10343,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10080,6 +10410,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10144,7 +10475,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -10202,6 +10536,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10260,6 +10595,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10330,6 +10666,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10404,6 +10741,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10456,7 +10794,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -10514,6 +10855,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10584,6 +10926,10 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10624,6 +10970,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10682,6 +11029,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10740,6 +11088,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10814,6 +11163,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -10883,6 +11233,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -10954,6 +11307,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11012,6 +11366,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11069,6 +11424,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -11140,6 +11498,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11167,6 +11528,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11213,6 +11575,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11271,6 +11634,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11333,6 +11697,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11397,6 +11762,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11454,6 +11820,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "uncertain_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -11525,6 +11895,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11556,7 +11929,10 @@
           "category": "amenity"
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -11626,6 +12002,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11684,7 +12061,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -11754,6 +12134,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11818,6 +12201,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -11869,6 +12255,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -11928,7 +12317,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -11998,6 +12390,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12056,6 +12449,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12114,6 +12508,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12184,6 +12579,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12248,6 +12644,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12305,6 +12702,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -12364,6 +12764,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12422,6 +12823,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12479,6 +12881,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -12554,6 +12959,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12616,6 +13022,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12643,6 +13050,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12713,6 +13121,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12782,6 +13191,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -12853,7 +13265,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -12923,6 +13338,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -12950,6 +13366,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13020,6 +13437,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13090,6 +13508,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13159,6 +13578,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -13242,6 +13664,7 @@
           "category": "amenity"
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13294,7 +13717,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -13364,6 +13790,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13416,6 +13843,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13480,6 +13908,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13526,6 +13955,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13584,6 +14014,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13648,6 +14079,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13718,6 +14150,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13776,6 +14211,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13802,6 +14238,9 @@
           "windows": [],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -13830,6 +14269,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13882,6 +14322,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -13940,6 +14381,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14009,6 +14451,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -14080,6 +14525,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14150,7 +14596,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -14220,6 +14669,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_end_time"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14277,6 +14729,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -14348,6 +14803,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14394,6 +14850,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14452,6 +14909,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14510,6 +14968,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14568,7 +15027,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -14619,6 +15081,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -14677,6 +15142,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -14742,6 +15210,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14800,6 +15269,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14858,6 +15328,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14889,6 +15362,7 @@
           "category": "amenity"
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -14953,6 +15427,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15010,6 +15485,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -15081,6 +15559,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15127,6 +15606,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15185,7 +15665,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -15249,6 +15732,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15301,6 +15787,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15359,6 +15846,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15417,6 +15905,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15475,6 +15964,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15508,6 +15998,9 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -15567,6 +16060,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15631,6 +16125,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15701,7 +16196,10 @@
           "highlights": []
         }
       ],
-      "needs_review": false,
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -15759,6 +16257,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15817,6 +16316,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15856,6 +16358,10 @@
           ],
           "highlights": []
         }
+      ],
+      "review_reasons": [
+        "missing_location",
+        "missing_end_time"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -15921,6 +16427,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -15985,6 +16492,9 @@
           "highlights": []
         }
       ],
+      "review_reasons": [
+        "missing_location"
+      ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -16043,6 +16553,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -16095,6 +16606,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -16153,6 +16665,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
@@ -16227,6 +16740,7 @@
           "highlights": []
         }
       ],
+      "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     }

@@ -525,7 +525,8 @@ function renderList(matched) {
             badges.push('<span class="v-badge v-badge-new" title="Added in the last week">🆕</span>');
         }
         if (r.needs_review) {
-            badges.push('<span class="v-badge v-badge-review" title="Address or hours need confirming">needs review</span>');
+            const reasonText = reviewReasonsText(r) || "Address or hours need confirming";
+            badges.push(`<span class="v-badge v-badge-review" title="${escapeHtml(reasonText)}">needs review</span>`);
         }
         const fav = isFavorite(r);
         const heartChar = fav ? "♥" : "♡";
@@ -727,6 +728,30 @@ function mapsLinkFor(r) {
     return `https://www.google.com/maps/search/${encodeURIComponent(r.name + " Omaha NE")}`;
 }
 
+const REVIEW_REASON_LABELS = {
+    missing_location: "address unknown (hidden from map)",
+    uncertain_location: "address might be wrong (low-confidence geocode)",
+    missing_end_time: "happy-hour end time unknown",
+};
+
+function reviewReasonsText(r) {
+    const reasons = (r.review_reasons || []).map(k => REVIEW_REASON_LABELS[k]).filter(Boolean);
+    return reasons.join(", ");
+}
+
+function renderReviewReasons(r) {
+    if (!r.needs_review) return "";
+    const reasons = (r.review_reasons || []).map(k => REVIEW_REASON_LABELS[k]).filter(Boolean);
+    if (!reasons.length) return "";
+    const items = reasons.map(t => `<li>${escapeHtml(t)}</li>`).join("");
+    return `
+      <div class="review-reasons">
+        <p class="review-reasons-title">⚠ Help fix this venue:</p>
+        <ul>${items}</ul>
+      </div>
+    `;
+}
+
 function showVenue(r) {
     const sheet = document.getElementById("venue-sheet");
     const metaParts = [];
@@ -755,6 +780,7 @@ function showVenue(r) {
         ${cuisineLine}
         ${photoBlock}
         <p>${escapeHtml(r.address || "(no address yet)")}</p>
+        ${renderReviewReasons(r)}
         ${distanceLines(r)}
         <p>
           <button class="fav-btn ${fav ? "active" : ""}" id="fav-toggle">

@@ -69,6 +69,29 @@ def _aggregate_website(recs: list[dict]) -> str | None:
     return None
 
 
+def _review_reasons(recs: list[dict], first: dict) -> list[str]:
+    """Specific reasons a venue is flagged for review, derived from the
+    geocoded records. Returns a stable list (ordered for consistent UI):
+
+      'missing_location'    no lat/lng at all; the venue is hidden from the
+                            map until an address override is added
+      'uncertain_location'  has coords but the geocoder reported low
+                            confidence (likely wrong building or city)
+      'missing_end_time'    a happy-hour deal whose end time we couldn't
+                            extract; window shows only the start
+    """
+    reasons: list[str] = []
+    if first.get("lat") is None or first.get("lng") is None:
+        reasons.append("missing_location")
+    elif first.get("geocode_confidence") == "low":
+        reasons.append("uncertain_location")
+    for r in recs:
+        if r.get("kind") == "happy_hour" and r.get("extraction_source") == "none":
+            if "missing_end_time" not in reasons:
+                reasons.append("missing_end_time")
+    return reasons
+
+
 def _source_count(recs: list[dict]) -> int:
     """How many distinct sources contributed a deal for this venue.
 
@@ -178,7 +201,8 @@ def main() -> int:
             "source_count": _source_count(recs),
             "personal": personal.get(rid, {}),
             "deals": [_deal(r) for r in recs],
-            "needs_review": any(r.get("needs_review", False) for r in recs),
+            "review_reasons": _review_reasons(recs, first),
+            "needs_review": bool(_review_reasons(recs, first)),
         })
         for r in recs:
             summary.setdefault(r["source"], {"count": 0})["count"] += 1
@@ -208,6 +232,7 @@ def main() -> int:
             "source_count": 1,  # manual entries by definition come from one source
             "personal": personal.get(rid, {}),
             "deals": entry.get("deals", []),
+            "review_reasons": [],
             "needs_review": False,
         })
         summary.setdefault("manual", {"count": 0})["count"] += 1
