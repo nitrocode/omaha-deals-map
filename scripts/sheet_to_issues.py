@@ -82,6 +82,11 @@ def main() -> int:
     new = [(idx + 1, row) for idx, row in enumerate(rows) if idx + 1 > last]
     if not new:
         print(f"[sheet-to-issues] no new submissions (last_processed_row={last})")
+        # Drop a state file on the first-ever empty run so the workflow's
+        # commit step has something to look at. We don't bump last_processed_at
+        # on empty runs to avoid daily noise commits when nothing's happening.
+        if not STATE_PATH.exists():
+            save_state(state)
         return 0
 
     print(f"[sheet-to-issues] processing {len(new)} new submission(s)")
