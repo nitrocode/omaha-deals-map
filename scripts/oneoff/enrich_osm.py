@@ -25,8 +25,11 @@ import requests
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
-from scripts._lib.io import read_yaml, write_yaml
-from scripts._lib.photo_finder import fetch_extratags
+# Imports below the path tweak are intentional: oneoff scripts are run
+# directly (not `python -m`), so the package root has to be on sys.path
+# before these resolve. ruff E402 flags the order, hence the noqa.
+from scripts._lib.io import read_yaml, write_yaml  # noqa: E402
+from scripts._lib.photo_finder import fetch_extratags  # noqa: E402
 
 DEALS = ROOT / "data" / "deals.json"
 CACHE = ROOT / "data" / "osm_enrichment_cache.yaml"
