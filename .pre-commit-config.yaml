@@ -1,19 +1,27 @@
 # Pre-commit hook configuration. Install once with:
-#   pip install pre-commit && pre-commit install
+#   make install
+#   pre-commit install
 # Hooks then run automatically on `git commit` for staged files only.
 #
 # Run all hooks against every file:
 #   pre-commit run --all-files
+#
+# We invoke tools via .venv/bin/ rather than relying on PATH because
+# pre-commit runs in a fresh shell without venv activation. This matches
+# the project convention (see Makefile, CI) of pinning every dep via
+# requirements.lock; using language: system with explicit venv paths
+# avoids pre-commit's auto-managed envs (which aren't hash-pinned).
 repos:
   - repo: local
     hooks:
       # Catches the class of bug where someone (me) commits a fabricated or
       # stale SRI hash. Hits the network for each <link>/<script integrity=>
       # tag in changed HTML files; fails if any declared hash doesn't match
-      # the served content.
+      # the served content. Run as a module so the `from scripts._lib.sri`
+      # import resolves without a sys.path tweak.
       - id: verify-sri
         name: Verify SRI hashes in HTML
-        entry: python scripts/check_sri.py
+        entry: .venv/bin/python -m scripts.check_sri
         language: system
         files: '\.html$'
         pass_filenames: true
@@ -22,7 +30,7 @@ repos:
       # Lint the codebase. Pre-commit runs ruff on staged files only.
       - id: ruff
         name: Ruff lint
-        entry: ruff check
+        entry: .venv/bin/ruff check
         language: system
         types: [python]
         require_serial: true
@@ -31,7 +39,7 @@ repos:
       # network-heavy integration tests don't fire on every commit.
       - id: pytest-fast
         name: Pytest (fast suite)
-        entry: pytest -q -m "not slow"
+        entry: .venv/bin/pytest -q -m "not slow"
         language: system
         pass_filenames: false
         types: [python]

@@ -1,13 +1,9 @@
 """Tests for the check_sri CLI wrapper around scripts/_lib/sri.py."""
 from __future__ import annotations
 
-from pathlib import Path
-
 import pytest
 
 from scripts import check_sri
-from scripts._lib.sri import SriRef
-
 
 SAMPLE_HTML = """<!DOCTYPE html><html><head>
 <link rel="stylesheet" href="https://cdn.example/style.css"
