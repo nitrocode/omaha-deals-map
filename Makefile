@@ -1,4 +1,4 @@
-.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean
+.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean scrape-npdodge
 
 install:
 	pip install --require-hashes -r requirements.lock
@@ -58,3 +58,12 @@ clean:
 	rm -rf .pytest_cache .ruff_cache
 	find . -type d -name __pycache__ -exec rm -rf {} +
 	find . -type d -name '*.egg-info' -exec rm -rf {} +
+
+# One-off: scrape npdodge's annual happy-hour guide via Playwright (the
+# site is behind Cloudflare, regular HTTP gets a challenge page).
+# First-time setup:
+#   pip install -e ".[oneoff]"
+#   playwright install chromium
+# Then this command appends new venues to data/overrides/manual_venues.yaml.
+scrape-npdodge:
+	python scripts/oneoff/scrape_npdodge.py

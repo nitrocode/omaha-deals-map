@@ -72,6 +72,21 @@ Storage everywhere = `HH:MM` 24h. Display in the UI = 12h via `formatTime12()` i
 - `data/overrides/personal.yaml` (your tags/ratings/notes, private)
 - `.venv/`, `__pycache__/`, `*.egg-info/`
 
+## One-off scripts (scripts/oneoff/)
+
+For sources that don't work in CI (Cloudflare bot protection, etc), one-off
+scripts live in `scripts/oneoff/`. They use the `[oneoff]` extra in
+pyproject.toml so the main + dev installs stay lean.
+
+```bash
+pip install -e ".[oneoff]"       # ~150MB (Playwright + browser drivers)
+playwright install chromium       # one-time, downloads Chromium
+make scrape-npdodge               # appends to data/overrides/manual_venues.yaml
+```
+
+Outputs go through manual_venues.yaml (no automated commit) so the
+maintainer reviews + geocodes before pushing.
+
 ## Commits
 
 Conventional Commits with `Refs: omaha-deals-map` trailer. Working directly on `main` is the convention (personal repo, no PR gate). Pre-commit (`pre-commit install` once) runs ruff + the fast pytest suite + SRI verification on every commit.

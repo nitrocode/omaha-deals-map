@@ -23,6 +23,14 @@ dev = [
     "google-auth>=2.30",
 ]
 
+# Manual one-off scripts that require a headless browser (Playwright +
+# Chromium download, ~150MB). Kept out of `dev` so CI installs stay
+# lean. Install locally with `pip install -e ".[oneoff]"` then
+# `playwright install chromium` once.
+oneoff = [
+    "playwright>=1.40",
+]
+
 [tool.coverage.run]
 source = ["sources", "scripts"]
 # Numbered CLI stubs are intentionally tiny argparse wrappers around the
