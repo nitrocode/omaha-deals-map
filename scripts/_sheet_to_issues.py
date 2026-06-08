@@ -81,7 +81,12 @@ def row_to_issue(row: list) -> dict | None:
     if source_url:
         body_lines.append(f"**Source URL**: {source_url}")
     if email:
-        body_lines.append(f"**Reporter email**: {email}")
+        # Public repo + indexed-by-search issue body would expose the
+        # submitter's email to scrapers within hours. The form copy
+        # ("only if you want a reply") implies a private channel, so
+        # the actual address never gets echoed here. Maintainer reads
+        # the linked Sheet (which is not public) to find the email.
+        body_lines.append("**Reporter email**: provided (check the form responses sheet)")
     body_lines.extend([
         "",
         "---",

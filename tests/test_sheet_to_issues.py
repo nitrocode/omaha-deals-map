@@ -32,9 +32,28 @@ def test_fix_type_yields_fix_label_and_titled_with_venue():
     assert issue["title"] == "[fix] Test Bar"
     assert set(issue["labels"]) == {"community-form", "fix"}
     assert "Wrong hours" in issue["body"]
-    assert "user@example.com" in issue["body"]
     assert "`test-bar`" in issue["body"]
     assert "123 Main St" in issue["body"]
+
+
+def test_email_is_never_echoed_into_public_issue_body():
+    """The repo is public; the form's email field is opt-in ("only if you
+    want a reply"). Echoing the actual address into the issue body would
+    expose it to search-engine scraping. The maintainer reads the linked
+    sheet (not public) to recover the email when responding."""
+    issue = row_to_issue(_row(
+        type="Fix info for a venue", name="X", details="d",
+        email="someone@example.com",
+    ))
+    body = issue["body"]
+    assert "someone@example.com" not in body
+    assert "Reporter email" in body
+    assert "form responses sheet" in body
+
+
+def test_no_email_section_when_field_blank():
+    issue = row_to_issue(_row(type="Fix info for a venue", name="X", details="d"))
+    assert "Reporter email" not in issue["body"]
 
 
 def test_deal_and_closed_and_other_get_appropriate_labels():
