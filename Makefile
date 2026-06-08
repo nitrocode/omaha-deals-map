@@ -1,4 +1,4 @@
-.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean scrape-npdodge
+.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean scrape-npdodge update-umami
 
 install:
 	pip install --require-hashes -r requirements.lock
@@ -72,3 +72,12 @@ scrape-npdodge:
 # venues with gaps in OSM data so the maintainer can contribute fixes.
 osm-gaps:
 	python scripts/oneoff/generate_osm_gaps.py
+
+# Refresh the self-hosted Umami analytics script. We pin the script into
+# the repo (rather than loading from cloud.umami.is) so visitors aren't
+# exposed to CDN compromise; the trade-off is we manually pull updates.
+# Run this when Umami releases a new version you want to adopt; review
+# the diff like any other dependency bump.
+update-umami:
+	curl -sLf https://cloud.umami.is/script.js -o site/umami.js
+	@echo "site/umami.js refreshed. Review the diff before committing."

@@ -137,6 +137,7 @@ def render_today_html(restaurants: list[dict], day_key: str, *, now=None) -> str
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#2c5aa0">
+<script defer src="umami.js" data-website-id="8166cd95-14b1-4f03-b872-ebc1d4afc99f"></script>
 <style>
 body {{ font-family: system-ui, -apple-system, sans-serif; max-width: 48rem;
        margin: 0 auto; padding: 1rem; color: #222; background: #f5f5f5; }}
