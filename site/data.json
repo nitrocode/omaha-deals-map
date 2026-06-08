@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-07T05:03:57.912314+00:00",
+  "built_at": "2026-06-08T01:18:24.873218+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -192,7 +192,7 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "2724",
@@ -317,7 +317,7 @@
           "valid_until": "2027-04-01"
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "30hop",
@@ -482,7 +482,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "402-eat-drink",
@@ -756,7 +756,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "acadian-grille",
@@ -1681,7 +1681,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "billy-os-lounge",
@@ -2370,7 +2370,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "brewskys-2",
@@ -2429,7 +2429,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "brick-street-tavern",
@@ -4665,7 +4665,7 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "id": "flemings-2",
@@ -4789,7 +4789,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "fore-seasons-golf",
@@ -4848,7 +4848,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "foxy-sushi",
@@ -4972,7 +4972,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "gather-omaha",
@@ -5149,7 +5149,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "gl-lounge",
@@ -5214,7 +5214,7 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "id": "goldbergs-bar-grills",
@@ -5804,7 +5804,7 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "id": "harolds-bar",
@@ -5963,7 +5963,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "hiro-88",
@@ -6681,7 +6681,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "isla-del-mar-restaurante-132nd-and-center",
@@ -7874,7 +7874,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "lighthouse-bar-grill",
@@ -8161,7 +8161,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "mantra",
@@ -9193,7 +9193,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "omaha-tap-house-2",
@@ -9476,7 +9476,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "pat-mikes-bar-grill",
@@ -10036,7 +10036,7 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "id": "railcar-modern-american-kitchen",
@@ -10473,7 +10473,7 @@
           "category": "amenity"
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "roja-mexican-grill",
@@ -10591,7 +10591,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "rusty-nail-2",
@@ -10815,7 +10815,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "salty-dog-bar-grill-omaha",
@@ -11657,7 +11657,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "spezia-2",
@@ -12063,7 +12063,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "sweetbeans-coffee-co",
@@ -12844,7 +12844,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-good-life",
@@ -12909,7 +12909,7 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "id": "the-green-room",
@@ -13227,7 +13227,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "the-porch-council-bluffs",
@@ -13789,7 +13789,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "twisted-fork-grill-bar",
@@ -14260,7 +14260,7 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "id": "vino-mas",

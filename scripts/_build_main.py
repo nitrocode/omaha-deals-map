@@ -8,6 +8,9 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from scripts._lib.io import read_yaml, write_json
+from scripts._lib.today_html import DAY_KEYS, render_today_html
+
+SITE_BASE_URL = "https://nitrocode.github.io/omaha-deals-map/"
 
 SCHEMA_VERSION = "1.0"
 
@@ -87,10 +90,57 @@ def main() -> int:
     write_json(out_path, bundle)
     Path("site").mkdir(exist_ok=True)
     shutil.copyfile(out_path, "site/data.json")
+    _write_seo_pages(restaurants)
     print(f"[build] {len(restaurants)} restaurants, "
           f"{sum(len(r['deals']) for r in restaurants)} deals")
     print(f"[build] needs_review: {sum(1 for r in restaurants if r['needs_review'])}")
     return 0
+
+
+def _write_seo_pages(restaurants: list[dict]) -> None:
+    """Generate static today.html + per-weekday pages + robots.txt + sitemap.xml.
+
+    Each day gets its own crawlable page so Google can rank "happy hour
+    omaha <weekday>" queries against an exact-match URL. today.html is
+    a convenience redirect-target so external links don't have to know
+    the current weekday.
+    """
+    site = Path("site")
+    now = datetime.now(UTC)
+    today_key = DAY_KEYS[(now.weekday() + 1) % 7]  # weekday(): Mon=0; DAY_KEYS: Sun=0
+
+    # Per-weekday pages (sun.html ... sat.html) so each gets its own
+    # canonical URL for search.
+    for day_key in DAY_KEYS:
+        (site / f"{day_key}.html").write_text(
+            render_today_html(restaurants, day_key, now=now),
+        )
+
+    # today.html mirrors whichever weekday it is, with canonical pointing
+    # at the per-day page so search doesn't index two URLs as duplicates.
+    today_html = render_today_html(restaurants, today_key, now=now).replace(
+        "today.html",
+        f"{today_key}.html",
+    )
+    (site / "today.html").write_text(today_html)
+
+    (site / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\nSitemap: " + SITE_BASE_URL + "sitemap.xml\n",
+    )
+
+    sitemap_urls = [SITE_BASE_URL, SITE_BASE_URL + "today.html"]
+    sitemap_urls += [SITE_BASE_URL + f"{d}.html" for d in DAY_KEYS]
+    lastmod = now.date().isoformat()
+    url_xml = "\n".join(
+        f"  <url><loc>{u}</loc><lastmod>{lastmod}</lastmod></url>"
+        for u in sitemap_urls
+    )
+    (site / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{url_xml}\n"
+        "</urlset>\n",
+    )
 
 
 if __name__ == "__main__":

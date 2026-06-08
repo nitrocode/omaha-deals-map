@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nitrocode.github.io/omaha-deals-map/sitemap.xml
