@@ -211,8 +211,24 @@ body[data-view="map"] #list-view { display: none; }
     box-shadow: 0 -4px 12px rgba(0,0,0,.1); z-index: 1000;
 }
 .sheet.hidden { display: none; }
-.sheet-header { display: flex; justify-content: space-between; align-items: center; }
-.sheet-header h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+/* Sticky so the close button stays reachable as the user scrolls through
+ * a long sheet. The negative top padding compensates for the sheet's own
+ * 1rem top padding so the sticky header doesn't leave a visible gap. */
+.sheet-header {
+    display: flex; justify-content: space-between; align-items: center;
+    position: sticky; top: -1rem; z-index: 5;
+    background: var(--card-bg);
+    margin: -1rem -1rem 0; padding: .75rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+.sheet-header h2 { margin: 0; font-size: 1.1rem; }
+.sheet-header-actions { display: flex; gap: .5rem; align-items: center; }
+.sheet-close-btn {
+    background: transparent; border: 0; color: var(--muted); cursor: pointer;
+    font-size: 1.6rem; line-height: 1; padding: 0 .35rem;
+    width: 2rem; height: 2rem; border-radius: 4px;
+}
+.sheet-close-btn:hover { background: var(--border); color: var(--text, #222); }
 .link-btn { background: none; border: 0; color: var(--primary); cursor: pointer;
     font-size: .85rem; padding: .25rem 0; }
 .sheet fieldset { border: 0; padding: 0; margin: 0 0 1rem; }

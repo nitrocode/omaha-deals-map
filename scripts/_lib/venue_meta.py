@@ -38,6 +38,40 @@ _PLATFORM_PATTERNS = {
 # the venue's URL as a query param); we only want the venue's OWN page.
 _SHARE_HINTS = re.compile(r"(?:sharer|share|intent/tweet|/share[?/])", re.I)
 
+# Per-platform path segments that aren't venue-specific. A link to
+# facebook.com/login is the platform's login page, not a venue profile.
+# Conservative reject-list: anything matching these gets dropped. The
+# most important one is /profile.php (without an ?id= query) which a
+# few venue homepages link to as a placeholder. We strip queries during
+# normalization, so /profile.php?id=12345 also gets dropped here. That's
+# acceptable since venues that care surface a vanity URL too.
+_GENERIC_PATH_SEGMENTS = {
+    "facebook":  {"profile.php", "home", "login", "help", "about", "pages",
+                  "sharer", "watch", "marketplace", "groups", "events"},
+    "instagram": {"explore", "accounts", "p", "reels", "stories",
+                  "directory", "developer"},
+    "twitter":   {"home", "login", "explore", "i", "intent", "settings",
+                  "search", "share", "compose"},
+    "tiktok":    {"foryou", "login", "discover", "trending"},
+    "youtube":   {"feed", "results", "watch", "playlist", "shorts", "channel"},
+    "threads":   {"login", "search"},
+}
+
+
+def _is_venue_specific_path(platform: str, path: str) -> bool:
+    """Return True if the path looks like a venue's own profile, not a
+    generic platform page. Path is the URL path with leading slash stripped.
+    Examples for facebook:
+      'omahacafe'        -> True   (vanity URL)
+      'pages/cafe/123'   -> False  (starts with generic segment 'pages')
+      'profile.php'      -> False  (placeholder, no id)
+    """
+    if not path:
+        return False
+    first = path.split("/", 1)[0].lower()
+    generic = _GENERIC_PATH_SEGMENTS.get(platform, set())
+    return first not in generic
+
 
 def _normalize_social_url(url: str) -> str | None:
     """Strip query strings / fragments and trailing slashes so the same
@@ -72,8 +106,14 @@ def find_socials(html: str) -> dict[str, str]:
                 continue
             if pattern.match(href):
                 cleaned = _normalize_social_url(href)
-                if cleaned:
-                    out[platform] = cleaned
+                if not cleaned:
+                    break
+                # Drop generic platform pages (login, profile.php, etc.)
+                # that some venue sites link to as placeholders.
+                path = urlparse(cleaned).path.lstrip("/")
+                if not _is_venue_specific_path(platform, path):
+                    break
+                out[platform] = cleaned
                 break
     return out
 

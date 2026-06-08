@@ -6,9 +6,11 @@ import shutil
 from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 from scripts._lib.io import read_yaml, write_json
 from scripts._lib.today_html import DAY_KEYS, render_today_html
+from scripts._lib.venue_meta import _is_venue_specific_path
 
 SITE_BASE_URL = "https://nitrocode.github.io/omaha-deals-map/"
 
@@ -120,17 +122,29 @@ def _venue_socials(osm: dict | None, scraped: dict | None = None) -> dict[str, s
     """Pull social links from OSM tags + scraped venue-meta. Returns
     {platform: url}. OSM wins when both have a value for the same
     platform (OSM tags are deliberate signal; the homepage scrape is
-    fuzzier and might catch a partner brand's link)."""
+    fuzzier and might catch a partner brand's link).
+
+    Defensive filter: even if the cache contains a generic platform URL
+    (login page, /profile.php placeholder, etc.) we reject it here so
+    older cache entries don't surface in the UI after the scraper's
+    filter is tightened. Re-running the scrape would also flush them.
+    """
     out: dict[str, str] = {}
     if scraped and isinstance(scraped, dict):
         scraped_socials = scraped.get("socials") or {}
         for k, v in scraped_socials.items():
-            if v:
+            if not v:
+                continue
+            path = urlparse(v).path.lstrip("/")
+            if _is_venue_specific_path(k, path):
                 out[k] = v
     if osm:
         for tag, key in _SOCIAL_TAG_TO_KEY.items():
             url = _normalize_social_url(osm.get(tag))
-            if url:
+            if not url:
+                continue
+            path = urlparse(url).path.lstrip("/")
+            if _is_venue_specific_path(key, path):
                 out[key] = url   # OSM overrides scraped value
     return out
 

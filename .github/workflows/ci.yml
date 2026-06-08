@@ -5,6 +5,12 @@ on:
   push:
     branches: [main]
 
+# Least-privilege defaults. The only writes happen on main pushes when
+# we refresh the coverage badge JSON; that step elevates with a
+# step-level token. Pull-request runs never need write.
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,7 +18,7 @@ jobs:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
-          python-version: '3.11'
+          python-version-file: .python-version
       - name: Install pinned deps + local package
         # Lockfile carries every transitive dep with --hash=sha256 pins so a
         # compromised upstream release fails fast in CI. --no-deps on the
@@ -24,7 +30,7 @@ jobs:
       - run: ruff check .
       - name: Run fast suite with coverage gate
         # The gate prevents test coverage from silently rotting. Threshold
-        # set just under the current baseline (76%) so flaky measurements
+        # set just under the current baseline (80%) so flaky measurements
         # don't tank PRs while still failing if real test loss happens.
         run: pytest -q -m "not slow" --cov --cov-report=term --cov-report=xml --cov-fail-under=70
       # Fetches each external resource referenced in site/index.html and
@@ -32,3 +38,36 @@ jobs:
       # acceptable in CI since the run is short.
       - name: Verify SRI hashes in site/index.html
         run: python scripts/check_sri.py site/index.html
+
+  # Updates .github/badges/coverage.json from the coverage XML and commits
+  # it back to main. Runs only on direct main pushes (not PRs) so forks
+  # and PR contexts never need write perms.
+  coverage-badge:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+      - run: |
+          pip install --require-hashes -r requirements.lock
+          pip install -e . --no-deps
+      - run: pytest -q -m "not slow" --cov --cov-report=xml
+      - name: Render shields.io endpoint JSON
+        run: python scripts/coverage_badge.py
+      - name: Commit badge if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/badges/coverage.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh coverage badge [skip ci]" \
+                       -m "Refs: omaha-deals-map"
+            git push
+          else
+            echo "Coverage unchanged."
+          fi

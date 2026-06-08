@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T05:13:50.481414+00:00",
+  "built_at": "2026-06-08T12:27:41.989858+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -4811,7 +4811,6 @@
       "phone": null,
       "socials": {
         "instagram": "https://www.instagram.com/dundee_dell",
-        "facebook": "https://www.facebook.com/profile.php",
         "twitter": "https://x.com/thedundeedell"
       },
       "features": {},

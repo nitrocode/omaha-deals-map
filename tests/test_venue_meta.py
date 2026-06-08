@@ -1,6 +1,8 @@
 """Tests for venue_meta: parses socials + canonical URL from venue HTML."""
 from __future__ import annotations
 
+import pytest
+
 from scripts._lib import venue_meta
 
 # ---- find_socials -----------------------------------------------------------
@@ -52,6 +54,45 @@ def test_find_socials_rejects_bare_domain():
     """A link to 'facebook.com' (no path) isn't a venue profile."""
     html = '<a href="https://facebook.com">FB</a>'
     assert venue_meta.find_socials(html) == {}
+
+
+@pytest.mark.parametrize("href, platform", [
+    # The dundee-dell-2 regression: /profile.php (no id) is a placeholder.
+    ("https://www.facebook.com/profile.php", "facebook"),
+    # Even with a junk query (which we strip), the bare profile.php path
+    # is rejected.
+    ("https://www.facebook.com/profile.php?id=", "facebook"),
+    ("https://www.facebook.com/login", "facebook"),
+    ("https://www.facebook.com/home", "facebook"),
+    ("https://www.facebook.com/pages/something", "facebook"),
+    ("https://twitter.com/home", "twitter"),
+    ("https://twitter.com/i/status/12345", "twitter"),
+    ("https://www.instagram.com/explore", "instagram"),
+    ("https://www.instagram.com/p/AbCdEf", "instagram"),
+    ("https://www.tiktok.com/foryou", "tiktok"),
+    ("https://www.youtube.com/feed/trending", "youtube"),
+])
+def test_find_socials_rejects_generic_platform_paths(href, platform):
+    html = f'<a href="{href}">link</a>'
+    s = venue_meta.find_socials(html)
+    assert platform not in s, f"Expected to drop generic {platform} URL: {href}"
+
+
+def test_find_socials_accepts_real_vanity_paths():
+    """Sanity check: vanity URLs and @handles aren't false-positives."""
+    html = """<a href="https://facebook.com/omahacafe">FB</a>
+              <a href="https://instagram.com/omahacafe">IG</a>
+              <a href="https://tiktok.com/@omahacafe">TT</a>
+              <a href="https://youtube.com/@omahacafe">YT</a>"""
+    s = venue_meta.find_socials(html)
+    assert set(s.keys()) == {"facebook", "instagram", "tiktok", "youtube"}
+
+
+def test_is_venue_specific_path_handles_unknown_platform():
+    # Defensive: an unknown platform has no generic list, so everything passes.
+    assert venue_meta._is_venue_specific_path("mastodon", "user") is True
+    # Empty path always fails (we reject bare domains upstream too).
+    assert venue_meta._is_venue_specific_path("facebook", "") is False
 
 
 def test_find_socials_handles_mobile_subdomains():

@@ -903,7 +903,10 @@ function showVenue(r) {
     const mapsUrl = mapsLinkFor(r);
     const mapsLabel = state.home ? "Directions from home" : "Open in Google Maps";
     sheet.innerHTML = `
-        <h2>${escapeHtml(r.name)}</h2>
+        <div class="sheet-header">
+            <h2>${escapeHtml(r.name)}</h2>
+            <button id="venue-close-top" class="sheet-close-btn" aria-label="Close venue">&times;</button>
+        </div>
         ${cuisineLine}
         ${photoBlock}
         <p>${escapeHtml(r.address || "(no address yet)")}</p>
@@ -927,11 +930,10 @@ function showVenue(r) {
           &middot;
           <a target="_blank" rel="noopener" href="${reportIssueLinkFor(r)}">via GitHub</a>
         </p>
-        <button id="venue-close">Close</button>
     `;
     sheet.classList.remove("hidden");
 
-    document.getElementById("venue-close").addEventListener("click", () => {
+    document.getElementById("venue-close-top").addEventListener("click", () => {
         sheet.classList.add("hidden");
         if (state.selectedMarker) {
             _applyMarkerState(state.selectedMarker, state.selectedMarker._kind, false);
@@ -1265,9 +1267,11 @@ function wireControls() {
     document.getElementById("filter-btn").addEventListener("click", () => {
         document.getElementById("filter-sheet").classList.toggle("hidden");
     });
-    document.getElementById("close-filter").addEventListener("click", () => {
+    const closeFilterSheet = () => {
         document.getElementById("filter-sheet").classList.add("hidden");
-    });
+    };
+    document.getElementById("close-filter").addEventListener("click", closeFilterSheet);
+    document.getElementById("close-filter-top").addEventListener("click", closeFilterSheet);
     document.getElementById("clear-filters").addEventListener("click", clearAllFilters);
     document.querySelectorAll("[data-kind]").forEach(cb => {
         cb.addEventListener("change", () => {
