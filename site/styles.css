@@ -123,6 +123,31 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 }
 .fav-marker.selected { transform: scale(1.15); transform-origin: center bottom; }
 
+/* Venue-sheet socials, features, phone, hours -- compact rows under the
+ * address. The chips keep visual hierarchy down so the deals stay primary. */
+.socials { margin: .35rem 0; }
+.social-link {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.8rem; height: 1.8rem; margin-right: .35rem;
+    background: var(--card-bg); color: var(--accent, #2c5aa0);
+    border: 1px solid var(--border); border-radius: 999px;
+    font-size: .8rem; font-weight: 600; text-decoration: none;
+}
+.social-link:hover { background: var(--accent, #2c5aa0); color: #fff; }
+.features { margin: .35rem 0; line-height: 1.9; }
+.feature-chip {
+    display: inline-block; padding: .1rem .55rem; margin-right: .3rem;
+    background: #eef4fb; color: #2c5aa0; border-radius: 999px;
+    font-size: .75rem;
+}
+.phone { margin: .25rem 0; }
+.phone a { color: var(--accent, #2c5aa0); text-decoration: none; }
+.hours-osm { margin: .25rem 0; font-size: .85rem; color: var(--muted); }
+
+/* "unknown cuisine" / "unknown price" sentinels in the meta line. Italic
+ * + muted so they don't compete with real values that get the same row. */
+.meta-unknown { color: var(--muted); font-style: italic; }
+
 /* Subtle "sorted by distance from home" hint above the list. */
 .list-sort-hint {
     font-size: .75rem; color: var(--muted); padding: .35rem .75rem;
@@ -314,7 +339,7 @@ body[data-view="map"] #list-view { display: none; }
        edge at the list pane's left edge - so the list stays scrollable
        while a venue is selected. On mobile (below 900px) the sheets
        still span full width (this block doesn't fire there). */
-    #venue-sheet, #contribute-sheet, #home-sheet {
+    #venue-sheet, #contribute-sheet, #home-sheet, #filter-sheet {
         /* Centered 80rem body: left edge = 50% - 40rem.
            List's left edge = body's right edge - 22rem = 50% + 40rem - 22rem,
            i.e., 50% - 18rem from the right of the viewport. */
@@ -328,7 +353,7 @@ body[data-view="map"] #list-view { display: none; }
        the screen edge to edge. Map is on the left, list is the rightmost
        22rem. Sheet covers the left side up to where the list begins. */
     @media (max-width: 80rem) {
-        #venue-sheet, #contribute-sheet, #home-sheet {
+        #venue-sheet, #contribute-sheet, #home-sheet, #filter-sheet {
             left: 0;
             right: 22rem;
         }

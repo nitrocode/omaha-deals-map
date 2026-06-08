@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""One-off OSM enrichment pass: for venues that we've placed on the map but
-have no website link, query Nominatim's extratags and persist `website` and
-`addr:street/city/postcode` if OSM knows them.
+"""One-off OSM enrichment pass: for every venue we've placed on the map,
+query Nominatim's extratags and persist the FULL tag dict OSM has on file
+(website, addr:*, contact:*, opening_hours, wheelchair, outdoor_seating,
+cuisine, ...).
+
+The cache stores everything because Nominatim rate-limits us to ~1 req/sec
+and re-querying for newly-interesting fields would be hours of wall time.
+The pipeline (_build_main) picks the subset it wants to surface; the rest
+sits in the cache, ready for future UX additions.
 
 Inputs:  data/deals.json (read-only)
-Outputs: data/osm_enrichment_cache.yaml  -- slug -> {website, addr_*}
-
-The pipeline merges this in _build_main as a fallback when the source-
-supplied website is empty. Nominatim's usage policy asks for ~1 req/sec
-from a single client, so the script sleeps between calls.
+Outputs: data/osm_enrichment_cache.yaml -- slug -> dict of OSM extratags
+         (plus the sentinels _empty / _error for misses)
 
 Run:
     .venv/bin/python scripts/oneoff/enrich_osm.py
@@ -33,14 +36,18 @@ from scripts._lib.photo_finder import fetch_extratags  # noqa: E402
 
 DEALS = ROOT / "data" / "deals.json"
 CACHE = ROOT / "data" / "osm_enrichment_cache.yaml"
-KEEP_TAGS = {"website", "addr:street", "addr:city", "addr:postcode", "addr:housenumber"}
 
 
 def _venues_needing_enrichment(deals: dict, cache: dict) -> list[dict]:
+    """Venues with coords that we haven't queried yet.
+
+    We query every venue with coords (not just ones missing a website),
+    because the cache now stores the full OSM tag dict and feeds many
+    UI fields beyond just website. Already-cached venues are skipped;
+    use `make refresh-osm` (rm the cache file) if you want a full refresh.
+    """
     pending = []
     for r in deals.get("restaurants", []):
-        if r.get("website"):
-            continue
         if r.get("lat") is None or r.get("lng") is None:
             continue
         if r["id"] in cache:
@@ -51,12 +58,10 @@ def _venues_needing_enrichment(deals: dict, cache: dict) -> list[dict]:
 
 
 def _harvest(extratags: dict) -> dict:
-    out = {}
-    for k in KEEP_TAGS:
-        v = extratags.get(k)
-        if v:
-            out[k.replace(":", "_")] = v
-    return out
+    """Pass through every non-empty OSM tag. We intentionally keep colon
+    names (e.g. 'contact:facebook') so future readers can match against
+    OSM's canonical schema without a key-rename lookup."""
+    return {k: v for k, v in (extratags or {}).items() if v}
 
 
 def main(limit: int | None = None, sleep_s: float = 1.1) -> int:

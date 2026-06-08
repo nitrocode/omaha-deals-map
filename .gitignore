@@ -38,3 +38,4 @@ htmlcov/
 # Skill workspaces and per-skill eval runs are personal, not repo content.
 .claude/skills/*-workspace/
 .claude/skills/*/evals/
+.claude/scheduled_tasks.lock

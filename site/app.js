@@ -795,6 +795,62 @@ const REVIEW_REASON_LABELS = {
     missing_end_time: "happy-hour end time unknown",
 };
 
+const SOCIAL_LABELS = {
+    facebook: { label: "Facebook", glyph: "f" },
+    instagram: { label: "Instagram", glyph: "IG" },
+    twitter: { label: "Twitter / X", glyph: "X" },
+    tiktok: { label: "TikTok", glyph: "TT" },
+    youtube: { label: "YouTube", glyph: "YT" },
+    threads: { label: "Threads", glyph: "@" },
+};
+
+const FEATURE_LABELS = {
+    outdoor_seating: "Outdoor seating",
+    takeaway: "Takeaway",
+    delivery: "Delivery",
+    wheelchair: "Wheelchair accessible",
+    dog_friendly: "Dog friendly",
+    wifi: "Wi-Fi",
+    reservation: "Reservations",
+};
+
+function renderSocials(socials) {
+    if (!socials) return "";
+    const keys = Object.keys(socials).filter(k => SOCIAL_LABELS[k]);
+    if (!keys.length) return "";
+    const links = keys.map(k => {
+        const meta = SOCIAL_LABELS[k];
+        return `<a class="social-link" target="_blank" rel="noopener nofollow"
+                   href="${escapeHtml(socials[k])}"
+                   title="${escapeHtml(meta.label)}"
+                   aria-label="${escapeHtml(meta.label)}">${escapeHtml(meta.glyph)}</a>`;
+    }).join("");
+    return `<p class="socials">${links}</p>`;
+}
+
+function renderFeatures(features) {
+    if (!features) return "";
+    const keys = Object.keys(features).filter(k => FEATURE_LABELS[k]);
+    if (!keys.length) return "";
+    const chips = keys.map(k =>
+        `<span class="feature-chip" title="${escapeHtml(features[k])}">${escapeHtml(FEATURE_LABELS[k])}</span>`
+    ).join("");
+    return `<p class="features">${chips}</p>`;
+}
+
+function renderPhone(phone) {
+    if (!phone) return "";
+    // Build a tel: URL stripped to digits + leading-plus, but display the
+    // original (formatted) string for human eyes.
+    const cleaned = phone.replace(/[^\d+]/g, "");
+    return `<p class="phone"><a href="tel:${escapeHtml(cleaned)}">${escapeHtml(phone)}</a></p>`;
+}
+
+function renderHours(hours) {
+    if (!hours) return "";
+    return `<p class="hours-osm" title="OSM opening_hours">Hours: ${escapeHtml(hours)}</p>`;
+}
+
 function reviewReasonsText(r) {
     const reasons = (r.review_reasons || []).map(k => REVIEW_REASON_LABELS[k]).filter(Boolean);
     return reasons.join(", ");
@@ -815,13 +871,23 @@ function renderReviewReasons(r) {
 
 function showVenue(r) {
     const sheet = document.getElementById("venue-sheet");
+    // Explicit "unknown" sentinels make it obvious why a venue might not
+    // appear under a cuisine or price filter, instead of silently omitting
+    // the line. Neighborhood stays optional (often genuinely outside Omaha
+    // proper, in which case empty reads cleaner than "Unknown neighborhood").
     const metaParts = [];
-    if (r.cuisine && r.cuisine.length) metaParts.push(escapeHtml(r.cuisine.join(", ")));
+    metaParts.push(
+        (r.cuisine && r.cuisine.length)
+            ? escapeHtml(r.cuisine.join(", "))
+            : `<em class="meta-unknown">unknown cuisine</em>`
+    );
     if (r.neighborhood) metaParts.push(escapeHtml(r.neighborhood));
-    if (r.price_tier) metaParts.push(escapeHtml(r.price_tier));
-    const cuisineLine = metaParts.length
-        ? `<p class="meta">${metaParts.join(" &middot; ")}</p>`
-        : "";
+    metaParts.push(
+        r.price_tier
+            ? escapeHtml(r.price_tier)
+            : `<em class="meta-unknown">unknown price</em>`
+    );
+    const cuisineLine = `<p class="meta">${metaParts.join(" &middot; ")}</p>`;
     // Photo: discovered free-of-charge via OSM image / Wikidata / venue's
     // own og:image. URL and attribution come from a trusted pipeline
     // cache, but still escape every interpolated string since this lands
@@ -841,6 +907,10 @@ function showVenue(r) {
         ${cuisineLine}
         ${photoBlock}
         <p>${escapeHtml(r.address || "(no address yet)")}</p>
+        ${renderPhone(r.phone)}
+        ${renderHours(r.hours_osm)}
+        ${renderFeatures(r.features)}
+        ${renderSocials(r.socials)}
         ${renderReviewReasons(r)}
         ${distanceLines(r)}
         <p>

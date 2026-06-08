@@ -1,33 +1,58 @@
 11eleven:
+  brewery: 'no'
   website: https://elevenelevenomaha.com/
-3189-2:
+  building: 'yes'
+  opening_hours: Mo 16:00-23:00; Tu-Th 13:00-23:00; Fr-Sa 13:00-24:00
+'2717':
   _empty: true
+'2732':
+  _empty: true
+3189-2:
+  building: 'yes'
 3rd-base-bar-grill:
   _empty: true
 402-eat-drink:
+  phone: +1-402-619-5474
   website: https://eat402.com/
+  website:menu: https://eat402.com/menu
+  opening_hours: Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 10:00-20:00
 72-table-and-tap:
+  _empty: true
+72-table-tap:
   _empty: true
 801-chophouse:
   _empty: true
 a-catered-affair:
   _empty: true
 addys-sports-bar-grill:
-  _empty: true
+  building: 'yes'
 agave-azteca:
   _empty: true
 annies-irish-pub:
+  phone: +1-402-504-4290
   website: https://www.facebook.com/anniesirishpubomaha/
+  opening_hours: Su-Fr 15:00-02:00; Sa 12:00-02:00
 applebees-2:
+  phone: +1 402-492-8707
+  cuisine: american
   website: https://restaurants.applebees.com/en-us/ne/omaha/13208-w-maple-road-91054
+  building: commercial
+  website:menu: https://www.applebees.com/en/menu?StoreNumber=91054&action=viewmenu
+  brand:wikidata: Q621532
 approach-at-indian-creek:
   _empty: true
 backlot-taphouse:
   _empty: true
 barretts-barleycorn:
+  phone: +1-402-554-5805
   website: https://www.barrettsomaha.com/
+  wheelchair: 'yes'
+  opening_hours: Mo-Sa 11:00-02:00, Su 12:00-02:00
+  payment:credit_cards: 'yes'
 benson-brewery:
-  _empty: true
+  wheelchair: 'yes'
+  microbrewery: 'yes'
+  outdoor_seating: 'yes'
 beyond-golf:
   _empty: true
 big-kels-pizza-wings:
@@ -43,11 +68,12 @@ blue-sushi-3:
 blue-sushi-old-market:
   _empty: true
 blue-sushi-shops-of-legacy:
-  _empty: true
+  cuisine: sushi
 bogies-bar-grill-west:
   _empty: true
 bonefish-grill:
-  _empty: true
+  cuisine: seafood
+  brand:wikidata: Q4941599
 brazen-head-irish-pub:
   _empty: true
 brewskys-2:
@@ -59,21 +85,27 @@ brownies-bar-grill:
 brushi-bistro-bar:
   _empty: true
 burdock-bitters:
+  phone: +1 531 444 4049
+  cuisine: whiskey
   website: https://www.marriott.com/hotels/hotel-information/restaurant/omadm-omaha-marriott-downtown-at-the-capitol-district/
 burrito-envy:
   _empty: true
 bushwood-lounge:
   _empty: true
 charlestons-2:
-  _empty: true
+  cuisine: american
+  building: retail
 charlies-on-the-lake:
   _empty: true
 cheeseburgers:
+  phone: '+15314667995'
+  cuisine: burger
   website: https://www.ineedcheeseburgers.com/
+  contact:facebook: https://www.facebook.com/welovecheeseburgers
 cibo-vino:
   _empty: true
 cilantros-mexican-bar-grill:
-  _empty: true
+  cuisine: mexican
 clancys-pub:
   _empty: true
 clio:
@@ -85,47 +117,102 @@ copps-pizza:
 cork-n-bottle:
   _empty: true
 corkscrew-blackstone:
+  email: jessica@corkscrewwineandcheese.com
+  phone: +1-402-933-3150
   website: https://corkscrewwineandcheese.com
+  building: 'yes'
+  opening_hours: Mo-Th 11:00-22:00; Fr,Sa 11:00-24:00; Su 12:00-20:00
+  indoor_seating: 'yes'
+  building:levels: '1'
+  outdoor_seating: 'yes'
 crescent-moon:
+  phone: +1-402-345-1708
+  smoking: 'no'
   website: https://beercornerusa.com/crescentmoon/
+  building: retail
+  opening_hours: Su-Tu 10:00-23:00, We,Th 11:00-24:00, Fr,Sa 10:00-02:00
+  building:levels: '1'
+  air_conditioning: 'yes'
+  payment:debit_cards: 'yes'
+  payment:credit_cards: 'yes'
 cumbia-omaha:
   _empty: true
 cunninghams-pub-grill:
   _empty: true
 dante-2:
-  _empty: true
+  cuisine: pizza
 djs-dugout:
+  phone: +1-402-763-9974
+  cuisine: american
   website: https://www.djsdugout.com/
+  check_date: '2025-05-03'
+  opening_hours: Mo-Su 11:00-23:59
 dundee-dell-2:
   website: https://dundeedell.com/
+  building: 'yes'
+  wikidata: Q5314813
+  opening_hours: We-Fr 11:00-21:00; Sa,Su 11:00-22:00
 dundees-place-bar-grill:
   _empty: true
 early-bird:
+  phone: +1-402-934-5535
   website: https://www.earlybirdbrunch.com/
+  delivery: 'no'
+  takeaway: 'yes'
+  diet:vegetarian: 'yes'
 edge-of-the-universe:
+  bar: 'yes'
+  phone: +1 402-990-6064
   website: https://www.edgeoftheuniverseomaha.com
+  building: 'yes'
+  wheelchair: 'no'
+  indoor_seating: 'yes'
+  outdoor_seating: 'no'
+  air_conditioning: 'yes'
 el-chicano:
   _empty: true
 el-muchacho-alegre:
-  _empty: true
+  cuisine: mexican
+  building: commercial
+  not:brand:wikidata: Q621532
 ez-place:
   _empty: true
 famous-daves-2:
-  _empty: true
+  cuisine: barbecue
+  building: retail
+  brand:wikidata: Q5433448
 fig:
   website: https://kiewitluminarium.org/visit/fig-cafe/
 firebirds-wood-fired-grill:
-  _empty: true
+  cuisine: american
+  building: retail
 firewater-grille:
-  _empty: true
+  phone: +1-402-452-3473
+  building: 'yes'
+  opening_hours: Mo-We 15:00-22:00; Th-Sa 15:00-24:00
 first-round-2:
+  phone: +1-531-466-5984
   website: http://www.firstroundomaha.com/
+  opening_hours: Mo-Th, Su 11:00-21:00; Fr-Sa 11:00-22:00
 fizzys-fountain-liquors:
+  bar: 'yes'
+  phone: '+14029164144'
+  cuisine: burger;american;ice_cream
   website: https://www.fizzysomaha.com/
+  building: 'yes'
+  microbrewery: 'no'
+  outdoor_seating: 'no'
+  air_conditioning: 'yes'
 flagship-commons:
   _empty: true
 flemings-2:
+  bar: 'yes'
+  phone: +1 402 393 0811
+  cuisine: steak_house
   website: https://www.flemingssteakhouse.com/locations/ne/omaha/
+  building: retail
+  opening_hours: Mo-Th 17:00-22:00; Fr,Sa 17:00-23:00; Su 17:00-21:00
+  brand:wikidata: Q5458552
 flight-deck-tap-grill:
   _empty: true
 fore-seasons-golf:
@@ -147,7 +234,18 @@ goldeez:
 gooses-bar-grill:
   _empty: true
 gorats-steakhouse:
+  email: gorats@hotmail.com
+  phone: +1-402-551-3733
+  stars: '4.3'
+  cuisine: steak_house
   website: https://goratsomaha.com/
+  building: 'yes'
+  delivery: 'no'
+  takeaway: 'yes'
+  wheelchair: 'yes'
+  reservation: recommended
+  opening_hours: Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 17:00-22:00
+  diet:vegetarian: 'yes'
 grant-st-bar:
   _empty: true
 hail-varsity:
@@ -159,11 +257,17 @@ harolds-bar:
 herbe-sainte:
   _empty: true
 hiro-88:
+  phone: +1 402 7028800
+  cuisine: asian
   website: https://hiro88.com/
+  building: 'yes'
 homy-inn:
   _empty: true
 hook-lime:
+  phone: +1-402-933-4222
+  cuisine: mexican
   website: https://www.hookandlime.com/
+  opening_hours: Tu-Th 11:00-21:00; Fr 11:00-23:00; Sa 10:00-23:00; Su 10:00-21:00
 houstons-lounge:
   _empty: true
 huber-haus:
@@ -185,19 +289,25 @@ island-bar-grill:
 j-gilberts-wood-fired-steaks-seafood:
   _empty: true
 jams-2:
-  _empty: true
+  building: 'yes'
+  building:levels: '5'
 javis-taco:
   _empty: true
 jimi-ds:
   _empty: true
 jinya-ramen-bar:
-  _empty: true
+  cuisine: ramen
+  brand:wikidata: Q16997755
 kaiyo-sushi:
   _empty: true
 kobe-steakhouse:
+  cuisine: japanese
   website: http://www.kobesteakhouse.us/locations.php
+  building: retail
 krug-park:
   website: https://krugpark.com/
+  microbrewery: 'yes'
+  opening_hours: Mo-Th 15:00-00:00; Su 12:00-00:00; Fr-Sa 15:00-02:00
 la-mesa:
   _empty: true
 le-bouillon:
@@ -215,27 +325,45 @@ local-beer-patio-kitchen:
 lula-bs-breakfast-brunch-bar:
   _empty: true
 lyles-pizzeria-2:
-  _empty: true
+  cuisine: pizza
 maloneys-irish-pub:
   _empty: true
 marias:
   _empty: true
 mas-chingon-2:
-  _empty: true
+  cuisine: mexican
 maximos-cantina:
   _empty: true
 meddys-village-pointe:
   _empty: true
 memoir-2:
-  _empty: true
+  bar: 'yes'
+  cuisine: american
 mercury:
+  email: info@mercury-info.com
+  phone: +1-402-999-7448
   website: https://mercury-omaha.com/#
+  website:menu: https://mercury-omaha.com/omaha-mercury-food-menu
+  opening_hours: Mo-Su 16:00-00:00
 monarch-prime-bar:
   _empty: true
 mouth-of-the-south-downtown:
+  phone: +1-513-357-5399
+  cuisine: american;burger;chicken;fish;seafood;cajun;southern
   website: https://www.motsomaha.com
+  opening_hours: Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 10:00-20:00
 nite-owl:
+  phone: +1-402-991-6767
+  smoking: 'no'
   website: https://niteowlomaha.com
+  building: 'yes'
+  wheelchair: 'yes'
+  opening_hours: Tu-Sa 16:00-22:00; Su 16:00-20:00
+  indoor_seating: 'yes'
+  outdoor_seating: 'yes'
+  air_conditioning: 'yes'
+  payment:debit_cards: 'yes'
+  payment:credit_cards: 'yes'
 office-west-lounge:
   _empty: true
 ollie-hobbs-craft-kitchen:
@@ -243,7 +371,7 @@ ollie-hobbs-craft-kitchen:
 omaha-tap-house-2:
   _empty: true
 oscars:
-  _empty: true
+  cuisine: pizza
 pacific-eating-house:
   _empty: true
 pageturners-lounge:
@@ -255,15 +383,21 @@ pat-mikes-bar-grill:
 pint-nine-brewing:
   _empty: true
 pivot-prime:
+  cuisine: steak_house
   website: https://www.pivot-prime.com/
+  building: retail
+  was:name: Mahogany Prime
 pizza-west-2:
   _empty: true
 ponzu-sushi:
+  cuisine: sushi
   website: https://www.ponzusushiandgrill.com/
 pub-134:
   _empty: true
 public-house:
+  email: adstiles@live.com
   website: https://www.facebook.com/stilespub
+  opening_hours: Tu 19:00-24:00; We-Sa 00:00-02:00,19:00-24:00; Su 00:00-02:00
 r-taco:
   _empty: true
 ralston-keno:
@@ -273,15 +407,22 @@ ramonas-mexican-restaurant:
 rays-wings:
   _empty: true
 red-lion-lounge:
+  email: info@redlionlounge.com
+  level: '-1'
+  phone: +1-402-933-8686
   website: https://www.redlionlounge.com/
+  opening_hours: Mo-Th 15:00-24:00; Fr, Sa 15:00-02:00; Su 12:00-24:00
 redeye-tavern:
   _empty: true
 report-in-pub:
   _empty: true
 revival-house:
   _empty: true
-roja-mexican-grill:
+rib-shack-smokehouse:
   _empty: true
+roja-mexican-grill:
+  cuisine: mexican
+  building: 'yes'
 rookies-bar-grill:
   _empty: true
 saltgrass-steakhouse:
@@ -297,35 +438,68 @@ shucks-fish-house-oyster-bar:
 sickies-garage-burgers-brews:
   _empty: true
 sips-on-10th:
+  bar: 'yes'
+  phone: '+14028854252'
+  cuisine: american
+  toilets: 'yes'
   website: https://www.sipson10th.com/
+  building: 'yes'
+  microbrewery: 'no'
+  website:menu: https://www.sipson10th.com/barmenu
+  opening_hours: Mo-Th 16:00-23:00 Fr-Sa 10:00-02:00 Sun 10:00-15:00
+  outdoor_seating: 'yes'
+  air_conditioning: 'yes'
 site-1-brewing:
   _empty: true
 skyboxx-bar-grill:
   _empty: true
 smittys-garage-burgers-beer:
+  phone: +1-402-614-4949
   website: https://eatatthegarage.com/
+  opening_hours: Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00
 smokin-oak-wood-fired-pizza:
+  cuisine: pizza
   website: https://smokinoakpizza.com/location/omaha-ne/
 social-blackstone:
+  layer: '1'
+  phone: +1-402-260-7900
   website: https://www.blackstonesocial.com/
+  building: 'yes'
+  opening_hours: Mo-Th 16:00-02:00, Fr 14:00-02:00, Sa,Su 12:00-02:00
 sonic:
+  phone: +1 402-431-1593
+  cuisine: burger
   website: https://locations.sonicdrivein.com/ne/omaha/14598-west-maple-road.html
+  building: 'yes'
+  drive_in: 'yes'
+  operator: Sonic
+  takeaway: 'yes'
+  opening_hours: 06:00-24:00
+  brand:wikidata: Q7561808
 spencers-steak-chops:
   _empty: true
 spezia-2:
+  phone: +1-402-391-2950
+  cuisine: italian
   website: https://speziarestaurant.com/
+  building: 'yes'
+  delivery: 'no'
+  takeaway: 'yes'
+  opening_hours: Mo-Su 11:00-14:00,16:00-20:00
 spin-pizza:
   _empty: true
 st-andrews-pub:
   _empty: true
 stokes-2:
+  cuisine: american
+stories-coffee:
   _empty: true
 sullivans-steakhouse:
   _empty: true
 sweetbeans-coffee-co:
   _empty: true
 taco-co:
-  _empty: true
+  building: 'yes'
 talus-spirits-sustenance:
   _empty: true
 taqueria-tijuana-west:
@@ -341,7 +515,10 @@ the-caddy-shack-west-180th-harrison:
 the-casual-pint:
   website: https://thecasualpint.com/
 the-cheesecake-factory:
-  _empty: true
+  cuisine: american
+  building: retail
+  check_date: '2025-05-02'
+  brand:wikidata: Q1045842
 the-corner-kick:
   _empty: true
 the-dandy-lion:
@@ -349,8 +526,11 @@ the-dandy-lion:
 the-good-life:
   _empty: true
 the-hill:
-  _empty: true
+  delivery: 'no'
+  outdoor_seating: 'yes'
 the-jewell:
+  email: info@jewellomaha.com
+  phone: +1 917 748 4337
   website: https://jewellomaha.com/
 the-matt-bar-grill:
   _empty: true
@@ -359,15 +539,20 @@ the-nifty-bar:
 the-observatory:
   _empty: true
 the-tipsy-pig:
-  _empty: true
+  bar: 'yes'
+  air_conditioning: 'yes'
 the-verdict-bar-grill:
+  _empty: true
+the-woodcliff-restaurant:
   _empty: true
 therapy-bar-grill:
   _empty: true
 timber-wood-fire-bistro:
+  phone: +1-402-964-2227
   website: https://www.timberomaha.com/
+  opening_hours: Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 9:30-22:00; Su 9:30-20:30
 trucks-taps:
-  _empty: true
+  building: 'yes'
 tupelo-honey:
   _empty: true
 twisted-vine:
@@ -375,11 +560,15 @@ twisted-vine:
 union-pizzeria-sports-bar:
   _empty: true
 upstream-2:
-  _empty: true
+  cuisine: american
+  wheelchair: 'yes'
+  opening_hours: Su 10:00-24:00, Mo-Th 11:00-01:00, Fr-Sa 11:00-02:00
 varsity-sports-cafe-roman-pizza:
   _empty: true
 via-farina:
-  _empty: true
+  cuisine: italian
+  building: 'yes'
+  opening_hours: Su 14:00-21:00; Mo-Th 16:00-21:00; Fr-Sa 12:00-22:00
 villagio-pizzeria:
   _empty: true
 vincenzos:
@@ -393,6 +582,11 @@ wilson-washburn:
 winchester-bar-grill:
   _empty: true
 zen-coffee-company:
-  _empty: true
+  opening_hours: Mo-Sa 06:00-19:00; Su 07:00-19:00
 zios-pizzeria:
+  phone: +1-402-344-2222
+  cuisine: pizza
   website: https://ziospizzeria.com/locations/old-market/
+  takeaway: 'yes'
+  opening_hours: Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 12:00-20:00
+  outdoor_seating: 'no'

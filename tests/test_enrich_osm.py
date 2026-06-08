@@ -37,37 +37,33 @@ def _sample_deals():
     }
 
 
-def test_venues_needing_enrichment_filters_correctly():
+def test_venues_needing_enrichment_includes_all_with_coords_not_cached():
     deals = _sample_deals()
     cache = {"already-in-cache": {"_empty": True}}
     pending = enrich_osm._venues_needing_enrichment(deals, cache)
-    # Only the venue that has coords, no website, and isn't cached.
-    assert [v["id"] for v in pending] == ["needs-enrichment"]
+    # Every venue with coords AND not cached, regardless of website state.
+    # The cache now stores the full OSM tag dict for many downstream uses,
+    # so we don't gate on website.
+    assert sorted(v["id"] for v in pending) == ["needs-enrichment", "with-website"]
 
 
-def test_harvest_keeps_only_whitelisted_keys():
+def test_harvest_passes_through_all_nonempty_tags():
     extratags = {
         "website": "https://example.com",
         "addr:street": "123 Main St",
-        "addr:city": "Omaha",
-        "addr:postcode": "68102",
-        "addr:housenumber": "123",
-        "cuisine": "pizza",          # not in KEEP_TAGS, dropped
-        "opening_hours": "Mo-Fr",    # not in KEEP_TAGS, dropped
+        "contact:facebook": "https://facebook.com/foo",
+        "opening_hours": "Mo-Fr 11:00-22:00",
+        "cuisine": "pizza",
+        "wheelchair": "yes",
     }
-    harvested = enrich_osm._harvest(extratags)
-    assert harvested == {
-        "website": "https://example.com",
-        "addr_street": "123 Main St",
-        "addr_city": "Omaha",
-        "addr_postcode": "68102",
-        "addr_housenumber": "123",
-    }
+    # No filtering: every non-empty tag is kept verbatim, colons and all.
+    assert enrich_osm._harvest(extratags) == extratags
 
 
-def test_harvest_skips_missing_values():
+def test_harvest_drops_empty_values():
     assert enrich_osm._harvest({}) == {}
-    assert enrich_osm._harvest({"website": ""}) == {}
+    assert enrich_osm._harvest({"website": "", "phone": "555-1234"}) == {"phone": "555-1234"}
+    assert enrich_osm._harvest(None) == {}
 
 
 def _redirect_paths(monkeypatch, tmp_path):
@@ -120,7 +116,7 @@ def test_main_persists_websites_and_handles_errors(tmp_path, monkeypatch, capsys
     assert rc == 0
     cache = yaml.safe_load((tmp_path / "data" / "osm_enrichment_cache.yaml").read_text())
     assert cache["good"]["website"] == "https://good.example"
-    assert cache["good"]["addr_city"] == "Omaha"
+    assert cache["good"]["addr:city"] == "Omaha"  # colon preserved from OSM
     assert "_error" in cache["bad"]
     assert cache["empty"] == {"_empty": True}
     assert len(calls) == 3

@@ -1,4 +1,4 @@
-.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean scrape-npdodge update-umami
+.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean scrape-npdodge update-umami enrich-osm enrich-venue-meta
 
 install:
 	pip install --require-hashes -r requirements.lock
@@ -72,6 +72,18 @@ scrape-npdodge:
 # venues with gaps in OSM data so the maintainer can contribute fixes.
 osm-gaps:
 	python scripts/oneoff/generate_osm_gaps.py
+
+# Query Nominatim for the full OSM tag dict (website, phone, hours,
+# contact:*, features) for every mapped venue. Cache is resumable; rm
+# data/osm_enrichment_cache.yaml first to refresh.
+enrich-osm:
+	python scripts/oneoff/enrich_osm.py
+
+# Scrape each venue's own homepage for social links + canonical URL,
+# filling the gap where OSM is sparse on contact:* tags. Cache is
+# resumable; rm data/venue_meta_cache.yaml to refresh.
+enrich-venue-meta:
+	python scripts/oneoff/enrich_venue_meta.py
 
 # Refresh the self-hosted Umami analytics script. We pin the script into
 # the repo (rather than loading from cloud.umami.is) so visitors aren't

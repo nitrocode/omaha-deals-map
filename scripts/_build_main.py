@@ -80,6 +80,88 @@ def _aggregate_website(recs: list[dict], osm: dict | None = None) -> str | None:
     return None
 
 
+_SOCIAL_TAG_TO_KEY = {
+    "contact:facebook": "facebook",
+    "contact:instagram": "instagram",
+    "contact:twitter": "twitter",
+    "contact:tiktok": "tiktok",
+    "contact:youtube": "youtube",
+    "contact:threads": "threads",
+}
+# Tags whose presence we expose as a one-bit "feature" chip in the UI.
+# OSM values can be yes / no / limited / customers / designated; we treat
+# anything other than "no" as a positive signal because the UI just wants
+# to know whether the venue advertises the feature.
+_FEATURE_TAGS = {
+    "outdoor_seating": "outdoor_seating",
+    "takeaway": "takeaway",
+    "delivery": "delivery",
+    "wheelchair": "wheelchair",
+    "dog": "dog_friendly",
+    "internet_access": "wifi",
+    "reservation": "reservation",
+}
+
+
+def _normalize_social_url(value: str) -> str | None:
+    """OSM lets `contact:facebook` be either a full URL or a handle. Normalize
+    to a clickable URL. Reject anything that doesn't look like a real value."""
+    if not value or not isinstance(value, str):
+        return None
+    v = value.strip()
+    if v.lower() in {"no", "none", "n/a"}:
+        return None
+    if v.startswith(("http://", "https://")):
+        return v
+    return None  # raw handles are ambiguous (which platform?) so we skip them
+
+
+def _venue_socials(osm: dict | None, scraped: dict | None = None) -> dict[str, str]:
+    """Pull social links from OSM tags + scraped venue-meta. Returns
+    {platform: url}. OSM wins when both have a value for the same
+    platform (OSM tags are deliberate signal; the homepage scrape is
+    fuzzier and might catch a partner brand's link)."""
+    out: dict[str, str] = {}
+    if scraped and isinstance(scraped, dict):
+        scraped_socials = scraped.get("socials") or {}
+        for k, v in scraped_socials.items():
+            if v:
+                out[k] = v
+    if osm:
+        for tag, key in _SOCIAL_TAG_TO_KEY.items():
+            url = _normalize_social_url(osm.get(tag))
+            if url:
+                out[key] = url   # OSM overrides scraped value
+    return out
+
+
+def _venue_phone(osm: dict | None) -> str | None:
+    if not osm:
+        return None
+    return osm.get("phone") or osm.get("contact:phone")
+
+
+def _venue_features(osm: dict | None) -> dict[str, str]:
+    """Pull yes/no feature tags. Skips explicit 'no' values."""
+    if not osm:
+        return {}
+    out: dict[str, str] = {}
+    for tag, key in _FEATURE_TAGS.items():
+        v = osm.get(tag)
+        if v and isinstance(v, str) and v.strip().lower() not in {"", "no"}:
+            out[key] = v.strip().lower()
+    return out
+
+
+def _venue_hours(osm: dict | None) -> str | None:
+    """OSM `opening_hours` in their canonical format (e.g. 'Mo-Fr 11:00-22:00').
+    We surface it raw; parsing OSM hours is its own rabbit hole."""
+    if not osm:
+        return None
+    v = osm.get("opening_hours")
+    return v.strip() if v and isinstance(v, str) else None
+
+
 def _review_reasons(recs: list[dict], first: dict) -> list[str]:
     """Specific reasons a venue is flagged for review, derived from the
     geocoded records. Returns a stable list (ordered for consistent UI):
@@ -172,6 +254,9 @@ def main() -> int:
     # Optional: per-venue OSM enrichment (website, addr) discovered by
     # scripts/oneoff/enrich_osm.py. Read-only here; absence is fine.
     osm_enrich = read_yaml(Path("data/osm_enrichment_cache.yaml"), default={}) or {}
+    # Optional: socials/canonical URL scraped from venue homepages by
+    # scripts/oneoff/enrich_venue_meta.py.
+    venue_meta = read_yaml(Path("data/venue_meta_cache.yaml"), default={}) or {}
     # First-seen tracker: lets the UI flag "🆕 new this week" on venues
     # that landed in the dataset recently. Stamped per-slug at first
     # build, preserved across runs.
@@ -211,6 +296,13 @@ def main() -> int:
             # Venue's own website if any source provided one. Used by the
             # photo finder as a fallback when OSM lacks the website tag.
             "website": _aggregate_website(recs, osm=osm_enrich.get(rid)),
+            # Venue-meta fields harvested from OSM (or null if missing).
+            # The full OSM tag dict lives in data/osm_enrichment_cache.yaml
+            # for future curation; here we surface the subset the UI uses.
+            "phone": _venue_phone(osm_enrich.get(rid)),
+            "socials": _venue_socials(osm_enrich.get(rid), venue_meta.get(rid)),
+            "features": _venue_features(osm_enrich.get(rid)),
+            "hours_osm": _venue_hours(osm_enrich.get(rid)),
             # Cross-source confirmation. 2+ sources = community-confirmed.
             "source_count": _source_count(recs),
             "personal": personal.get(rid, {}),
@@ -241,8 +333,13 @@ def main() -> int:
             "photo": _photo_for(rid, photos),
             # manual_venues.yaml entries with a source_url that's the venue's
             # own site (vs a third-party aggregator) double as a website.
-            "website": _aggregate_website(entry.get("deals", []))
+            "website": _aggregate_website(entry.get("deals", []),
+                                          osm=osm_enrich.get(rid))
                        or entry.get("website"),
+            "phone": _venue_phone(osm_enrich.get(rid)) or entry.get("phone"),
+            "socials": _venue_socials(osm_enrich.get(rid), venue_meta.get(rid)),
+            "features": _venue_features(osm_enrich.get(rid)),
+            "hours_osm": _venue_hours(osm_enrich.get(rid)),
             "source_count": 1,  # manual entries by definition come from one source
             "personal": personal.get(rid, {}),
             "deals": entry.get("deals", []),
