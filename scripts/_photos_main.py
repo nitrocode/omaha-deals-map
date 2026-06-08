@@ -64,6 +64,10 @@ def main(force: bool = False) -> int:
         # waste the work we've already done.
         write_yaml(CACHE_PATH, cache)
 
+    # Flush at the end so no-coord venues (whose null entries are added
+    # outside the to_check loop) persist even when to_check was empty.
+    # Inside the loop we also write per-venue so Ctrl-C is safe.
+    write_yaml(CACHE_PATH, cache)
     found = sum(1 for v in cache.values() if v.get("url"))
     print(f"[photos] total: {found}/{len(cache)} venues have a photo")
     return 0
