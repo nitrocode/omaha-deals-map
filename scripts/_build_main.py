@@ -20,6 +20,19 @@ def _merge_key(rec: dict, merges: dict) -> str:
     return merges.get(f"{rec['source']}:{rid}", rid)
 
 
+def _photo_for(rid: str, photos: dict) -> dict | None:
+    """Pull a photo entry from the cache. Negative cache entries (url: null)
+    return None so the front-end doesn't render an empty <img>."""
+    entry = photos.get(rid)
+    if not entry or not entry.get("url"):
+        return None
+    return {
+        "url": entry["url"],
+        "source": entry.get("source"),
+        "attribution": entry.get("attribution"),
+    }
+
+
 def _deal(rec: dict) -> dict:
     base = {
         "kind": rec["kind"],
@@ -55,6 +68,9 @@ def main() -> int:
     categories = read_yaml(Path("data/overrides/categories.yaml"), default={}) or {}
     personal = read_yaml(Path("data/overrides/personal.yaml"), default={}) or {}
     merges = read_yaml(Path("data/overrides/merges.yaml"), default={}) or {}
+    # Optional: photos discovered by stage 06_photos. Build is the single
+    # place that knows the deals.json schema, so the merge lives here.
+    photos = read_yaml(Path("data/photo_cache.yaml"), default={}) or {}
 
     by_id: dict[str, list[dict]] = defaultdict(list)
     for rec in geocoded:
@@ -77,6 +93,7 @@ def main() -> int:
             # universal restaurant pricing convention so contributors don't
             # have to learn a new vocabulary.
             "price_tier": categories.get(rid, {}).get("price_tier"),
+            "photo": _photo_for(rid, photos),
             "personal": personal.get(rid, {}),
             "deals": [_deal(r) for r in recs],
             "needs_review": any(r.get("needs_review", False) for r in recs),
@@ -101,6 +118,7 @@ def main() -> int:
             "cuisine": entry.get("cuisine", []),
             "neighborhood": entry.get("neighborhood"),
             "price_tier": entry.get("price_tier"),
+            "photo": _photo_for(rid, photos),
             "personal": personal.get(rid, {}),
             "deals": entry.get("deals", []),
             "needs_review": False,

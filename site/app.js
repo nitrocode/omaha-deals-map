@@ -655,12 +655,24 @@ function showVenue(r) {
     const cuisineLine = metaParts.length
         ? `<p class="meta">${metaParts.join(" &middot; ")}</p>`
         : "";
+    // Photo: discovered free-of-charge via OSM image / Wikidata / venue's
+    // own og:image. URL and attribution come from a trusted pipeline
+    // cache, but still escape every interpolated string since this lands
+    // in innerHTML.
+    const photoBlock = (r.photo && r.photo.url)
+        ? `<figure class="venue-photo">
+             <img src="${escapeHtml(r.photo.url)}" alt="${escapeHtml(r.name)}" loading="lazy"
+                  onerror="this.closest('figure').style.display='none'">
+             <figcaption>${escapeHtml(r.photo.attribution || "")}</figcaption>
+           </figure>`
+        : "";
     const fav = state.favorites.has(r.id);
     const mapsUrl = mapsLinkFor(r);
     const mapsLabel = state.home ? "Directions from home" : "Open in Google Maps";
     sheet.innerHTML = `
         <h2>${escapeHtml(r.name)}</h2>
         ${cuisineLine}
+        ${photoBlock}
         <p>${escapeHtml(r.address || "(no address yet)")}</p>
         ${distanceLines(r)}
         <p>

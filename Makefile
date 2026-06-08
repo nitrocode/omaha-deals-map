@@ -1,4 +1,4 @@
-.PHONY: install scrape parse extract geocode build all serve test lint review rebuild clean
+.PHONY: install scrape parse extract geocode photos build all serve test lint review rebuild clean
 
 install:
 	pip install --require-hashes -r requirements.lock
@@ -25,13 +25,21 @@ geocode:
 build:
 	python scripts/05_build.py
 
-all: scrape parse extract geocode build
+# Photo discovery: OSM tags + Wikidata + venue og:image. Skips already-cached
+# venues; ~1 req/sec to respect Nominatim rate limits. Re-run with --force
+# (see `make rebuild`) to refresh negatives.
+photos:
+	python scripts/06_photos.py
+
+all: scrape parse extract geocode build photos build
 
 rebuild:
 	python scripts/01_fetch.py --force
 	python scripts/02_parse.py --force
 	python scripts/03_extract_times.py --force
 	python scripts/04_geocode.py --force
+	python scripts/05_build.py --force
+	python scripts/06_photos.py --force
 	python scripts/05_build.py --force
 
 serve:

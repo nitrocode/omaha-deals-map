@@ -25,6 +25,10 @@ jobs:
           python scripts/03_extract_times.py
           python scripts/04_geocode.py
           python scripts/05_build.py
+          # Photo discovery reads data/deals.json (just written above) and
+          # writes data/photo_cache.yaml; rebuild to merge the cache in.
+          python scripts/06_photos.py
+          python scripts/05_build.py
       - name: Commit changes
         env:
           RUN: ${{ github.run_number }}
