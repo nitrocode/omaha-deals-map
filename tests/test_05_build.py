@@ -77,6 +77,41 @@ def test_build_website_is_none_when_no_source_supplies_one(tmp_path, monkeypatch
     assert bundle["restaurants"][0]["website"] is None
 
 
+def test_build_uses_osm_enrichment_website_as_fallback(tmp_path, monkeypatch):
+    """When sources don't supply a website but the OSM enrichment cache
+    has one (from scripts/oneoff/enrich_osm.py), use it."""
+    monkeypatch.chdir(tmp_path)
+    Path("data/overrides").mkdir(parents=True)
+    Path("site").mkdir()
+    with open("data/geocoded.yaml", "w") as f:
+        yaml.safe_dump([SAMPLE[0]], f)
+    with open("data/osm_enrichment_cache.yaml", "w") as f:
+        yaml.safe_dump({"blue-sky": {"website": "https://blueskypatio.example"}}, f)
+    from scripts import _build_main
+    _build_main.main()
+    bundle = json.loads(Path("data/deals.json").read_text())
+    assert bundle["restaurants"][0]["website"] == "https://blueskypatio.example"
+
+
+def test_build_source_link_wins_over_osm_enrichment(tmp_path, monkeypatch):
+    """When a source provides a website AND OSM does too, prefer the
+    source link. Sources often point at a deal landing page; OSM points
+    at the homepage; the deal page is more useful when both exist."""
+    monkeypatch.chdir(tmp_path)
+    Path("data/overrides").mkdir(parents=True)
+    Path("site").mkdir()
+    sample = dict(SAMPLE[0])
+    sample["external_link"] = "https://example-bar.com/happy-hour"
+    with open("data/geocoded.yaml", "w") as f:
+        yaml.safe_dump([sample], f)
+    with open("data/osm_enrichment_cache.yaml", "w") as f:
+        yaml.safe_dump({"blue-sky": {"website": "https://example-bar.com"}}, f)
+    from scripts import _build_main
+    _build_main.main()
+    bundle = json.loads(Path("data/deals.json").read_text())
+    assert bundle["restaurants"][0]["website"] == "https://example-bar.com/happy-hour"
+
+
 def test_build_applies_category_overrides(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     Path("data/overrides").mkdir(parents=True)

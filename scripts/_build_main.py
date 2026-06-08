@@ -57,15 +57,26 @@ def _photo_for(rid: str, photos: dict) -> dict | None:
     }
 
 
-def _aggregate_website(recs: list[dict]) -> str | None:
+def _aggregate_website(recs: list[dict], osm: dict | None = None) -> str | None:
     """Pull the first usable `external_link` across the records for one
     venue. Sources like visitomaha + bigdealsmedia set this directly; we
     aggregate so the photo finder can use it as a fallback when the OSM
-    `website` tag is missing."""
+    `website` tag is missing.
+
+    If `osm` is provided (output of scripts/oneoff/enrich_osm.py for this
+    venue's id) and no source-supplied link exists, fall back to the OSM
+    `website` tag. Sources win over OSM because they tend to point at a
+    deal landing page while OSM points at the venue homepage; either is
+    useful when the other is missing.
+    """
     for r in recs:
         link = r.get("external_link")
         if link and isinstance(link, str) and link.startswith(("http://", "https://")):
             return link
+    if osm:
+        w = osm.get("website")
+        if w and isinstance(w, str) and w.startswith(("http://", "https://")):
+            return w
     return None
 
 
@@ -158,6 +169,9 @@ def main() -> int:
     # Optional: photos discovered by stage 06_photos. Build is the single
     # place that knows the deals.json schema, so the merge lives here.
     photos = read_yaml(Path("data/photo_cache.yaml"), default={}) or {}
+    # Optional: per-venue OSM enrichment (website, addr) discovered by
+    # scripts/oneoff/enrich_osm.py. Read-only here; absence is fine.
+    osm_enrich = read_yaml(Path("data/osm_enrichment_cache.yaml"), default={}) or {}
     # First-seen tracker: lets the UI flag "🆕 new this week" on venues
     # that landed in the dataset recently. Stamped per-slug at first
     # build, preserved across runs.
@@ -196,7 +210,7 @@ def main() -> int:
             "photo": _photo_for(rid, photos),
             # Venue's own website if any source provided one. Used by the
             # photo finder as a fallback when OSM lacks the website tag.
-            "website": _aggregate_website(recs),
+            "website": _aggregate_website(recs, osm=osm_enrich.get(rid)),
             # Cross-source confirmation. 2+ sources = community-confirmed.
             "source_count": _source_count(recs),
             "personal": personal.get(rid, {}),

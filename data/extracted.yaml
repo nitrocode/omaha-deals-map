@@ -593,31 +593,31 @@
   pre_extracted_windows:
   - day: fri
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: mon
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: sat
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: sun
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: thu
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: tue
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: wed
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -629,8 +629,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: sips-on-10th
   source_url: https://growomaha.com/happy-hour/sips-on-10th/
@@ -643,23 +643,23 @@
   pre_extracted_windows:
   - day: fri
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: mon
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: thu
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: tue
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: wed
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -671,8 +671,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: the-committee-chophouse
   source_url: https://growomaha.com/happy-hour/the-committee-chophouse/
@@ -2696,7 +2696,7 @@
   pre_extracted_windows:
   - day: sun
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -2708,8 +2708,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: lyles-pizzeria-2
   source_url: https://growomaha.com/happy-hour/lyles-pizzeria-2/
@@ -4635,31 +4635,31 @@
   pre_extracted_windows:
   - day: fri
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sat
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sun
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -4671,8 +4671,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: jdubs-hangout
   source_url: https://growomaha.com/happy-hour/jdubs-hangout/
@@ -4844,7 +4844,7 @@
   pre_extracted_windows:
   - day: tue
     start: '15:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -4856,8 +4856,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: brewskys-2
   source_url: https://growomaha.com/happy-hour/brewskys-2/
@@ -6029,7 +6029,7 @@
   pre_extracted_windows:
   - day: mon
     start: '16:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -6041,8 +6041,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: grant-st-bar
   source_url: https://growomaha.com/happy-hour/grant-st-bar/
@@ -6587,31 +6587,31 @@
   pre_extracted_windows:
   - day: fri
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: mon
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: sat
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: sun
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: thu
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: tue
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: wed
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -6623,8 +6623,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: blue-chip-ultra-lounge
   source_url: https://growomaha.com/happy-hour/blue-chip-ultra-lounge/
@@ -7160,31 +7160,31 @@
   pre_extracted_windows:
   - day: fri
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sat
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sun
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -7196,8 +7196,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: redeye-tavern
   source_url: https://growomaha.com/happy-hour/redeye-tavern/
@@ -7919,31 +7919,31 @@
   pre_extracted_windows:
   - day: fri
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: mon
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: sat
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: sun
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: thu
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: tue
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: wed
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -7955,8 +7955,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: nosh-restaurant-wine-lounge
   source_url: https://growomaha.com/happy-hour/nosh-restaurant-wine-lounge/
@@ -9267,23 +9267,23 @@
   pre_extracted_windows:
   - day: fri
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -9295,8 +9295,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: ponzu-sushi
   source_url: https://growomaha.com/happy-hour/ponzu-sushi/
@@ -10551,32 +10551,32 @@
   pre_extracted_windows:
   - day: fri
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: mon
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: sat
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: sun
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: thu
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: tue
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: wed
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   valid_from: null
   valid_until: null
   title: null
@@ -10587,8 +10587,8 @@
   category: null
   lat: null
   lng: null
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
 - source: growomaha
   source_record_id: cunninghams-pub-grill
   source_url: https://growomaha.com/happy-hour/cunninghams-pub-grill/

@@ -33,3 +33,41 @@ def test_reverse_hh_detection():
     r = extract_end_time("Reverse HH Friday 9-11 PM", start_hint="21:00")
     assert r.is_reverse is True
     assert r.end == "23:00"
+
+
+@pytest.mark.parametrize("text", [
+    "Mondays from 4PM- Close",
+    "Everyday from 9PM-close",
+    "Monday-Friday 4pm to close",
+])
+def test_close_sentinel_returns_2359(text):
+    r = extract_end_time(text, start_hint="16:00")
+    assert r.end == "23:59"
+    assert r.confidence == "medium"
+
+
+def test_open_to_recovers_end():
+    r = extract_end_time("Every day from open to 7 PM", start_hint=None)
+    assert r.end == "19:00"
+
+
+def test_open_to_with_dash():
+    r = extract_end_time("Monday-Saturday from open-6 PM", start_hint=None)
+    assert r.end == "18:00"
+
+
+@pytest.mark.parametrize("text", [
+    "All day Sunday",
+    "All day happy hour on Tuesday",
+])
+def test_all_day_returns_2359(text):
+    r = extract_end_time(text, start_hint="00:00")
+    assert r.end == "23:59"
+    assert r.confidence == "medium"
+
+
+def test_range_still_beats_close_sentinel():
+    # Mixed text, prefer the explicit range over the close-sentinel default.
+    r = extract_end_time("Tuesday 4-6 PM then again 9 PM-close", start_hint="16:00")
+    assert r.end == "18:00"  # range, not close
+    assert r.confidence == "high"

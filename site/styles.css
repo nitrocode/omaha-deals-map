@@ -111,6 +111,7 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 .v-badge-popular { background: #e3f0ff; color: #1b4a8a; }
 .v-badge-new     { background: #e6f6e6; color: #1a6a1a; }
 .v-badge-review  { background: #fff3e0; color: #8a4a00; cursor: help; }
+.v-badge-reverse { background: #efe5ff; color: #4a2a8a; }
 
 /* Specific review reasons in the venue sheet, shown only when needs_review.
  * Keeps the orange palette of the badge so users connect the two. */
@@ -200,6 +201,8 @@ body[data-view="map"] #list-view { display: none; }
 .venue-deal .kind.kind-voucher    { background: var(--voucher); }
 .venue-deal .deal-text { color: var(--muted); font-size: .85rem; display: block;
     margin-top: .25rem; }
+.venue-deal .deal-source-link { color: var(--muted); font-size: .75rem;
+    margin-top: .25rem; display: inline-block; }
 
 .fav-btn {
     background: transparent; border: 1px solid var(--border);

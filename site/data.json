@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T03:27:49.178174+00:00",
+  "built_at": "2026-06-08T04:08:22.750753+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -48,17 +48,15 @@
             {
               "day": "mon",
               "start": "16:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -514,53 +512,51 @@
             {
               "day": "fri",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "sat",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "14:00",
-              "end": null,
+              "end": "19:00",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -5930,53 +5926,51 @@
             {
               "day": "fri",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "sat",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -6594,53 +6588,51 @@
             {
               "day": "fri",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "sat",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "12:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -6738,7 +6730,7 @@
             {
               "day": "tue",
               "start": "15:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
@@ -6746,8 +6738,7 @@
         }
       ],
       "review_reasons": [
-        "missing_location",
-        "missing_end_time"
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -7216,7 +7207,7 @@
             {
               "day": "sun",
               "start": "00:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
@@ -7224,8 +7215,7 @@
         }
       ],
       "review_reasons": [
-        "missing_location",
-        "missing_end_time"
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -10883,43 +10873,43 @@
             {
               "day": "fri",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "sat",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "14:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
@@ -10927,8 +10917,7 @@
         }
       ],
       "review_reasons": [
-        "missing_location",
-        "missing_end_time"
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -11394,41 +11383,39 @@
             {
               "day": "fri",
               "start": "07:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "07:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "07:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "07:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "07:00",
-              "end": null,
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -11852,53 +11839,51 @@
             {
               "day": "fri",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "sat",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "16:00",
-              "end": null,
+              "end": "18:30",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -12672,41 +12657,39 @@
             {
               "day": "fri",
               "start": "16:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "mon",
               "start": "16:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "16:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "16:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "16:00",
-              "end": null,
+              "end": "18:00",
               "type": "happy_hour"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -14626,53 +14609,51 @@
             {
               "day": "fri",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "mon",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "sat",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "sun",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "thu",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "tue",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             },
             {
               "day": "wed",
               "start": "21:00",
-              "end": null,
-              "type": "happy_hour"
+              "end": "23:59",
+              "type": "reverse_hh"
             }
           ],
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_end_time"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {

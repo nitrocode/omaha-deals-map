@@ -622,31 +622,31 @@
   pre_extracted_windows:
   - day: fri
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: mon
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: sat
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: sun
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: thu
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: tue
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   - day: wed
     start: '16:00'
-    end: null
+    end: '18:30'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -658,8 +658,8 @@
   category: amenity
   lat: 41.2576301
   lng: -95.9678598
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Revival House, 3700, Farnam Street, Blackstone, Omaha, Douglas County,
     Nebraska, 68131, United States
   geocode_confidence: high
@@ -676,23 +676,23 @@
   pre_extracted_windows:
   - day: fri
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: mon
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: thu
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: tue
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: wed
     start: '16:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -704,8 +704,8 @@
   category: amenity
   lat: 41.2494131
   lng: -95.9296268
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Sips on 10th, 1022, South 10th Street, Omaha, Douglas County, Nebraska,
     68108, United States
   geocode_confidence: high
@@ -2866,7 +2866,7 @@
   pre_extracted_windows:
   - day: sun
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -2878,8 +2878,8 @@
   category: null
   lat: null
   lng: null
+  extraction_source: regex
   needs_review: true
-  extraction_source: none
   geocode_confidence: none
 - source: growomaha
   source_record_id: lyles-pizzeria-2
@@ -4932,31 +4932,31 @@
   pre_extracted_windows:
   - day: fri
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sat
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sun
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: 00:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -4968,8 +4968,8 @@
   category: amenity
   lat: 41.2656727
   lng: -96.0930437
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
   geocode_source: photon
   geocode_confidence: high
@@ -5155,7 +5155,7 @@
   pre_extracted_windows:
   - day: tue
     start: '15:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -5167,8 +5167,8 @@
   category: null
   lat: null
   lng: null
+  extraction_source: regex
   needs_review: true
-  extraction_source: none
   geocode_confidence: none
 - source: growomaha
   source_record_id: brewskys-2
@@ -6424,7 +6424,7 @@
   pre_extracted_windows:
   - day: mon
     start: '16:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -6436,8 +6436,8 @@
   category: amenity
   lat: 41.2847514
   lng: -96.006534
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: 11 Eleven, 6061, Maple Street, Benson, Omaha, Douglas County, Nebraska,
     68104, United States
   geocode_confidence: high
@@ -7022,31 +7022,31 @@
   pre_extracted_windows:
   - day: fri
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: mon
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: sat
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: sun
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: thu
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: tue
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   - day: wed
     start: '12:00'
-    end: null
+    end: '18:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -7058,8 +7058,8 @@
   category: highway
   lat: 41.2565173
   lng: -95.9308121
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Harney Street, Omaha, Nebraska, 68131
   geocode_source: photon
   geocode_confidence: medium
@@ -7637,31 +7637,31 @@
   pre_extracted_windows:
   - day: fri
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sat
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: sun
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: '14:00'
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -7673,8 +7673,8 @@
   category: null
   lat: null
   lng: null
+  extraction_source: regex
   needs_review: true
-  extraction_source: none
   geocode_confidence: none
 - source: growomaha
   source_record_id: redeye-tavern
@@ -8445,31 +8445,31 @@
   pre_extracted_windows:
   - day: fri
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: mon
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: sat
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: sun
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: thu
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: tue
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   - day: wed
     start: '14:00'
-    end: null
+    end: '19:00'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -8481,8 +8481,8 @@
   category: amenity
   lat: 41.2851969
   lng: -96.0074377
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Beercade, Maple Street, Benson, Omaha, Douglas County, Nebraska, 68104,
     United States
   geocode_confidence: high
@@ -9885,23 +9885,23 @@
   pre_extracted_windows:
   - day: fri
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: mon
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: thu
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: tue
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   - day: wed
     start: 07:00
-    end: null
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -9913,8 +9913,8 @@
   category: amenity
   lat: 41.2028601
   lng: -96.2350204
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Rusty Taco, 5331, South 204th Avenue, Elkhorn, Nebraska, 68022
   geocode_source: photon
   geocode_confidence: high
@@ -11266,32 +11266,32 @@
   pre_extracted_windows:
   - day: fri
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: mon
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: sat
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: sun
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: thu
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: tue
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   - day: wed
     start: '21:00'
-    end: null
-    type: happy_hour
+    end: '23:59'
+    type: reverse_hh
   valid_from: null
   valid_until: null
   title: null
@@ -11302,8 +11302,8 @@
   category: office
   lat: 41.1920326
   lng: -96.1532126
-  needs_review: true
-  extraction_source: none
+  extraction_source: regex
+  needs_review: false
   address: Good Life Concrete, 6710, South 153rd Circle, Omaha, Nebraska, 68137
   geocode_source: photon
   geocode_confidence: medium

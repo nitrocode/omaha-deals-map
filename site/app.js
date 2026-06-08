@@ -27,6 +27,7 @@ const DEFAULT_FILTERS = {
     priceTiers: [],  // empty = any; otherwise subset of ["$", "$$", "$$$", "$$$$"]
     neighborhood: null,  // null = any; otherwise a string match
     needsReviewOnly: false,  // show only venues flagged as needs_review
+    reverseOnly: false,      // show only venues with a reverse (late-night) HH window
 };
 
 // Days. A venue's first_seen_at within this window gets a 🆕 badge.
@@ -45,6 +46,7 @@ const state = {
     priceTiers: new Set(DEFAULT_FILTERS.priceTiers),
     neighborhood: DEFAULT_FILTERS.neighborhood,
     needsReviewOnly: DEFAULT_FILTERS.needsReviewOnly,
+    reverseOnly: DEFAULT_FILTERS.reverseOnly,
     favorites: new Set(),
     markers: [],
     selectedMarker: null,
@@ -80,6 +82,7 @@ function loadPersistedFilters() {
             state.neighborhood = f.neighborhood;
         }
         if (typeof f.needsReviewOnly === "boolean") state.needsReviewOnly = f.needsReviewOnly;
+        if (typeof f.reverseOnly === "boolean") state.reverseOnly = f.reverseOnly;
     } catch (e) { /* ignore corrupt storage */ }
 }
 
@@ -94,6 +97,7 @@ function persistFilters() {
         priceTiers: [...state.priceTiers],
         neighborhood: state.neighborhood,
         needsReviewOnly: state.needsReviewOnly,
+        reverseOnly: state.reverseOnly,
     };
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); } catch (e) { /* ignore */ }
 }
@@ -294,9 +298,15 @@ function isNewBadge(r) {
     return ageDays >= 0 && ageDays < NEW_BADGE_WINDOW_DAYS;
 }
 
+function hasReverseHH(r) {
+    return (r.deals || []).some(d =>
+        (d.windows || []).some(w => w.type === "reverse_hh"));
+}
+
 function matchesFilters(r) {
     if (state.favoritesOnly && !isFavorite(r)) return false;
     if (state.needsReviewOnly && !r.needs_review) return false;
+    if (state.reverseOnly && !hasReverseHH(r)) return false;
     if (state.cuisines.size > 0) {
         const cs = r.cuisine || [];
         if (!cs.some(c => state.cuisines.has(c))) return false;
@@ -524,6 +534,9 @@ function renderList(matched) {
         if (isNewBadge(r)) {
             badges.push('<span class="v-badge v-badge-new" title="Added in the last week">🆕</span>');
         }
+        if (hasReverseHH(r)) {
+            badges.push('<span class="v-badge v-badge-reverse" title="Late-night / reverse happy hour">late night</span>');
+        }
         if (r.needs_review) {
             const reasonText = reviewReasonsText(r) || "Address or hours need confirming";
             badges.push(`<span class="v-badge v-badge-review" title="${escapeHtml(reasonText)}">needs review</span>`);
@@ -601,11 +614,20 @@ function setView(v) {
 
 // ---------- venue sheet ----------
 
+function _sourceLink(d) {
+    const url = d.source_url || d.external_link;
+    if (!url || !/^https?:\/\//i.test(url)) return "";
+    const host = (url.match(/^https?:\/\/([^/]+)/i) || [, ""])[1].replace(/^www\./, "");
+    return ` <a class="deal-source-link" target="_blank" rel="noopener nofollow"
+              href="${escapeHtml(url)}">source: ${escapeHtml(host)} ↗</a>`;
+}
+
 function renderDeal(d) {
     const kindClass = `kind kind-${d.kind}`;
     const dealTextLine = (d.raw_text && d.raw_text.trim())
         ? `<span class="deal-text">${escapeHtml(d.raw_text.trim())}</span>`
         : "";
+    const srcLink = _sourceLink(d);
     if (d.kind === "happy_hour") {
         const wins = (d.windows || [])
             .filter(w => w.day === state.selectedDay)
@@ -617,17 +639,17 @@ function renderDeal(d) {
             })
             .join(", ");
         return `<div class="venue-deal"><span class="${kindClass}">happy hour</span>${wins}
-                ${dealTextLine}</div>`;
+                ${dealTextLine}${srcLink}</div>`;
     }
     if (d.kind === "special") {
         return `<div class="venue-deal"><span class="${kindClass}">special</span>${escapeHtml(d.title || "")}
                 <br><small>${escapeHtml(d.valid_from || "?")} to ${escapeHtml(d.valid_until || "?")}</small>
-                ${dealTextLine}</div>`;
+                ${dealTextLine}${srcLink}</div>`;
     }
     if (d.kind === "voucher") {
         return `<div class="venue-deal"><span class="${kindClass}">voucher</span>${escapeHtml(d.title || "")}
                 <br><small>$${fmtMoney(d.original_price)} to $${fmtMoney(d.sale_price)}
-                (save $${fmtMoney(d.savings)})</small></div>`;
+                (save $${fmtMoney(d.savings)})</small>${srcLink}</div>`;
     }
     return "";
 }
@@ -788,6 +810,7 @@ function showVenue(r) {
           </button>
         </p>
         ${(r.deals || []).map(renderDeal).join("")}
+        ${r.website ? `<p><a target="_blank" rel="noopener nofollow" href="${escapeHtml(r.website)}">Official site ↗</a></p>` : ""}
         <p><a target="_blank" rel="noopener" href="${mapsUrl}">${mapsLabel}</a></p>
         ${r.personal?.notes ? `<p><em>${escapeHtml(r.personal.notes)}</em></p>` : ""}
         <p class="report-link">
@@ -1070,6 +1093,7 @@ function applyFilterUI() {
     document.getElementById("now-only").checked = state.nowOnly;
     document.getElementById("favorites-only").checked = state.favoritesOnly;
     document.getElementById("needs-review-only").checked = state.needsReviewOnly;
+    document.getElementById("reverse-only").checked = state.reverseOnly;
     const slider = document.getElementById("at-hour");
     if (state.atHour === null) {
         slider.value = "";
@@ -1189,6 +1213,11 @@ function wireControls() {
     });
     document.getElementById("needs-review-only").addEventListener("change", e => {
         state.needsReviewOnly = e.target.checked;
+        persistFilters();
+        render();
+    });
+    document.getElementById("reverse-only").addEventListener("change", e => {
+        state.reverseOnly = e.target.checked;
         persistFilters();
         render();
     });
