@@ -191,6 +191,9 @@ body[data-view="map"] #list-view { display: none; }
 .contribute-links a { color: var(--hh); }
 .contribute-links .link-btn { font-size: .85rem; padding: 0; }
 
+.tip-jar { margin-top: .5rem; font-size: .85rem; color: var(--muted); }
+.tip-jar a { color: var(--hh); }
+
 #contribute-sheet { max-height: 92vh; }
 #contribute-iframe {
     width: 100%; min-height: 70vh; border: 0;
