@@ -1048,7 +1048,7 @@
   lat: 39.2420941
   lng: -81.5752146
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Fore Seasons Golf, Gihon Road, Parkersburg, West Virginia, 26101
   geocode_source: photon
   geocode_confidence: low
@@ -1644,7 +1644,7 @@
   lat: 47.216582
   lng: -94.7567025
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: 3rd Base Bar & Grill, 1st Ave NW, Laporte, Minnesota, 56461
   geocode_source: photon
   geocode_confidence: low
@@ -1750,7 +1750,7 @@
   lat: 41.6596359
   lng: -91.5332957
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: The Dandy Lion, 111, South Dubuque Street, Iowa City, Iowa, 52240
   geocode_source: photon
   geocode_confidence: low
@@ -2622,7 +2622,7 @@
   lat: 38.3283613
   lng: -88.9107001
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: The Frosty Mug Bar & Grill, 1113, Salem Road, Mount Vernon, Illinois, 62864
   geocode_source: photon
   geocode_confidence: low
@@ -2715,7 +2715,7 @@
   lat: 30.3066534
   lng: -97.938016
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Saltgrass Steakhouse Parking, Galleria Circle, Bee Cave, Texas, 78738
   geocode_source: photon
   geocode_confidence: low
@@ -2850,7 +2850,7 @@
   lat: 35.5948353
   lng: -82.5548917
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Tupelo Honey, 12, College Street, Asheville, North Carolina, 28801
   geocode_source: photon
   geocode_confidence: low
@@ -3582,7 +3582,7 @@
   lat: 40.5049925
   lng: -74.6443762
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Catered Affair, Hillsborough Township, New Jersey, 08844
   geocode_source: photon
   geocode_confidence: low
@@ -4007,7 +4007,7 @@
   lat: -31.9806893
   lng: -64.5601675
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: "Fabrica de Sandwiches de Miga, Ruta Provincial E-83 - Avenida Julio Argentino\
     \ Roca, Villa General Belgrano, C\xF3rdoba, X5194"
   geocode_source: photon
@@ -4535,7 +4535,7 @@
   lat: 43.4790624
   lng: -3.877448
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Isla de la Virgen del Mar, Santander, Cantabria, 39012
   geocode_source: photon
   geocode_confidence: low
@@ -4676,7 +4676,7 @@
   category: leisure
   lat: 41.2433178
   lng: -96.0104803
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: Scott Village Commons, Omaha, Nebraska
   geocode_source: photon
@@ -4968,7 +4968,7 @@
   category: amenity
   lat: 41.2656727
   lng: -96.0930437
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: The Omaha Lounge, 666, North 114th Street, Omaha, Nebraska, 68154
   geocode_source: photon
@@ -5216,7 +5216,7 @@
   lat: 40.8151888
   lng: -96.7102032
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508
   geocode_source: photon
   geocode_confidence: low
@@ -5420,7 +5420,7 @@
   category: amenity
   lat: 41.2452822
   lng: -95.9336772
-  extraction_source: llm
+  extraction_source: regex
   needs_review: false
   address: Fizzy's Fountain & Liquors, 1408, South 13th Street, Omaha, Douglas County,
     Nebraska, 68108, United States
@@ -5750,7 +5750,7 @@
   lat: 41.4517245
   lng: -96.4720119
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Big Red Restaurant & Sports Bar, 2323, Laverna Street, Fremont, Nebraska,
     68025
   geocode_source: photon
@@ -6315,7 +6315,7 @@
   lat: 27.9512201
   lng: -82.4486647
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Maloney's Irish Pub, 1120, East Kennedy Boulvard, Tampa, Florida, 33602
   geocode_source: photon
   geocode_confidence: low
@@ -6769,7 +6769,7 @@
   lat: 41.6137048
   lng: -93.8347701
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Rookies Sports Bar & Grill, 2180, Northwest 156th Street, Walnut Township,
     Iowa, 50325
   geocode_source: photon
@@ -7058,7 +7058,7 @@
   category: highway
   lat: 41.2565173
   lng: -95.9308121
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: Harney Street, Omaha, Nebraska, 68131
   geocode_source: photon
@@ -7146,7 +7146,7 @@
   lat: 40.816778
   lng: -96.7097403
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Legends Patio Grill & Bar, 801, R Street, Lincoln, Nebraska, 68508
   geocode_source: photon
   geocode_confidence: low
@@ -7572,7 +7572,7 @@
   lat: 38.8926965
   lng: -119.9983696
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California,
     96158
   geocode_source: photon
@@ -8938,7 +8938,7 @@
   lat: 40.8149576
   lng: -96.7095786
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Vincenzo's, 808, P Street, Lincoln, Nebraska, 68508
   geocode_source: photon
   geocode_confidence: low
@@ -9314,7 +9314,7 @@
   lat: 38.9124336
   lng: -94.6374237
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Sullivan's Steakhouse, West 119th Street, Leawood, Kansas, 66211
   geocode_source: photon
   geocode_confidence: low
@@ -9525,7 +9525,7 @@
   lat: 40.7640215
   lng: -111.893552
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Spencers for Steaks and Chops, 255, West Temple, Salt Lake City, Utah,
     84144
   geocode_source: photon
@@ -9913,7 +9913,7 @@
   category: amenity
   lat: 41.2028601
   lng: -96.2350204
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: Rusty Taco, 5331, South 204th Avenue, Elkhorn, Nebraska, 68022
   geocode_source: photon
@@ -10011,7 +10011,7 @@
   lat: 40.696551
   lng: -75.2586815
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Asian Gifts, 123, Palmer Park Mall, Easton, Pennsylvania, 18045
   geocode_source: photon
   geocode_confidence: low
@@ -10106,7 +10106,7 @@
   lat: 40.7430165
   lng: -96.6789605
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska,
     68516
   geocode_source: photon
@@ -10155,7 +10155,7 @@
   lat: 20.6793114
   lng: -88.5707562
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: "The Observatory or Caracol, Sendero de acceso a Serie Inicial o Chich\xE9\
     n viejo, Yucat\xE1n, 97751"
   geocode_source: photon
@@ -11149,7 +11149,7 @@
   lat: 49.3651776
   lng: -1.188704
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: "La Gr\xE8ve Herbe, Sainte-Marie-du-Mont, Normandy, 50480"
   geocode_source: photon
   geocode_confidence: low
@@ -11302,7 +11302,7 @@
   category: office
   lat: 41.1920326
   lng: -96.1532126
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: Good Life Concrete, 6710, South 153rd Circle, Omaha, Nebraska, 68137
   geocode_source: photon
@@ -11677,7 +11677,7 @@
   lat: 43.6384421
   lng: -79.4172263
   extraction_source: regex
-  needs_review: true
+  needs_review: false
   address: Brazen Head Irish Pub, 165, East Liberty Street, Toronto, Ontario, M6K
     3K4
   geocode_source: photon
@@ -12149,7 +12149,7 @@
   source_record_id: '1480'
   source_url: https://www.visitomaha.com/coupon/save-10%25-off-with-get-out%3a-omaha-escape-rooms-fri-sun/1480/
   name: 'Save 10% OFF with Get Out: Omaha Escape Rooms Fri-Sun'
-  record_modified_at: '2026-05-28T15:31:18.596Z'
+  record_modified_at: '2026-06-07T15:31:28.606Z'
   kind: special
   raw_text: "Use Visit Omaha's exclusive promo code for 10% off your next Get Out:\
     \ Omaha experience when you book an escape room online for Friday - Sunday!\r\n\
@@ -12291,7 +12291,6 @@
     8HN
   geocode_source: photon
   geocode_confidence: low
-  needs_review: true
 - source: visitomaha
   source_record_id: '2732'
   source_url: https://www.visitomaha.com/coupon/the-off-peak-perk/2732/
@@ -12337,7 +12336,6 @@
   address: Off the Road Banana Loop Bush Camp, Stuart Highway, South Australia, 5723
   geocode_source: photon
   geocode_confidence: low
-  needs_review: true
 - source: visitomaha
   source_record_id: '2725'
   source_url: https://www.visitomaha.com/coupon/treerush-advenures-4-pack-special/2725/
@@ -12393,7 +12391,7 @@
   source_record_id: 72-table-tap
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: 72 Table & Tap
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/2895/deal/3833
@@ -12417,7 +12415,7 @@
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Stories Coffee
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
@@ -12441,7 +12439,7 @@
   source_record_id: le-voltaire-french-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Le Voltaire French Restaurant
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3075/deal/4000
@@ -12463,7 +12461,7 @@
   source_record_id: circo
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Circo
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3599/deal/5218
@@ -12485,7 +12483,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
@@ -12504,12 +12502,11 @@
   address: Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102
   geocode_source: photon
   geocode_confidence: high
-  needs_review: false
 - source: bigdealsmedia
   source_record_id: cheeseburgers-a-take-out-joint
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Cheeseburger's A Take Out Joint
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4499/deal/6399
@@ -12531,7 +12528,7 @@
   source_record_id: rib-shack-smokehouse
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Rib Shack Smokehouse
-  record_modified_at: '2026-06-07T04:05:59.633028+00:00'
+  record_modified_at: '2026-06-07T23:59:15.764178+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4839/deal/7039
@@ -12551,4 +12548,3 @@
     34984
   geocode_source: photon
   geocode_confidence: low
-  needs_review: true

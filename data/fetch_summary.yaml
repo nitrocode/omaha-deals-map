@@ -1,12 +1,15 @@
 growomaha:
   ok: true
-  snapshot: data/raw/growomaha/20260607T040558Z.pickle
+  snapshot: data/raw/growomaha/20260607T235914Z.pickle
   records: 261
+  stale_data_warning: false
 visitomaha:
   ok: true
-  snapshot: data/raw/visitomaha/20260607T040559Z.pickle
+  snapshot: data/raw/visitomaha/20260607T235915Z.pickle
   records: 11
+  stale_data_warning: false
 bigdealsmedia:
   ok: true
-  snapshot: data/raw/bigdealsmedia/20260607T040559Z.pickle
-  records: 0
+  snapshot: data/raw/bigdealsmedia/20260607T235915Z.pickle
+  records: null
+  stale_data_warning: false

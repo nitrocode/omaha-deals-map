@@ -13,6 +13,6 @@ https://growomaha.com/wp-json/wp/v2/happy-hour?per_page=100&page=3:
 https://growomaha.com/wp-json/wp/v2/time-slots?per_page=100:
   body_sha: 8d79ae91ebef937054eb77979d2204a8c3dd7cf6382cf12bac6c942b9db0d4d9
 https://omaha.bigdealsmedia.net/category/restaurants:
-  body_sha: 66284d2c8dbd12d5d2d543ae8a161ad22ae3ef2449a09326eab4f3b7aca7b71a
+  body_sha: 666edbe22439e75b6985aba24043e170d3ac70894ce5974940c8c411e8d1b4df
 ? https://www.visitomaha.com/includes/rest_v2/plugins_offers_offers/find/?json=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22categories.categoryid%22%3A%7B%22%24in%22%3A%5B1%2C3%2C4%2C9%2C2%2C7%5D%7D%7D%2C%7B%22filter_tags%22%3A%7B%22%24in%22%3A%5B%22site_primary%22%5D%7D%7D%5D%7D%2C%22options%22%3A%7B%22limit%22%3A100%2C%22skip%22%3A0%2C%22count%22%3Atrue%2C%22sort%22%3A%7B%22qualityScore%22%3A-1%2C%22title_sort%22%3A1%7D%7D%7D&token=7d890807f6e33bbfee82427523fda90c
-: body_sha: 198784e39a8af244b6d9ea77aa24494b643d46f54fc636c5153842e6df30abc1
+: body_sha: 1aa557bf6f8bdf4b0860ae4306c8cc1dcca533f3d57f6f97701b0ce3434ad762
