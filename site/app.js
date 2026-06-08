@@ -367,13 +367,39 @@ function markerStyle(kind, selected) {
     };
 }
 
+// Favorited venues render as a heart glyph in the deal-type color instead
+// of a circle, so they're scannable from across the map. divIcon takes a
+// raw HTML string; the heart character itself is a literal in our source,
+// not user-controlled, so no escapeHtml needed here. We still anchor the
+// icon to its tip rather than its center.
+function favoriteIcon(kind, selected) {
+    const color = selected ? "#d9534f" : (KIND_COLOR[kind] || KIND_COLOR.happy_hour);
+    const size = selected ? 28 : 22;
+    return L.divIcon({
+        className: "fav-marker" + (selected ? " selected" : ""),
+        html: `<span style="color:${color};font-size:${size}px;line-height:1">&#9829;</span>`,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size],   // tip-of-heart anchors at the coord
+        tooltipAnchor: [0, -size],
+    });
+}
+
+function _applyMarkerState(marker, kind, selected) {
+    // Favorited heart markers use divIcon (L.Marker, no setStyle); circle
+    // markers use setStyle. Branch on the flag we set at creation time.
+    if (marker._isFav) {
+        marker.setIcon(favoriteIcon(kind, selected));
+    } else {
+        marker.setStyle(markerStyle(kind, selected));
+    }
+}
+
 function selectMarker(marker, kind) {
     if (state.selectedMarker && state.selectedMarker !== marker) {
-        const prevKind = state.selectedMarker._kind;
-        state.selectedMarker.setStyle(markerStyle(prevKind, false));
+        _applyMarkerState(state.selectedMarker, state.selectedMarker._kind, false);
     }
-    marker.setStyle(markerStyle(kind, true));
-    marker.bringToFront();
+    _applyMarkerState(marker, kind, true);
+    if (!marker._isFav) marker.bringToFront();  // bringToFront is circleMarker-only
     state.selectedMarker = marker;
 }
 
@@ -417,9 +443,13 @@ function render() {
     for (const r of matched) {
         if (r.lat == null || r.lng == null) continue;
         const kind = primaryKindForRestaurant(r);
-        const marker = L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
+        const fav = isFavorite(r);
+        const marker = fav
+            ? L.marker([r.lat, r.lng], { icon: favoriteIcon(kind, false) })
+            : L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
         marker._kind = kind;
         marker._venueId = r.id;
+        marker._isFav = fav;
         // escapeHtml on every interpolated field: r.name + the deal summary
         // both come from third-party scrape sources via deals.json, and
         // bindTooltip renders strings as HTML (OWASP A03 sink).
@@ -506,6 +536,15 @@ function renderList(matched) {
     const root = document.getElementById("list-rows");
     if (!root) return;
     root.innerHTML = "";
+    const sortHint = document.getElementById("list-sort-hint");
+    if (sortHint) {
+        const anchor = state.home
+            ? "home"
+            : (state.userLocation ? "current location" : null);
+        sortHint.textContent = anchor
+            ? `Sorted by distance from ${anchor}`
+            : "Sorted A to Z (set home for distance sort)";
+    }
     const sorted = [...matched].sort(compareForList);
     const frag = document.createDocumentFragment();
     for (const r of sorted) {
@@ -825,8 +864,7 @@ function showVenue(r) {
     document.getElementById("venue-close").addEventListener("click", () => {
         sheet.classList.add("hidden");
         if (state.selectedMarker) {
-            const k = state.selectedMarker._kind;
-            state.selectedMarker.setStyle(markerStyle(k, false));
+            _applyMarkerState(state.selectedMarker, state.selectedMarker._kind, false);
             state.selectedMarker = null;
         }
         state.selectedId = null;
@@ -1309,7 +1347,7 @@ function dismissOpenSheets() {
     contributeSheet.classList.add("hidden");
     document.getElementById("contribute-iframe").src = "about:blank";
     if (state.selectedMarker) {
-        state.selectedMarker.setStyle(markerStyle(state.selectedMarker._kind, false));
+        _applyMarkerState(state.selectedMarker, state.selectedMarker._kind, false);
         state.selectedMarker = null;
     }
     state.selectedId = null;

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T04:08:22.750753+00:00",
+  "built_at": "2026-06-08T04:19:02.589691+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -35,7 +35,7 @@
         "source": "og",
         "attribution": "https://elevenelevenomaha.com/"
       },
-      "website": null,
+      "website": "https://elevenelevenomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -619,7 +619,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://eat402.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -1110,7 +1110,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.facebook.com/anniesirishpubomaha/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -1161,7 +1161,7 @@
         "source": "og",
         "attribution": "https://restaurants.applebees.com/en-us/ne/omaha/13208-w-maple-road-91054"
       },
-      "website": null,
+      "website": "https://restaurants.applebees.com/en-us/ne/omaha/13208-w-maple-road-91054",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -1606,7 +1606,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.barrettsomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -3059,7 +3059,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.marriott.com/hotels/hotel-information/restaurant/omadm-omaha-marriott-downtown-at-the-capitol-district/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -3995,7 +3995,7 @@
         "source": "og",
         "attribution": "https://corkscrewwineandcheese.com"
       },
-      "website": null,
+      "website": "https://corkscrewwineandcheese.com",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -4115,7 +4115,7 @@
       "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://beercornerusa.com/crescentmoon/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -4369,7 +4369,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.djsdugout.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -4432,7 +4432,7 @@
         "source": "wikidata",
         "attribution": "Wikimedia Commons"
       },
-      "website": null,
+      "website": "https://dundeedell.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -4566,7 +4566,7 @@
         "source": "og",
         "attribution": "https://www.earlybirdbrunch.com/"
       },
-      "website": null,
+      "website": "https://www.earlybirdbrunch.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -4637,7 +4637,7 @@
       "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.edgeoftheuniverseomaha.com",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -5038,7 +5038,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://kiewitluminarium.org/visit/fig-cafe/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -5184,7 +5184,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "http://www.firstroundomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -5247,7 +5247,7 @@
         "source": "og",
         "attribution": "https://www.fizzysomaha.com/"
       },
-      "website": null,
+      "website": "https://www.fizzysomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -5373,7 +5373,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.flemingssteakhouse.com/locations/ne/omaha/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -6057,7 +6057,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.goldeez.net/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -6246,7 +6246,7 @@
         "source": "og",
         "attribution": "https://goratsomaha.com/"
       },
-      "website": null,
+      "website": "https://goratsomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -6827,7 +6827,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://hiro88.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -6961,7 +6961,7 @@
         "source": "og",
         "attribution": "https://www.hookandlime.com/"
       },
-      "website": null,
+      "website": "https://www.hookandlime.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -7473,7 +7473,7 @@
         "source": "og",
         "attribution": "https://inkwellbar.com/"
       },
-      "website": null,
+      "website": "https://inkwellbar.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -8349,7 +8349,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "http://www.kobesteakhouse.us/locations.php",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -8485,7 +8485,7 @@
         "source": "og",
         "attribution": "https://krugpark.com/"
       },
-      "website": null,
+      "website": "https://krugpark.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -9773,7 +9773,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://mercury-omaha.com/#",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -9897,7 +9897,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.motsomaha.com",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -10157,7 +10157,7 @@
       "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://niteowlomaha.com",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -10675,7 +10675,7 @@
         "source": "og",
         "attribution": "https://www.pageturnersomaha.com/"
       },
-      "website": null,
+      "website": "https://www.pageturnersomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -10974,7 +10974,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.pivot-prime.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -11096,7 +11096,7 @@
         "source": "og",
         "attribution": "https://www.ponzusushiandgrill.com/"
       },
-      "website": null,
+      "website": "https://www.ponzusushiandgrill.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -11311,7 +11311,7 @@
       "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.facebook.com/stilespub",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -11640,7 +11640,7 @@
         "source": "og",
         "attribution": "https://www.redlionlounge.com/"
       },
-      "website": null,
+      "website": "https://www.redlionlounge.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -12644,7 +12644,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.sipson10th.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -12886,7 +12886,7 @@
         "source": "og",
         "attribution": "https://eatatthegarage.com/"
       },
-      "website": null,
+      "website": "https://eatatthegarage.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -12961,7 +12961,7 @@
         "source": "og",
         "attribution": "https://smokinoakpizza.com/location/omaha-ne/"
       },
-      "website": null,
+      "website": "https://smokinoakpizza.com/location/omaha-ne/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -13020,7 +13020,7 @@
       "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.blackstonesocial.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -13048,7 +13048,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://locations.sonicdrivein.com/ne/omaha/14598-west-maple-road.html",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -13265,7 +13265,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://speziarestaurant.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -14267,7 +14267,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://thecasualpint.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -14799,7 +14799,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://jewellomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -15484,7 +15484,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://www.timberomaha.com/",
       "source_count": 1,
       "personal": {},
       "deals": [
@@ -16665,7 +16665,7 @@
         "source": "og",
         "attribution": "https://ziospizzeria.com/locations/old-market/"
       },
-      "website": null,
+      "website": "https://ziospizzeria.com/locations/old-market/",
       "source_count": 1,
       "personal": {},
       "deals": [

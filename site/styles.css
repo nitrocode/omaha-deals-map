@@ -113,6 +113,22 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 .v-badge-review  { background: #fff3e0; color: #8a4a00; cursor: help; }
 .v-badge-reverse { background: #efe5ff; color: #4a2a8a; }
 
+/* Favorite heart markers. Leaflet wraps divIcon content in a default
+ * .leaflet-div-icon box (border + bg); strip it so just the glyph shows. */
+.fav-marker {
+    background: transparent !important;
+    border: none !important;
+    text-align: center;
+    text-shadow: 0 0 2px #fff, 0 0 4px rgba(0,0,0,.35);
+}
+.fav-marker.selected { transform: scale(1.15); transform-origin: center bottom; }
+
+/* Subtle "sorted by distance from home" hint above the list. */
+.list-sort-hint {
+    font-size: .75rem; color: var(--muted); padding: .35rem .75rem;
+    border-bottom: 1px solid var(--border); background: var(--bg-alt, transparent);
+}
+
 /* Specific review reasons in the venue sheet, shown only when needs_review.
  * Keeps the orange palette of the badge so users connect the two. */
 .review-reasons {

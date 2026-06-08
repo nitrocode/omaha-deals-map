@@ -31,3 +31,10 @@ data/raw/
 .coverage.*
 coverage.xml
 htmlcov/
+
+# Local browser-automation captures (one-off debugging artifacts).
+.playwright-mcp/
+
+# Skill workspaces and per-skill eval runs are personal, not repo content.
+.claude/skills/*-workspace/
+.claude/skills/*/evals/
