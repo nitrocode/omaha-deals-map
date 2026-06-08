@@ -67,6 +67,37 @@ def test_build_applies_category_overrides(tmp_path, monkeypatch):
     assert r["price_tier"] == "$$"
 
 
+def test_neighborhood_heuristic_picks_known_keyword_from_address():
+    from scripts._build_main import _guess_neighborhood
+    assert _guess_neighborhood("1020 Howard St, Old Market, Omaha NE") == "Old Market"
+    assert _guess_neighborhood("4007 Farnam St, Blackstone, Omaha NE 68131") == "Blackstone"
+    assert _guess_neighborhood("123 Main, Council Bluffs IA") == "Council Bluffs"
+
+
+def test_neighborhood_heuristic_returns_none_when_no_keyword_matches():
+    from scripts._build_main import _guess_neighborhood
+    assert _guess_neighborhood("1234 Anywhere St, Omaha, NE") is None
+    assert _guess_neighborhood("") is None
+    assert _guess_neighborhood(None) is None
+
+
+def test_build_applies_neighborhood_heuristic_when_no_override(tmp_path, monkeypatch):
+    """If categories.yaml doesn't set a neighborhood for a venue but the
+    address contains a known keyword, the heuristic fills it in."""
+    monkeypatch.chdir(tmp_path)
+    Path("data/overrides").mkdir(parents=True)
+    Path("site").mkdir()
+    sample = dict(SAMPLE[0])
+    sample["address"] = "1020 Howard St, Old Market, Omaha NE 68102"
+    with open("data/geocoded.yaml", "w") as f:
+        yaml.safe_dump([sample], f)
+    # No categories.yaml -> empty overrides.
+    from scripts import _build_main
+    _build_main.main()
+    bundle = json.loads(Path("data/deals.json").read_text())
+    assert bundle["restaurants"][0]["neighborhood"] == "Old Market"
+
+
 def test_build_includes_manual_venues_from_override(tmp_path, monkeypatch):
     """data/overrides/manual_venues.yaml is for venues that aren't in any
     scrape source. They flow into deals.json next to scraped venues."""

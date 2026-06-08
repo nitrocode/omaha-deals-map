@@ -458,9 +458,14 @@ function renderList(matched) {
         const nogeoHtml = (r.lat == null || r.lng == null)
             ? `<span class="v-nogeo" title="No location yet, won't show on map">no location</span>`
             : "";
+        // Small 📷 next to the name when we have a photo, so users can scan
+        // the list and see which venues will show an image when tapped.
+        const photoIcon = (r.photo && r.photo.url)
+            ? `<span class="v-photo-icon" title="Photo available">📷</span>`
+            : "";
         li.innerHTML = `
             <span class="v-pip kind-${kind}"></span>
-            <span class="v-name">${escapeHtml(r.name)}${nogeoHtml}</span>
+            <span class="v-name">${escapeHtml(r.name)}${photoIcon}${nogeoHtml}</span>
             ${distHtml}
             <span class="v-meta">${escapeHtml(listRowMetaLine(r))}</span>
         `;
@@ -726,9 +731,15 @@ function buildCuisineFilter() {
             "<p class='hint'>No cuisine data yet. Edit <code>data/overrides/categories.yaml</code>.</p>";
         return;
     }
+    // Count venues per cuisine so the user sees up front whether a
+    // checkbox will narrow the map to 100 or to 2.
+    const counts = {};
+    for (const r of state.data.restaurants) {
+        for (const c of (r.cuisine || [])) counts[c] = (counts[c] || 0) + 1;
+    }
     host.innerHTML = "<legend>Cuisine</legend>" + sorted.map(c =>
         `<label><input type="checkbox" data-cuisine="${escapeHtml(c)}"
-          ${state.cuisines.has(c) ? "checked" : ""}> ${escapeHtml(c)}</label>`
+          ${state.cuisines.has(c) ? "checked" : ""}> ${escapeHtml(c)} <span class="count-tag">(${counts[c] || 0})</span></label>`
     ).join("");
     host.querySelectorAll("[data-cuisine]").forEach(cb => {
         cb.addEventListener("change", () => {
@@ -744,21 +755,38 @@ function buildPriceAndNeighborhoodFilters() {
     // Both filters hide when there's no data populated yet, so an empty
     // map doesn't show an empty filter box. They reveal automatically as
     // soon as overrides start landing entries.
-    const prices = new Set();
-    const neighborhoods = new Set();
+    // Counts make sparse-data filters honest: users see "$ (1)" or
+    // "Old Market (12)" up front so clicking doesn't gray the map
+    // unexpectedly.
+    const priceCounts = {};
+    const neighborhoodCounts = {};
     for (const r of state.data.restaurants) {
-        if (r.price_tier) prices.add(r.price_tier);
-        if (r.neighborhood) neighborhoods.add(r.neighborhood);
+        if (r.price_tier) priceCounts[r.price_tier] = (priceCounts[r.price_tier] || 0) + 1;
+        if (r.neighborhood) neighborhoodCounts[r.neighborhood] = (neighborhoodCounts[r.neighborhood] || 0) + 1;
     }
-    document.getElementById("price-filter").hidden = prices.size === 0;
-    const nbField = document.getElementById("neighborhood-filter");
-    nbField.hidden = neighborhoods.size === 0;
+    const priceCount = Object.keys(priceCounts).length;
+    const neighborhoodCount = Object.keys(neighborhoodCounts).length;
+    document.getElementById("price-filter").hidden = priceCount === 0;
+    document.getElementById("neighborhood-filter").hidden = neighborhoodCount === 0;
+    // Update price labels to include the count.
+    document.querySelectorAll("[data-price]").forEach(cb => {
+        const tier = cb.dataset.price;
+        const count = priceCounts[tier] || 0;
+        const label = cb.parentElement;
+        label.querySelector(".count-tag")?.remove();
+        const span = document.createElement("span");
+        span.className = "count-tag";
+        span.textContent = ` (${count})`;
+        label.appendChild(span);
+        cb.disabled = count === 0;
+    });
     const sel = document.getElementById("neighborhood-select");
-    // Rebuild options: "Any" + sorted unique neighborhoods.
     sel.innerHTML = '<option value="">Any neighborhood</option>' +
-        [...neighborhoods].sort().map(n =>
-            `<option value="${escapeHtml(n)}"${state.neighborhood === n ? " selected" : ""}>${escapeHtml(n)}</option>`
-        ).join("");
+        Object.entries(neighborhoodCounts)
+            .sort()
+            .map(([n, c]) =>
+                `<option value="${escapeHtml(n)}"${state.neighborhood === n ? " selected" : ""}>${escapeHtml(n)} (${c})</option>`
+            ).join("");
 }
 
 // ---------- home location ----------

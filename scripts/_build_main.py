@@ -12,6 +12,30 @@ from scripts._lib.today_html import DAY_KEYS, render_today_html
 
 SITE_BASE_URL = "https://nitrocode.github.io/omaha-deals-map/"
 
+# Known Omaha-area neighborhoods, in priority order. The heuristic walks the
+# list and returns the first one that appears (case-insensitive) anywhere in
+# the venue's address string. Order matters because of overlap, e.g.,
+# "Downtown Omaha" should resolve to "Downtown" before any substring conflict.
+# Only used when categories.yaml doesn't already pin an explicit override.
+OMAHA_NEIGHBORHOODS = [
+    "Old Market", "Blackstone", "Aksarben", "Benson", "Dundee",
+    "Florence", "Council Bluffs", "Bellevue",
+    "Midtown", "Downtown", "West Omaha", "North Omaha", "South Omaha",
+]
+
+
+def _guess_neighborhood(address: str) -> str | None:
+    """Pick a known neighborhood from an address string. Returns None when
+    no keyword matches; the explicit override path in categories.yaml is the
+    source of truth, this only fills gaps for venues that don't have one yet."""
+    if not address:
+        return None
+    addr_lower = address.lower()
+    for nb in OMAHA_NEIGHBORHOODS:
+        if nb.lower() in addr_lower:
+            return nb
+    return None
+
 SCHEMA_VERSION = "1.0"
 
 
@@ -88,7 +112,15 @@ def main() -> int:
             "lng": first.get("lng"),
             "geocode_confidence": first.get("geocode_confidence", "none"),
             "cuisine": categories.get(rid, {}).get("cuisine", []),
-            "neighborhood": categories.get(rid, {}).get("neighborhood"),
+            # Override > address heuristic > null. The heuristic is purely
+            # additive: a maintainer who explicitly sets neighborhood: null
+            # in categories.yaml is opting out, but missing entries fall back
+            # to address keyword matching so the UI filter populates without
+            # 280 hand-entries.
+            "neighborhood": (
+                categories.get(rid, {}).get("neighborhood")
+                or _guess_neighborhood(first.get("address", ""))
+            ),
             # Price tier: "$" / "$$" / "$$$" / "$$$$" / null. Matches the
             # universal restaurant pricing convention so contributors don't
             # have to learn a new vocabulary.

@@ -67,3 +67,8 @@ clean:
 # Then this command appends new venues to data/overrides/manual_venues.yaml.
 scrape-npdodge:
 	python scripts/oneoff/scrape_npdodge.py
+
+# Generate docs/osm-contribution-list.md from the photo cache, listing
+# venues with gaps in OSM data so the maintainer can contribute fixes.
+osm-gaps:
+	python scripts/oneoff/generate_osm_gaps.py

@@ -98,6 +98,14 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
     background: #f0e2c4; color: #7a5b1c; border-radius: 3px; margin-left: .25rem;
     vertical-align: middle;
 }
+.venue-row .v-photo-icon {
+    font-size: .8rem; margin-left: .3rem; opacity: .65;
+    vertical-align: middle;
+}
+
+/* Tiny count tag next to filter options: "Old Market (12)" so users see
+   coverage before clicking and don't gray the map by surprise. */
+.count-tag { color: var(--muted); font-size: .8rem; }
 
 /* Header view-toggle (mobile only). Hidden on wide screens since both panes show. */
 .view-toggle {
@@ -252,4 +260,27 @@ body[data-view="map"] #list-view { display: none; }
     body[data-view="map"] #list-view { display: block; }
     .view-toggle { display: none; }
     #list-view { flex: 0 0 22rem; max-width: 22rem; }
+
+    /* Venue / contribute / home sheets sit over the MAP only, not the list,
+       so the user can keep scrolling the list while a venue is selected.
+       On mobile they still take the full width (this rule only fires
+       above the breakpoint).
+       Use the same 22rem offset as the list pane; on a centered 80rem
+       layout the body margin pushes both alongside each other. */
+    #venue-sheet, #contribute-sheet, #home-sheet {
+        left: calc(50% - 40rem + 22rem);
+        right: calc(50% - 40rem);
+        max-width: calc(80rem - 22rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* When the viewport is narrower than the centered max but still desktop,
+       the body fills the screen, so the offset should hug the list pane. */
+    @media (max-width: 80rem) {
+        #venue-sheet, #contribute-sheet, #home-sheet {
+            left: 22rem;
+            right: 0;
+            max-width: none;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T01:44:50.392162+00:00",
+  "built_at": "2026-06-08T02:06:02.862504+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -28,9 +28,13 @@
       "lng": -96.006534,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://static1.squarespace.com/static/5d6ef5910fdf3200015e0971/t/5dd0861e48fc02235981af59/1573946918756/IMG_20191109_110916_895.jpg?format=1500w",
+        "source": "og",
+        "attribution": "https://elevenelevenomaha.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -416,7 +420,7 @@
       "lng": -96.0074377,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -1026,7 +1030,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://assets.restaurants.applebees.com/images/applebees-logo-og.png",
+        "source": "og",
+        "attribution": "https://restaurants.applebees.com/en-us/ne/omaha/13208-w-maple-road-91054"
+      },
       "personal": {},
       "deals": [
         {
@@ -1555,7 +1563,7 @@
       "lng": -96.0064163,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -2842,7 +2850,7 @@
       "lng": -96.0077744,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -3097,7 +3105,11 @@
       ],
       "neighborhood": "Blackstone",
       "price_tier": "$",
-      "photo": null,
+      "photo": {
+        "url": "https://static1.squarespace.com/static/5e60537decae0b6abfd22293/t/612d34ebaca35464ca9354f5/1630352619129/AT_Logos-03.png?format=1500w",
+        "source": "og",
+        "attribution": "https://www.ineedcheeseburgers.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -3572,7 +3584,7 @@
       "lng": -95.9904351,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Dundee",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -3627,9 +3639,13 @@
       "lng": -95.9724476,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://static1.squarespace.com/static/57d1baae9de4bb06b4b77ccf/t/57fd06fa6a4963df59483653/1476200188914/corkscrew_logo_center_main_white.png?format=1500w",
+        "source": "og",
+        "attribution": "https://corkscrewwineandcheese.com"
+      },
       "personal": {},
       "deals": [
         {
@@ -3737,7 +3753,7 @@
       "lng": -95.9662994,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -4030,9 +4046,13 @@
       "lng": -95.9906791,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Dundee",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/50th%20%26%20Underwood.jpg?width=600",
+        "source": "wikidata",
+        "attribution": "Wikimedia Commons"
+      },
       "personal": {},
       "deals": [
         {
@@ -4097,7 +4117,7 @@
       "lng": -95.9901317,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Dundee",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -4152,9 +4172,13 @@
       "lng": -95.9701558,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://earlybirdbrunch.com/wp-content/uploads/2023/08/bg2.jpg",
+        "source": "og",
+        "attribution": "https://www.earlybirdbrunch.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -4219,7 +4243,7 @@
       "lng": -96.0070456,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -4777,7 +4801,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://www.fizzysomaha.com/wp-content/uploads/2023/04/Fizzys_logotype_orange-1.svg",
+        "source": "og",
+        "attribution": "https://www.fizzysomaha.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -5698,7 +5726,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://goratsomaha.com/wp-content/uploads/2020/11/facebook-img.jpg",
+        "source": "og",
+        "attribution": "https://goratsomaha.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -6300,7 +6332,7 @@
       "lng": -95.9361194,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -6357,7 +6389,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://static.spotapps.co/website_images/ab_websites/87393_website/parties_right.jpg",
+        "source": "og",
+        "attribution": "https://www.hookandlime.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -6822,7 +6858,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://images.getbento.com/accounts/cf5699c868195e5e67a4a73213f51da1/media/images/67748Logo-Inkwell.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
+        "source": "og",
+        "attribution": "https://inkwellbar.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -7126,7 +7166,7 @@
       "lng": -95.9309226,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -7498,7 +7538,7 @@
       "lng": -95.9660768,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Bellevue",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -7748,9 +7788,13 @@
       "lng": -96.0086983,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://cdn.shopify.com/s/files/1/0509/0633/3343/files/logo.png?height=628&pad_color=FFFBF6&v=1614335519&width=1200",
+        "source": "og",
+        "attribution": "https://krugpark.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -8686,7 +8730,7 @@
       "lng": -96.0087857,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -9284,7 +9328,7 @@
       "lng": -95.9722476,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -9461,7 +9505,7 @@
       "lng": -96.0461471,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "West Omaha",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -9762,7 +9806,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://static1.squarespace.com/static/59fcd4a8ccc5c59997594ca7/t/5fc514f85147b14804d3bd27/1606751485818/IMG_0374.PNG?format=1500w",
+        "source": "og",
+        "attribution": "https://www.pageturnersomaha.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -10145,9 +10193,13 @@
       "lng": -96.0153313,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Aksarben",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/qeurbpoz/1daac7e8-5453-424b-82e5-d42d1d9513f6.jpg",
+        "source": "og",
+        "attribution": "https://www.ponzusushiandgrill.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -10346,7 +10398,7 @@
       "lng": -95.9321694,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -10645,9 +10697,13 @@
       "lng": -95.9691803,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://static1.squarespace.com/static/6657582c8b1d2e699314a379/t/66832207260ec16690e38467/1719869959159/Asset+3.png?format=1500w",
+        "source": "og",
+        "attribution": "https://www.redlionlounge.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -10700,7 +10756,7 @@
       "lng": -95.9585075,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "North Omaha",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -10816,7 +10872,7 @@
       "lng": -95.9678598,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -11509,7 +11565,7 @@
       "lng": -95.9326215,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Bellevue",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -11792,7 +11848,11 @@
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://eatatthegarage.com/wp-content/uploads/2026/04/GAR-2026-Brioche-Bun-Group-Shot-DSC04698-scaled.jpg",
+        "source": "og",
+        "attribution": "https://eatatthegarage.com/"
+      },
       "personal": {},
       "deals": [
         {
@@ -11857,9 +11917,13 @@
       "lng": -95.9592836,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Midtown",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://smokinoakpizza.com/previews/index.webp",
+        "source": "og",
+        "attribution": "https://smokinoakpizza.com/location/omaha-ne/"
+      },
       "personal": {},
       "deals": [
         {
@@ -11912,7 +11976,7 @@
       "lng": -95.9726028,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Blackstone",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -12624,7 +12688,7 @@
       "lng": -96.0075763,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Benson",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -12777,7 +12841,7 @@
       "lng": -95.9314378,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -14514,7 +14578,7 @@
       "lng": -95.9308408,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "personal": {},
@@ -15266,9 +15330,13 @@
       "lng": -95.9310913,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
-      "photo": null,
+      "photo": {
+        "url": "https://ziospizzeria.com/wp-content/uploads/2015/05/ZiosPizzeria-Downtown-Exterior.jpg",
+        "source": "og",
+        "attribution": "https://ziospizzeria.com/locations/old-market/"
+      },
       "personal": {},
       "deals": [
         {
