@@ -69,6 +69,34 @@ def _aggregate_website(recs: list[dict]) -> str | None:
     return None
 
 
+def _source_count(recs: list[dict]) -> int:
+    """How many distinct sources contributed a deal for this venue.
+
+    A venue that shows up in 2+ sources is a stronger signal than one
+    that only one aggregator knew about; surface as a `popular` badge
+    in the UI. Doesn't double-count multiple deals from the same source.
+    """
+    return len({r.get("source") for r in recs if r.get("source")})
+
+
+def _update_first_seen(rids: list[str], state_path: Path, now_iso: str) -> dict:
+    """Maintain a slug -> first_seen_at map. New slugs get stamped with
+    today; existing entries are preserved. Removed slugs stay in the map
+    too - it's purely additive so we can answer 'is this venue new?'
+    without bouncing between full rebuilds.
+    """
+    state = read_yaml(state_path, default={}) or {}
+    changed = False
+    for rid in rids:
+        if rid not in state:
+            state[rid] = now_iso
+            changed = True
+    if changed:
+        from scripts._lib.io import write_yaml
+        write_yaml(state_path, state)
+    return state
+
+
 def _deal(rec: dict) -> dict:
     base = {
         "kind": rec["kind"],
@@ -107,6 +135,11 @@ def main() -> int:
     # Optional: photos discovered by stage 06_photos. Build is the single
     # place that knows the deals.json schema, so the merge lives here.
     photos = read_yaml(Path("data/photo_cache.yaml"), default={}) or {}
+    # First-seen tracker: lets the UI flag "🆕 new this week" on venues
+    # that landed in the dataset recently. Stamped per-slug at first
+    # build, preserved across runs.
+    now_iso = datetime.now(UTC).isoformat()
+    first_seen_path = Path("data/_first_seen.yaml")
 
     by_id: dict[str, list[dict]] = defaultdict(list)
     for rec in geocoded:
@@ -141,6 +174,8 @@ def main() -> int:
             # Venue's own website if any source provided one. Used by the
             # photo finder as a fallback when OSM lacks the website tag.
             "website": _aggregate_website(recs),
+            # Cross-source confirmation. 2+ sources = community-confirmed.
+            "source_count": _source_count(recs),
             "personal": personal.get(rid, {}),
             "deals": [_deal(r) for r in recs],
             "needs_review": any(r.get("needs_review", False) for r in recs),
@@ -170,6 +205,7 @@ def main() -> int:
             # own site (vs a third-party aggregator) double as a website.
             "website": _aggregate_website(entry.get("deals", []))
                        or entry.get("website"),
+            "source_count": 1,  # manual entries by definition come from one source
             "personal": personal.get(rid, {}),
             "deals": entry.get("deals", []),
             "needs_review": False,
@@ -177,6 +213,15 @@ def main() -> int:
         summary.setdefault("manual", {"count": 0})["count"] += 1
     # Keep alphabetical order stable.
     restaurants.sort(key=lambda r: r["id"])
+
+    # Stamp first-seen for any venue we haven't seen before, then attach
+    # the per-venue timestamp to the bundle so the UI can compute "new
+    # this week" relative to its own clock.
+    first_seen = _update_first_seen(
+        [r["id"] for r in restaurants], first_seen_path, now_iso,
+    )
+    for r in restaurants:
+        r["first_seen_at"] = first_seen.get(r["id"])
 
     bundle = {
         "schema_version": SCHEMA_VERSION,

@@ -66,33 +66,51 @@ body { display: grid; grid-template-rows: auto auto 1fr; }
 }
 .venue-list { list-style: none; margin: 0; padding: 0; }
 .venue-row {
-    padding: .65rem 1rem;
+    padding: .65rem 1rem .65rem .5rem;
     border-bottom: 1px solid var(--border);
     cursor: pointer;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: .25rem .5rem;
+    /* heart | pip | name | distance */
+    grid-template-columns: auto auto 1fr auto;
+    gap: .15rem .5rem;
     align-items: baseline;
 }
 .venue-row:hover, .venue-row:focus-visible { background: #f0f4fb; outline: 0; }
 .venue-row.selected { background: #fde8e8; }
+.venue-row .v-fav-btn {
+    grid-row: 1; grid-column: 1; align-self: center;
+    background: transparent; border: 0; padding: .25rem .35rem;
+    font-size: 1.2rem; line-height: 1; color: #bbb;
+    cursor: pointer; border-radius: 4px;
+}
+.venue-row .v-fav-btn:hover { color: #d9534f; background: #fde8e8; }
+.venue-row .v-fav-btn.active { color: #d9534f; }
 .venue-row .v-pip {
     width: 8px; height: 8px; border-radius: 50%; align-self: center;
-    grid-row: 1; grid-column: 1;
+    grid-row: 1; grid-column: 2;
 }
 .venue-row .v-name {
-    font-weight: 600; grid-row: 1; grid-column: 2;
+    font-weight: 600; grid-row: 1; grid-column: 3;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .venue-row .v-distance {
-    grid-row: 1; grid-column: 3; font-size: .75rem; color: var(--muted);
+    grid-row: 1; grid-column: 4; font-size: .75rem; color: var(--muted);
     white-space: nowrap;
 }
 .venue-row .v-meta {
-    grid-row: 2; grid-column: 2 / span 2;
+    grid-row: 2; grid-column: 3 / span 2;
     font-size: .8rem; color: var(--muted);
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+/* Inline badges on list rows: small pill chips. */
+.v-badge {
+    display: inline-block; font-size: .65rem; padding: .05rem .35rem;
+    border-radius: 3px; margin-left: .3rem; vertical-align: middle;
+    font-weight: normal;
+}
+.v-badge-popular { background: #e3f0ff; color: #1b4a8a; }
+.v-badge-new     { background: #e6f6e6; color: #1a6a1a; }
+.v-badge-review  { background: #fff3e0; color: #8a4a00; }
 .venue-row .v-nogeo {
     display: inline-block; font-size: .65rem; padding: .05rem .35rem;
     background: #f0e2c4; color: #7a5b1c; border-radius: 3px; margin-left: .25rem;

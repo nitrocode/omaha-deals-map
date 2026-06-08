@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T02:43:50.345610+00:00",
+  "built_at": "2026-06-08T03:04:46.578084+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -36,6 +36,7 @@
         "attribution": "https://elevenelevenomaha.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -54,7 +55,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "1479",
@@ -68,6 +70,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://bookeo.com/get_out_omaha/?promotion=VISITOMAHA20",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -82,7 +85,8 @@
           "valid_until": null
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "1480",
@@ -96,6 +100,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://bookeo.com/get_out_omaha?promotion=VISITOMAHATEN",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -110,7 +115,8 @@
           "valid_until": null
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "1549",
@@ -124,6 +130,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -137,7 +144,8 @@
           "valid_until": null
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "1628",
@@ -151,6 +159,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://heartlandbikeshare.org",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -165,7 +174,8 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2681",
@@ -179,6 +189,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://www.opentable.com/booking/experiences-availability?rid=1383829&restref=1383829&experienceId=339211&utm_source=external&utm_medium=referral&utm_campaign=shared",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -193,7 +204,8 @@
           "valid_until": null
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2717",
@@ -207,6 +219,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://www.omahahoteldeco.com/offers/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -221,7 +234,8 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2724",
@@ -235,6 +249,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://treerush.com/try-it-tickets/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -249,7 +264,8 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2725",
@@ -263,6 +279,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://treerush.com/family-4pack/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -277,7 +294,8 @@
           "valid_until": "2027-01-01"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2729",
@@ -291,6 +309,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://www.thecottonwoodhotel.com/meetings-and-events/weddings/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -305,7 +324,8 @@
           "valid_until": "2026-12-02"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2731",
@@ -319,6 +339,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://www.thecottonwoodhotel.com/meetings-and-events/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -333,7 +354,8 @@
           "valid_until": "2026-11-01"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "2732",
@@ -347,6 +369,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://www.thecottonwoodhotel.com/meetings-and-events/",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -361,7 +384,8 @@
           "valid_until": "2027-04-01"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "30hop",
@@ -375,6 +399,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -423,7 +448,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "3189-2",
@@ -437,6 +463,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -491,7 +518,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "3rd-base-bar-grill",
@@ -505,6 +533,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -535,7 +564,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "402-eat-drink",
@@ -549,6 +579,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -603,7 +634,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "72-table-and-tap",
@@ -617,6 +649,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -671,7 +704,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "72-table-tap",
@@ -685,6 +719,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/2895/deal/3833",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -700,7 +735,8 @@
           "category": "amenity"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "801-chophouse",
@@ -714,6 +750,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -756,7 +793,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "a-catered-affair",
@@ -770,6 +808,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -824,7 +863,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "acadian-grille",
@@ -838,6 +878,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -886,7 +927,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "addys-sports-bar-grill",
@@ -900,6 +942,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -942,7 +985,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "agave-azteca",
@@ -956,6 +1000,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -998,7 +1043,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "annies-irish-pub",
@@ -1012,6 +1058,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1042,7 +1089,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "applebees-2",
@@ -1060,6 +1108,7 @@
         "attribution": "https://restaurants.applebees.com/en-us/ne/omaha/13208-w-maple-road-91054"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1102,7 +1151,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "approach-at-indian-creek",
@@ -1116,6 +1166,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1164,7 +1215,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "backlot-pizza-kitchen",
@@ -1178,6 +1230,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1220,7 +1273,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "backlot-taphouse",
@@ -1234,6 +1288,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1282,7 +1337,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "backstretch-bar-at-inner-rail-food-hall",
@@ -1296,6 +1352,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1350,7 +1407,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "barchen-beer-garden",
@@ -1364,6 +1422,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1406,7 +1465,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "barnato",
@@ -1420,6 +1480,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1462,7 +1523,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "barretts-barleycorn",
@@ -1476,6 +1538,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1530,7 +1593,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "beacon-hills-aksarben",
@@ -1544,6 +1608,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1586,7 +1651,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "benson-brewery",
@@ -1600,6 +1666,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1648,7 +1715,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "beyond-golf",
@@ -1662,6 +1730,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1710,7 +1779,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "big-kels-pizza-wings",
@@ -1724,6 +1794,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1754,7 +1825,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "big-red-restaurant-sports-bar-2",
@@ -1768,6 +1840,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1804,7 +1877,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "billy-os-lounge",
@@ -1818,6 +1892,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1872,7 +1947,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "biryaniwala",
@@ -1886,6 +1962,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1897,7 +1974,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "blatt-beer-table",
@@ -1911,6 +1989,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -1965,7 +2044,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "blue-chip-ultra-lounge",
@@ -1979,6 +2059,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2021,7 +2102,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "blue-sushi-3",
@@ -2035,6 +2117,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2089,7 +2172,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "blue-sushi-old-market",
@@ -2103,6 +2187,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2157,7 +2242,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "blue-sushi-shops-of-legacy",
@@ -2171,6 +2257,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2225,7 +2312,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "bob-willies-wonderbowl",
@@ -2239,6 +2327,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2293,7 +2382,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "bobafi",
@@ -2307,6 +2397,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2349,7 +2440,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "bogies-bar-grill-west",
@@ -2363,6 +2455,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2405,7 +2498,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "bonefish-grill",
@@ -2419,6 +2513,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2473,7 +2568,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brazen-head-irish-pub",
@@ -2487,6 +2583,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2529,7 +2626,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brewskys-2",
@@ -2543,6 +2641,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2591,7 +2690,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brick-street-tavern",
@@ -2605,6 +2705,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2647,7 +2748,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brickway-brewery-distillery",
@@ -2661,6 +2763,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2715,7 +2818,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brownies-bar-grill",
@@ -2729,6 +2833,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2765,7 +2870,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "brushi-bistro-bar",
@@ -2779,6 +2885,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2827,7 +2934,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "burdock-bitters",
@@ -2841,6 +2949,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2895,7 +3004,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "burrito-envy",
@@ -2909,6 +3019,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -2957,7 +3068,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "bushwood-lounge",
@@ -2971,6 +3083,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3013,7 +3126,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "casanovas-butchery-rockbrook",
@@ -3027,6 +3141,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3045,7 +3160,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "charlestons-2",
@@ -3059,6 +3175,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3101,7 +3218,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "charlies-on-the-lake",
@@ -3115,6 +3233,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3151,7 +3270,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cheeseburgers",
@@ -3171,6 +3291,7 @@
         "attribution": "https://www.ineedcheeseburgers.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3182,7 +3303,8 @@
           "raw_text": "$5 original burgers every Tuesday."
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cheeseburgers-a-take-out-joint",
@@ -3196,6 +3318,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/4499/deal/6399",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3211,7 +3334,8 @@
           "category": "restaurants"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cibo-vino",
@@ -3225,6 +3349,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3273,7 +3398,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cilantros-mexican-bar-grill",
@@ -3287,6 +3413,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3323,7 +3450,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "circo",
@@ -3337,6 +3465,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/3599/deal/5218",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3352,7 +3481,8 @@
           "category": "restaurants"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "circo-3",
@@ -3366,6 +3496,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3414,7 +3545,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "clancys-pub",
@@ -3428,6 +3560,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3470,7 +3603,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "clio",
@@ -3484,6 +3618,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3538,7 +3673,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cohen-kellys-lounge",
@@ -3552,6 +3688,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3588,7 +3725,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "copps-pizza",
@@ -3602,6 +3740,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3644,7 +3783,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cork-n-bottle",
@@ -3658,6 +3798,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3700,7 +3841,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "corkscrew-blackstone",
@@ -3718,6 +3860,7 @@
         "attribution": "https://corkscrewwineandcheese.com"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3760,7 +3903,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cove-lounge-grille",
@@ -3774,6 +3918,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3816,7 +3961,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "crescent-moon",
@@ -3830,6 +3976,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3872,7 +4019,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cumbia-omaha",
@@ -3886,6 +4034,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3934,7 +4083,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "cunninghams-pub-grill",
@@ -3948,6 +4098,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -3990,7 +4141,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "dante-2",
@@ -4004,6 +4156,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4058,7 +4211,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "djs-dugout",
@@ -4072,6 +4226,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4114,7 +4269,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "dundee-dell-2",
@@ -4132,6 +4288,7 @@
         "attribution": "Wikimedia Commons"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4186,7 +4343,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "dundees-place-bar-grill",
@@ -4200,6 +4358,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4242,7 +4401,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "early-bird",
@@ -4260,6 +4420,7 @@
         "attribution": "https://www.earlybirdbrunch.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4314,7 +4475,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "edge-of-the-universe",
@@ -4328,6 +4490,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4346,7 +4509,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "el-chicano",
@@ -4360,6 +4524,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4408,7 +4573,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "el-milagro",
@@ -4422,6 +4588,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4464,7 +4631,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "el-muchacho-alegre",
@@ -4478,6 +4646,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4520,7 +4689,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ez-place",
@@ -4534,6 +4704,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4582,7 +4753,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "famous-daves-2",
@@ -4596,6 +4768,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4638,7 +4811,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "fernandos-omaha",
@@ -4652,6 +4826,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4688,7 +4863,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "fig",
@@ -4702,6 +4878,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4713,7 +4890,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "firebirds-wood-fired-grill",
@@ -4727,6 +4905,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4769,7 +4948,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "firewater-grille",
@@ -4783,6 +4963,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4825,7 +5006,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "first-round-2",
@@ -4839,6 +5021,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4881,7 +5064,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "fizzys-fountain-liquors",
@@ -4899,6 +5083,7 @@
         "attribution": "https://www.fizzysomaha.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -4935,7 +5120,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "flagship-commons",
@@ -4949,6 +5135,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5003,7 +5190,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "flemings-2",
@@ -5017,6 +5205,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5071,7 +5260,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "flight-deck-tap-grill",
@@ -5085,6 +5275,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5133,7 +5324,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "fore-seasons-golf",
@@ -5147,6 +5339,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5195,7 +5388,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "foxy-sushi",
@@ -5209,6 +5403,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5263,7 +5458,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "frosty-mug",
@@ -5277,6 +5473,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5325,7 +5522,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "gather-omaha",
@@ -5339,6 +5537,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5381,7 +5580,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "genos-bar-grill",
@@ -5395,6 +5595,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5443,7 +5644,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "get-real-sandwiches",
@@ -5457,6 +5659,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5511,7 +5714,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "gl-lounge",
@@ -5525,6 +5729,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5579,7 +5784,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "goldbergs-bar-grills",
@@ -5593,6 +5799,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5647,7 +5854,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "goldeez",
@@ -5661,6 +5869,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5703,7 +5912,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "goose-120",
@@ -5717,6 +5927,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5771,7 +5982,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "gooses-bar-grill",
@@ -5785,6 +5997,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5821,7 +6034,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "gorats-steakhouse",
@@ -5839,6 +6053,7 @@
         "attribution": "https://goratsomaha.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5881,7 +6096,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "grant-st-bar",
@@ -5895,6 +6111,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -5937,7 +6154,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "green-onion-lounge",
@@ -5951,6 +6169,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6005,7 +6224,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hacienda-real-2",
@@ -6019,6 +6239,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6073,7 +6294,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hail-varsity",
@@ -6087,6 +6309,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6135,7 +6358,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "harney-street-tavern",
@@ -6149,6 +6373,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6203,7 +6428,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "harolds-bar",
@@ -6217,6 +6443,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6271,7 +6498,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "heights-draft-room",
@@ -6285,6 +6513,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6303,7 +6532,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "herbe-sainte",
@@ -6317,6 +6547,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6371,7 +6602,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hiro-88",
@@ -6385,6 +6617,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6439,7 +6672,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "homy-inn",
@@ -6453,6 +6687,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6495,7 +6730,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hook-lime",
@@ -6513,6 +6749,7 @@
         "attribution": "https://www.hookandlime.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6549,7 +6786,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hotel-indigo-three-card-monte",
@@ -6563,6 +6801,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6605,7 +6844,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "houstons-lounge",
@@ -6619,6 +6859,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6673,7 +6914,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "huber-haus",
@@ -6687,6 +6929,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6717,7 +6960,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hunan-fusion-sushi-bar",
@@ -6731,6 +6975,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6749,7 +6994,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "hy-vee-gretna",
@@ -6763,6 +7009,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6805,7 +7052,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "icehouse-sports-bar",
@@ -6819,6 +7067,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6861,7 +7110,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ika-ramen-izakaya",
@@ -6875,6 +7125,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6917,7 +7168,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "industrial-bar-grill",
@@ -6931,6 +7183,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -6973,7 +7226,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "inkwell",
@@ -6991,6 +7245,7 @@
         "attribution": "https://inkwellbar.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7045,7 +7300,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "interlude-lounge",
@@ -7059,6 +7315,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7095,7 +7352,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "isla-del-mar",
@@ -7109,6 +7367,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7139,7 +7398,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "isla-del-mar-restaurante-132nd-and-center",
@@ -7153,6 +7413,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7183,7 +7444,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "island-bar-grill",
@@ -7197,6 +7459,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7233,7 +7496,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "j-gilberts-wood-fired-steaks-seafood",
@@ -7247,6 +7511,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7289,7 +7554,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "jams-2",
@@ -7303,6 +7569,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7345,7 +7612,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "javis-taco",
@@ -7359,6 +7627,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7413,7 +7682,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "jdubs-hangout",
@@ -7427,6 +7697,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7475,7 +7746,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "jimi-ds",
@@ -7489,6 +7761,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7543,7 +7816,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "jinya-ramen-bar",
@@ -7557,6 +7831,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7611,7 +7886,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "js-smokehouse",
@@ -7625,6 +7901,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7667,7 +7944,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "kaiyo-sushi",
@@ -7681,6 +7959,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7735,7 +8014,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "kinaara",
@@ -7749,6 +8029,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7797,7 +8078,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "kobe-steakhouse",
@@ -7811,6 +8093,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7853,7 +8136,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "koen-japanese-bbq-sushi",
@@ -7867,6 +8151,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7921,7 +8206,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "krug-park",
@@ -7939,6 +8225,7 @@
         "attribution": "https://krugpark.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -7981,7 +8268,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "la-casa-pizza-pasta",
@@ -7995,6 +8283,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8031,7 +8320,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "la-mesa",
@@ -8045,6 +8335,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8081,7 +8372,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "lazlos-2",
@@ -8095,6 +8387,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8137,7 +8430,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "le-bouillon",
@@ -8151,6 +8445,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8199,7 +8494,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "le-voltaire-french-restaurant",
@@ -8213,6 +8509,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/3075/deal/4000",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8228,7 +8525,8 @@
           "category": "restaurants"
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "lefty-otooles",
@@ -8242,6 +8540,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8290,7 +8589,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "legacy-chophouse",
@@ -8304,6 +8604,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8346,7 +8647,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "legends-patio-grill-bar",
@@ -8360,6 +8662,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8402,7 +8705,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "lighthouse-bar-grill",
@@ -8416,6 +8720,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8458,7 +8763,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "liquid-sunshine-taproom",
@@ -8472,6 +8778,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8514,7 +8821,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "local-beer-patio-kitchen",
@@ -8528,6 +8836,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8570,7 +8879,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "lula-bs-breakfast-brunch-bar",
@@ -8584,6 +8894,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8595,7 +8906,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "lyles-pizzeria-2",
@@ -8609,6 +8921,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8651,7 +8964,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "maloneys-irish-pub",
@@ -8665,6 +8979,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8707,7 +9022,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "mantra",
@@ -8721,6 +9037,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8763,7 +9080,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "marias",
@@ -8777,6 +9095,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8813,7 +9132,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "marrow",
@@ -8827,6 +9147,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8881,7 +9202,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "mas-chingon-2",
@@ -8895,6 +9217,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -8949,7 +9272,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "maximos-cantina",
@@ -8963,6 +9287,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9005,7 +9330,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "meddys-village-pointe",
@@ -9019,6 +9345,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9073,7 +9400,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "memoir-2",
@@ -9087,6 +9415,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9129,7 +9458,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "mercury",
@@ -9143,6 +9473,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9179,7 +9510,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "monarch-prime-bar",
@@ -9193,6 +9525,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9247,7 +9580,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "mouth-of-the-south-downtown",
@@ -9261,6 +9595,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9303,7 +9638,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "mula-mexican-kitchen-tequileria",
@@ -9317,6 +9653,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9359,7 +9696,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "nates-stumble-inn",
@@ -9373,6 +9711,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9421,7 +9760,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "nicks-quorum",
@@ -9435,6 +9775,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9489,7 +9830,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "nite-owl",
@@ -9503,6 +9845,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9551,7 +9894,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "north-italia",
@@ -9565,6 +9909,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9607,7 +9952,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "nosh-restaurant-wine-lounge",
@@ -9621,6 +9967,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9669,7 +10016,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "office-west-lounge",
@@ -9683,6 +10031,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9731,7 +10080,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ollie-hobbs-craft-kitchen",
@@ -9745,6 +10095,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9793,7 +10144,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "omaha-tap-house-2",
@@ -9807,6 +10159,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9849,7 +10202,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "oscars",
@@ -9863,6 +10217,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9905,7 +10260,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pacific-eating-house",
@@ -9919,6 +10275,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -9973,7 +10330,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pageturners-lounge",
@@ -9991,6 +10349,7 @@
         "attribution": "https://www.pageturnersomaha.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10045,7 +10404,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pan-asian-terrace",
@@ -10059,6 +10419,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10095,7 +10456,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pat-mikes-bar-grill",
@@ -10109,6 +10471,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10151,7 +10514,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "phoenix-food-spirits",
@@ -10165,6 +10529,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10219,7 +10584,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pint-nine-brewing",
@@ -10233,6 +10599,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10257,7 +10624,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pivot-prime",
@@ -10271,6 +10639,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10313,7 +10682,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pizza-west-2",
@@ -10327,6 +10697,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10369,7 +10740,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ponzu-sushi",
@@ -10387,6 +10759,7 @@
         "attribution": "https://www.ponzusushiandgrill.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10441,7 +10814,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "proof-whiskey-bar-craft-cocktails",
@@ -10455,6 +10829,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10509,7 +10884,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "pub-134",
@@ -10523,6 +10899,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10577,7 +10954,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "public-house",
@@ -10591,6 +10969,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10633,7 +11012,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "r-taco",
@@ -10647,6 +11027,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10689,7 +11070,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "railcar-modern-american-kitchen",
@@ -10703,6 +11085,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10757,7 +11140,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ralston-keno",
@@ -10771,6 +11155,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10782,7 +11167,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "ramonas-mexican-restaurant",
@@ -10796,6 +11182,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10826,7 +11213,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "rays-wings",
@@ -10840,6 +11228,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10882,7 +11271,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "red-lion-lounge",
@@ -10900,6 +11290,7 @@
         "attribution": "https://www.redlionlounge.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -10942,7 +11333,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "redeye-tavern",
@@ -10956,6 +11348,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11004,7 +11397,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "report-in-pub",
@@ -11018,6 +11412,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11060,7 +11455,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "revival-house",
@@ -11074,6 +11470,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11128,7 +11525,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "rib-shack-smokehouse",
@@ -11142,6 +11540,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/4839/deal/7039",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11157,7 +11556,8 @@
           "category": "amenity"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "roja-mexican-grill",
@@ -11171,6 +11571,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11225,7 +11626,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "rookies-bar-grill",
@@ -11239,6 +11641,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11281,7 +11684,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "rusty-nail-2",
@@ -11295,6 +11699,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11349,7 +11754,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "saffron-urban-kitchen",
@@ -11363,6 +11769,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11411,7 +11818,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "salted-edge",
@@ -11425,6 +11833,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11461,7 +11870,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "saltgrass-steakhouse",
@@ -11475,6 +11885,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11517,7 +11928,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "salty-dog-bar-grill-omaha",
@@ -11531,6 +11943,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11585,7 +11998,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sean-ocaseys",
@@ -11599,6 +12013,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11641,7 +12056,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "shevys-sports-bar-grill",
@@ -11655,6 +12071,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11697,7 +12114,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "shucks-fish-house-oyster-bar",
@@ -11711,6 +12129,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11765,7 +12184,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sickies-garage-burgers-brews",
@@ -11779,6 +12199,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11827,7 +12248,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sips-on-10th",
@@ -11841,6 +12263,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11883,7 +12306,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "site-1-brewing",
@@ -11897,6 +12321,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11939,7 +12364,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "skyboxx-bar-grill",
@@ -11953,6 +12379,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -11995,7 +12422,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "smash-park-lavista",
@@ -12009,6 +12437,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12051,7 +12480,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "smittys-garage-burgers-beer",
@@ -12069,6 +12499,7 @@
         "attribution": "https://eatatthegarage.com/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12123,7 +12554,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "smokin-oak-wood-fired-pizza",
@@ -12141,6 +12573,7 @@
         "attribution": "https://smokinoakpizza.com/location/omaha-ne/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12183,7 +12616,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "social-blackstone",
@@ -12197,6 +12631,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12208,7 +12643,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sonic",
@@ -12222,6 +12658,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12276,7 +12713,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sonnys-at-the-inner-rail-food-hall",
@@ -12290,6 +12728,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12344,7 +12783,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "spencers-steak-chops",
@@ -12358,6 +12798,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12412,7 +12853,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "spezia-2",
@@ -12426,6 +12868,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12480,7 +12923,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "spin-pizza",
@@ -12494,6 +12938,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12505,7 +12950,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "st-andrews-pub",
@@ -12519,6 +12965,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12573,7 +13020,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "stokes-2",
@@ -12587,6 +13035,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12641,7 +13090,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "stokin-goat",
@@ -12655,6 +13105,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12709,7 +13160,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "stories-coffee",
@@ -12723,6 +13175,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/3038/deal/3989",
+      "source_count": 2,
       "personal": {},
       "deals": [
         {
@@ -12789,7 +13242,8 @@
           "category": "amenity"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sullivans-steakhouse",
@@ -12803,6 +13257,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12839,7 +13294,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "sweetbeans-coffee-co",
@@ -12853,6 +13309,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12907,7 +13364,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "taco-co",
@@ -12921,6 +13379,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12957,7 +13416,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "talus-spirits-sustenance",
@@ -12971,6 +13431,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13019,7 +13480,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "taqueria-tijuana-west",
@@ -13033,6 +13495,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13063,7 +13526,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "tavern-180",
@@ -13077,6 +13541,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13119,7 +13584,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "tavern-on-q",
@@ -13133,6 +13599,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13181,7 +13648,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "taxis-grille-bar",
@@ -13195,6 +13663,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13249,7 +13718,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-cabin-bar-grill",
@@ -13263,6 +13733,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13305,7 +13776,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-caddy-shack-blondo",
@@ -13319,6 +13791,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13330,7 +13803,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-caddy-shack-west-180th-harrison",
@@ -13344,6 +13818,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13355,7 +13830,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-casual-pint",
@@ -13369,6 +13845,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13405,7 +13882,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-cheesecake-factory",
@@ -13419,6 +13897,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13461,7 +13940,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-committee-chophouse",
@@ -13475,6 +13955,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13529,7 +14010,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-corner-kick",
@@ -13543,6 +14025,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13597,7 +14080,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-dandy-lion",
@@ -13611,6 +14095,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13665,7 +14150,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-good-life",
@@ -13679,6 +14165,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13733,7 +14220,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-green-room",
@@ -13747,6 +14235,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13789,7 +14278,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-hill",
@@ -13803,6 +14293,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13857,7 +14348,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-jewell",
@@ -13871,6 +14363,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13901,7 +14394,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-matt-bar-grill",
@@ -13915,6 +14409,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -13957,7 +14452,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-nifty-bar",
@@ -13971,6 +14467,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14013,7 +14510,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-observatory",
@@ -14027,6 +14525,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14069,7 +14568,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-porch-council-bluffs",
@@ -14083,6 +14583,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14119,7 +14620,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-sydney",
@@ -14133,6 +14635,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14175,7 +14678,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-tipsy-pig",
@@ -14189,6 +14693,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14237,7 +14742,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-verdict-bar-grill",
@@ -14251,6 +14757,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14293,7 +14800,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-west-end",
@@ -14307,6 +14815,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14349,7 +14858,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "the-woodcliff-restaurant",
@@ -14363,6 +14873,7 @@
       "price_tier": null,
       "photo": null,
       "website": "https://omaha.bigdealsmedia.net/business/3603/deal/5223",
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14378,7 +14889,8 @@
           "category": "amenity"
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "therapy-bar-grill",
@@ -14392,6 +14904,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14440,7 +14953,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "timber-creek-pizza-pub-grill",
@@ -14454,6 +14968,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14496,7 +15011,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "timber-wood-fire-bistro",
@@ -14510,6 +15026,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14564,7 +15081,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "trucks-taps",
@@ -14578,6 +15096,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14608,7 +15127,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "tupelo-honey",
@@ -14622,6 +15142,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14664,7 +15185,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "twisted-fork-grill-bar",
@@ -14678,6 +15200,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14726,7 +15249,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "twisted-vine",
@@ -14740,6 +15264,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14776,7 +15301,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "union-pizzeria-sports-bar",
@@ -14790,6 +15316,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14832,7 +15359,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "upstream-2",
@@ -14846,6 +15374,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14888,7 +15417,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "varsity-sports-cafe-roman-pizza",
@@ -14902,6 +15432,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14944,7 +15475,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "venue-779",
@@ -14958,6 +15490,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14976,7 +15509,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "via-farina",
@@ -14990,6 +15524,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15032,7 +15567,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "villagio-pizzeria",
@@ -15046,6 +15582,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15094,7 +15631,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "vincenzos",
@@ -15108,6 +15646,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15162,7 +15701,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "vino-mas",
@@ -15176,6 +15716,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15218,7 +15759,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "vis-major-brewing-co",
@@ -15232,6 +15774,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15274,7 +15817,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "vive-le-rock-lounge",
@@ -15288,6 +15832,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15312,7 +15857,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "waterfall-bar-grill",
@@ -15326,6 +15872,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15374,7 +15921,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "well-smoke-u-bbq",
@@ -15388,6 +15936,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15436,7 +15985,8 @@
           "highlights": []
         }
       ],
-      "needs_review": true
+      "needs_review": true,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "wilson-washburn",
@@ -15450,6 +16000,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15492,7 +16043,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "winchester-bar-grill",
@@ -15506,6 +16058,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15542,7 +16095,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "zen-coffee-company",
@@ -15556,6 +16110,7 @@
       "price_tier": null,
       "photo": null,
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15598,7 +16153,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
       "id": "zios-pizzeria",
@@ -15616,6 +16172,7 @@
         "attribution": "https://ziospizzeria.com/locations/old-market/"
       },
       "website": null,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -15670,7 +16227,8 @@
           "highlights": []
         }
       ],
-      "needs_review": false
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     }
   ]
 }

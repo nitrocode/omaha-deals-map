@@ -26,7 +26,11 @@ const DEFAULT_FILTERS = {
     radiusMi: null,  // null = no limit; otherwise miles from home
     priceTiers: [],  // empty = any; otherwise subset of ["$", "$$", "$$$", "$$$$"]
     neighborhood: null,  // null = any; otherwise a string match
+    needsReviewOnly: false,  // show only venues flagged as needs_review
 };
+
+// Days. A venue's first_seen_at within this window gets a 🆕 badge.
+const NEW_BADGE_WINDOW_DAYS = 7;
 
 const state = {
     data: null,
@@ -40,6 +44,7 @@ const state = {
     radiusMi: DEFAULT_FILTERS.radiusMi,
     priceTiers: new Set(DEFAULT_FILTERS.priceTiers),
     neighborhood: DEFAULT_FILTERS.neighborhood,
+    needsReviewOnly: DEFAULT_FILTERS.needsReviewOnly,
     favorites: new Set(),
     markers: [],
     selectedMarker: null,
@@ -74,6 +79,7 @@ function loadPersistedFilters() {
         if (typeof f.neighborhood === "string" || f.neighborhood === null) {
             state.neighborhood = f.neighborhood;
         }
+        if (typeof f.needsReviewOnly === "boolean") state.needsReviewOnly = f.needsReviewOnly;
     } catch (e) { /* ignore corrupt storage */ }
 }
 
@@ -87,6 +93,7 @@ function persistFilters() {
         radiusMi: state.radiusMi,
         priceTiers: [...state.priceTiers],
         neighborhood: state.neighborhood,
+        needsReviewOnly: state.needsReviewOnly,
     };
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); } catch (e) { /* ignore */ }
 }
@@ -241,8 +248,55 @@ function isFavorite(r) {
     return state.favorites.has(r.id) || (r.personal?.tags || []).includes("favorite");
 }
 
+function toggleFavorite(r) {
+    if (state.favorites.has(r.id)) state.favorites.delete(r.id);
+    else state.favorites.add(r.id);
+    persistFavorites();
+    // Re-render list + markers so all surfaces of the favorite state stay
+    // in sync (badge in list, fill on heart, marker if favoritesOnly is on).
+    render();
+    // Refresh the venue sheet too if it's open and showing this venue.
+    if (state.selectedId === r.id) showVenue(r);
+}
+
+function shouldShowNewBadges() {
+    // First time the tracker ran, every venue got stamped within the same
+    // build, so 🆕 would mean nothing. Suppress badges entirely when more
+    // than half the dataset shares the earliest first_seen_at. As new
+    // venues land in later scrapes their timestamps diverge and badges
+    // become meaningful again.
+    if (state._showNewCache !== undefined) return state._showNewCache;
+    const rs = state.data?.restaurants || [];
+    if (!rs.length) { state._showNewCache = false; return false; }
+    let earliest = Infinity;
+    const stamps = [];
+    for (const r of rs) {
+        if (!r.first_seen_at) continue;
+        const t = new Date(r.first_seen_at).getTime();
+        if (!isNaN(t)) {
+            stamps.push(t);
+            if (t < earliest) earliest = t;
+        }
+    }
+    if (!stamps.length) { state._showNewCache = false; return false; }
+    const tolerance = 60 * 60 * 1000;  // an hour
+    const initial = stamps.filter(t => Math.abs(t - earliest) <= tolerance).length;
+    state._showNewCache = initial / stamps.length < 0.5;
+    return state._showNewCache;
+}
+
+function isNewBadge(r) {
+    if (!r.first_seen_at) return false;
+    if (!shouldShowNewBadges()) return false;
+    const seen = new Date(r.first_seen_at).getTime();
+    if (isNaN(seen)) return false;
+    const ageDays = (Date.now() - seen) / (1000 * 60 * 60 * 24);
+    return ageDays >= 0 && ageDays < NEW_BADGE_WINDOW_DAYS;
+}
+
 function matchesFilters(r) {
     if (state.favoritesOnly && !isFavorite(r)) return false;
+    if (state.needsReviewOnly && !r.needs_review) return false;
     if (state.cuisines.size > 0) {
         const cs = r.cuisine || [];
         if (!cs.some(c => state.cuisines.has(c))) return false;
@@ -463,12 +517,34 @@ function renderList(matched) {
         const photoIcon = (r.photo && r.photo.url)
             ? `<span class="v-photo-icon" title="Photo available">📷</span>`
             : "";
+        const badges = [];
+        if ((r.source_count || 0) >= 2) {
+            badges.push('<span class="v-badge v-badge-popular" title="Listed in 2+ sources">popular</span>');
+        }
+        if (isNewBadge(r)) {
+            badges.push('<span class="v-badge v-badge-new" title="Added in the last week">🆕</span>');
+        }
+        if (r.needs_review) {
+            badges.push('<span class="v-badge v-badge-review" title="Address or hours need confirming">needs review</span>');
+        }
+        const fav = isFavorite(r);
+        const heartChar = fav ? "♥" : "♡";
+        const heartLabel = fav ? "Unfavorite" : "Favorite";
+        const heartButton = `<button type="button" class="v-fav-btn${fav ? " active" : ""}" `
+            + `aria-pressed="${fav}" aria-label="${heartLabel}" title="${heartLabel}">${heartChar}</button>`;
         li.innerHTML = `
+            ${heartButton}
             <span class="v-pip kind-${kind}"></span>
-            <span class="v-name">${escapeHtml(r.name)}${photoIcon}${nogeoHtml}</span>
+            <span class="v-name">${escapeHtml(r.name)}${photoIcon}${nogeoHtml} ${badges.join(" ")}</span>
             ${distHtml}
             <span class="v-meta">${escapeHtml(listRowMetaLine(r))}</span>
         `;
+        li.querySelector(".v-fav-btn").addEventListener("click", e => {
+            // Stop the click from bubbling to the row (which opens the
+            // venue sheet) - heart taps are a separate gesture.
+            e.stopPropagation();
+            toggleFavorite(r);
+        });
         li.addEventListener("click", () => openVenue(r, { fromList: true }));
         li.addEventListener("keydown", e => {
             if (e.key === "Enter" || e.key === " ") {
@@ -967,6 +1043,7 @@ function applyFilterUI() {
     if (nbSel) nbSel.value = state.neighborhood || "";
     document.getElementById("now-only").checked = state.nowOnly;
     document.getElementById("favorites-only").checked = state.favoritesOnly;
+    document.getElementById("needs-review-only").checked = state.needsReviewOnly;
     const slider = document.getElementById("at-hour");
     if (state.atHour === null) {
         slider.value = "";
@@ -987,6 +1064,7 @@ function clearAllFilters() {
     state.radiusMi = DEFAULT_FILTERS.radiusMi;
     state.priceTiers = new Set(DEFAULT_FILTERS.priceTiers);
     state.neighborhood = DEFAULT_FILTERS.neighborhood;
+    state.needsReviewOnly = DEFAULT_FILTERS.needsReviewOnly;
     applyFilterUI();
     buildCuisineFilter();
     buildPriceAndNeighborhoodFilters();
@@ -1080,6 +1158,11 @@ function wireControls() {
     });
     document.getElementById("favorites-only").addEventListener("change", e => {
         state.favoritesOnly = e.target.checked;
+        persistFilters();
+        render();
+    });
+    document.getElementById("needs-review-only").addEventListener("change", e => {
+        state.needsReviewOnly = e.target.checked;
         persistFilters();
         render();
     });
