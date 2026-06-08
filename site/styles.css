@@ -261,26 +261,29 @@ body[data-view="map"] #list-view { display: none; }
     .view-toggle { display: none; }
     #list-view { flex: 0 0 22rem; max-width: 22rem; }
 
-    /* Venue / contribute / home sheets sit over the MAP only, not the list,
-       so the user can keep scrolling the list while a venue is selected.
-       On mobile they still take the full width (this rule only fires
-       above the breakpoint).
-       Use the same 22rem offset as the list pane; on a centered 80rem
-       layout the body margin pushes both alongside each other. */
+    /* The flex container puts the map on the left and the list pane on
+       the right. Sheets are position:fixed, so we anchor them to span
+       only the map column - left edge at the body's left edge, right
+       edge at the list pane's left edge - so the list stays scrollable
+       while a venue is selected. On mobile (below 900px) the sheets
+       still span full width (this block doesn't fire there). */
     #venue-sheet, #contribute-sheet, #home-sheet {
-        left: calc(50% - 40rem + 22rem);
-        right: calc(50% - 40rem);
-        max-width: calc(80rem - 22rem);
-        margin-left: auto;
-        margin-right: auto;
+        /* Centered 80rem body: left edge = 50% - 40rem.
+           List's left edge = body's right edge - 22rem = 50% + 40rem - 22rem,
+           i.e., 50% - 18rem from the right of the viewport. */
+        left: calc(50% - 40rem);
+        right: calc(50% - 18rem);
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
     }
-    /* When the viewport is narrower than the centered max but still desktop,
-       the body fills the screen, so the offset should hug the list pane. */
+    /* When the viewport is narrower than the centered max, the body fills
+       the screen edge to edge. Map is on the left, list is the rightmost
+       22rem. Sheet covers the left side up to where the list begins. */
     @media (max-width: 80rem) {
         #venue-sheet, #contribute-sheet, #home-sheet {
-            left: 22rem;
-            right: 0;
-            max-width: none;
+            left: 0;
+            right: 22rem;
         }
     }
 }
