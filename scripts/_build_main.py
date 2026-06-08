@@ -73,6 +73,10 @@ def main() -> int:
             "geocode_confidence": first.get("geocode_confidence", "none"),
             "cuisine": categories.get(rid, {}).get("cuisine", []),
             "neighborhood": categories.get(rid, {}).get("neighborhood"),
+            # Price tier: "$" / "$$" / "$$$" / "$$$$" / null. Matches the
+            # universal restaurant pricing convention so contributors don't
+            # have to learn a new vocabulary.
+            "price_tier": categories.get(rid, {}).get("price_tier"),
             "personal": personal.get(rid, {}),
             "deals": [_deal(r) for r in recs],
             "needs_review": any(r.get("needs_review", False) for r in recs),

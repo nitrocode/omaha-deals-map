@@ -53,10 +53,15 @@ def test_build_applies_category_overrides(tmp_path, monkeypatch):
     with open("data/geocoded.yaml", "w") as f:
         yaml.safe_dump([SAMPLE[0]], f)
     with open("data/overrides/categories.yaml", "w") as f:
-        yaml.safe_dump({"blue-sky": {"cuisine": ["american"], "neighborhood": "Aksarben"}}, f)
+        yaml.safe_dump({"blue-sky": {
+            "cuisine": ["american"],
+            "neighborhood": "Aksarben",
+            "price_tier": "$$",
+        }}, f)
     from scripts import _build_main
     _build_main.main()
     bundle = json.loads(Path("data/deals.json").read_text())
     r = bundle["restaurants"][0]
     assert r["cuisine"] == ["american"]
     assert r["neighborhood"] == "Aksarben"
+    assert r["price_tier"] == "$$"

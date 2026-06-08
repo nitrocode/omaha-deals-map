@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T01:18:24.873218+00:00",
+  "built_at": "2026-06-08T01:22:59.499522+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -25,6 +25,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -54,6 +55,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -79,6 +81,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -104,6 +107,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -128,6 +132,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -153,6 +158,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -178,6 +184,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -203,6 +210,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -228,6 +236,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -253,6 +262,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -278,6 +288,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -303,6 +314,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -328,6 +340,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -387,6 +400,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -452,6 +466,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -493,6 +508,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -558,6 +574,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -623,6 +640,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -649,6 +667,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -702,6 +721,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -767,6 +787,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -826,6 +847,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -879,6 +901,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -932,6 +955,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -973,6 +997,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1026,6 +1051,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1085,6 +1111,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1138,6 +1165,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1197,6 +1225,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1262,6 +1291,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1315,6 +1345,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1368,6 +1399,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1433,6 +1465,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1486,6 +1519,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1545,6 +1579,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1604,6 +1639,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1645,6 +1681,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1692,6 +1729,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1757,6 +1795,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1779,6 +1818,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1844,6 +1884,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1897,6 +1938,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -1962,6 +2004,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2027,6 +2070,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2092,6 +2136,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2157,6 +2202,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2210,6 +2256,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2263,6 +2310,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2328,6 +2376,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2381,6 +2430,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2440,6 +2490,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2493,6 +2544,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2558,6 +2610,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2605,6 +2658,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2664,6 +2718,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2729,6 +2784,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2788,6 +2844,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2841,6 +2898,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2870,6 +2928,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2923,6 +2982,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2970,6 +3030,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -2996,6 +3057,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3055,6 +3117,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3102,6 +3165,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3128,6 +3192,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3187,6 +3252,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3240,6 +3306,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3305,6 +3372,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3352,6 +3420,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3405,6 +3474,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3458,6 +3528,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3511,6 +3582,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3564,6 +3636,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3617,6 +3690,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3676,6 +3750,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3729,6 +3804,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3794,6 +3870,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3847,6 +3924,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3912,6 +3990,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -3965,6 +4044,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4030,6 +4110,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4059,6 +4140,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4118,6 +4200,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4171,6 +4254,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4224,6 +4308,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4283,6 +4368,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4336,6 +4422,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4383,6 +4470,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4405,6 +4493,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4458,6 +4547,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4511,6 +4601,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4564,6 +4655,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4611,6 +4703,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4676,6 +4769,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4741,6 +4835,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4800,6 +4895,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4859,6 +4955,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4924,6 +5021,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -4983,6 +5081,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5036,6 +5135,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5095,6 +5195,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5160,6 +5261,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5225,6 +5327,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5290,6 +5393,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5343,6 +5447,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5408,6 +5513,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5455,6 +5561,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5508,6 +5615,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5561,6 +5669,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5626,6 +5735,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5691,6 +5801,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5750,6 +5861,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5815,6 +5927,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5880,6 +5993,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5909,6 +6023,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -5974,6 +6089,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6039,6 +6155,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6092,6 +6209,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6139,6 +6257,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6192,6 +6311,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6257,6 +6377,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6298,6 +6419,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6327,6 +6449,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6380,6 +6503,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6433,6 +6557,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6486,6 +6611,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6539,6 +6665,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6604,6 +6731,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6651,6 +6779,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6692,6 +6821,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6733,6 +6863,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6780,6 +6911,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6833,6 +6965,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6886,6 +7019,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -6951,6 +7085,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7010,6 +7145,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7075,6 +7211,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7140,6 +7277,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7193,6 +7331,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7258,6 +7397,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7317,6 +7457,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7370,6 +7511,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7435,6 +7577,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7488,6 +7631,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7535,6 +7679,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7582,6 +7727,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7635,6 +7781,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7694,6 +7841,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7720,6 +7868,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7779,6 +7928,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7832,6 +7982,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7885,6 +8036,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7938,6 +8090,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -7991,6 +8144,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8044,6 +8198,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8066,6 +8221,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8119,6 +8275,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8172,6 +8329,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8225,6 +8383,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8272,6 +8431,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8337,6 +8497,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8402,6 +8563,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8455,6 +8617,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8520,6 +8683,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8573,6 +8737,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8620,6 +8785,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8685,6 +8851,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8738,6 +8905,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8791,6 +8959,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8850,6 +9019,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8915,6 +9085,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -8974,6 +9145,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9027,6 +9199,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9086,6 +9259,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9145,6 +9319,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9204,6 +9379,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9257,6 +9433,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9310,6 +9487,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9375,6 +9553,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9440,6 +9619,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9487,6 +9667,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9540,6 +9721,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9605,6 +9787,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9640,6 +9823,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9693,6 +9877,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9746,6 +9931,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9811,6 +9997,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9876,6 +10063,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9941,6 +10129,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -9994,6 +10183,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10047,6 +10237,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10112,6 +10303,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10134,6 +10326,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10175,6 +10368,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10228,6 +10422,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10281,6 +10476,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10340,6 +10536,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10393,6 +10590,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10458,6 +10656,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10484,6 +10683,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10549,6 +10749,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10602,6 +10803,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10667,6 +10869,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10726,6 +10929,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10773,6 +10977,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10826,6 +11031,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10891,6 +11097,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10944,6 +11151,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -10997,6 +11205,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11062,6 +11271,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11121,6 +11331,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11174,6 +11385,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11227,6 +11439,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11280,6 +11493,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11333,6 +11547,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11398,6 +11613,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11451,6 +11667,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11473,6 +11690,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11538,6 +11756,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11603,6 +11822,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11668,6 +11888,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11733,6 +11954,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11755,6 +11977,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11820,6 +12043,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11885,6 +12109,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -11950,6 +12175,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12027,6 +12253,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12074,6 +12301,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12139,6 +12367,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12186,6 +12415,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12245,6 +12475,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12286,6 +12517,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12339,6 +12571,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12398,6 +12631,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12463,6 +12697,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12516,6 +12751,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12538,6 +12774,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12560,6 +12797,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12607,6 +12845,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12660,6 +12899,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12725,6 +12965,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12790,6 +13031,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12855,6 +13097,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12920,6 +13163,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -12973,6 +13217,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13038,6 +13283,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13079,6 +13325,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13132,6 +13379,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13185,6 +13433,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13238,6 +13487,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13285,6 +13535,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13338,6 +13589,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13397,6 +13649,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13450,6 +13703,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13503,6 +13757,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13529,6 +13784,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13588,6 +13844,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13641,6 +13898,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13706,6 +13964,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13747,6 +14006,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13800,6 +14060,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13859,6 +14120,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13906,6 +14168,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -13959,6 +14222,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14012,6 +14276,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14065,6 +14330,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14094,6 +14360,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14147,6 +14414,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14206,6 +14474,7 @@
       "geocode_confidence": "low",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14271,6 +14540,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14324,6 +14594,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14377,6 +14648,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14412,6 +14684,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14471,6 +14744,7 @@
       "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14530,6 +14804,7 @@
       "geocode_confidence": "medium",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14583,6 +14858,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14630,6 +14906,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {
@@ -14683,6 +14960,7 @@
       "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
+      "price_tier": null,
       "personal": {},
       "deals": [
         {

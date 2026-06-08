@@ -84,6 +84,21 @@
       <input type="range" id="radius" min="1" max="30" step="1" value="">
     </label>
   </fieldset>
+  <fieldset id="price-filter" hidden>
+    <legend>Price</legend>
+    <label><input type="checkbox" data-price="$"> $</label>
+    <label><input type="checkbox" data-price="$$"> $$</label>
+    <label><input type="checkbox" data-price="$$$"> $$$</label>
+    <label><input type="checkbox" data-price="$$$$"> $$$$</label>
+  </fieldset>
+  <fieldset id="neighborhood-filter" hidden>
+    <legend>Neighborhood</legend>
+    <label class="slider-row">
+      <select id="neighborhood-select">
+        <option value="">Any neighborhood</option>
+      </select>
+    </label>
+  </fieldset>
   <fieldset id="cuisine-filter"><legend>Cuisine</legend></fieldset>
   <label><input type="checkbox" id="favorites-only"> Favorites only</label>
   <button id="close-filter">Done</button>

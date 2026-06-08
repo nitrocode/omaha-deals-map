@@ -24,6 +24,8 @@ const DEFAULT_FILTERS = {
     favoritesOnly: false,
     cuisines: [],
     radiusMi: null,  // null = no limit; otherwise miles from home
+    priceTiers: [],  // empty = any; otherwise subset of ["$", "$$", "$$$", "$$$$"]
+    neighborhood: null,  // null = any; otherwise a string match
 };
 
 const state = {
@@ -36,6 +38,8 @@ const state = {
     favoritesOnly: DEFAULT_FILTERS.favoritesOnly,
     cuisines: new Set(DEFAULT_FILTERS.cuisines),
     radiusMi: DEFAULT_FILTERS.radiusMi,
+    priceTiers: new Set(DEFAULT_FILTERS.priceTiers),
+    neighborhood: DEFAULT_FILTERS.neighborhood,
     favorites: new Set(),
     markers: [],
     selectedMarker: null,
@@ -66,6 +70,10 @@ function loadPersistedFilters() {
         if (typeof f.favoritesOnly === "boolean") state.favoritesOnly = f.favoritesOnly;
         if (Array.isArray(f.cuisines)) state.cuisines = new Set(f.cuisines);
         if (f.radiusMi === null || typeof f.radiusMi === "number") state.radiusMi = f.radiusMi;
+        if (Array.isArray(f.priceTiers)) state.priceTiers = new Set(f.priceTiers);
+        if (typeof f.neighborhood === "string" || f.neighborhood === null) {
+            state.neighborhood = f.neighborhood;
+        }
     } catch (e) { /* ignore corrupt storage */ }
 }
 
@@ -77,6 +85,8 @@ function persistFilters() {
         favoritesOnly: state.favoritesOnly,
         cuisines: [...state.cuisines],
         radiusMi: state.radiusMi,
+        priceTiers: [...state.priceTiers],
+        neighborhood: state.neighborhood,
     };
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); } catch (e) { /* ignore */ }
 }
@@ -245,6 +255,14 @@ function matchesFilters(r) {
         // the user has explicitly constrained by distance.
         return false;
     }
+    if (state.priceTiers.size > 0) {
+        // Skip venues that haven't been classified yet; "$" through "$$$$"
+        // can't both be a real filter AND match the absence of data.
+        if (!r.price_tier || !state.priceTiers.has(r.price_tier)) return false;
+    }
+    if (state.neighborhood && r.neighborhood !== state.neighborhood) {
+        return false;
+    }
     return r.deals.some(d => {
         if (!state.kinds.has(d.kind)) return false;
         if (d.kind === "happy_hour") {
@@ -383,11 +401,17 @@ function listRowMetaLine(r) {
     // Prefer the happy-hour window for the selected day; otherwise show the
     // kinds-on-this-venue as fallback so a special/voucher-only venue isn't blank.
     const hh = happyHourSummaryForDay(r);
-    if (hh) return hh;
-    const kinds = [...new Set(r.deals.map(d => d.kind))]
-        .filter(k => k !== "happy_hour")
-        .join(", ");
-    return kinds || "";
+    const dealPart = hh
+        ? hh
+        : ([...new Set(r.deals.map(d => d.kind))]
+            .filter(k => k !== "happy_hour")
+            .join(", "));
+    // Append price + neighborhood as low-key trailing context, only when set.
+    const tags = [];
+    if (r.price_tier) tags.push(r.price_tier);
+    if (r.neighborhood) tags.push(r.neighborhood);
+    const tagPart = tags.length ? " · " + tags.join(" · ") : "";
+    return (dealPart || "") + tagPart;
 }
 
 function distanceAnchor() {
@@ -624,8 +648,12 @@ function mapsLinkFor(r) {
 
 function showVenue(r) {
     const sheet = document.getElementById("venue-sheet");
-    const cuisineLine = (r.cuisine && r.cuisine.length)
-        ? `<p class="meta">${escapeHtml(r.cuisine.join(", "))}${r.neighborhood ? " &middot; " + escapeHtml(r.neighborhood) : ""}</p>`
+    const metaParts = [];
+    if (r.cuisine && r.cuisine.length) metaParts.push(escapeHtml(r.cuisine.join(", ")));
+    if (r.neighborhood) metaParts.push(escapeHtml(r.neighborhood));
+    if (r.price_tier) metaParts.push(escapeHtml(r.price_tier));
+    const cuisineLine = metaParts.length
+        ? `<p class="meta">${metaParts.join(" &middot; ")}</p>`
         : "";
     const fav = state.favorites.has(r.id);
     const mapsUrl = mapsLinkFor(r);
@@ -698,6 +726,27 @@ function buildCuisineFilter() {
             render();
         });
     });
+}
+
+function buildPriceAndNeighborhoodFilters() {
+    // Both filters hide when there's no data populated yet, so an empty
+    // map doesn't show an empty filter box. They reveal automatically as
+    // soon as overrides start landing entries.
+    const prices = new Set();
+    const neighborhoods = new Set();
+    for (const r of state.data.restaurants) {
+        if (r.price_tier) prices.add(r.price_tier);
+        if (r.neighborhood) neighborhoods.add(r.neighborhood);
+    }
+    document.getElementById("price-filter").hidden = prices.size === 0;
+    const nbField = document.getElementById("neighborhood-filter");
+    nbField.hidden = neighborhoods.size === 0;
+    const sel = document.getElementById("neighborhood-select");
+    // Rebuild options: "Any" + sorted unique neighborhoods.
+    sel.innerHTML = '<option value="">Any neighborhood</option>' +
+        [...neighborhoods].sort().map(n =>
+            `<option value="${escapeHtml(n)}"${state.neighborhood === n ? " selected" : ""}>${escapeHtml(n)}</option>`
+        ).join("");
 }
 
 // ---------- home location ----------
@@ -871,6 +920,11 @@ function applyFilterUI() {
     document.querySelectorAll("[data-kind]").forEach(cb => {
         cb.checked = state.kinds.has(cb.dataset.kind);
     });
+    document.querySelectorAll("[data-price]").forEach(cb => {
+        cb.checked = state.priceTiers.has(cb.dataset.price);
+    });
+    const nbSel = document.getElementById("neighborhood-select");
+    if (nbSel) nbSel.value = state.neighborhood || "";
     document.getElementById("now-only").checked = state.nowOnly;
     document.getElementById("favorites-only").checked = state.favoritesOnly;
     const slider = document.getElementById("at-hour");
@@ -891,8 +945,11 @@ function clearAllFilters() {
     state.favoritesOnly = DEFAULT_FILTERS.favoritesOnly;
     state.cuisines = new Set(DEFAULT_FILTERS.cuisines);
     state.radiusMi = DEFAULT_FILTERS.radiusMi;
+    state.priceTiers = new Set(DEFAULT_FILTERS.priceTiers);
+    state.neighborhood = DEFAULT_FILTERS.neighborhood;
     applyFilterUI();
-    buildCuisineFilter();  // re-render to clear checkmarks
+    buildCuisineFilter();
+    buildPriceAndNeighborhoodFilters();
     persistFilters();
     render();
 }
@@ -943,6 +1000,19 @@ function wireControls() {
             persistFilters();
             render();
         });
+    });
+    document.querySelectorAll("[data-price]").forEach(cb => {
+        cb.addEventListener("change", () => {
+            if (cb.checked) state.priceTiers.add(cb.dataset.price);
+            else state.priceTiers.delete(cb.dataset.price);
+            persistFilters();
+            render();
+        });
+    });
+    document.getElementById("neighborhood-select").addEventListener("change", e => {
+        state.neighborhood = e.target.value || null;
+        persistFilters();
+        render();
     });
     document.getElementById("now-only").addEventListener("change", e => {
         state.nowOnly = e.target.checked;
@@ -1084,6 +1154,7 @@ function dismissOpenSheets() {
     try {
         state.data = await loadData();
         buildCuisineFilter();
+        buildPriceAndNeighborhoodFilters();
         applyFilterUI();
         render();
     } catch (e) {
