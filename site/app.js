@@ -47,6 +47,8 @@ const state = {
     homeMarker: null,
     radiusCircle: null,    // L.circle showing the radius constraint, or null
     pickingHomeOnMap: false,
+    lastMarkerClickAt: 0,  // epoch ms; used to suppress the map-click that
+                           // Leaflet fires alongside a marker click
     view: "map",           // "map" | "list" (mobile-only; ignored when split-pane shows both)
     selectedId: null,      // restaurant.id of the currently-selected venue, if any
 };
@@ -336,11 +338,20 @@ function render() {
         const marker = L.circleMarker([r.lat, r.lng], markerStyle(kind, false));
         marker._kind = kind;
         marker._venueId = r.id;
-        // escapeHtml: r.name comes from third-party scrape sources via deals.json;
-        // bindTooltip renders strings as HTML so an unescaped value would be a
-        // stored-XSS sink (OWASP A03).
-        marker.bindTooltip(escapeHtml(r.name), { direction: "top", offset: [0, -4] });
-        marker.on("click", () => openVenue(r, { fromList: false }));
+        // escapeHtml on every interpolated field: r.name + the deal summary
+        // both come from third-party scrape sources via deals.json, and
+        // bindTooltip renders strings as HTML (OWASP A03 sink).
+        const dealMeta = listRowMetaLine(r);
+        const tooltipHtml = dealMeta
+            ? `<strong>${escapeHtml(r.name)}</strong><br>${escapeHtml(dealMeta)}`
+            : `<strong>${escapeHtml(r.name)}</strong>`;
+        marker.bindTooltip(tooltipHtml, { direction: "top", offset: [0, -4] });
+        marker.on("click", () => {
+            // Stamp the time so the map's click handler can ignore the
+            // companion event Leaflet fires alongside marker clicks.
+            state.lastMarkerClickAt = Date.now();
+            openVenue(r, { fromList: false });
+        });
         state.cluster.addLayer(marker);
         state.markers.push(marker);
         if (state.selectedId === r.id) selectMarker(marker, kind);
@@ -706,12 +717,14 @@ function renderHomeMarker() {
         iconSize: [28, 28],
         iconAnchor: [14, 14],
     });
-    // escapeHtml: home.label flows from Nominatim's display_name (third-party
-    // API) through localStorage to this innerHTML sink. Escape before render.
-    const tip = state.home.label ? `🏠 ${escapeHtml(state.home.label)}` : "🏠 Home";
+    // The marker IS the 🏠 emoji, so the tooltip just needs to confirm "yes,
+    // this is your home" without repeating the icon. Keeping it short also
+    // avoids showing the Nominatim display_name, which is often long and
+    // sometimes contains the user's geocoded street address that they may
+    // not want hovering above the map (privacy nudge).
     state.homeMarker = L.marker([state.home.lat, state.home.lng], { icon })
         .addTo(state.map)
-        .bindTooltip(tip);
+        .bindTooltip("Home");
 }
 
 function renderRadiusCircle() {
@@ -1029,6 +1042,11 @@ function wireControls() {
             setHome(e.latlng.lat, e.latlng.lng, "Picked on map");
             return;
         }
+        // Leaflet fires map "click" alongside marker "click" for the same
+        // pointer event. Suppress the background-dismiss when a marker
+        // handler just ran, otherwise the venue sheet would open and close
+        // in the same tap.
+        if (Date.now() - state.lastMarkerClickAt < 100) return;
         dismissOpenSheets();
     });
 }
