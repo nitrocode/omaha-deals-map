@@ -84,6 +84,31 @@ def main() -> int:
         for r in recs:
             summary.setdefault(r["source"], {"count": 0})["count"] += 1
 
+    # Manual venues: hand-curated entries that don't come from any scrape
+    # source. Keyed by slug. Same shape as the merged-restaurant record so
+    # they flow through the rest of the pipeline (and the map UI) the same
+    # way as scraped venues. Useful for one-off restaurants the user knows
+    # about but no source aggregates.
+    manual_venues = read_yaml(Path("data/overrides/manual_venues.yaml"), default={}) or {}
+    for rid, entry in manual_venues.items():
+        restaurants.append({
+            "id": rid,
+            "name": entry["name"],
+            "address": entry.get("address", ""),
+            "lat": entry.get("lat"),
+            "lng": entry.get("lng"),
+            "geocode_confidence": entry.get("geocode_confidence", "manual"),
+            "cuisine": entry.get("cuisine", []),
+            "neighborhood": entry.get("neighborhood"),
+            "price_tier": entry.get("price_tier"),
+            "personal": personal.get(rid, {}),
+            "deals": entry.get("deals", []),
+            "needs_review": False,
+        })
+        summary.setdefault("manual", {"count": 0})["count"] += 1
+    # Keep alphabetical order stable.
+    restaurants.sort(key=lambda r: r["id"])
+
     bundle = {
         "schema_version": SCHEMA_VERSION,
         "built_at": datetime.now(UTC).isoformat(),

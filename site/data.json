@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-08T01:22:59.499522+00:00",
+  "built_at": "2026-06-08T01:25:06.895348+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -13,6 +13,10 @@
     {
       "name": "bigdealsmedia",
       "count": 7
+    },
+    {
+      "name": "manual",
+      "count": 1
     }
   ],
   "restaurants": [
@@ -3017,6 +3021,31 @@
             }
           ],
           "highlights": []
+        }
+      ],
+      "needs_review": false
+    },
+    {
+      "id": "cheeseburgers",
+      "name": "Cheeseburgers",
+      "address": "4007 Farnam St, Blackstone, Omaha, NE 68131",
+      "lat": 41.2576975,
+      "lng": -95.9737277,
+      "geocode_confidence": "manual",
+      "cuisine": [
+        "burgers"
+      ],
+      "neighborhood": "Blackstone",
+      "price_tier": "$",
+      "personal": {},
+      "deals": [
+        {
+          "kind": "special",
+          "source": "manual",
+          "source_url": "https://www.ineedcheeseburgers.com",
+          "title": "$5 original burger every Tuesday",
+          "description": "Original burger for $5 on Tuesdays.",
+          "raw_text": "$5 original burgers every Tuesday."
         }
       ],
       "needs_review": false

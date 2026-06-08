@@ -1,0 +1,31 @@
+# Manual venues: hand-curated restaurants that aren't in any scrape source
+# but you know have a deal worth pinning to the map. Each entry needs:
+#   - name (required)
+#   - address (free text; used for display only)
+#   - lat / lng (required; geocode via Nominatim once and hardcode)
+#   - cuisine: list of tags (optional)
+#   - neighborhood (optional, but recommended)
+#   - price_tier: "$" / "$$" / "$$$" / "$$$$" (optional)
+#   - deals: list of deal dicts matching the data/deals.json shape
+#       happy_hour:  {kind, source, source_url, raw_text, windows, highlights}
+#       special:     {kind, source, source_url, title, description, valid_from, valid_until}
+#       voucher:     {kind, source, source_url, title, original_price, sale_price, savings, category}
+#
+# `source` is set to "manual" for tracking. `source_url` should point at
+# the restaurant's own page so contributors and users can verify.
+
+cheeseburgers:
+  name: Cheeseburgers
+  address: 4007 Farnam St, Blackstone, Omaha, NE 68131
+  lat: 41.2576975
+  lng: -95.9737277
+  cuisine: [burgers]
+  neighborhood: Blackstone
+  price_tier: "$"
+  deals:
+    - kind: special
+      source: manual
+      source_url: https://www.ineedcheeseburgers.com
+      title: "$5 original burger every Tuesday"
+      description: "Original burger for $5 on Tuesdays."
+      raw_text: "$5 original burgers every Tuesday."
