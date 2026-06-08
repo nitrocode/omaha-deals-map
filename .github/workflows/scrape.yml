@@ -16,7 +16,9 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: '3.11'
-      - run: pip install -e .
+      - run: |
+          pip install --require-hashes -r requirements.lock
+          pip install -e . --no-deps
       - run: |
           python scripts/01_fetch.py
           python scripts/02_parse.py

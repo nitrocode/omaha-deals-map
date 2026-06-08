@@ -79,8 +79,23 @@ Conventional Commits with `Refs: omaha-deals-map` trailer. Working directly on `
 ## Pre-commit setup (one-time)
 
 ```bash
-pip install -e ".[dev]"
+make install        # installs from requirements.lock with --require-hashes
 pre-commit install
 ```
 
 After that, hooks fire automatically on `git commit`. CI runs the same checks.
+
+## Dependency lockfile
+
+Every Python dep (direct + transitive) is pinned in `requirements.lock` with
+sha256 hashes. CI installs with `pip install --require-hashes -r requirements.lock`
+so a compromised upstream release fails fast.
+
+After editing `pyproject.toml`, regenerate the lock:
+
+```bash
+make lock           # uv pip compile --generate-hashes
+```
+
+Commit `requirements.lock` alongside the `pyproject.toml` change. Don't
+hand-edit the lockfile.

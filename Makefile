@@ -1,7 +1,14 @@
 .PHONY: install scrape parse extract geocode build all serve test lint review rebuild clean
 
 install:
-	pip install -e ".[dev]"
+	pip install --require-hashes -r requirements.lock
+	pip install -e . --no-deps
+
+# Regenerate requirements.lock after any pyproject.toml change. Run this
+# locally; CI verifies the lockfile matches via --require-hashes.
+lock:
+	uv pip compile pyproject.toml --extra dev --generate-hashes \
+		--output-file requirements.lock
 
 scrape:
 	python scripts/01_fetch.py

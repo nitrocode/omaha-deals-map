@@ -34,7 +34,9 @@ jobs:
         with:
           workload_identity_provider: 'projects/202457150116/locations/global/workloadIdentityPools/github-actions/providers/github'
           service_account: 'omaha-deals-sheet-reader@cryptic-net-256222.iam.gserviceaccount.com'
-      - run: pip install -e ".[dev]"
+      - run: |
+          pip install --require-hashes -r requirements.lock
+          pip install -e . --no-deps
       - run: python scripts/sheet_to_issues.py
       - name: Commit state file if changed
         run: |

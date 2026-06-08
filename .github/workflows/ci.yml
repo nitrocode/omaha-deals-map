@@ -13,7 +13,14 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: '3.11'
-      - run: pip install -e ".[dev]"
+      - name: Install pinned deps + local package
+        # Lockfile carries every transitive dep with --hash=sha256 pins so a
+        # compromised upstream release fails fast in CI. --no-deps on the
+        # editable install prevents pip from re-resolving the deps it was
+        # just told are fully specified.
+        run: |
+          pip install --require-hashes -r requirements.lock
+          pip install -e . --no-deps
       - run: ruff check .
       - name: Run fast suite with coverage gate
         # The gate prevents test coverage from silently rotting. Threshold
