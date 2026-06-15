@@ -1448,3 +1448,10 @@ Rib Shack Smokehouse:
   category: amenity
   geocode_source: photon
   geocode_confidence: low
+Red Door Woodfired Grill:
+  address: Red Door Woodfired Grill, 9703, North Ash Avenue, Liberty, Missouri, 64157
+  lat: 39.2685787
+  lng: -94.4509414
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low

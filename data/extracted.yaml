@@ -1,4 +1,46 @@
 - source: growomaha
+  source_record_id: red-door-woodfired-grill
+  source_url: https://growomaha.com/happy-hour/red-door-woodfired-grill/
+  name: Red Door Woodfired Grill
+  record_modified_at: '2026-06-11T14:22:55Z'
+  kind: happy_hour
+  raw_text: Monday-Friday from 3-6pm 1/2 off the bar drinks on Tuesdays only during
+    happy hour
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '15:00'
+    end: '18:00'
+    type: happy_hour
+  - day: mon
+    start: '15:00'
+    end: '18:00'
+    type: happy_hour
+  - day: thu
+    start: '15:00'
+    end: '18:00'
+    type: happy_hour
+  - day: tue
+    start: '15:00'
+    end: '18:00'
+    type: happy_hour
+  - day: wed
+    start: '15:00'
+    end: '18:00'
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+  extraction_source: regex
+  needs_review: false
+- source: growomaha
   source_record_id: approach-at-indian-creek
   source_url: https://growomaha.com/happy-hour/approach-at-indian-creek/
   name: Approach at Indian Creek
@@ -11252,352 +11294,11 @@
   lng: null
   extraction_source: regex
   needs_review: false
-- source: visitomaha
-  source_record_id: '1628'
-  source_url: https://www.visitomaha.com/coupon/%243-off-heartland-bike-share-24-hour-pass/1628/
-  name: $3 off Heartland Bike Share 24 Hour Pass
-  record_modified_at: '2026-06-04T12:30:37.643Z'
-  kind: special
-  raw_text: Experience Omaha with Heartland Bike Share and our 24 Hour pass including
-    unlimited 1-hour trips as well as access to the system for 24 hours. Overage fees
-    will apply for any rides over one hour. Download the BCycle app and use the promo
-    code VISITOMA26 to receive $3 off your purchase. Get your discounted 24 HOUR PASS
-    and explore Omaha while supplies last!
-  external_link: https://heartlandbikeshare.org
-  pre_extracted_windows: []
-  valid_from: '2024-01-02'
-  valid_until: '2027-01-01'
-  title: $3 off Heartland Bike Share 24 Hour Pass
-  description: Experience Omaha with Heartland Bike Share and our 24 Hour pass including
-    unlimited 1-hour trips as well as access to the system for 24 hours. Overage fees
-    will apply for any rides over one hour. Download the BCycle app and use the promo
-    code VISITOMA26 to receive $3 off your purchase. Get your discounted 24 HOUR PASS
-    and explore Omaha while supplies last!
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '1549'
-  source_url: https://www.visitomaha.com/coupon/buy-one-get-one-free-ice-cream-treat/1549/
-  name: Buy One, Get One Free Ice Cream Treat
-  record_modified_at: '2026-06-04T05:30:59.701Z'
-  kind: special
-  raw_text: Enjoy two scoops of delicious hand-churned ice cream or two gourmet cookies
-    for the price of one. Just mention Visit Omaha or Omaha Restaurant Week to receive
-    the deal.
-  external_link: null
-  pre_extracted_windows: []
-  valid_from: null
-  valid_until: null
-  title: Buy One, Get One Free Ice Cream Treat
-  description: Enjoy two scoops of delicious hand-churned ice cream or two gourmet
-    cookies for the price of one. Just mention Visit Omaha or Omaha Restaurant Week
-    to receive the deal.
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2681'
-  source_url: https://www.visitomaha.com/coupon/fowl-play-%245-bowling-at-ch%c3%a2m-pang-lanes/2681/
-  name: "Fowl Play $5 Bowling at Ch\xE2m Pang Lanes"
-  record_modified_at: '2026-06-07T02:30:58.734Z'
-  kind: special
-  raw_text: Get your game on every Monday & Tuesday with $5 duckpin bowling open to
-    close. See you on the lanes!
-  external_link: https://www.opentable.com/booking/experiences-availability?rid=1383829&restref=1383829&experienceId=339211&utm_source=external&utm_medium=referral&utm_campaign=shared
-  pre_extracted_windows: []
-  valid_from: '2024-12-31'
-  valid_until: null
-  title: "Fowl Play $5 Bowling at Ch\xE2m Pang Lanes"
-  description: Get your game on every Monday & Tuesday with $5 duckpin bowling open
-    to close. See you on the lanes!
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2731'
-  source_url: https://www.visitomaha.com/coupon/more-than-a-meeting-at-the-cottonwood/2731/
-  name: More Than A Meeting at The Cottonwood
-  record_modified_at: '2026-06-02T06:30:43.694Z'
-  kind: special
-  raw_text: "Sunday - Thursday multiday programs | April-October 2026\r\n\r\nYour\
-    \ next multiday program comes with more than a meeting. The Kimpton Cottonwood\
-    \ Hotel is a pet friendly boutique, AAA Four Diamond property, steps from 30+\
-    \ restaurants and bars in a walkable historic neighborhood. Book a qualifying\
-    \ weekday group program this summer and choose from curated enhancements designed\
-    \ to set your event apart.\r\n\r\nSelect Your Enhancements:\r\n\r\n-Wine or Whiskey\
-    \ Tasting\r\n-Custom Trivia hosted by Trivia Mafia\r\n-Private Yoga Class\r\n\
-    -Premium Room Upgrades\r\n-History + Reuben Tasting\r\n-Pasta Making Class\r\n\
-    \r\nSpend $20K - Pick 1\r\nSpend $35K - Pick 2\r\nSpend $50K - Pick 3\r\n\r\n\
-    Available for Sunday through Thursday multiday programs from April through October\
-    \ 2026 with a\r\nminimum spend of $20,000 and 20+ peak room nights. Blackout dates\
-    \ apply. Subject to availability."
-  external_link: https://www.thecottonwoodhotel.com/meetings-and-events/
-  pre_extracted_windows: []
-  valid_from: '2026-04-23'
-  valid_until: '2026-11-01'
-  title: More Than A Meeting at The Cottonwood
-  description: "Sunday - Thursday multiday programs | April-October 2026\r\n\r\nYour\
-    \ next multiday program comes with more than a meeting. The Kimpton Cottonwood\
-    \ Hotel is a pet friendly boutique, AAA Four Diamond property, steps from 30+\
-    \ restaurants and bars in a walkable historic neighborhood. Book a qualifying\
-    \ weekday group program this summer and choose from curated enhancements designed\
-    \ to set your event apart.\r\n\r\nSelect Your Enhancements:\r\n\r\n-Wine or Whiskey\
-    \ Tasting\r\n-Custom Trivia hosted by Trivia Mafia\r\n-Private Yoga Class\r\n\
-    -Premium Room Upgrades\r\n-History + Reuben Tasting\r\n-Pasta Making Class\r\n\
-    \r\nSpend $20K - Pick 1\r\nSpend $35K - Pick 2\r\nSpend $50K - Pick 3\r\n\r\n\
-    Available for Sunday through Thursday multiday programs from April through October\
-    \ 2026 with a\r\nminimum spend of $20,000 and 20+ peak room nights. Blackout dates\
-    \ apply. Subject to availability."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '1480'
-  source_url: https://www.visitomaha.com/coupon/save-10%25-off-with-get-out%3a-omaha-escape-rooms-fri-sun/1480/
-  name: 'Save 10% OFF with Get Out: Omaha Escape Rooms Fri-Sun'
-  record_modified_at: '2026-06-07T15:31:28.606Z'
-  kind: special
-  raw_text: "Use Visit Omaha's exclusive promo code for 10% off your next Get Out:\
-    \ Omaha experience when you book an escape room online for Friday - Sunday!\r\n\
-    \r\nCODE: VISITOMAHATEN\r\n\r\nTry one of Get Out: Omaha's four immersive escape\
-    \ room experiences, ranked #1 in Omaha on TripAdvisor. \r\n\r\nVisit getoutomaha.com\
-    \ for more information and to book today."
-  external_link: https://bookeo.com/get_out_omaha?promotion=VISITOMAHATEN
-  pre_extracted_windows: []
-  valid_from: '2019-05-31'
-  valid_until: null
-  title: 'Save 10% OFF with Get Out: Omaha Escape Rooms Fri-Sun'
-  description: "Use Visit Omaha's exclusive promo code for 10% off your next Get Out:\
-    \ Omaha experience when you book an escape room online for Friday - Sunday!\r\n\
-    \r\nCODE: VISITOMAHATEN\r\n\r\nTry one of Get Out: Omaha's four immersive escape\
-    \ room experiences, ranked #1 in Omaha on TripAdvisor. \r\n\r\nVisit getoutomaha.com\
-    \ for more information and to book today."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '1479'
-  source_url: https://www.visitomaha.com/coupon/save-20%25-off-with-get-out%3a-omaha-escape-rooms-m-th/1479/
-  name: 'Save 20% OFF with Get Out: Omaha Escape Rooms M-Th'
-  record_modified_at: '2026-06-03T11:33:04.688Z'
-  kind: special
-  raw_text: "Use Visit Omaha's exclusive promo code for 20% off your next Get Out:\
-    \ Omaha experience when you book online for Monday - Thursday experience!\r\n\r\
-    \nCODE: VISITOMAHA20\r\n\r\nTry one of Get Out: Omaha's four immersive escape\
-    \ room experiences ranked #1 in Omaha on TripAdvisor. \r\n\r\nVisit getoutomaha.com\
-    \ for more information and to book today."
-  external_link: https://bookeo.com/get_out_omaha/?promotion=VISITOMAHA20
-  pre_extracted_windows: []
-  valid_from: '2019-05-31'
-  valid_until: null
-  title: 'Save 20% OFF with Get Out: Omaha Escape Rooms M-Th'
-  description: "Use Visit Omaha's exclusive promo code for 20% off your next Get Out:\
-    \ Omaha experience when you book online for Monday - Thursday experience!\r\n\r\
-    \nCODE: VISITOMAHA20\r\n\r\nTry one of Get Out: Omaha's four immersive escape\
-    \ room experiences ranked #1 in Omaha on TripAdvisor. \r\n\r\nVisit getoutomaha.com\
-    \ for more information and to book today."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2729'
-  source_url: https://www.visitomaha.com/coupon/say-yes-effortlessly/2729/
-  name: Say Yes, Effortlessly
-  record_modified_at: '2026-06-02T06:30:43.688Z'
-  kind: special
-  raw_text: "Your wedding deserves a setting that feels as special as the moment itself.\
-    \ At Kimpton Cottonwood Hotel, an AAA Four Diamond, 1916 landmark in Omaha\u2019\
-    s Blackstone District, your celebration unfolds in beautifully designed spaces,\
-    \ with thoughtful details and a team that takes care of everything behind the\
-    \ scenes.\r\n\r\nFor a limited time, enjoy waived room rental for qualifying Friday\
-    \ and Sunday weddings in 2026.\r\n\r\nWays We Make It Effortless:\r\n-Waived room\
-    \ rental for your ceremony and/or reception\r\n-Dedicated event manager for coordinating\
-    \ venue details\r\n-A complimentary group tasting to bring your menu to life\r\
-    \n-Preferred pricing on room blocks for your guests\r\n-Exclusive access for photography\
-    \ opportunities\r\n\r\nFriday & Sunday Weddings | September&#8211;December 2026\r\
-    \n\r\nRoom rental waiver applies to Friday and Sunday weddings booked and held\
-    \ between September and December 2026 with a minimum food and beverage spend of\
-    \ $10,000. Ceremony, reception, and combination events qualify. Cannot be combined\
-    \ with other promotional offers. Blackout dates apply. Subject to availability."
-  external_link: https://www.thecottonwoodhotel.com/meetings-and-events/weddings/
-  pre_extracted_windows: []
-  valid_from: '2026-04-23'
-  valid_until: '2026-12-02'
-  title: Say Yes, Effortlessly
-  description: "Your wedding deserves a setting that feels as special as the moment\
-    \ itself. At Kimpton Cottonwood Hotel, an AAA Four Diamond, 1916 landmark in Omaha\u2019\
-    s Blackstone District, your celebration unfolds in beautifully designed spaces,\
-    \ with thoughtful details and a team that takes care of everything behind the\
-    \ scenes.\r\n\r\nFor a limited time, enjoy waived room rental for qualifying Friday\
-    \ and Sunday weddings in 2026.\r\n\r\nWays We Make It Effortless:\r\n-Waived room\
-    \ rental for your ceremony and/or reception\r\n-Dedicated event manager for coordinating\
-    \ venue details\r\n-A complimentary group tasting to bring your menu to life\r\
-    \n-Preferred pricing on room blocks for your guests\r\n-Exclusive access for photography\
-    \ opportunities\r\n\r\nFriday & Sunday Weddings | September&#8211;December 2026\r\
-    \n\r\nRoom rental waiver applies to Friday and Sunday weddings booked and held\
-    \ between September and December 2026 with a minimum food and beverage spend of\
-    \ $10,000. Ceremony, reception, and combination events qualify. Cannot be combined\
-    \ with other promotional offers. Blackout dates apply. Subject to availability."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2717'
-  source_url: https://www.visitomaha.com/coupon/stay-local-stay-inspired-w-15%25-off!/2717/
-  name: Stay Local. Stay Inspired w/ 15% Off!
-  record_modified_at: '2026-06-04T21:30:46.635Z'
-  kind: special
-  raw_text: "Enjoy 15% off our Best Available Rate, available all year long for locals.\r\
-    \n\r\nCalling all locals, your downtown escape begins now. From concerts at Steelhouse\
-    \ Omaha and shows at the Orpheum to major events at the CHI Health Center Omaha,\
-    \ dinner in the Old Market, museum days, or family River Front adventures, make\
-    \ Hotel Deco your home base.\r\n\r\nEnjoy elevated indulgence, striking Art Deco\
-    \ design, and an experience that feels distinctly Omaha, just steps from the city\u2019\
-    s best.\r\n\r\nBased on availability. Some blackout dates may apply. Not for existing\
-    \ reservations or groups."
-  external_link: https://www.omahahoteldeco.com/offers/
-  pre_extracted_windows: []
-  valid_from: '2025-12-03'
-  valid_until: '2027-01-01'
-  title: Stay Local. Stay Inspired w/ 15% Off!
-  description: "Enjoy 15% off our Best Available Rate, available all year long for\
-    \ locals.\r\n\r\nCalling all locals, your downtown escape begins now. From concerts\
-    \ at Steelhouse Omaha and shows at the Orpheum to major events at the CHI Health\
-    \ Center Omaha, dinner in the Old Market, museum days, or family River Front adventures,\
-    \ make Hotel Deco your home base.\r\n\r\nEnjoy elevated indulgence, striking Art\
-    \ Deco design, and an experience that feels distinctly Omaha, just steps from\
-    \ the city\u2019s best.\r\n\r\nBased on availability. Some blackout dates may\
-    \ apply. Not for existing reservations or groups."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2732'
-  source_url: https://www.visitomaha.com/coupon/the-off-peak-perk/2732/
-  name: The Off Peak Perk
-  record_modified_at: '2026-06-05T22:30:59.699Z'
-  kind: special
-  raw_text: "November 2026 - March 2027\r\n\r\nFewer crowds, lower minimums, and the\
-    \ same AAA Four Diamond experience. At Kimpton Cottonwood Hotel, a 1916 landmark\
-    \ in one of Omaha\u2019s most walkable neighborhoods, your attendees are steps\
-    \ from restaurants, galleries, and nightlife. Book a qualifying winter group program\
-    \ and add curated experiences your guests will actually remember.\r\n\r\nSelect\
-    \ Your Enhancements:\r\n-Wine or Whiskey Tasting\r\n-Custom Trivia hosted by Trivia\
-    \ Mafia\r\n-Private Yoga Class\r\n-Premium Room Upgrades\r\n-History Tour + Reuben\
-    \ Tasting\r\n-Pasta Making Class\r\n\r\nSpend $15K - Pick 1\r\nSpend $25K - Pick\
-    \ 2\r\nSpend $40K - Pick 3\r\n\r\nAvailable for any multiday group program from\
-    \ November 2026 through March 2027 with a minimum spend of $15,000 and 15+ peak\
-    \ room nights. Lower minimums reflect seasonal flexibility. Blackout dates apply.\
-    \ Subject to availability."
-  external_link: https://www.thecottonwoodhotel.com/meetings-and-events/
-  pre_extracted_windows: []
-  valid_from: '2026-04-23'
-  valid_until: '2027-04-01'
-  title: The Off Peak Perk
-  description: "November 2026 - March 2027\r\n\r\nFewer crowds, lower minimums, and\
-    \ the same AAA Four Diamond experience. At Kimpton Cottonwood Hotel, a 1916 landmark\
-    \ in one of Omaha\u2019s most walkable neighborhoods, your attendees are steps\
-    \ from restaurants, galleries, and nightlife. Book a qualifying winter group program\
-    \ and add curated experiences your guests will actually remember.\r\n\r\nSelect\
-    \ Your Enhancements:\r\n-Wine or Whiskey Tasting\r\n-Custom Trivia hosted by Trivia\
-    \ Mafia\r\n-Private Yoga Class\r\n-Premium Room Upgrades\r\n-History Tour + Reuben\
-    \ Tasting\r\n-Pasta Making Class\r\n\r\nSpend $15K - Pick 1\r\nSpend $25K - Pick\
-    \ 2\r\nSpend $40K - Pick 3\r\n\r\nAvailable for any multiday group program from\
-    \ November 2026 through March 2027 with a minimum spend of $15,000 and 15+ peak\
-    \ room nights. Lower minimums reflect seasonal flexibility. Blackout dates apply.\
-    \ Subject to availability."
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2725'
-  source_url: https://www.visitomaha.com/coupon/treerush-advenures-4-pack-special/2725/
-  name: TreeRush Advenures 4-Pack Special
-  record_modified_at: '2026-06-02T14:30:01.816Z'
-  kind: special
-  raw_text: '<p>The 4-Pack Special includes: 4 tickets, 4 pairs of gloves, and locker
-    rental all for $210</p>Not good with other offers or discounts. Must book online.</p>'
-  external_link: https://treerush.com/family-4pack/
-  pre_extracted_windows: []
-  valid_from: '2026-02-27'
-  valid_until: '2027-01-01'
-  title: TreeRush Advenures 4-Pack Special
-  description: '<p>The 4-Pack Special includes: 4 tickets, 4 pairs of gloves, and
-    locker rental all for $210</p>Not good with other offers or discounts. Must book
-    online.</p>'
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
-- source: visitomaha
-  source_record_id: '2724'
-  source_url: https://www.visitomaha.com/coupon/try-it-tickets-at-treerush-advenutres/2724/
-  name: Try-It Tickets at TreeRush Advenutres
-  record_modified_at: '2026-06-04T21:30:46.642Z'
-  kind: special
-  raw_text: "<p>Pricing: $44 Adults / $36 Youth / $19 Child</p>\r\n<p>Not good with\
-    \ other offers or discounts. Discounted tickets only available on certain days\
-    \ and times. Must book online.</p>"
-  external_link: https://treerush.com/try-it-tickets/
-  pre_extracted_windows: []
-  valid_from: '2026-02-27'
-  valid_until: '2027-01-01'
-  title: Try-It Tickets at TreeRush Advenutres
-  description: "<p>Pricing: $44 Adults / $36 Youth / $19 Child</p>\r\n<p>Not good\
-    \ with other offers or discounts. Discounted tickets only available on certain\
-    \ days and times. Must book online.</p>"
-  original_price: null
-  sale_price: null
-  savings: null
-  category: null
-  lat: null
-  lng: null
-  extraction_source: n/a
 - source: bigdealsmedia
   source_record_id: 72-table-tap
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: 72 Table & Tap
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/2895/deal/3833
@@ -11617,7 +11318,7 @@
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Stories Coffee
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
@@ -11637,7 +11338,7 @@
   source_record_id: le-voltaire-french-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Le Voltaire French Restaurant
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3075/deal/4000
@@ -11657,7 +11358,7 @@
   source_record_id: circo
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Circo
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3599/deal/5218
@@ -11677,7 +11378,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
@@ -11697,7 +11398,7 @@
   source_record_id: cheeseburgers-a-take-out-joint
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Cheeseburger's A Take Out Joint
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4499/deal/6399
@@ -11717,7 +11418,7 @@
   source_record_id: rib-shack-smokehouse
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Rib Shack Smokehouse
-  record_modified_at: '2026-06-08T13:34:55.806692+00:00'
+  record_modified_at: '2026-06-15T14:14:55.903289+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4839/deal/7039
