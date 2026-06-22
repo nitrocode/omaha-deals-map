@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-06-15T14:18:06.828242+00:00",
+  "built_at": "2026-06-22T14:02:23.253760+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -8,7 +8,7 @@
     },
     {
       "name": "bigdealsmedia",
-      "count": 7
+      "count": 6
     },
     {
       "name": "manual",
@@ -16113,45 +16113,6 @@
         "missing_location"
       ],
       "needs_review": true,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "the-woodcliff-restaurant",
-      "name": "The Woodcliff Restaurant",
-      "address": "Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102",
-      "lat": 41.2567175,
-      "lng": -95.938139,
-      "geocode_confidence": "high",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/3603/deal/5223",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/thewoodcliffrestaurant",
-        "instagram": "https://www.instagram.com/thewoodcliff"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/3603/deal/5223",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "amenity"
-        }
-      ],
-      "review_reasons": [],
-      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
