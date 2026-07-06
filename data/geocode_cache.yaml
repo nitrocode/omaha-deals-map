@@ -1455,3 +1455,11 @@ Red Door Woodfired Grill:
   category: amenity
   geocode_source: photon
   geocode_confidence: low
+Phoenix Food & Spirits:
+  address: Phoenix Food and Spirits, Richland Drive, Richland I Precinct, Nebraska,
+    68138
+  lat: 41.1466772
+  lng: -96.1202385
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high
