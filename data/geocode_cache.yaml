@@ -1463,3 +1463,10 @@ Phoenix Food & Spirits:
   category: shop
   geocode_source: photon
   geocode_confidence: high
+Backlot Pizza + Kitchen:
+  address: Backlot Pizza + Kitchen, 6200, South 205th Plaza, Elkhorn, Nebraska, 68022
+  lat: 41.1958582
+  lng: -96.236374
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high

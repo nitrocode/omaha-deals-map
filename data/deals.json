@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-07-06T13:24:06.645134+00:00",
+  "built_at": "2026-07-13T14:39:10.633913+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -986,10 +986,10 @@
     {
       "id": "backlot-pizza-kitchen",
       "name": "Backlot Pizza + Kitchen",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Backlot Pizza + Kitchen, 6200, South 205th Plaza, Elkhorn, Nebraska, 68022",
+      "lat": 41.1958582,
+      "lng": -96.236374,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -1042,10 +1042,8 @@
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -10250,36 +10248,36 @@
           "kind": "happy_hour",
           "source": "growomaha",
           "source_url": "https://growomaha.com/happy-hour/mouth-of-the-south-downtown/",
-          "raw_text": "Sunday-Thursday from 2-6pm and includes a variety of appetizer and drink specials.",
+          "raw_text": "Tuesday-Friday from 2-5pm",
           "windows": [
             {
               "day": "mon",
               "start": "14:00",
-              "end": "18:00",
+              "end": "17:00",
               "type": "happy_hour"
             },
             {
               "day": "sun",
               "start": "14:00",
-              "end": "18:00",
+              "end": "17:00",
               "type": "happy_hour"
             },
             {
               "day": "thu",
               "start": "14:00",
-              "end": "18:00",
+              "end": "17:00",
               "type": "happy_hour"
             },
             {
               "day": "tue",
               "start": "14:00",
-              "end": "18:00",
+              "end": "17:00",
               "type": "happy_hour"
             },
             {
               "day": "wed",
               "start": "14:00",
-              "end": "18:00",
+              "end": "17:00",
               "type": "happy_hour"
             }
           ],
