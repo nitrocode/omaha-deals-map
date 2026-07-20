@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-07-13T14:39:10.633913+00:00",
+  "built_at": "2026-07-20T14:10:51.927290+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -8,7 +8,7 @@
     },
     {
       "name": "bigdealsmedia",
-      "count": 7
+      "count": 8
     },
     {
       "name": "manual",
@@ -12093,12 +12093,12 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": null,
+      "website": "https://omaha.bigdealsmedia.net/business/5241/deal/7494",
       "phone": null,
       "socials": {},
       "features": {},
       "hours_osm": null,
-      "source_count": 1,
+      "source_count": 2,
       "personal": {},
       "deals": [
         {
@@ -12139,6 +12139,18 @@
             }
           ],
           "highlights": []
+        },
+        {
+          "kind": "voucher",
+          "source": "bigdealsmedia",
+          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
+          "raw_text": "",
+          "external_link": "https://omaha.bigdealsmedia.net/business/5241/deal/7494",
+          "title": null,
+          "original_price": 50.0,
+          "sale_price": 25.0,
+          "savings": 25.0,
+          "category": "amenity"
         }
       ],
       "review_reasons": [
