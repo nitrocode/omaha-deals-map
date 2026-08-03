@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-07-27T14:39:12.939684+00:00",
+  "built_at": "2026-08-03T14:43:09.787201+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -8,7 +8,7 @@
     },
     {
       "name": "bigdealsmedia",
-      "count": 8
+      "count": 6
     },
     {
       "name": "manual",
@@ -3449,47 +3449,6 @@
       ],
       "review_reasons": [],
       "needs_review": false,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "circo",
-      "name": "Circo",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/3599/deal/5218",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/CircoRestaurantNE",
-        "instagram": "https://www.instagram.com/circorestaurant"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/3599/deal/5218",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "restaurants"
-        }
-      ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -12093,12 +12052,12 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/5241/deal/7494",
+      "website": null,
       "phone": null,
       "socials": {},
       "features": {},
       "hours_osm": null,
-      "source_count": 2,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -12139,18 +12098,6 @@
             }
           ],
           "highlights": []
-        },
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/5241/deal/7494",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "amenity"
         }
       ],
       "review_reasons": [

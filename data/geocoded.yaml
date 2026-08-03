@@ -12074,7 +12074,7 @@
   source_record_id: 72-table-tap
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: 72 Table & Tap
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/2895/deal/3833
@@ -12098,7 +12098,7 @@
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Stories Coffee
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
@@ -12122,7 +12122,7 @@
   source_record_id: le-voltaire-french-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Le Voltaire French Restaurant
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3075/deal/4000
@@ -12141,32 +12141,10 @@
   needs_review: true
   geocode_confidence: none
 - source: bigdealsmedia
-  source_record_id: circo
-  source_url: https://omaha.bigdealsmedia.net/category/restaurants
-  name: Circo
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
-  kind: voucher
-  raw_text: ''
-  external_link: https://omaha.bigdealsmedia.net/business/3599/deal/5218
-  pre_extracted_windows: []
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: 50.0
-  sale_price: 25.0
-  savings: 25.0
-  category: restaurants
-  lat: null
-  lng: null
-  extraction_source: n/a
-  needs_review: true
-  geocode_confidence: none
-- source: bigdealsmedia
   source_record_id: cheeseburgers-a-take-out-joint
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Cheeseburger's A Take Out Joint
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4499/deal/6399
@@ -12188,7 +12166,7 @@
   source_record_id: rib-shack-smokehouse
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Rib Shack Smokehouse
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4839/deal/7039
@@ -12212,7 +12190,7 @@
   source_record_id: timber-creek-pizza-pub-grill-omaha
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Timber Creek Pizza Pub & Grill Omaha
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
+  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4899/deal/7105
@@ -12230,26 +12208,3 @@
   extraction_source: n/a
   needs_review: true
   geocode_confidence: none
-- source: bigdealsmedia
-  source_record_id: red-door-woodfired-grill
-  source_url: https://omaha.bigdealsmedia.net/category/restaurants
-  name: Red Door Woodfired Grill
-  record_modified_at: '2026-07-27T14:36:24.984232+00:00'
-  kind: voucher
-  raw_text: ''
-  external_link: https://omaha.bigdealsmedia.net/business/5241/deal/7494
-  pre_extracted_windows: []
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: 50.0
-  sale_price: 25.0
-  savings: 25.0
-  category: amenity
-  lat: 39.2685787
-  lng: -94.4509414
-  extraction_source: n/a
-  address: Red Door Woodfired Grill, 9703, North Ash Avenue, Liberty, Missouri, 64157
-  geocode_source: photon
-  geocode_confidence: low
