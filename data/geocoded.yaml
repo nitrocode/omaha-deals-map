@@ -1,4 +1,57 @@
 - source: growomaha
+  source_record_id: sky-bar-grill
+  source_url: https://growomaha.com/happy-hour/sky-bar-grill/
+  name: Sky Bar + Grill
+  record_modified_at: '2026-08-09T18:19:37Z'
+  kind: happy_hour
+  raw_text: Happy Hour Daily from 4-6pm (1/2 off spirits and apps with players club
+    card)
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: mon
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: sat
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: sun
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: thu
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: tue
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  - day: wed
+    start: '16:00'
+    end: '18:00'
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: amenity
+  lat: 41.2563999
+  lng: -95.9410893
+  extraction_source: regex
+  needs_review: false
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  geocode_source: photon
+  geocode_confidence: high
+- source: growomaha
   source_record_id: red-door-woodfired-grill
   source_url: https://growomaha.com/happy-hour/red-door-woodfired-grill/
   name: Red Door Woodfired Grill
@@ -5672,7 +5725,7 @@
   source_record_id: famous-daves-2
   source_url: https://growomaha.com/happy-hour/famous-daves-2/
   name: Famous Dave's
-  record_modified_at: '2020-08-07T02:28:53Z'
+  record_modified_at: '2026-08-09T19:37:00Z'
   kind: happy_hour
   raw_text: Monday-Friday from 3-6 PM and includes $3/4/5 drink specials and $4/5/6
     food specials (dine in only).
@@ -7574,60 +7627,10 @@
   geocode_source: photon
   geocode_confidence: high
 - source: growomaha
-  source_record_id: flight-deck-tap-grill
-  source_url: https://growomaha.com/happy-hour/flight-deck-tap-grill/
-  name: Flight Deck Tap & Grill
-  record_modified_at: '2025-04-21T18:04:13Z'
-  kind: happy_hour
-  raw_text: Monday-Friday from 2-6 PM and all day Sunday (dine-in only). Includes
-    half off appetizers and $1 off wells and draft beers.
-  external_link: null
-  pre_extracted_windows:
-  - day: fri
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  - day: mon
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  - day: sun
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  - day: thu
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  - day: tue
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  - day: wed
-    start: '14:00'
-    end: '18:00'
-    type: happy_hour
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: null
-  sale_price: null
-  savings: null
-  category: amenity
-  lat: 38.8926965
-  lng: -119.9983696
-  extraction_source: regex
-  needs_review: false
-  address: Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California,
-    96158
-  geocode_source: photon
-  geocode_confidence: low
-- source: growomaha
   source_record_id: djs-dugout
   source_url: https://growomaha.com/happy-hour/djs-dugout/
   name: DJ's Dugout
-  record_modified_at: '2019-03-20T19:47:19Z'
+  record_modified_at: '2026-08-09T19:34:09Z'
   kind: happy_hour
   raw_text: Monday-Friday 3-6 PM. Includes $7 32 ounce domestic draft beers, specialty
     drinks, and $3.50 select pints.
@@ -10111,56 +10114,6 @@
   geocode_confidence: high
   geocode_source: cache
 - source: growomaha
-  source_record_id: ollie-hobbs-craft-kitchen
-  source_url: https://growomaha.com/happy-hour/ollie-hobbs-craft-kitchen/
-  name: Ollie and Hobbes Craft Kitchen
-  record_modified_at: '2018-09-16T18:17:00Z'
-  kind: happy_hour
-  raw_text: Monday-Friday from 3-6 PM and all day on Sunday. Happy hour includes appetizer,
-    drinks, AND entrees.
-  external_link: null
-  pre_extracted_windows:
-  - day: fri
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  - day: mon
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  - day: sun
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  - day: thu
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  - day: tue
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  - day: wed
-    start: '15:00'
-    end: '18:00'
-    type: happy_hour
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: null
-  sale_price: null
-  savings: null
-  category: amenity
-  lat: 40.7430165
-  lng: -96.6789605
-  extraction_source: regex
-  needs_review: false
-  address: Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska,
-    68516
-  geocode_source: photon
-  geocode_confidence: low
-- source: growomaha
   source_record_id: the-observatory
   source_url: https://growomaha.com/happy-hour/the-observatory/
   name: The Observatory
@@ -11458,32 +11411,34 @@
 - source: growomaha
   source_record_id: crescent-moon
   source_url: https://growomaha.com/happy-hour/crescent-moon/
-  name: Crescent Moon
-  record_modified_at: '2018-09-12T19:04:50Z'
+  name: Crescent Moon Alehouse
+  record_modified_at: '2026-08-09T18:38:43Z'
   kind: happy_hour
-  raw_text: Monday-Friday from 4-6 PM and includes $1 off drafts and discounted food
-    specials.
+  raw_text: 'Happy hour all day Monday! Tuesday thru Friday from 2-6 P.M. $5 apps:
+    Fried Pickles, Onion Rings, Green Pepper Rings, Chips and Queso, Loaded Fries$4
+    Boulevard Wheat, Lagunitas IPA, El Squatcho Mexian Lager, and well cocktails$5
+    old fashioneds and Tito''s cocktails$2 Blackberry Brandy or Apple Pie Shots'
   external_link: null
   pre_extracted_windows:
   - day: fri
-    start: '15:00'
-    end: '18:00'
+    start: '14:00'
+    end: '23:59'
     type: happy_hour
   - day: mon
-    start: '15:00'
-    end: '18:00'
+    start: '14:00'
+    end: '23:59'
     type: happy_hour
   - day: thu
-    start: '15:00'
-    end: '18:00'
+    start: '14:00'
+    end: '23:59'
     type: happy_hour
   - day: tue
-    start: '15:00'
-    end: '18:00'
+    start: '14:00'
+    end: '23:59'
     type: happy_hour
   - day: wed
-    start: '15:00'
-    end: '18:00'
+    start: '14:00'
+    end: '23:59'
     type: happy_hour
   valid_from: null
   valid_until: null
@@ -11497,10 +11452,9 @@
   lng: -95.9662994
   extraction_source: regex
   needs_review: false
-  address: Crescent Moon, 3578, Farnam Street, Blackstone, Omaha, Douglas County,
-    Nebraska, 68131, United States
+  address: Crescent Moon, 3578, Farnam Street, Omaha, Nebraska, 68131
+  geocode_source: photon
   geocode_confidence: high
-  geocode_source: cache
 - source: growomaha
   source_record_id: the-cheesecake-factory
   source_url: https://growomaha.com/happy-hour/the-cheesecake-factory/
@@ -12074,7 +12028,7 @@
   source_record_id: 72-table-tap
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: 72 Table & Tap
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/2895/deal/3833
@@ -12098,7 +12052,7 @@
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Stories Coffee
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
@@ -12122,7 +12076,7 @@
   source_record_id: le-voltaire-french-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Le Voltaire French Restaurant
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3075/deal/4000
@@ -12144,7 +12098,7 @@
   source_record_id: cheeseburgers-a-take-out-joint
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Cheeseburger's A Take Out Joint
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4499/deal/6399
@@ -12166,7 +12120,7 @@
   source_record_id: rib-shack-smokehouse
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Rib Shack Smokehouse
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4839/deal/7039
@@ -12190,7 +12144,7 @@
   source_record_id: timber-creek-pizza-pub-grill-omaha
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Timber Creek Pizza Pub & Grill Omaha
-  record_modified_at: '2026-08-03T14:40:27.562370+00:00'
+  record_modified_at: '2026-08-10T13:09:13.046385+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/4899/deal/7105

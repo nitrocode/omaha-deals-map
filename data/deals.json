@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-08-03T14:43:09.787201+00:00",
+  "built_at": "2026-08-10T13:12:11.222185+00:00",
   "sources": [
     {
       "name": "growomaha",
-      "count": 262
+      "count": 261
     },
     {
       "name": "bigdealsmedia",
@@ -3982,13 +3982,13 @@
     },
     {
       "id": "crescent-moon",
-      "name": "Crescent Moon",
-      "address": "Crescent Moon, 3578, Farnam Street, Blackstone, Omaha, Douglas County, Nebraska, 68131, United States",
+      "name": "Crescent Moon Alehouse",
+      "address": "Crescent Moon, 3578, Farnam Street, Omaha, Nebraska, 68131",
       "lat": 41.2579532,
       "lng": -95.9662994,
       "geocode_confidence": "high",
       "cuisine": [],
-      "neighborhood": "Blackstone",
+      "neighborhood": null,
       "price_tier": null,
       "photo": null,
       "website": "https://beercornerusa.com/crescentmoon/",
@@ -4003,36 +4003,36 @@
           "kind": "happy_hour",
           "source": "growomaha",
           "source_url": "https://growomaha.com/happy-hour/crescent-moon/",
-          "raw_text": "Monday-Friday from 4-6 PM and includes $1 off drafts and discounted food specials.",
+          "raw_text": "Happy hour all day Monday! Tuesday thru Friday from 2-6 P.M. $5 apps: Fried Pickles, Onion Rings, Green Pepper Rings, Chips and Queso, Loaded Fries$4 Boulevard Wheat, Lagunitas IPA, El Squatcho Mexian Lager, and well cocktails$5 old fashioneds and Tito's cocktails$2 Blackberry Brandy or Apple Pie Shots",
           "windows": [
             {
               "day": "fri",
-              "start": "15:00",
-              "end": "18:00",
+              "start": "14:00",
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "mon",
-              "start": "15:00",
-              "end": "18:00",
+              "start": "14:00",
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "thu",
-              "start": "15:00",
-              "end": "18:00",
+              "start": "14:00",
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "tue",
-              "start": "15:00",
-              "end": "18:00",
+              "start": "14:00",
+              "end": "23:59",
               "type": "happy_hour"
             },
             {
               "day": "wed",
-              "start": "15:00",
-              "end": "18:00",
+              "start": "14:00",
+              "end": "23:59",
               "type": "happy_hour"
             }
           ],
@@ -5414,77 +5414,6 @@
       ],
       "review_reasons": [],
       "needs_review": false,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "flight-deck-tap-grill",
-      "name": "Flight Deck Tap & Grill",
-      "address": "Flight Deck Sports Bar and Grill, Airport Road, South Lake Tahoe, California, 96158",
-      "lat": 38.8926965,
-      "lng": -119.9983696,
-      "geocode_confidence": "low",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": null,
-      "phone": null,
-      "socials": {},
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "happy_hour",
-          "source": "growomaha",
-          "source_url": "https://growomaha.com/happy-hour/flight-deck-tap-grill/",
-          "raw_text": "Monday-Friday from 2-6 PM and all day Sunday (dine-in only). Includes half off appetizers and $1 off wells and draft beers.",
-          "windows": [
-            {
-              "day": "fri",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "mon",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "sun",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "thu",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "tue",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "wed",
-              "start": "14:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            }
-          ],
-          "highlights": []
-        }
-      ],
-      "review_reasons": [
-        "uncertain_location"
-      ],
-      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -10740,77 +10669,6 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
-      "id": "ollie-hobbs-craft-kitchen",
-      "name": "Ollie and Hobbes Craft Kitchen",
-      "address": "Ollie and Hobbes Craft Kitchen, 2940, Pine Lake Road, Lincoln, Nebraska, 68516",
-      "lat": 40.7430165,
-      "lng": -96.6789605,
-      "geocode_confidence": "low",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": null,
-      "phone": null,
-      "socials": {},
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "happy_hour",
-          "source": "growomaha",
-          "source_url": "https://growomaha.com/happy-hour/ollie-hobbs-craft-kitchen/",
-          "raw_text": "Monday-Friday from 3-6 PM and all day on Sunday. Happy hour includes appetizer, drinks, AND entrees.",
-          "windows": [
-            {
-              "day": "fri",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "mon",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "sun",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "thu",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "tue",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "wed",
-              "start": "15:00",
-              "end": "18:00",
-              "type": "happy_hour"
-            }
-          ],
-          "highlights": []
-        }
-      ],
-      "review_reasons": [
-        "uncertain_location"
-      ],
-      "needs_review": true,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
       "id": "omaha-tap-house-2",
       "name": "Omaha Tap House",
       "address": "Omaha Tap House, Pepperwood Drive, Omaha, Douglas County, Nebraska, 68154, United States",
@@ -13315,6 +13173,81 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "sky-bar-grill",
+      "name": "Sky Bar + Grill",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/sky-bar-grill/",
+          "raw_text": "Happy Hour Daily from 4-6pm (1/2 off spirits and apps with players club card)",
+          "windows": [
+            {
+              "day": "fri",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "mon",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "sat",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "sun",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "thu",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "tue",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "wed",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            }
+          ],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false,
+      "first_seen_at": "2026-08-10T13:12:08.184538+00:00"
     },
     {
       "id": "skyboxx-bar-grill",

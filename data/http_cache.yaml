@@ -1,18 +1,18 @@
 https://growomaha.com/wp-json/wp/v2/cities?per_page=100:
-  body_sha: 6fc9751b10a8b473047c1524eae1aedf2ac855cbe75424e78c41678540ba8f33
+  body_sha: 59adafec8b6bc341c4e7b1a80abec44dcfe1def3053e31d991e60eb66f4249b0
 https://growomaha.com/wp-json/wp/v2/day-of-week?per_page=100:
-  body_sha: 8a06a1be1000c61e45db9882f52214e28b104b123d58b04ac94c562a2c150c40
+  body_sha: 5c03f6de423cbc1c88cce8e31b015d01c8811da4516eff0e52133c9bd9a85d66
 https://growomaha.com/wp-json/wp/v2/features?per_page=100:
-  body_sha: 670202be2d588510196c9c241c519e4bdd0976d4797c0d5467a03e5613ad797a
+  body_sha: cd3133caf1250fe5254a0937f0756554c428a30b6c3b043c5a31b585f522607c
 https://growomaha.com/wp-json/wp/v2/happy-hour?per_page=100&page=1:
-  body_sha: a1e0aa39d3195aee366b339ac071de998b9271401b33324925a62195147e2c09
+  body_sha: d4944653a699a74f04ede24d3f001c0835a52c313622091f647b0513840f4617
 https://growomaha.com/wp-json/wp/v2/happy-hour?per_page=100&page=2:
-  body_sha: 1321ee7bbe5f1b53ecb749a87dec3e7cacb0c095778f0cd8f445c17f628f246c
+  body_sha: 3a291375263fd1b24cf190a51997c9584d8eba33c00d1f60c3e6250c48499035
 https://growomaha.com/wp-json/wp/v2/happy-hour?per_page=100&page=3:
-  body_sha: 137b10ca1365c4c865eafc649242fbabeeb755635d153d5e17474d344ca2ae66
+  body_sha: 59eb60e428e8f548f9eb83d49c4d346b9089dbb4161d2a3bf11ad70dee41f5aa
 https://growomaha.com/wp-json/wp/v2/time-slots?per_page=100:
-  body_sha: 635de15bcfdd0cc2376488325066ea25652fb8683dd17f894caec27def859091
+  body_sha: 90ed826b8fc9395a36c3f4952e5138fbf71c37215de71ec7363e6cddac220190
 https://omaha.bigdealsmedia.net/category/restaurants:
-  body_sha: 320afddf74186eda4e8b8430ce1207ce1a2acbb2ee090f192efe8fe3c759b59a
+  body_sha: 259cddaad0e6a0a4199463e46d7ace31344fcb29b00ba36af6d0345ebd6905bc
 ? https://www.visitomaha.com/includes/rest_v2/plugins_offers_offers/find/?json=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22categories.categoryid%22%3A%7B%22%24in%22%3A%5B1%2C3%2C4%2C9%2C2%2C7%5D%7D%7D%2C%7B%22filter_tags%22%3A%7B%22%24in%22%3A%5B%22site_primary%22%5D%7D%7D%5D%7D%2C%22options%22%3A%7B%22limit%22%3A100%2C%22skip%22%3A0%2C%22count%22%3Atrue%2C%22sort%22%3A%7B%22qualityScore%22%3A-1%2C%22title_sort%22%3A1%7D%7D%7D&token=7d890807f6e33bbfee82427523fda90c
 : body_sha: 7ec371a97f3b25934ed1ced0ead58668c1c8c3f24f7b8b223c26dc2178fa921e

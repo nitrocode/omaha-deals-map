@@ -1470,3 +1470,17 @@ Backlot Pizza + Kitchen:
   category: amenity
   geocode_source: photon
   geocode_confidence: high
+Sky Bar + Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
+Crescent Moon Alehouse:
+  address: Crescent Moon, 3578, Farnam Street, Omaha, Nebraska, 68131
+  lat: 41.2579532
+  lng: -95.9662994
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
