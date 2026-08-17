@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-08-10T13:12:11.222185+00:00",
+  "built_at": "2026-08-17T12:48:31.935220+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -8,7 +8,7 @@
     },
     {
       "name": "bigdealsmedia",
-      "count": 6
+      "count": 5
     },
     {
       "name": "manual",
@@ -12245,47 +12245,6 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
-      "id": "rib-shack-smokehouse",
-      "name": "Rib Shack Smokehouse",
-      "address": "Rib shack Smokehouse bbq, 295, Port St Lucie, Port Saint Lucie, Florida, 34984",
-      "lat": 27.2757797,
-      "lng": -80.354112,
-      "geocode_confidence": "low",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/4839/deal/7039",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/ribshacksmokehouse",
-        "instagram": "https://www.instagram.com/ribshacksmokehouse"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/4839/deal/7039",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "amenity"
-        }
-      ],
-      "review_reasons": [
-        "uncertain_location"
-      ],
-      "needs_review": true,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
       "id": "roja-mexican-grill",
       "name": "Roja Mexican Grill",
       "address": "Roja Mexican Grill & Margarita Bar, 17010, Wright Plaza, The Shops of Legacy, Millard, Omaha, Douglas County, Nebraska, 68130, United States",
@@ -16004,6 +15963,45 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
+      "id": "the-woodcliff-restaurant",
+      "name": "The Woodcliff Restaurant",
+      "address": "Mexitli Restaurant, 1620, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2567175,
+      "lng": -95.938139,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": "https://omaha.bigdealsmedia.net/business/3603/deal/5223",
+      "phone": null,
+      "socials": {
+        "facebook": "https://www.facebook.com/thewoodcliffrestaurant",
+        "instagram": "https://www.instagram.com/thewoodcliff"
+      },
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "voucher",
+          "source": "bigdealsmedia",
+          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
+          "raw_text": "",
+          "external_link": "https://omaha.bigdealsmedia.net/business/3603/deal/5223",
+          "title": null,
+          "original_price": 50.0,
+          "sale_price": 25.0,
+          "savings": 25.0,
+          "category": "amenity"
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false,
+      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
       "id": "therapy-bar-grill",
       "name": "Therapy Bar and Grill",
       "address": "Therapy Bar and Grill, South 108th Street, Millard, Omaha, Douglas County, Nebraska, 68127, United States",
@@ -16136,44 +16134,6 @@
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "timber-creek-pizza-pub-grill-omaha",
-      "name": "Timber Creek Pizza Pub & Grill Omaha",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/4899/deal/7105",
-      "phone": null,
-      "socials": {},
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/4899/deal/7105",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "restaurants"
-        }
-      ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
-      "first_seen_at": "2026-07-06T13:24:05.615666+00:00"
     },
     {
       "id": "timber-wood-fire-bistro",
