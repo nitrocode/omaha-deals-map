@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-08-24T12:54:16.894884+00:00",
+  "built_at": "2026-08-31T18:56:15.721152+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -8,7 +8,7 @@
     },
     {
       "name": "bigdealsmedia",
-      "count": 5
+      "count": 3
     },
     {
       "name": "manual",
@@ -3282,47 +3282,6 @@
       ],
       "review_reasons": [],
       "needs_review": false,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "cheeseburgers-a-take-out-joint",
-      "name": "Cheeseburger's A Take Out Joint",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/4499/deal/6399",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/welovecheeseburgers",
-        "instagram": "https://www.instagram.com/cheeseburgersomaha"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/4499/deal/6399",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "restaurants"
-        }
-      ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -8909,47 +8868,6 @@
       ],
       "review_reasons": [],
       "needs_review": false,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
-      "id": "le-voltaire-french-restaurant",
-      "name": "Le Voltaire French Restaurant",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/3075/deal/4000",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/LeVoltaireRestaurantOmaha",
-        "instagram": "https://www.instagram.com/levoltaireomaha"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/3075/deal/4000",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "restaurants"
-        }
-      ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
