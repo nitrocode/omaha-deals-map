@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-08-31T18:56:15.721152+00:00",
+  "built_at": "2026-09-07T17:27:40.372408+00:00",
   "sources": [
     {
       "name": "growomaha",
-      "count": 261
+      "count": 264
     },
     {
       "name": "bigdealsmedia",
-      "count": 3
+      "count": 2
     },
     {
       "name": "manual",
@@ -415,45 +415,6 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
-      "id": "72-table-tap",
-      "name": "72 Table & Tap",
-      "address": "72 Table & Tap, 5413, South 70th Street, Omaha, Douglas County, Nebraska, 68127, United States",
-      "lat": 41.2035881,
-      "lng": -96.022821,
-      "geocode_confidence": "high",
-      "cuisine": [],
-      "neighborhood": null,
-      "price_tier": null,
-      "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/2895/deal/3833",
-      "phone": null,
-      "socials": {
-        "facebook": "https://www.facebook.com/72TableandTap",
-        "instagram": "https://www.instagram.com/72tableandtap"
-      },
-      "features": {},
-      "hours_osm": null,
-      "source_count": 1,
-      "personal": {},
-      "deals": [
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/2895/deal/3833",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "amenity"
-        }
-      ],
-      "review_reasons": [],
-      "needs_review": false,
-      "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
-    },
-    {
       "id": "801-chophouse",
       "name": "801 Chophouse",
       "address": "Omaha Chophouse, Regency Circle, Omaha, Nebraska, 68114",
@@ -789,6 +750,75 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "ancho-agave",
+      "name": "Ancho & Agave",
+      "address": "Ancho & Agave, Davenport Street, Village Pointe, Omaha, Douglas County, Nebraska, 68118, United States",
+      "lat": 41.2611162,
+      "lng": -96.1817616,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/ancho-agave/",
+          "raw_text": "Sunday- Friday from 3-6pm",
+          "windows": [
+            {
+              "day": "fri",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "mon",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "sun",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "thu",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "tue",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "wed",
+              "start": "15:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            }
+          ],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false,
+      "first_seen_at": "2026-09-07T17:27:33.437350+00:00"
     },
     {
       "id": "annies-irish-pub",
@@ -1608,6 +1638,73 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "biaggis-2",
+      "name": "Biaggi's",
+      "address": "Biaggi's Ristorante Italiano, 13655, California Street, Commercial Federal Business Park, Omaha, Douglas County, Nebraska, 68154, United States",
+      "lat": 41.264791,
+      "lng": -96.1290739,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": {
+        "url": "https://biaggis.com/wp-content/uploads/OM-Ext.jpg",
+        "source": "og",
+        "attribution": "https://biaggis.com/locations/nebraska-omaha/"
+      },
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/biaggis-2/",
+          "raw_text": "Monday-Friday from 4-6pm",
+          "windows": [
+            {
+              "day": "fri",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "mon",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "thu",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "tue",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            },
+            {
+              "day": "wed",
+              "start": "16:00",
+              "end": "18:00",
+              "type": "happy_hour"
+            }
+          ],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false,
+      "first_seen_at": "2026-09-07T17:27:33.437350+00:00"
     },
     {
       "id": "big-kels-pizza-wings",
@@ -4001,6 +4098,40 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "culinary-dropout",
+      "name": "Culinary Dropout",
+      "address": "Culinary Dropout, East Camelback Road, Scottsdale, Arizona, 85251",
+      "lat": 33.5019262,
+      "lng": -111.9274483,
+      "geocode_confidence": "low",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/culinary-dropout/",
+          "raw_text": "Monday-Friday from 3-6pm",
+          "windows": [],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
+      "first_seen_at": "2026-09-07T17:27:33.437350+00:00"
     },
     {
       "id": "cumbia-omaha",

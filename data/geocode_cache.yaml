@@ -1484,3 +1484,26 @@ Crescent Moon Alehouse:
   category: amenity
   geocode_source: photon
   geocode_confidence: high
+Biaggi's:
+  address: Biaggi's Ristorante Italiano, 13655, California Street, Commercial Federal
+    Business Park, Omaha, Douglas County, Nebraska, 68154, United States
+  lat: 41.264791
+  lng: -96.1290739
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high
+Ancho & Agave:
+  address: Ancho & Agave, Davenport Street, Village Pointe, Omaha, Douglas County,
+    Nebraska, 68118, United States
+  lat: 41.2611162
+  lng: -96.1817616
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high
+Culinary Dropout:
+  address: Culinary Dropout, East Camelback Road, Scottsdale, Arizona, 85251
+  lat: 33.5019262
+  lng: -111.9274483
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low

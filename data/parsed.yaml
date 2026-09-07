@@ -1,4 +1,105 @@
 - source: growomaha
+  source_record_id: biaggis-2
+  source_url: https://growomaha.com/happy-hour/biaggis-2/
+  name: Biaggi's
+  record_modified_at: '2026-09-01T15:34:24Z'
+  kind: happy_hour
+  raw_text: Monday-Friday from 4-6pm
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '16:00'
+    end: null
+    type: happy_hour
+  - day: mon
+    start: '16:00'
+    end: null
+    type: happy_hour
+  - day: thu
+    start: '16:00'
+    end: null
+    type: happy_hour
+  - day: tue
+    start: '16:00'
+    end: null
+    type: happy_hour
+  - day: wed
+    start: '16:00'
+    end: null
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+- source: growomaha
+  source_record_id: ancho-agave
+  source_url: https://growomaha.com/happy-hour/ancho-agave/
+  name: Ancho & Agave
+  record_modified_at: '2026-09-01T15:30:43Z'
+  kind: happy_hour
+  raw_text: Sunday- Friday from 3-6pm
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '15:00'
+    end: null
+    type: happy_hour
+  - day: mon
+    start: '15:00'
+    end: null
+    type: happy_hour
+  - day: sun
+    start: '15:00'
+    end: null
+    type: happy_hour
+  - day: thu
+    start: '15:00'
+    end: null
+    type: happy_hour
+  - day: tue
+    start: '15:00'
+    end: null
+    type: happy_hour
+  - day: wed
+    start: '15:00'
+    end: null
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+- source: growomaha
+  source_record_id: culinary-dropout
+  source_url: https://growomaha.com/happy-hour/culinary-dropout/
+  name: Culinary Dropout
+  record_modified_at: '2026-09-01T15:17:16Z'
+  kind: happy_hour
+  raw_text: Monday-Friday from 3-6pm
+  external_link: null
+  pre_extracted_windows: []
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+- source: growomaha
   source_record_id: sky-bar-grill
   source_url: https://growomaha.com/happy-hour/sky-bar-grill/
   name: Sky Bar + Grill
@@ -10732,29 +10833,10 @@
   lat: null
   lng: null
 - source: bigdealsmedia
-  source_record_id: 72-table-tap
-  source_url: https://omaha.bigdealsmedia.net/category/restaurants
-  name: 72 Table & Tap
-  record_modified_at: '2026-08-31T18:53:20.216979+00:00'
-  kind: voucher
-  raw_text: ''
-  external_link: https://omaha.bigdealsmedia.net/business/2895/deal/3833
-  pre_extracted_windows: []
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: 50.0
-  sale_price: 25.0
-  savings: 25.0
-  category: restaurants
-  lat: null
-  lng: null
-- source: bigdealsmedia
   source_record_id: stories-coffee
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Stories Coffee
-  record_modified_at: '2026-08-31T18:53:20.216979+00:00'
+  record_modified_at: '2026-09-07T17:24:42.421188+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
@@ -10773,7 +10855,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-08-31T18:53:20.216979+00:00'
+  record_modified_at: '2026-09-07T17:24:42.421188+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
