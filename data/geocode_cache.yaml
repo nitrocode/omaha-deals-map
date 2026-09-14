@@ -1507,3 +1507,11 @@ Culinary Dropout:
   category: amenity
   geocode_source: photon
   geocode_confidence: low
+Brickway Brewery and Distillery:
+  address: Brickway Brewery and Distillery, 1116, Jackson Street, The Old Market,
+    Omaha, Douglas County, Nebraska, 68102, United States
+  lat: 41.2545881
+  lng: -95.9314169
+  category: craft
+  geocode_source: nominatim
+  geocode_confidence: medium

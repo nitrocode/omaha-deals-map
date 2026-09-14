@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-09-07T17:27:40.372408+00:00",
+  "built_at": "2026-09-14T17:54:39.815890+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -2772,12 +2772,12 @@
     {
       "id": "brickway-brewery-distillery",
       "name": "Brickway Brewery and Distillery",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Brickway Brewery and Distillery, 1116, Jackson Street, The Old Market, Omaha, Douglas County, Nebraska, 68102, United States",
+      "lat": 41.2545881,
+      "lng": -95.9314169,
+      "geocode_confidence": "medium",
       "cuisine": [],
-      "neighborhood": null,
+      "neighborhood": "Old Market",
       "price_tier": null,
       "photo": null,
       "website": null,
@@ -2841,7 +2841,6 @@
         }
       ],
       "review_reasons": [
-        "missing_location",
         "missing_end_time"
       ],
       "needs_review": true,
