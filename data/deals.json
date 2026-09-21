@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-09-14T17:54:39.815890+00:00",
+  "built_at": "2026-09-21T18:02:37.998031+00:00",
   "sources": [
     {
       "name": "growomaha",
-      "count": 264
+      "count": 265
     },
     {
       "name": "bigdealsmedia",
-      "count": 2
+      "count": 1
     },
     {
       "name": "manual",
@@ -1436,10 +1436,10 @@
     {
       "id": "beacon-hills-aksarben",
       "name": "Beacon Hills in Aksarben",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Beacon Hills, 6750, Mercy Road, Omaha, Nebraska, 68106",
+      "lat": 41.2384693,
+      "lng": -96.0162176,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -1492,10 +1492,8 @@
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -12906,6 +12904,83 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
+      "id": "shiki",
+      "name": "Shiki",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "geocode_confidence": "none",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/shiki/",
+          "raw_text": "Monday-Friday: 2 – 5:30 PMSunday: 12 – 5 PMReverse Happy Hour: Friday & Saturday: 9 – 11PM",
+          "windows": [
+            {
+              "day": "fri",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "sat",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "sun",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "thu",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "tue",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            },
+            {
+              "day": "wed",
+              "start": "14:00",
+              "end": "17:30",
+              "type": "reverse_hh"
+            }
+          ],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [
+        "missing_location"
+      ],
+      "needs_review": true,
+      "first_seen_at": "2026-09-21T18:02:36.679366+00:00"
+    },
+    {
       "id": "shucks-fish-house-oyster-bar",
       "name": "Shuck's Fish House and Oyster Bar",
       "address": "Shuck's Fish House & Oyster Bar, 16901, Wright Plaza, Omaha, Nebraska, 68130",
@@ -14148,7 +14223,7 @@
       "neighborhood": null,
       "price_tier": null,
       "photo": null,
-      "website": "https://omaha.bigdealsmedia.net/business/3038/deal/3989",
+      "website": null,
       "phone": null,
       "socials": {
         "facebook": "https://www.facebook.com/storiescoffeecompany",
@@ -14156,7 +14231,7 @@
       },
       "features": {},
       "hours_osm": null,
-      "source_count": 2,
+      "source_count": 1,
       "personal": {},
       "deals": [
         {
@@ -14209,18 +14284,6 @@
             }
           ],
           "highlights": []
-        },
-        {
-          "kind": "voucher",
-          "source": "bigdealsmedia",
-          "source_url": "https://omaha.bigdealsmedia.net/category/restaurants",
-          "raw_text": "",
-          "external_link": "https://omaha.bigdealsmedia.net/business/3038/deal/3989",
-          "title": null,
-          "original_price": 50.0,
-          "sale_price": 25.0,
-          "savings": 25.0,
-          "category": "amenity"
         }
       ],
       "review_reasons": [],
@@ -15001,10 +15064,10 @@
     {
       "id": "the-committee-chophouse",
       "name": "The Committee Chophouse",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "The Committee Chophouse, 302, South 36th Street, Omaha, Douglas County, Nebraska, 68131, United States",
+      "lat": 41.2576124,
+      "lng": -95.9665574,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -15069,10 +15132,8 @@
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
@@ -17013,10 +17074,10 @@
     {
       "id": "vis-major-brewing-co",
       "name": "Vis Major Brewing Co.",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Vis Major Brewing Co., 3501, Omaha, Douglas County, Nebraska, 68105, United States",
+      "lat": 41.2412523,
+      "lng": -95.9644807,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -17069,10 +17130,8 @@
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {

@@ -1,4 +1,52 @@
 - source: growomaha
+  source_record_id: shiki
+  source_url: https://growomaha.com/happy-hour/shiki/
+  name: Shiki
+  record_modified_at: '2026-09-21T14:26:29Z'
+  kind: happy_hour
+  raw_text: "Monday-Friday: 2 \u2013 5:30 PMSunday: 12 \u2013 5 PMReverse Happy Hour:\
+    \ Friday & Saturday: 9 \u2013 11PM"
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: mon
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: sat
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: sun
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: thu
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: tue
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: wed
+    start: '14:00'
+    end: null
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+- source: growomaha
   source_record_id: biaggis-2
   source_url: https://growomaha.com/happy-hour/biaggis-2/
   name: Biaggi's
@@ -626,7 +674,7 @@
   source_record_id: north-italia
   source_url: https://growomaha.com/happy-hour/north-italia/
   name: North Italia
-  record_modified_at: '2025-11-26T03:17:50Z'
+  record_modified_at: '2026-09-21T14:35:52Z'
   kind: happy_hour
   raw_text: Monday-Friday from 3-6pm
   external_link: null
@@ -10833,29 +10881,10 @@
   lat: null
   lng: null
 - source: bigdealsmedia
-  source_record_id: stories-coffee
-  source_url: https://omaha.bigdealsmedia.net/category/restaurants
-  name: Stories Coffee
-  record_modified_at: '2026-09-14T17:51:10.423753+00:00'
-  kind: voucher
-  raw_text: ''
-  external_link: https://omaha.bigdealsmedia.net/business/3038/deal/3989
-  pre_extracted_windows: []
-  valid_from: null
-  valid_until: null
-  title: null
-  description: null
-  original_price: 50.0
-  sale_price: 25.0
-  savings: 25.0
-  category: restaurants
-  lat: null
-  lng: null
-- source: bigdealsmedia
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-09-14T17:51:10.423753+00:00'
+  record_modified_at: '2026-09-21T17:57:49.665674+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223

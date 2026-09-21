@@ -1515,3 +1515,26 @@ Brickway Brewery and Distillery:
   category: craft
   geocode_source: nominatim
   geocode_confidence: medium
+The Committee Chophouse:
+  address: The Committee Chophouse, 302, South 36th Street, Omaha, Douglas County,
+    Nebraska, 68131, United States
+  lat: 41.2576124
+  lng: -95.9665574
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high
+Vis Major Brewing Co.:
+  address: Vis Major Brewing Co., 3501, Omaha, Douglas County, Nebraska, 68105, United
+    States
+  lat: 41.2412523
+  lng: -95.9644807
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high
+Beacon Hills in Aksarben:
+  address: Beacon Hills, 6750, Mercy Road, Omaha, Nebraska, 68106
+  lat: 41.2384693
+  lng: -96.0162176
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high
