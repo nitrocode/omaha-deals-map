@@ -1538,3 +1538,11 @@ Beacon Hills in Aksarben:
   category: amenity
   geocode_source: photon
   geocode_confidence: high
+Taqueria El Rey:
+  address: Taqueria El Rey, South 24th Street, South Omaha, Omaha, Douglas County,
+    Nebraska, 68107, United States
+  lat: 41.2052936
+  lng: -95.9467163
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high

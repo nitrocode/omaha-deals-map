@@ -1142,3 +1142,7 @@ shiki:
   url: null
   source: null
   attribution: null
+taqueria-el-rey:
+  url: https://s3.amazonaws.com/bdm.media/logo.png
+  source: og
+  attribution: https://omaha.bigdealsmedia.net/business/5331/deal/7645
