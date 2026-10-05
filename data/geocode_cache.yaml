@@ -1546,3 +1546,11 @@ Taqueria El Rey:
   category: amenity
   geocode_source: nominatim
   geocode_confidence: high
+Circo:
+  address: Circo Italian Restaurant, 19102, Q Street, Omaha, Chicago Precinct, Douglas
+    County, Nebraska, 68135, United States
+  lat: 41.2054665
+  lng: -96.2144123
+  category: amenity
+  geocode_source: nominatim
+  geocode_confidence: high

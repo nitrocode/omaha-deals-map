@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-09-28T19:26:30.598861+00:00",
+  "built_at": "2026-10-05T20:28:41.576985+00:00",
   "sources": [
     {
       "name": "growomaha",
@@ -3507,10 +3507,10 @@
     {
       "id": "circo-3",
       "name": "Circo",
-      "address": "",
-      "lat": null,
-      "lng": null,
-      "geocode_confidence": "none",
+      "address": "Circo Italian Restaurant, 19102, Q Street, Omaha, Chicago Precinct, Douglas County, Nebraska, 68135, United States",
+      "lat": 41.2054665,
+      "lng": -96.2144123,
+      "geocode_confidence": "high",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -3569,10 +3569,8 @@
           "highlights": []
         }
       ],
-      "review_reasons": [
-        "missing_location"
-      ],
-      "needs_review": true,
+      "review_reasons": [],
+      "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
