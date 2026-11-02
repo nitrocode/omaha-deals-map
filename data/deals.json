@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-10-19T18:29:38.963321+00:00",
+  "built_at": "2026-11-02T21:31:07.069153+00:00",
   "sources": [
     {
       "name": "growomaha",
-      "count": 265
+      "count": 268
     },
     {
       "name": "bigdealsmedia",
@@ -2635,11 +2635,11 @@
     },
     {
       "id": "brewskys-2",
-      "name": "Brewsky's",
-      "address": "Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508",
-      "lat": 40.8151888,
-      "lng": -96.7102032,
-      "geocode_confidence": "low",
+      "name": "Forest's Game Time Pub & Grill",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "geocode_confidence": "none",
       "cuisine": [],
       "neighborhood": null,
       "price_tier": null,
@@ -2656,7 +2656,7 @@
           "kind": "happy_hour",
           "source": "growomaha",
           "source_url": "https://growomaha.com/happy-hour/brewskys-2/",
-          "raw_text": "Tuesday-Thursday from 3-6 PM and includes $3 select bottles and pints, $3 select wells, $4 Robert Mondavi wines by the glass, $3 fireball shots, and $2 off select appetizers. Extended Friday HH from 3-7 PM.",
+          "raw_text": "Monday- Thursday from 3-6pm and Fridays ALL DAY",
           "windows": [
             {
               "day": "fri",
@@ -2699,7 +2699,7 @@
         }
       ],
       "review_reasons": [
-        "uncertain_location"
+        "missing_location"
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
@@ -6788,6 +6788,40 @@
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
     },
     {
+      "id": "hectors-baja-mexican-cuisine",
+      "name": "Hector's Baja Mexican Cuisine",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "geocode_confidence": "none",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/hectors-baja-mexican-cuisine/",
+          "raw_text": "Monday, Wednesday, Friday, and Saturday from 3-5pm$1 off bar drinks; $2 off dips (chili con queso, bean dip, guacamole)",
+          "windows": [],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [
+        "missing_location"
+      ],
+      "needs_review": true,
+      "first_seen_at": "2026-11-02T21:31:02.234163+00:00"
+    },
+    {
       "id": "heights-draft-room",
       "name": "Heights Draft Room",
       "address": "",
@@ -10183,13 +10217,7 @@
           "raw_text": "Tuesday-Friday from 2-5pm",
           "windows": [
             {
-              "day": "mon",
-              "start": "14:00",
-              "end": "17:00",
-              "type": "happy_hour"
-            },
-            {
-              "day": "sun",
+              "day": "fri",
               "start": "14:00",
               "end": "17:00",
               "type": "happy_hour"
@@ -10774,6 +10802,40 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "osaka-steakhouse-sushi-bar",
+      "name": "Osaka Steakhouse & Sushi Bar",
+      "address": "Osaka Japanese Hibachi Steakhouse & Sushi Bar, Commons Drive West, Florida, 32541",
+      "lat": 30.387717,
+      "lng": -86.4374691,
+      "geocode_confidence": "low",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/osaka-steakhouse-sushi-bar/",
+          "raw_text": "Monday-Saturday from 11AM-5:30PM, ALL DAY Sunday (Both dine-in and carry out)",
+          "windows": [],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [
+        "uncertain_location"
+      ],
+      "needs_review": true,
+      "first_seen_at": "2026-11-02T21:31:02.234163+00:00"
     },
     {
       "id": "oscars",
@@ -16411,6 +16473,38 @@
       "review_reasons": [],
       "needs_review": false,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "tu-familia",
+      "name": "Tu Familia",
+      "address": "Supermercado Nuestra Familia, 2900, Leavenworth Street, Omaha, Nebraska, 68105",
+      "lat": 41.2527772,
+      "lng": -95.955441,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/tu-familia/",
+          "raw_text": "Tuesday- Thursday from 3-7pm",
+          "windows": [],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [],
+      "needs_review": false,
+      "first_seen_at": "2026-11-02T21:31:02.234163+00:00"
     },
     {
       "id": "tupelo-honey",

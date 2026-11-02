@@ -1554,3 +1554,19 @@ Circo:
   category: amenity
   geocode_source: nominatim
   geocode_confidence: high
+Osaka Steakhouse & Sushi Bar:
+  address: Osaka Japanese Hibachi Steakhouse & Sushi Bar, Commons Drive West, Florida,
+    32541
+  lat: 30.387717
+  lng: -86.4374691
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: low
+Tu Familia:
+  address: Supermercado Nuestra Familia, 2900, Leavenworth Street, Omaha, Nebraska,
+    68105
+  lat: 41.2527772
+  lng: -95.955441
+  category: shop
+  geocode_source: photon
+  geocode_confidence: high

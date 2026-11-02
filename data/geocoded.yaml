@@ -1,4 +1,78 @@
 - source: growomaha
+  source_record_id: osaka-steakhouse-sushi-bar
+  source_url: https://growomaha.com/happy-hour/osaka-steakhouse-sushi-bar/
+  name: Osaka Steakhouse & Sushi Bar
+  record_modified_at: '2026-10-26T02:22:17Z'
+  kind: happy_hour
+  raw_text: Monday-Saturday from 11AM-5:30PM, ALL DAY Sunday (Both dine-in and carry
+    out)
+  external_link: null
+  pre_extracted_windows: []
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: amenity
+  lat: 30.387717
+  lng: -86.4374691
+  extraction_source: regex
+  needs_review: true
+  address: Osaka Japanese Hibachi Steakhouse & Sushi Bar, Commons Drive West, Florida,
+    32541
+  geocode_source: photon
+  geocode_confidence: low
+- source: growomaha
+  source_record_id: hectors-baja-mexican-cuisine
+  source_url: https://growomaha.com/happy-hour/hectors-baja-mexican-cuisine/
+  name: Hector's Baja Mexican Cuisine
+  record_modified_at: '2026-10-26T01:46:01Z'
+  kind: happy_hour
+  raw_text: Monday, Wednesday, Friday, and Saturday from 3-5pm$1 off bar drinks; $2
+    off dips (chili con queso, bean dip, guacamole)
+  external_link: null
+  pre_extracted_windows: []
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+  extraction_source: regex
+  needs_review: true
+  geocode_confidence: none
+- source: growomaha
+  source_record_id: tu-familia
+  source_url: https://growomaha.com/happy-hour/tu-familia/
+  name: Tu Familia
+  record_modified_at: '2026-10-22T18:56:08Z'
+  kind: happy_hour
+  raw_text: Tuesday- Thursday from 3-7pm
+  external_link: null
+  pre_extracted_windows: []
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: shop
+  lat: 41.2527772
+  lng: -95.955441
+  extraction_source: regex
+  needs_review: false
+  address: Supermercado Nuestra Familia, 2900, Leavenworth Street, Omaha, Nebraska,
+    68105
+  geocode_source: photon
+  geocode_confidence: high
+- source: growomaha
   source_record_id: shiki
   source_url: https://growomaha.com/happy-hour/shiki/
   name: Shiki
@@ -3864,16 +3938,12 @@
   source_record_id: mouth-of-the-south-downtown
   source_url: https://growomaha.com/happy-hour/mouth-of-the-south-downtown/
   name: Mouth of the South
-  record_modified_at: '2026-07-10T18:59:22Z'
+  record_modified_at: '2026-10-26T02:46:49Z'
   kind: happy_hour
   raw_text: Tuesday-Friday from 2-5pm
   external_link: null
   pre_extracted_windows:
-  - day: mon
-    start: '14:00'
-    end: '17:00'
-    type: happy_hour
-  - day: sun
+  - day: fri
     start: '14:00'
     end: '17:00'
     type: happy_hour
@@ -5446,12 +5516,10 @@
 - source: growomaha
   source_record_id: brewskys-2
   source_url: https://growomaha.com/happy-hour/brewskys-2/
-  name: Brewsky's
-  record_modified_at: '2025-12-09T02:51:22Z'
+  name: Forest's Game Time Pub & Grill
+  record_modified_at: '2026-10-27T03:36:43Z'
   kind: happy_hour
-  raw_text: Tuesday-Thursday from 3-6 PM and includes $3 select bottles and pints,
-    $3 select wells, $4 Robert Mondavi wines by the glass, $3 fireball shots, and
-    $2 off select appetizers. Extended Friday HH from 3-7 PM.
+  raw_text: Monday- Thursday from 3-6pm and Fridays ALL DAY
   external_link: null
   pre_extracted_windows:
   - day: fri
@@ -5485,14 +5553,12 @@
   original_price: null
   sale_price: null
   savings: null
-  category: amenity
-  lat: 40.8151888
-  lng: -96.7102032
+  category: null
+  lat: null
+  lng: null
   extraction_source: regex
-  needs_review: false
-  address: Brewsky's, 201, North 8th Street, Lincoln, Nebraska, 68508
-  geocode_source: photon
-  geocode_confidence: low
+  needs_review: true
+  geocode_confidence: none
 - source: growomaha
   source_record_id: backlot-pizza-kitchen
   source_url: https://growomaha.com/happy-hour/backlot-pizza-kitchen/
@@ -11978,7 +12044,7 @@
   source_record_id: blatt-beer-table
   source_url: https://growomaha.com/happy-hour/blatt-beer-table/
   name: Blatt Beer + Table (Downtown)
-  record_modified_at: '2026-01-09T16:29:01Z'
+  record_modified_at: '2026-10-22T19:01:32Z'
   kind: happy_hour
   raw_text: Times vary by location, but generally it's Monday-Saturday from 3:00-6:30
     PM with varying weekend hours based on location.
@@ -12212,7 +12278,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-10-19T18:26:23.715482+00:00'
+  record_modified_at: '2026-11-02T21:28:31.241851+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
@@ -12235,7 +12301,7 @@
   source_record_id: taqueria-el-rey
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Taqueria El Rey
-  record_modified_at: '2026-10-19T18:26:23.715482+00:00'
+  record_modified_at: '2026-11-02T21:28:31.241851+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/5331/deal/7645
