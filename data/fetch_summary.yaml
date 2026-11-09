@@ -1,13 +1,13 @@
 growomaha:
   ok: true
-  snapshot: data/raw/growomaha/20261102T212830Z.pickle
-  records: 268
+  snapshot: data/raw/growomaha/20261109T220021Z.pickle
+  records: 269
   stale_data_warning: false
 visitomaha:
   ok: false
   error: 'Expecting value: line 1 column 1 (char 0)'
 bigdealsmedia:
   ok: true
-  snapshot: data/raw/bigdealsmedia/20261102T212831Z.pickle
+  snapshot: data/raw/bigdealsmedia/20261109T220022Z.pickle
   records: null
   stale_data_warning: false

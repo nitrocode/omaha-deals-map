@@ -1,4 +1,43 @@
 - source: growomaha
+  source_record_id: railway-bar-and-grill
+  source_url: https://growomaha.com/happy-hour/railway-bar-and-grill/
+  name: Railway Bar and Grill
+  record_modified_at: '2026-11-07T01:35:56Z'
+  kind: happy_hour
+  raw_text: Monday-Friday from 2 to 6 pm
+  external_link: null
+  pre_extracted_windows:
+  - day: fri
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: mon
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: thu
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: tue
+    start: '14:00'
+    end: null
+    type: happy_hour
+  - day: wed
+    start: '14:00'
+    end: null
+    type: happy_hour
+  valid_from: null
+  valid_until: null
+  title: null
+  description: null
+  original_price: null
+  sale_price: null
+  savings: null
+  category: null
+  lat: null
+  lng: null
+- source: growomaha
   source_record_id: osaka-steakhouse-sushi-bar
   source_url: https://growomaha.com/happy-hour/osaka-steakhouse-sushi-bar/
   name: Osaka Steakhouse & Sushi Bar
@@ -4239,10 +4278,10 @@
   source_record_id: goldeez
   source_url: https://growomaha.com/happy-hour/goldeez/
   name: Goldeez
-  record_modified_at: '2022-01-03T20:00:17Z'
+  record_modified_at: '2026-11-07T01:09:21Z'
   kind: happy_hour
-  raw_text: "Monday-Friday from 3-6 PM and includes $2.50 Domestic pints, $3 wells,\
-    \ and $3 tall boys.\u200B"
+  raw_text: Monday-Friday from 3-6 PM and includes $2.75 Domestic pints and $1 off
+    wells.
   external_link: null
   pre_extracted_windows:
   - day: fri
@@ -10938,7 +10977,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-11-02T21:28:31.241851+00:00'
+  record_modified_at: '2026-11-09T22:00:22.644013+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
@@ -10957,7 +10996,7 @@
   source_record_id: taqueria-el-rey
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Taqueria El Rey
-  record_modified_at: '2026-11-02T21:28:31.241851+00:00'
+  record_modified_at: '2026-11-09T22:00:22.644013+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/5331/deal/7645

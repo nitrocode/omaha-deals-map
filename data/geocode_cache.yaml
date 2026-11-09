@@ -1570,3 +1570,10 @@ Tu Familia:
   category: shop
   geocode_source: photon
   geocode_confidence: high
+Railway Bar and Grill:
+  address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
+  lat: 41.2563999
+  lng: -95.9410893
+  category: amenity
+  geocode_source: photon
+  geocode_confidence: high

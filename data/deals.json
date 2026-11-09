@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "built_at": "2026-11-02T21:31:07.069153+00:00",
+  "built_at": "2026-11-09T22:03:42.445800+00:00",
   "sources": [
     {
       "name": "growomaha",
-      "count": 268
+      "count": 269
     },
     {
       "name": "bigdealsmedia",
@@ -6104,7 +6104,7 @@
           "kind": "happy_hour",
           "source": "growomaha",
           "source_url": "https://growomaha.com/happy-hour/goldeez/",
-          "raw_text": "Monday-Friday from 3-6 PM and includes $2.50 Domestic pints, $3 wells, and $3 tall boys.​",
+          "raw_text": "Monday-Friday from 3-6 PM and includes $2.75 Domestic pints and $1 off wells.",
           "windows": [
             {
               "day": "fri",
@@ -11858,6 +11858,71 @@
       ],
       "needs_review": true,
       "first_seen_at": "2026-06-08T03:04:46.566324+00:00"
+    },
+    {
+      "id": "railway-bar-and-grill",
+      "name": "Railway Bar and Grill",
+      "address": "The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102",
+      "lat": 41.2563999,
+      "lng": -95.9410893,
+      "geocode_confidence": "high",
+      "cuisine": [],
+      "neighborhood": null,
+      "price_tier": null,
+      "photo": null,
+      "website": null,
+      "phone": null,
+      "socials": {},
+      "features": {},
+      "hours_osm": null,
+      "source_count": 1,
+      "personal": {},
+      "deals": [
+        {
+          "kind": "happy_hour",
+          "source": "growomaha",
+          "source_url": "https://growomaha.com/happy-hour/railway-bar-and-grill/",
+          "raw_text": "Monday-Friday from 2 to 6 pm",
+          "windows": [
+            {
+              "day": "fri",
+              "start": "14:00",
+              "end": null,
+              "type": "happy_hour"
+            },
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": null,
+              "type": "happy_hour"
+            },
+            {
+              "day": "thu",
+              "start": "14:00",
+              "end": null,
+              "type": "happy_hour"
+            },
+            {
+              "day": "tue",
+              "start": "14:00",
+              "end": null,
+              "type": "happy_hour"
+            },
+            {
+              "day": "wed",
+              "start": "14:00",
+              "end": null,
+              "type": "happy_hour"
+            }
+          ],
+          "highlights": []
+        }
+      ],
+      "review_reasons": [
+        "missing_end_time"
+      ],
+      "needs_review": true,
+      "first_seen_at": "2026-11-09T22:03:39.409804+00:00"
     },
     {
       "id": "ralston-keno",
