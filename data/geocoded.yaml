@@ -37,7 +37,7 @@
   category: amenity
   lat: 41.2563999
   lng: -95.9410893
-  needs_review: false
+  needs_review: true
   extraction_source: none
   address: The Verdict Bar and Grill, 1901, Harney Street, Omaha, Nebraska, 68102
   geocode_source: photon
@@ -8342,7 +8342,7 @@
   source_record_id: addys-sports-bar-grill
   source_url: https://growomaha.com/happy-hour/addys-sports-bar-grill/
   name: Addy's Sports Bar & Grill
-  record_modified_at: '2026-10-16T15:54:18Z'
+  record_modified_at: '2026-11-13T20:32:50Z'
   kind: happy_hour
   raw_text: Monday-Friday from 3-6 PM and includes $5.75 domestic bowls, $5.75 wells,
     and more. Daily Drink Specials.
@@ -12322,7 +12322,7 @@
   source_record_id: the-woodcliff-restaurant
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: The Woodcliff Restaurant
-  record_modified_at: '2026-11-09T22:00:22.644013+00:00'
+  record_modified_at: '2026-11-23T23:30:10.946197+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/3603/deal/5223
@@ -12345,7 +12345,7 @@
   source_record_id: taqueria-el-rey
   source_url: https://omaha.bigdealsmedia.net/category/restaurants
   name: Taqueria El Rey
-  record_modified_at: '2026-11-09T22:00:22.644013+00:00'
+  record_modified_at: '2026-11-23T23:30:10.946197+00:00'
   kind: voucher
   raw_text: ''
   external_link: https://omaha.bigdealsmedia.net/business/5331/deal/7645
